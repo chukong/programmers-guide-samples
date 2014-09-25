@@ -12,7 +12,7 @@
     $ git clone https://github.com/chukong/programmers-guide-samples.git
     $ cd programmers-guide-samples
     $ git submodule update --init
-    $ cd cocos2d-x
+    $ cd libs/cocos2d-x
     $ ./download-deps.py
-    $ cd ..
+    $ cd ../..
     $ open proj.ios_mac/Programmers\ Guide.xcodeproj/
