@@ -77,6 +77,13 @@ bool Chapter2::init()
 
 void Chapter2::createMenu(const Size& _visibleSize, const Size& _playingSize)
 {
+    // BUG:
+    // setFontSize() doesn't seem to have any effect
+    // the callback never gets triggered.
+    //auto menuFont = MenuItemFont::create("Start Game", CC_CALLBACK_1(Chapter2::menuPlayCallback, this));
+    //menuFont->setFontName("Marker Felt.ttf");
+    //menuFont->setFontSize(64);
+    
     auto option1 = Label::createWithTTF("Start Game", "Marker Felt.ttf", 64);
     
     auto menuItem1 = MenuItemLabel::create(option1, CC_CALLBACK_1(Chapter2::menuPlayCallback, this));
