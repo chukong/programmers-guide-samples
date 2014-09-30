@@ -1,5 +1,7 @@
 #include "Chapter2.h"
 
+#include "Chapter2Level1.h"
+
 USING_NS_CC;
 
 Scene* Chapter2::createScene()
@@ -77,16 +79,9 @@ bool Chapter2::init()
 
 void Chapter2::createMenu(const Size& _visibleSize, const Size& _playingSize)
 {
-    // BUG:
-    // setFontSize() doesn't seem to have any effect
-    // the callback never gets triggered.
-    //auto menuFont = MenuItemFont::create("Start Game", CC_CALLBACK_1(Chapter2::menuPlayCallback, this));
-    //menuFont->setFontName("Marker Felt.ttf");
-    //menuFont->setFontSize(64);
-    
-    auto option1 = Label::createWithTTF("Start Game", "Marker Felt.ttf", 64);
-    
-    auto menuItem1 = MenuItemLabel::create(option1, CC_CALLBACK_1(Chapter2::menuPlayCallback, this));
+    auto menuItem1 = MenuItemFont::create("Start Game", CC_CALLBACK_1(Chapter2::menuPlayCallback, this));
+    menuItem1->setFontNameObj("Marker Felt.ttf");
+    menuItem1->setFontSizeObj(64);
     
     auto menu = Menu::create(menuItem1, NULL);
     
@@ -95,7 +90,7 @@ void Chapter2::createMenu(const Size& _visibleSize, const Size& _playingSize)
 
 void Chapter2::menuPlayCallback(Ref* pSender)
 {
-    std::cout << "Start Game" << std::endl;
+    Director::getInstance()->replaceScene(Chapter2Level1::createScene());
 }
 
 void Chapter2::createPlayerLabels(const Size& _visibleSize, const Size& _playingSize)

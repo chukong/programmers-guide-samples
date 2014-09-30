@@ -118,6 +118,8 @@
 		7E1526BF19D4DE890013F222 /* ZigzagGrass_Mud_Round.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E1526B319D4DE890013F222 /* ZigzagGrass_Mud_Round.png */; };
 		7E1526C119D4E0020013F222 /* Marker Felt.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7E1526C019D4E0020013F222 /* Marker Felt.ttf */; };
 		7E1526C219D4E0020013F222 /* Marker Felt.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7E1526C019D4E0020013F222 /* Marker Felt.ttf */; };
+		7E273C8019D9CE460029CCC0 /* Chapter2Level1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7E273C7E19D9CE460029CCC0 /* Chapter2Level1.cpp */; };
+		7E273C8119D9CE460029CCC0 /* Chapter2Level1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7E273C7E19D9CE460029CCC0 /* Chapter2Level1.cpp */; };
 		BF171245129291EC00B8313A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB012928DE900B8313A /* OpenGLES.framework */; };
 		BF1712471292920000B8313A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB412928DE900B8313A /* libz.dylib */; };
 		BF1C47F01293687400B63C5D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF1C47EA1293683800B63C5D /* QuartzCore.framework */; };
@@ -235,6 +237,8 @@
 		7E1526B219D4DE890013F222 /* ZigzagForest_Square.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ZigzagForest_Square.png; sourceTree = "<group>"; };
 		7E1526B319D4DE890013F222 /* ZigzagGrass_Mud_Round.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ZigzagGrass_Mud_Round.png; sourceTree = "<group>"; };
 		7E1526C019D4E0020013F222 /* Marker Felt.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Marker Felt.ttf"; sourceTree = "<group>"; };
+		7E273C7E19D9CE460029CCC0 /* Chapter2Level1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Chapter2Level1.cpp; sourceTree = "<group>"; };
+		7E273C7F19D9CE460029CCC0 /* Chapter2Level1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Chapter2Level1.h; sourceTree = "<group>"; };
 		BF170DB012928DE900B8313A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		BF170DB412928DE900B8313A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		BF1C47EA1293683800B63C5D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -455,6 +459,8 @@
 				50BA599B19D493310070A133 /* AppDelegate.h */,
 				50BA599C19D493310070A133 /* Chapter2.cpp */,
 				50BA599D19D493310070A133 /* Chapter2.h */,
+				7E273C7E19D9CE460029CCC0 /* Chapter2Level1.cpp */,
+				7E273C7F19D9CE460029CCC0 /* Chapter2Level1.h */,
 			);
 			path = chapter2;
 			sourceTree = "<group>";
@@ -752,6 +758,7 @@
 				50BA599E19D493310070A133 /* AppDelegate.cpp in Sources */,
 				50BA59A019D493310070A133 /* Chapter2.cpp in Sources */,
 				503AE10017EB989F00D1A890 /* AppController.mm in Sources */,
+				7E273C8019D9CE460029CCC0 /* Chapter2Level1.cpp in Sources */,
 				503AE10217EB989F00D1A890 /* RootViewController.mm in Sources */,
 				503AE10117EB989F00D1A890 /* main.m in Sources */,
 			);
@@ -762,6 +769,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				50BA599F19D493310070A133 /* AppDelegate.cpp in Sources */,
+				7E273C8119D9CE460029CCC0 /* Chapter2Level1.cpp in Sources */,
 				503AE10517EB98FF00D1A890 /* main.cpp in Sources */,
 				50BA59A119D493310070A133 /* Chapter2.cpp in Sources */,
 			);
