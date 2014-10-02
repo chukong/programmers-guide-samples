@@ -120,6 +120,7 @@
 		7E1526C219D4E0020013F222 /* Marker Felt.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7E1526C019D4E0020013F222 /* Marker Felt.ttf */; };
 		7E273C8019D9CE460029CCC0 /* Chapter2Level1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7E273C7E19D9CE460029CCC0 /* Chapter2Level1.cpp */; };
 		7E273C8119D9CE460029CCC0 /* Chapter2Level1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7E273C7E19D9CE460029CCC0 /* Chapter2Level1.cpp */; };
+		7E4ED39F19DB4D78003A49C2 /* clouds_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E4ED39E19DB4D78003A49C2 /* clouds_1.png */; };
 		BF171245129291EC00B8313A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB012928DE900B8313A /* OpenGLES.framework */; };
 		BF1712471292920000B8313A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB412928DE900B8313A /* libz.dylib */; };
 		BF1C47F01293687400B63C5D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF1C47EA1293683800B63C5D /* QuartzCore.framework */; };
@@ -239,6 +240,7 @@
 		7E1526C019D4E0020013F222 /* Marker Felt.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Marker Felt.ttf"; sourceTree = "<group>"; };
 		7E273C7E19D9CE460029CCC0 /* Chapter2Level1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Chapter2Level1.cpp; sourceTree = "<group>"; };
 		7E273C7F19D9CE460029CCC0 /* Chapter2Level1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Chapter2Level1.h; sourceTree = "<group>"; };
+		7E4ED39E19DB4D78003A49C2 /* clouds_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clouds_1.png; sourceTree = "<group>"; };
 		BF170DB012928DE900B8313A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		BF170DB412928DE900B8313A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		BF1C47EA1293683800B63C5D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -468,6 +470,7 @@
 		50BA59A419D498F00070A133 /* chapter2 */ = {
 			isa = PBXGroup;
 			children = (
+				7E4ED39E19DB4D78003A49C2 /* clouds_1.png */,
 				7E1526AE19D4DE890013F222 /* Blue_Front1.png */,
 				7E1526AF19D4DE890013F222 /* HelloWorld.png */,
 				7E1526B019D4DE890013F222 /* LightBlue_Front1.png */,
@@ -684,6 +687,7 @@
 				5087E78217EB970100C73F5D /* Icon-144.png in Resources */,
 				7E1526C119D4E0020013F222 /* Marker Felt.ttf in Resources */,
 				50EF629817ECD46A001EB2F8 /* Icon-80.png in Resources */,
+				7E4ED39F19DB4D78003A49C2 /* clouds_1.png in Resources */,
 				7E1526B819D4DE890013F222 /* LightBlue_Front1.png in Resources */,
 				7E1526BE19D4DE890013F222 /* ZigzagGrass_Mud_Round.png in Resources */,
 				5087E78417EB970100C73F5D /* Icon-57.png in Resources */,
