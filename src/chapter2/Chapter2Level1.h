@@ -31,7 +31,7 @@ public:
     void moveSprite(float dt);
 
 private:
-    cocos2d::Sprite* sprite1;
+    //cocos2d::Sprite* sprite1;
 };
 
 #endif // __CHAPTER2LEVEL1_H__

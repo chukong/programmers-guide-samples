@@ -134,10 +134,9 @@ Scene* Chapter2Level1::createScene()
     sprite1->setPosition(100, (visibleSize.height - playingSize.height));
     sprite1->setName("mainSprite");
     
-    sprite1->scheduleOnce([=](float dt) {
-        auto moveBy = MoveBy::create(2, Point(400,0));
-//        this->runAction(moveBy);
-    }, 5);
+    // schedule doesn't support lambda's, file a bug
+    
+    sprite1->scheduleOnce(schedule_selector(Chapter2Level1::moveSprite()), 5);
     
     scene->addChild(sprite1, 1);
 
@@ -145,19 +144,17 @@ Scene* Chapter2Level1::createScene()
     return scene;
 }
 
-//void Chapter2Level1::moveSprite(float dt)
-//{
-//    // Move a sprite 400 pixels to the right, over 2 seconds.
-//    auto moveBy = MoveBy::create(2, Point(400,0));
-//    
-//    
-//    
-//    this->runAction(moveBy);
-//
-//    //this->setRotation(40);
-//
-//    //this->setScale(2.0);
-//}
+void Chapter2Level1::moveSprite(float dt)
+{
+    // Move a sprite 400 pixels to the right, over 2 seconds.
+    auto moveBy = MoveBy::create(2, Point(400,0));
+    
+    sprite1->runAction(moveBy);
+
+    //this->setRotation(40);
+
+    //this->setScale(2.0);
+}
 
 // on "init" you need to initialize your instance
 //bool Chapter2Level1::init()
