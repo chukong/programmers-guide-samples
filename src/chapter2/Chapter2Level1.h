@@ -7,7 +7,7 @@
 
 USING_NS_CC;
 
-class Chapter2Level1
+class Chapter2Level1 : public Ref
 {
 public:
     // there's no 'id' in cpp, so we recommend returning the class instance pointer
