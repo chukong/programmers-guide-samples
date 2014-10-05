@@ -19,10 +19,13 @@ Scene* Chapter2Level1::createScene()
     auto scene = Scene::create();
     
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    // create a node to hold all of the labels
     // create the player and score labels
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     int paddingX = 20;
     int paddingY = 20;
+    
+    auto labelNode = Node::create();
     
     auto player1 = Label::createWithTTF("Player 1", "Marker Felt.ttf", 32);
     auto player2 = Label::createWithTTF("Player 2", "Marker Felt.ttf", 32);
@@ -30,10 +33,10 @@ Scene* Chapter2Level1::createScene()
     auto player1Score = Label::createWithTTF("00000", "Marker Felt.ttf", 32);
     auto player2Score = Label::createWithTTF("00000", "Marker Felt.ttf", 32);
     
-    scene->addChild(player1, -1);
-    scene->addChild(player2, -1);
-    scene->addChild(player1Score, -1);
-    scene->addChild(player2Score, -1);
+    labelNode->addChild(player1, 0);
+    labelNode->addChild(player2, 0);
+    labelNode->addChild(player1Score, 0);
+    labelNode->addChild(player2Score, 0);
     
     player1->setPosition(Vec2(0 + player1->getContentSize().width / 2 + paddingX,
                               visibleSize.height - player1->getContentSize().height / 2 - paddingY));
@@ -46,6 +49,14 @@ Scene* Chapter2Level1::createScene()
     
     player2->setPosition(Vec2(player2Score->getPositionX() - player2Score->getContentSize().width - paddingX,
                               visibleSize.height - player2Score->getContentSize().height / 2 - paddingY));
+    
+    scene->addChild(labelNode, -1);
+    
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    // create a node to hold non-sprites.
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    auto nodeItems = Node::create();
+    nodeItems->setName("nodeItems");
     
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     // create a path/walkway
@@ -68,7 +79,7 @@ Scene* Chapter2Level1::createScene()
         
         sX += sprite->getContentSize().width;
         
-        scene->addChild(sprite, 1);
+        nodeItems->addChild(sprite, 0);
     }
     
     testSprite = NULL;
@@ -91,7 +102,12 @@ Scene* Chapter2Level1::createScene()
         
         sX += sprite->getContentSize().width;
         
-        scene->addChild(sprite,1);
+        if (i == 1)
+        {
+            sprite->setName("middleBlock1");
+        }
+        
+        nodeItems->addChild(sprite, 0);
     }
     
     // right side blocks
@@ -106,7 +122,12 @@ Scene* Chapter2Level1::createScene()
         
         sX += sprite->getContentSize().width;
         
-        scene->addChild(sprite,1);
+        if (i == 1)
+        {
+            sprite->setName("middleBlock2");
+        }
+        
+        scene->addChild(sprite,0);
     }
     
     // center blocks
@@ -121,205 +142,101 @@ Scene* Chapter2Level1::createScene()
         
         sX += sprite->getContentSize().width;
         
-        scene->addChild(sprite,1);
+        nodeItems->addChild(sprite,0);
     }
     
     testSprite = NULL;
     
+    scene->addChild(nodeItems, 1);
+    
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    // create a node to hold sprites
     // create a sprite
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    auto spriteNode = Node::create();
+    spriteNode->setName("spriteNode");
+    
     auto sprite1 = Sprite::create("Blue_Front1.png");
     sprite1->setAnchorPoint(Vec2(0,0));
     sprite1->setPosition(100, (visibleSize.height - playingSize.height));
     sprite1->setName("mainSprite");
     
-    // schedule doesn't support lambda's, file a bug
+    spriteNode->addChild(sprite1, 0);
     
-    sprite1->schedule(schedule_selector(Chapter2Level1::moveSprite), 5);
+    scene->addChild(spriteNode, 1);
+    
+    //sprite1->scheduleOnce([&](float dt) {
+    //    // the local variable "sprite1" will go out of scope, so I have to get it from "this"
+    //    auto anode = Director::getInstance()->getRunningScene()->getChildByName("spriteNode");
+    //    auto bnode = anode->getChildByName("mainSprite");
+    //
+    //    //auto moveBy = MoveBy::create(2, Point(400,0));
+    //
+    //    //bnode->runAction(moveBy);
+    //}, 5, "udpate_key");
+    
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    // create a node to hold menu
+    // create a menu
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    auto menuNode = Node::create();
+    menuNode->setName("menuNode");
+    
+    auto menuItem1 = MenuItemFont::create("Demo Parent/Child");
+    menuItem1->setFontNameObj("Marker Felt.ttf");
+    menuItem1->setFontSizeObj(32);
+    
+    menuItem1->setCallback([&](cocos2d::Ref *sender) {
+        auto anode = Director::getInstance()->getRunningScene()->getChildByName("spriteNode");
+        auto bnode = anode->getChildByName("mainSprite");
+        
+        auto cnode = Director::getInstance()->getRunningScene()->getChildByName("nodeItems");
+        auto dnode = cnode->getChildByName("middleBlock1");
+        
+        // add a few more sprites
+        auto sprite1 = Sprite::create("LightBlue_Front1.png");
+        sprite1->setAnchorPoint(Vec2(0,0));
+        sprite1->setName("childSprite1");
+        
+        bnode->addChild(sprite1, 0);
 
-    scene->addChild(sprite1, 1);
+        sprite1->setPosition(dnode->getPositionX(), dnode->getPositionY());
+        
+        auto sprite2 = Sprite::create("White_Front1.png");
+        sprite2->setAnchorPoint(Vec2(0,0));
+        sprite2->setName("childSprite2");
+        
+        bnode->addChild(sprite2, 0);
+        
+        sprite2->setPosition(dnode->getPositionX() - dnode->getContentSize().width * 3, dnode->getPositionY());
+        
+        // hide the menu option
+        auto ynode = Director::getInstance()->getRunningScene()->getChildByName("menuNode");
+        auto znode = ynode->getChildByName("menu");
+        znode->removeFromParentAndCleanup(true);
+        
+        // schedule an action after 3 seconds
+        bnode->scheduleOnce([&](float dt) {
+            auto anode = Director::getInstance()->getRunningScene()->getChildByName("spriteNode");
+            auto bnode = anode->getChildByName("mainSprite");
+            
+            auto rotateBy = RotateBy::create(2, 40.0f);
+            auto scaleBy = ScaleTo::create(2, 2.0f);
+        
+            auto seq = Sequence::create(rotateBy, scaleBy, NULL);
+            
+            bnode->runAction(seq);
+            
+        }, 3, "udpate_key");
+    });
 
+    auto menu = Menu::create(menuItem1, NULL);
+    menu->setName("menu");
+    menuNode->addChild(menu, 0);
+    menu->setPosition(visibleSize.width / 2, visibleSize.height - menuItem1->getContentSize().height * 2);
+    
+    scene->addChild(menuNode, 2);
+    
     // return the scene
     return scene;
 }
-
-void Chapter2Level1::moveSprite(float dt)
-{
-    // Move a sprite 400 pixels to the right, over 2 seconds.
-    auto moveBy = MoveBy::create(2, Point(400,0));
-    
-    //this->runAction(moveBy);
-
-    //this->setRotation(40);
-
-    //this->setScale(2.0);
-}
-
-// on "init" you need to initialize your instance
-//bool Chapter2Level1::init()
-//{
-    //////////////////////////////
-    // 1. super init first
-    //if ( !LayerColor::initWithColor(Color4B(176, 224, 230, 176)))
-    //if (!Node::init())
-    //{
-    //    return false;
-    //}
-    
-    //Size visibleSize = Director::getInstance()->getVisibleSize();
-    //Vec2 origin = Director::getInstance()->getVisibleOrigin();
-    
-    //Size playingSize; // actual playing size to work with
-    
-    
-    // layout the bottom where the character will walk
-    //createWalkingPath(visibleSize, playingSize);
-    
-    // add the main character to the screen
-    //createSpriteCharacter(visibleSize, playingSize);
-    
-    // add some block to the screen
-    //createBlocks(visibleSize, playingSize);
-    
-    // add the player 1 and 2 labels
-    //createPlayerLabels(visibleSize, playingSize);
-    
-    //return true;
-//}
-
-//void Chapter2Level1::createPlayerLabels(const Size& _visibleSize, const Size& _playingSize)
-//{
-//    int paddingX = 20;
-//    int paddingY = 20;
-//    
-//    auto player1 = Label::createWithTTF("Player 1", "Marker Felt.ttf", 32);
-//    auto player2 = Label::createWithTTF("Player 2", "Marker Felt.ttf", 32);
-//    
-//    auto player1Score = Label::createWithTTF("00000", "Marker Felt.ttf", 32);
-//    auto player2Score = Label::createWithTTF("00000", "Marker Felt.ttf", 32);
-//    
-//    this->addChild(player1, 2);
-//    this->addChild(player2, 2);
-//    this->addChild(player1Score, 2);
-//    this->addChild(player2Score, 2);
-//    
-//    player1->setPosition(Vec2(0 + player1->getContentSize().width / 2 + paddingX,
-//                              _visibleSize.height - player1->getContentSize().height / 2 - paddingY));
-//    
-//    player1Score->setPosition(Vec2(0 + player1->getPositionX() + player1->getContentSize().width + paddingX,
-//                                   _visibleSize.height - player1->getContentSize().height / 2 - paddingY));
-//    
-//    player2Score->setPosition(Vec2(_visibleSize.width - player2Score->getContentSize().width / 2 - paddingX,
-//                                   _visibleSize.height - player2Score->getContentSize().height / 2 - paddingY));
-//    
-//    player2->setPosition(Vec2(player2Score->getPositionX() - player2Score->getContentSize().width - paddingX,
-//                              _visibleSize.height - player2Score->getContentSize().height / 2 - paddingY));
-//}
-
-//void Chapter2Level1::createBlocks(const Size& _visibleSize, const Size& _playingSize)
-//{
-//    auto testSprite = Sprite::create("ZigzagGrass_Mud_Round.png");
-//    
-//    
-//    // left side blocks
-//    int sX = _visibleSize.width/4 - testSprite->getContentSize().width;
-//    int sY = _playingSize.height/2 - testSprite->getContentSize().height * 2;
-//    
-//    for (int i=0; i < 3; i++)
-//    {
-//        auto sprite = Sprite::create("ZigzagGrass_Mud_Round.png");
-//        sprite->setAnchorPoint(Vec2(0,0));
-//        sprite->setPosition(sX,sY);
-//        
-//        sX += sprite->getContentSize().width;
-//        
-//        this->addChild(sprite,1);
-//    }
-//    
-//    // right side blocks
-//    sX = (_visibleSize.width/2 + _visibleSize.width/4) - testSprite->getContentSize().width;
-//    sY = _playingSize.height/2 - testSprite->getContentSize().height * 2;
-//    
-//    for (int i=0; i < 3; i++)
-//    {
-//        auto sprite = Sprite::create("ZigzagGrass_Mud_Round.png");
-//        sprite->setAnchorPoint(Vec2(0,0));
-//        sprite->setPosition(sX,sY);
-//        
-//        sX += sprite->getContentSize().width;
-//        
-//        this->addChild(sprite,1);
-//    }
-//    
-//    // center blocks
-//    sX = _visibleSize.width/2 - testSprite->getContentSize().width;
-//    sY = (_playingSize.height/2 + _playingSize.height/4) - testSprite->getContentSize().height * 2;
-//    
-//    for (int i=0; i < 3; i++)
-//    {
-//        auto sprite = Sprite::create("ZigzagGrass_Mud_Round.png");
-//        sprite->setAnchorPoint(Vec2(0,0));
-//        sprite->setPosition(sX,sY);
-//        
-//        sX += sprite->getContentSize().width;
-//        
-//        this->addChild(sprite,1);
-//    }
-//    
-//    testSprite = NULL;
-//}
-
-//void Chapter2Level1::createSpriteCharacter(const Size& _visibleSize, const Size& _playingSize)
-//{
-//    sprite1 = Sprite::create("Blue_Front1.png");
-//    sprite1->setAnchorPoint(Vec2(0,0));
-//    sprite1->setPosition(100, (_visibleSize.height - _playingSize.height));
-//    
-//    sprite1->scheduleOnce(schedule_selector(Chapter2Level1::moveSprite), 5);
-//    
-//    this->addChild(sprite1, 1);
-//}
-
-
-
-//void Chapter2Level1::createWalkingPath(const Size& _visibleSize, Size& _playingSize)
-//{
-//    // depending upon how large the screen is we need to decide how many blocks to lay down.
-//    
-//    auto testSprite = Sprite::create("ZigzagForest_Square.png");
-//    
-//    int howMany = std::ceil(_visibleSize.width / testSprite->getContentSize().width);
-//    
-//    int sX = 0;
-//    int sY = 0;
-//    
-//    _playingSize = Size(_visibleSize.width, _visibleSize.height - testSprite->getContentSize().height);
-//    
-//    for (int i=0; i < howMany; i++)
-//    {
-//        auto sprite = Sprite::create("ZigzagForest_Square.png");
-//        sprite->setAnchorPoint(Vec2(0,0));
-//        sprite->setPosition(sX,sY);
-//        
-//        sX += sprite->getContentSize().width;
-//        
-//        this->addChild(sprite,1);
-//    }
-//    
-//    testSprite = NULL;
-//}
-//
-//void Chapter2Level1::onMenuCloseCallback(Ref* pSender)
-//{
-//#if (CC_TARGET_PLATFORM == CC_PLATFORM_WP8) || (CC_TARGET_PLATFORM == CC_PLATFORM_WINRT)
-//	MessageBox("You pressed the close button. Windows Store Apps do not implement a close button.","Alert");
-//    return;
-//#endif
-//    
-//    Director::getInstance()->end();
-//    
-//#if (CC_TARGET_PLATFORM == CC_PLATFORM_IOS)
-//    exit(0);
-//#endif
-//}
