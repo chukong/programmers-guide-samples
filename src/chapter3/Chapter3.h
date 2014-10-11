@@ -1,5 +1,5 @@
-#ifndef __CHAPTER2LEVEL1_H__
-#define __CHAPTER2LEVEL1_H__
+#ifndef __CHAPTER3_H__
+#define __CHAPTER3_H__
 
 #include "cocos2d.h"
 
@@ -7,10 +7,10 @@
 
 USING_NS_CC;
 
-class Chapter2Level1 : public Ref
+class Chapter3 : public Ref
 {
     public:
         static cocos2d::Scene* createScene();
 };
 
-#endif // __CHAPTER2LEVEL1_H__
+#endif // __CHAPTER3_H__

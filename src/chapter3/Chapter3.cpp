@@ -1,8 +1,8 @@
-#include "Chapter2Level1.h"
+#include "Chapter3.h"
 
 USING_NS_CC;
 
-Scene* Chapter2Level1::createScene()
+Scene* Chapter3::createScene()
 {
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     // some upfront items that we need
@@ -85,95 +85,95 @@ Scene* Chapter2Level1::createScene()
     testSprite = NULL;
     
     
-    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    // create a few blocks as obstables
-    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    testSprite = Sprite::create("ZigzagGrass_Mud_Round.png");
-    
-    // left side blocks
-    sX = visibleSize.width/4 - testSprite->getContentSize().width;
-    sY = playingSize.height/2 - testSprite->getContentSize().height * 2;
-    
-    for (int i=0; i < 3; i++)
-    {
-        auto sprite = Sprite::create("ZigzagGrass_Mud_Round.png");
-        sprite->setAnchorPoint(Vec2(0,0));
-        sprite->setPosition(sX,sY);
-        
-        sX += sprite->getContentSize().width;
-        
-        if (i == 1)
-        {
-            sprite->setName("middleBlock1");
-        }
-        
-        nodeItems->addChild(sprite, 1);
-    }
-    
-    // right side blocks
-    sX = (visibleSize.width/2 + visibleSize.width/4) - testSprite->getContentSize().width;
-    sY = playingSize.height/2 - testSprite->getContentSize().height * 2;
-    
-    for (int i=0; i < 3; i++)
-    {
-        auto sprite = Sprite::create("ZigzagGrass_Mud_Round.png");
-        sprite->setAnchorPoint(Vec2(0,0));
-        sprite->setPosition(sX,sY);
-        
-        sX += sprite->getContentSize().width;
-        
-        if (i == 1)
-        {
-            sprite->setName("middleBlock2");
-        }
-        
-        scene->addChild(sprite, 1);
-    }
-    
-    // center blocks
-    sX = visibleSize.width/2 - testSprite->getContentSize().width;
-    sY = (playingSize.height/2 + playingSize.height/4) - testSprite->getContentSize().height * 2;
-    
-    for (int i=0; i < 3; i++)
-    {
-        auto sprite = Sprite::create("ZigzagGrass_Mud_Round.png");
-        sprite->setAnchorPoint(Vec2(0,0));
-        sprite->setPosition(sX,sY);
-        
-        sX += sprite->getContentSize().width;
-        
-        nodeItems->addChild(sprite, 1);
-    }
-    
-    testSprite = NULL;
-    
-    scene->addChild(nodeItems, 1);
-    
-    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    // create a node to hold sprites
-    // create a sprite
-    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    auto spriteNode = Node::create();
-    spriteNode->setName("spriteNode");
-    
-    auto sprite1 = Sprite::create("Blue_Front1.png");
-    sprite1->setAnchorPoint(Vec2(0,0));
-    sprite1->setPosition(100, (visibleSize.height - playingSize.height));
-    sprite1->setName("mainSprite");
-    
-    spriteNode->addChild(sprite1, 1);
-    
-    scene->addChild(spriteNode, 1);
-    
-    //sprite1->scheduleOnce([&](float dt) {
-    //    // the local variable "sprite1" will go out of scope, so I have to get it from "this"
-    //    auto anode = Director::getInstance()->getRunningScene()->getChildByName("spriteNode");
-    //    auto bnode = anode->getChildByName("mainSprite");
-    //
-    //    //auto moveBy = MoveBy::create(2, Point(400,0));
-    //
-    //    //bnode->runAction(moveBy);
-    //}, 5, "udpate_key");
+//    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//    // create a few blocks as obstables
+//    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//    testSprite = Sprite::create("ZigzagGrass_Mud_Round.png");
+//    
+//    // left side blocks
+//    sX = visibleSize.width/4 - testSprite->getContentSize().width;
+//    sY = playingSize.height/2 - testSprite->getContentSize().height * 2;
+//    
+//    for (int i=0; i < 3; i++)
+//    {
+//        auto sprite = Sprite::create("ZigzagGrass_Mud_Round.png");
+//        sprite->setAnchorPoint(Vec2(0,0));
+//        sprite->setPosition(sX,sY);
+//        
+//        sX += sprite->getContentSize().width;
+//        
+//        if (i == 1)
+//        {
+//            sprite->setName("middleBlock1");
+//        }
+//        
+//        nodeItems->addChild(sprite, 1);
+//    }
+//    
+//    // right side blocks
+//    sX = (visibleSize.width/2 + visibleSize.width/4) - testSprite->getContentSize().width;
+//    sY = playingSize.height/2 - testSprite->getContentSize().height * 2;
+//    
+//    for (int i=0; i < 3; i++)
+//    {
+//        auto sprite = Sprite::create("ZigzagGrass_Mud_Round.png");
+//        sprite->setAnchorPoint(Vec2(0,0));
+//        sprite->setPosition(sX,sY);
+//        
+//        sX += sprite->getContentSize().width;
+//        
+//        if (i == 1)
+//        {
+//            sprite->setName("middleBlock2");
+//        }
+//        
+//        scene->addChild(sprite, 1);
+//    }
+//    
+//    // center blocks
+//    sX = visibleSize.width/2 - testSprite->getContentSize().width;
+//    sY = (playingSize.height/2 + playingSize.height/4) - testSprite->getContentSize().height * 2;
+//    
+//    for (int i=0; i < 3; i++)
+//    {
+//        auto sprite = Sprite::create("ZigzagGrass_Mud_Round.png");
+//        sprite->setAnchorPoint(Vec2(0,0));
+//        sprite->setPosition(sX,sY);
+//        
+//        sX += sprite->getContentSize().width;
+//        
+//        nodeItems->addChild(sprite, 1);
+//    }
+//    
+//    testSprite = NULL;
+//    
+//    scene->addChild(nodeItems, 1);
+//    
+//    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//    // create a node to hold sprites
+//    // create a sprite
+//    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//    auto spriteNode = Node::create();
+//    spriteNode->setName("spriteNode");
+//    
+//    auto sprite1 = Sprite::create("Blue_Front1.png");
+//    sprite1->setAnchorPoint(Vec2(0,0));
+//    sprite1->setPosition(100, (visibleSize.height - playingSize.height));
+//    sprite1->setName("mainSprite");
+//    
+//    spriteNode->addChild(sprite1, 1);
+//    
+//    scene->addChild(spriteNode, 1);
+//    
+//    //sprite1->scheduleOnce([&](float dt) {
+//    //    // the local variable "sprite1" will go out of scope, so I have to get it from "this"
+//    //    auto anode = Director::getInstance()->getRunningScene()->getChildByName("spriteNode");
+//    //    auto bnode = anode->getChildByName("mainSprite");
+//    //
+//    //    //auto moveBy = MoveBy::create(2, Point(400,0));
+//    //
+//    //    //bnode->runAction(moveBy);
+//    //}, 5, "udpate_key");
     
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     // create a node to hold menu
