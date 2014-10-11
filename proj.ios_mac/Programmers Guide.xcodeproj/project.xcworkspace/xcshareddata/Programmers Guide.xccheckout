@@ -22,7 +22,7 @@
 		<key>54123B1436506F41A7C586AC3F460149AC886820</key>
 		<string>../../..</string>
 		<key>852ED3691A47A99B0D19C820A500AE9772B2A44E</key>
-		<string>../../..libs/cocos2d-x/</string>
+		<string>../../..libs/cocos2d-x</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/chukong/programmers-guide-samples.git</string>
