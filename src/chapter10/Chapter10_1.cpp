@@ -1,0 +1,56 @@
+#include "Chapter10_1.h"
+#include "Chapter10.h"
+
+USING_NS_CC;
+
+Scene* Chapter10_1::createScene()
+{
+    cocos2d::Rect visibleRect = Director::getInstance()->getOpenGLView()->getVisibleRect();
+
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    // create a scene
+    // 'scene' is an autorelease object
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    auto scene = Scene::create();
+    
+    // add title
+    auto label = LabelTTF::create("Static model test", "Arial", 24);
+    label->setPosition(Vec2(visibleRect.origin.x+visibleRect.size.width/2, visibleRect.origin.y+visibleRect.size.height/2).x,
+                       Vec2(visibleRect.origin.x+visibleRect.size.width/2, visibleRect.origin.y+visibleRect.size.height).y - 30);
+    
+    scene->addChild(label, -1);
+    
+    //add the menu item for back to main menu
+    label = LabelTTF::create("MainMenu", "Arial", 24);
+    
+    auto menuItem = MenuItemLabel::create(label);
+    menuItem->setCallback([&](cocos2d::Ref *sender) {
+        Director::getInstance()->replaceScene(Chapter10::createScene());
+    });
+    auto menu = Menu::create(menuItem, nullptr);
+    
+    menu->setPosition( Vec2::ZERO );
+    menuItem->setPosition( Vec2( Vec2(visibleRect.origin.x+visibleRect.size.width, visibleRect.origin.y+visibleRect.size.height/2).x - 80, Vec2(visibleRect.origin.x+visibleRect.size.width/2, visibleRect.origin.y).y + 25) );
+    
+    scene->addChild(menu, 1);
+    
+    auto sprite = Sprite3D::create("boss.c3b");
+    sprite->setScale(5.f);
+    
+    sprite->setPosition( Vec2(visibleRect.origin.x+visibleRect.size.width/2, visibleRect.origin.y+visibleRect.size.height/2).x,
+                        Vec2(visibleRect.origin.x+visibleRect.size.width/2, visibleRect.origin.y+visibleRect.size.height/2).y );
+    
+    ActionInterval* action;
+    action = ScaleBy::create(3, 2);
+    auto action_back = action->reverse();
+    auto seq = Sequence::create( action, action_back, nullptr );
+    
+    // Run Action
+    sprite->runAction( RepeatForever::create(seq) );
+    
+    //add to scene
+    scene->addChild(sprite);
+    
+    // return the scene
+    return scene;
+}
