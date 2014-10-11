@@ -3,7 +3,7 @@
 
 #include "cocos2d.h"
 
-class Chapter10 : public cocos2d::Node
+class Chapter9 : public cocos2d::Node
 {
 public:
     // there's no 'id' in cpp, so we recommend returning the class instance pointer
@@ -16,7 +16,7 @@ public:
     void onMenuCloseCallback(cocos2d::Ref* sender);
     
     // implement the "static create()" method manually
-    CREATE_FUNC(Chapter10);
+    CREATE_FUNC(Chapter9);
 };
 
 #endif // __HELLOWORLD_SCENE_H__

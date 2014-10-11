@@ -1,9 +1,9 @@
-#include "Chapter10_2.h"
-#include "Chapter10.h"
+#include "Chapter9_2.h"
+#include "Chapter9.h"
 
 USING_NS_CC;
 
-Scene* Chapter10_2::createScene()
+Scene* Chapter9_2::createScene()
 {
     //cocos2d::Rect visibleRect = Director::getInstance()->getOpenGLView()->getVisibleRect();
     Size visibleSize = Director::getInstance()->getVisibleSize();
@@ -27,7 +27,7 @@ Scene* Chapter10_2::createScene()
     
     auto menuItem = MenuItemLabel::create(label);
     menuItem->setCallback([&](cocos2d::Ref *sender) {
-        Director::getInstance()->replaceScene(Chapter10::createScene());
+        Director::getInstance()->replaceScene(Chapter9::createScene());
     });
     auto menu = Menu::create(menuItem, nullptr);
     

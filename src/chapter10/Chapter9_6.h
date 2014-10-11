@@ -1,32 +1,31 @@
-#ifndef __CHAPTER_10_7_H__
-#define __CHAPTER_10_7_H__
+#ifndef __CHAPTER_9_6_H__
+#define __CHAPTER_9_6_H__
 
 #include "cocos2d.h"
 #include "DrawNode3D.h"
 
 USING_NS_CC;
 
-class Chapter10_7 : public Ref
+class Chapter9_6 : public Ref
 {
     public:
         static cocos2d::Scene* createScene();
 };
 
-class OBBTest : public Layer
+class ABBTest : public Layer
 {
 public:
-    CREATE_FUNC(OBBTest);
-    OBBTest();
+    CREATE_FUNC(ABBTest);
+    ABBTest();
     virtual void update(float dt) override;
     void onTouchesBegan(const std::vector<Touch*>& touches, Event* event);
     void onTouchesEnded(const std::vector<Touch*>& touches, Event* event);
     void onTouchesMoved(const std::vector<Touch*>& touches, Event* event);
 protected:
     DrawNode3D*               _drawAABB;
-    OBB                      _obb;
-    Sprite3D* _sprite;
+    AABB                      _aabb;
     Camera* _camera;
     bool _pick;
 };
 
-#endif // __CHAPTER_10_6_H__
+#endif // __CHAPTER_9_6_H__

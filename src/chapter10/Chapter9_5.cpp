@@ -1,13 +1,14 @@
-#include "Chapter10_3.h"
-#include "Chapter10.h"
+#include "Chapter9_5.h"
+#include "Chapter9.h"
 
 USING_NS_CC;
 
-Scene* Chapter10_3::createScene()
+Scene* Chapter9_5::createScene()
 {
     //cocos2d::Rect visibleRect = Director::getInstance()->getOpenGLView()->getVisibleRect();
     Size visibleSize = Director::getInstance()->getVisibleSize();
     Vec2 origin = Director::getInstance()->getVisibleOrigin();
+    auto winSize = Director::getInstance()->getWinSize();
     
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     // create a scene
@@ -16,7 +17,7 @@ Scene* Chapter10_3::createScene()
     auto scene = Scene::create();
     
     // add title
-    auto label = LabelTTF::create("3D model aniamtion", "Arial", 24);
+    auto label = LabelTTF::create("camera test", "Arial", 24);
     label->setPosition(Vec2(origin.x+visibleSize.width/2, origin.y+visibleSize.height/2).x,
                        Vec2(origin.x+visibleSize.width/2, origin.y+visibleSize.height).y - 30);
     
@@ -27,7 +28,7 @@ Scene* Chapter10_3::createScene()
     
     auto menuItem = MenuItemLabel::create(label);
     menuItem->setCallback([&](cocos2d::Ref *sender) {
-        Director::getInstance()->replaceScene(Chapter10::createScene());
+        Director::getInstance()->replaceScene(Chapter9::createScene());
     });
     auto menu = Menu::create(menuItem, nullptr);
     
@@ -35,6 +36,9 @@ Scene* Chapter10_3::createScene()
     menuItem->setPosition( Vec2( Vec2(origin.x+visibleSize.width, origin.y+visibleSize.height/2).x - 80, Vec2(origin.x+visibleSize.width/2, origin.y).y + 25) );
     
     scene->addChild(menu, 1);
+    
+    auto layer3D=Layer::create();
+    scene->addChild(layer3D,2);
     
     std::string fileName = "orc.c3b";
     
@@ -44,15 +48,7 @@ Scene* Chapter10_3::createScene()
     sprite->setPosition( Vec2(origin.x+visibleSize.width/2, origin.y+visibleSize.height/2).x,
                         Vec2(origin.x+visibleSize.width/2, origin.y+visibleSize.height/2).y );
     
-    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    // attach weapon
-    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    auto sp = Sprite3D::create("axe.c3b");
-    sprite->getAttachNode("Bip001 R Hand")->addChild(sp);
-    
-    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     // play animation
-    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     auto animation = Animation3D::create(fileName);
     if (animation)
     {
@@ -62,7 +58,31 @@ Scene* Chapter10_3::createScene()
     }
     
     //add to scene
-    scene->addChild(sprite);
+    layer3D->addChild(sprite);
+    
+    // add camera
+    auto camera=Camera::createPerspective(60, (GLfloat)winSize.width/winSize.height, 1, 1000);
+    camera->setCameraFlag(CameraFlag::USER1);// set camera flag
+    camera->setPosition3D(Vec3(0, 0, 230) + sprite->getPosition3D());
+    camera->lookAt(sprite->getPosition3D(), Vec3(0,1,0));
+    
+    // create camera action
+    auto action = MoveBy::create(3, Vec2(100, 0));
+    auto action_back = action->reverse();
+    auto action1 = MoveBy::create(3, Vec2(0, 100));
+    auto action_back1 = action1->reverse();
+    auto seq = Sequence::create( action, action_back, action1, action_back1, nullptr );
+    
+    // run camera action
+    camera->runAction( RepeatForever::create(seq) );
+    
+    layer3D->addChild(camera);
+    
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    // set camera mask
+    // when node's camera-mask & camer-flag result is true, the node is visible for this camera.
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    layer3D->setCameraMask(0x2);
     
     // return the scene
     return scene;

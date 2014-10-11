@@ -1,21 +1,22 @@
-#include "Chapter10.h"
-#include "Chapter10_1.h"
-#include "Chapter10_2.h"
-#include "Chapter10_3.h"
-#include "Chapter10_4.h"
-#include "Chapter10_5.h"
-#include "Chapter10_6.h"
-#include "Chapter10_7.h"
+#include "Chapter9.h"
+#include "Chapter9_1.h"
+#include "Chapter9_2.h"
+#include "Chapter9_3.h"
+#include "Chapter9_4.h"
+#include "Chapter9_5.h"
+#include "Chapter9_6.h"
+#include "Chapter9_7.h"
+#include "Chapter9_8.h"
 
 USING_NS_CC;
 
-Scene* Chapter10::createScene()
+Scene* Chapter9::createScene()
 {
     // 'scene' is an autorelease object
     auto scene = Scene::create();
     
     // 'layer' is an autorelease object
-    auto layer = Chapter10::create();
+    auto layer = Chapter9::create();
 
     // add layer as a child to scene
     scene->addChild(layer);
@@ -25,7 +26,7 @@ Scene* Chapter10::createScene()
 }
 
 // on "init" you need to initialize your instance
-bool Chapter10::init()
+bool Chapter9::init()
 {
     //////////////////////////////
     // 1. super init first
@@ -45,7 +46,7 @@ bool Chapter10::init()
     auto closeItem = MenuItemImage::create(
                                            "CloseNormal.png",
                                            "CloseSelected.png",
-                                           CC_CALLBACK_1(Chapter10::onMenuCloseCallback, this));
+                                           CC_CALLBACK_1(Chapter9::onMenuCloseCallback, this));
     
 	closeItem->setPosition(Vec2(origin.x + visibleSize.width - closeItem->getContentSize().width/2 ,
                                 origin.y + closeItem->getContentSize().height/2));
@@ -58,13 +59,13 @@ bool Chapter10::init()
     /////////////////////////////
     // 3. add main menu
     auto mainmenu = Menu::create();
-    int index = 1;
+    int index = 2;
     
     // add "Static sprite3D model"
     auto itemlabel = LabelTTF::create("Static sprite3D model", "Arial", 24);
     auto menuItem = MenuItemLabel::create(itemlabel);
     menuItem->setCallback([&](cocos2d::Ref *sender) {
-        Director::getInstance()->replaceScene(Chapter10_1::createScene());
+        Director::getInstance()->replaceScene(Chapter9_1::createScene());
     });
     menuItem->setPosition(Vec2(origin.x+visibleSize.width/2, origin.y+visibleSize.height/2).x,
                           (Vec2(origin.x+visibleSize.width/2, origin.y+visibleSize.height).y - (++index) * 40));
@@ -76,7 +77,7 @@ bool Chapter10::init()
     itemlabel = LabelTTF::create("Sprite3D skeleton animation", "Arial", 24);
     menuItem = MenuItemLabel::create(itemlabel);
     menuItem->setCallback([&](cocos2d::Ref *sender) {
-        Director::getInstance()->replaceScene(Chapter10_2::createScene());
+        Director::getInstance()->replaceScene(Chapter9_2::createScene());
     });
     menuItem->setPosition(Vec2(origin.x+visibleSize.width/2, origin.y+visibleSize.height/2).x,
                           (Vec2(origin.x+visibleSize.width/2, origin.y+visibleSize.height).y - (++index) * 40));
@@ -89,7 +90,7 @@ bool Chapter10::init()
     itemlabel = LabelTTF::create("Attach weapon", "Arial", 24);
     menuItem = MenuItemLabel::create(itemlabel);
     menuItem->setCallback([&](cocos2d::Ref *sender) {
-        Director::getInstance()->replaceScene(Chapter10_3::createScene());
+        Director::getInstance()->replaceScene(Chapter9_3::createScene());
     });
     menuItem->setPosition(Vec2(origin.x+visibleSize.width/2, origin.y+visibleSize.height/2).x,
                           (Vec2(origin.x+visibleSize.width/2, origin.y+visibleSize.height).y - (++index) * 40));
@@ -101,7 +102,7 @@ bool Chapter10::init()
     itemlabel = LabelTTF::create("Test reskin", "Arial", 24);
     menuItem = MenuItemLabel::create(itemlabel);
     menuItem->setCallback([&](cocos2d::Ref *sender) {
-        Director::getInstance()->replaceScene(Chapter10_4::createScene());
+        Director::getInstance()->replaceScene(Chapter9_4::createScene());
     });
     menuItem->setPosition(Vec2(origin.x+visibleSize.width/2, origin.y+visibleSize.height/2).x,
                           (Vec2(origin.x+visibleSize.width/2, origin.y+visibleSize.height).y - (++index) * 40));
@@ -113,7 +114,7 @@ bool Chapter10::init()
     itemlabel = LabelTTF::create("Test camera", "Arial", 24);
     menuItem = MenuItemLabel::create(itemlabel);
     menuItem->setCallback([&](cocos2d::Ref *sender) {
-        Director::getInstance()->replaceScene(Chapter10_5::createScene());
+        Director::getInstance()->replaceScene(Chapter9_5::createScene());
     });
     menuItem->setPosition(Vec2(origin.x+visibleSize.width/2, origin.y+visibleSize.height/2).x,
                           (Vec2(origin.x+visibleSize.width/2, origin.y+visibleSize.height).y - (++index) * 40));
@@ -125,7 +126,7 @@ bool Chapter10::init()
     itemlabel = LabelTTF::create("Test AABB", "Arial", 24);
     menuItem = MenuItemLabel::create(itemlabel);
     menuItem->setCallback([&](cocos2d::Ref *sender) {
-        Director::getInstance()->replaceScene(Chapter10_6::createScene());
+        Director::getInstance()->replaceScene(Chapter9_6::createScene());
     });
     menuItem->setPosition(Vec2(origin.x+visibleSize.width/2, origin.y+visibleSize.height/2).x,
                           (Vec2(origin.x+visibleSize.width/2, origin.y+visibleSize.height).y - (++index) * 40));
@@ -137,7 +138,19 @@ bool Chapter10::init()
     itemlabel = LabelTTF::create("Test OBB", "Arial", 24);
     menuItem = MenuItemLabel::create(itemlabel);
     menuItem->setCallback([&](cocos2d::Ref *sender) {
-        Director::getInstance()->replaceScene(Chapter10_7::createScene());
+        Director::getInstance()->replaceScene(Chapter9_7::createScene());
+    });
+    menuItem->setPosition(Vec2(origin.x+visibleSize.width/2, origin.y+visibleSize.height/2).x,
+                          (Vec2(origin.x+visibleSize.width/2, origin.y+visibleSize.height).y - (++index) * 40));
+    
+    mainmenu->addChild(menuItem,2);
+    mainmenu->setPosition(Vec2::ZERO);
+    
+    // add "Test BillBoard"
+    itemlabel = LabelTTF::create("Test BillBoard", "Arial", 24);
+    menuItem = MenuItemLabel::create(itemlabel);
+    menuItem->setCallback([&](cocos2d::Ref *sender) {
+        Director::getInstance()->replaceScene(Chapter9_8::createScene());
     });
     menuItem->setPosition(Vec2(origin.x+visibleSize.width/2, origin.y+visibleSize.height/2).x,
                           (Vec2(origin.x+visibleSize.width/2, origin.y+visibleSize.height).y - (++index) * 40));
@@ -165,7 +178,7 @@ bool Chapter10::init()
 }
 
 
-void Chapter10::onMenuCloseCallback(Ref* sender)
+void Chapter9::onMenuCloseCallback(Ref* sender)
 {
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_WP8) || (CC_TARGET_PLATFORM == CC_PLATFORM_WINRT)
 	MessageBox("You pressed the close button. Windows Store Apps do not implement a close button.","Alert");

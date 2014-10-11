@@ -1,10 +1,10 @@
-#include "Chapter10_7.h"
-#include "Chapter10.h"
+#include "Chapter9_7.h"
+#include "Chapter9.h"
 #include "DrawNode3D.h"
 
 USING_NS_CC;
 
-Scene* Chapter10_7::createScene()
+Scene* Chapter9_7::createScene()
 {
     cocos2d::Rect visibleRect = Director::getInstance()->getOpenGLView()->getVisibleRect();
 
@@ -49,7 +49,7 @@ _camera(nullptr)
     
     auto menuItem = MenuItemLabel::create(label);
     menuItem->setCallback([&](cocos2d::Ref *sender) {
-        Director::getInstance()->replaceScene(Chapter10::createScene());
+        Director::getInstance()->replaceScene(Chapter9::createScene());
     });
     auto menu = Menu::create(menuItem, nullptr);
     
