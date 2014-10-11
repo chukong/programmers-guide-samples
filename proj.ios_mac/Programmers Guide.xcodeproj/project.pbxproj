@@ -10,36 +10,6 @@
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
-		29997A1019E8DB89009779D7 /* Chapter-2-iOS-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 29997A0A19E8DB89009779D7 /* Chapter-2-iOS-Info.plist */; };
-		29997A1119E8DB89009779D7 /* Chapter-2-iOS-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 29997A0A19E8DB89009779D7 /* Chapter-2-iOS-Info.plist */; };
-		29997A1219E8DB89009779D7 /* Chapter-2-iOS-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 29997A0A19E8DB89009779D7 /* Chapter-2-iOS-Info.plist */; };
-		29997A1319E8DB89009779D7 /* Chapter-2-iOS-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 29997A0A19E8DB89009779D7 /* Chapter-2-iOS-Info.plist */; };
-		29997A1419E8DB89009779D7 /* Chapter-2-iOS-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 29997A0A19E8DB89009779D7 /* Chapter-2-iOS-Info.plist */; };
-		29997A1519E8DB89009779D7 /* Chapter-2-Mac-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 29997A0B19E8DB89009779D7 /* Chapter-2-Mac-Info.plist */; };
-		29997A1619E8DB89009779D7 /* Chapter-2-Mac-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 29997A0B19E8DB89009779D7 /* Chapter-2-Mac-Info.plist */; };
-		29997A1719E8DB89009779D7 /* Chapter-2-Mac-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 29997A0B19E8DB89009779D7 /* Chapter-2-Mac-Info.plist */; };
-		29997A1819E8DB89009779D7 /* Chapter-2-Mac-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 29997A0B19E8DB89009779D7 /* Chapter-2-Mac-Info.plist */; };
-		29997A1919E8DB89009779D7 /* Chapter-2-Mac-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 29997A0B19E8DB89009779D7 /* Chapter-2-Mac-Info.plist */; };
-		29997A1A19E8DB89009779D7 /* Chapter-3-iOS-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 29997A0C19E8DB89009779D7 /* Chapter-3-iOS-Info.plist */; };
-		29997A1B19E8DB89009779D7 /* Chapter-3-iOS-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 29997A0C19E8DB89009779D7 /* Chapter-3-iOS-Info.plist */; };
-		29997A1C19E8DB89009779D7 /* Chapter-3-iOS-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 29997A0C19E8DB89009779D7 /* Chapter-3-iOS-Info.plist */; };
-		29997A1D19E8DB89009779D7 /* Chapter-3-iOS-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 29997A0C19E8DB89009779D7 /* Chapter-3-iOS-Info.plist */; };
-		29997A1E19E8DB89009779D7 /* Chapter-3-iOS-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 29997A0C19E8DB89009779D7 /* Chapter-3-iOS-Info.plist */; };
-		29997A1F19E8DB89009779D7 /* Chapter-3-Mac-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 29997A0D19E8DB89009779D7 /* Chapter-3-Mac-Info.plist */; };
-		29997A2019E8DB89009779D7 /* Chapter-3-Mac-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 29997A0D19E8DB89009779D7 /* Chapter-3-Mac-Info.plist */; };
-		29997A2119E8DB89009779D7 /* Chapter-3-Mac-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 29997A0D19E8DB89009779D7 /* Chapter-3-Mac-Info.plist */; };
-		29997A2219E8DB89009779D7 /* Chapter-3-Mac-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 29997A0D19E8DB89009779D7 /* Chapter-3-Mac-Info.plist */; };
-		29997A2319E8DB89009779D7 /* Chapter-3-Mac-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 29997A0D19E8DB89009779D7 /* Chapter-3-Mac-Info.plist */; };
-		29997A2419E8DB89009779D7 /* Chapter-10-iOS-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 29997A0E19E8DB89009779D7 /* Chapter-10-iOS-Info.plist */; };
-		29997A2519E8DB89009779D7 /* Chapter-10-iOS-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 29997A0E19E8DB89009779D7 /* Chapter-10-iOS-Info.plist */; };
-		29997A2619E8DB89009779D7 /* Chapter-10-iOS-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 29997A0E19E8DB89009779D7 /* Chapter-10-iOS-Info.plist */; };
-		29997A2719E8DB89009779D7 /* Chapter-10-iOS-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 29997A0E19E8DB89009779D7 /* Chapter-10-iOS-Info.plist */; };
-		29997A2819E8DB89009779D7 /* Chapter-10-iOS-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 29997A0E19E8DB89009779D7 /* Chapter-10-iOS-Info.plist */; };
-		29997A2919E8DB89009779D7 /* Chapter-10-Mac-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 29997A0F19E8DB89009779D7 /* Chapter-10-Mac-Info.plist */; };
-		29997A2A19E8DB89009779D7 /* Chapter-10-Mac-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 29997A0F19E8DB89009779D7 /* Chapter-10-Mac-Info.plist */; };
-		29997A2B19E8DB89009779D7 /* Chapter-10-Mac-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 29997A0F19E8DB89009779D7 /* Chapter-10-Mac-Info.plist */; };
-		29997A2C19E8DB89009779D7 /* Chapter-10-Mac-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 29997A0F19E8DB89009779D7 /* Chapter-10-Mac-Info.plist */; };
-		29997A2D19E8DB89009779D7 /* Chapter-10-Mac-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 29997A0F19E8DB89009779D7 /* Chapter-10-Mac-Info.plist */; };
 		503AE0F817EB97AB00D1A890 /* Icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 503AE0F617EB97AB00D1A890 /* Icon.icns */; };
 		503AE10017EB989F00D1A890 /* AppController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 503AE0FB17EB989F00D1A890 /* AppController.mm */; };
 		503AE10117EB989F00D1A890 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 503AE0FC17EB989F00D1A890 /* main.m */; };
@@ -71,6 +41,8 @@
 		50BA59A119D493310070A133 /* Chapter2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 50BA599C19D493310070A133 /* Chapter2.cpp */; };
 		50BA59A219D498180070A133 /* libcocos2d Mac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 50BA599119D492B60070A133 /* libcocos2d Mac.a */; };
 		50BA59A319D4981C0070A133 /* libcocos2d iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 50BA599319D492B60070A133 /* libcocos2d iOS.a */; };
+		50BA59AE19D498F00070A133 /* Marker Felt.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 50BA59A819D498F00070A133 /* Marker Felt.ttf */; };
+		50BA59AF19D498F00070A133 /* Marker Felt.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 50BA59A819D498F00070A133 /* Marker Felt.ttf */; };
 		50BA59B619D4992C0070A133 /* Icon-120.png in Resources */ = {isa = PBXBuildFile; fileRef = 5087E77617EB970100C73F5D /* Icon-120.png */; };
 		50BA59B719D4992C0070A133 /* Icon-76.png in Resources */ = {isa = PBXBuildFile; fileRef = 5087E77B17EB970100C73F5D /* Icon-76.png */; };
 		50BA59B819D4992C0070A133 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5087E77417EB970100C73F5D /* Default@2x.png */; };
@@ -134,6 +106,8 @@
 		50EF62A317ECD613001EB2F8 /* Icon-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 50EF62A117ECD613001EB2F8 /* Icon-50.png */; };
 		7E1526B419D4DE890013F222 /* Blue_Front1.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E1526AE19D4DE890013F222 /* Blue_Front1.png */; };
 		7E1526B519D4DE890013F222 /* Blue_Front1.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E1526AE19D4DE890013F222 /* Blue_Front1.png */; };
+		7E1526B619D4DE890013F222 /* HelloWorld.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E1526AF19D4DE890013F222 /* HelloWorld.png */; };
+		7E1526B719D4DE890013F222 /* HelloWorld.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E1526AF19D4DE890013F222 /* HelloWorld.png */; };
 		7E1526B819D4DE890013F222 /* LightBlue_Front1.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E1526B019D4DE890013F222 /* LightBlue_Front1.png */; };
 		7E1526B919D4DE890013F222 /* LightBlue_Front1.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E1526B019D4DE890013F222 /* LightBlue_Front1.png */; };
 		7E1526BA19D4DE890013F222 /* White_Front1.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E1526B119D4DE890013F222 /* White_Front1.png */; };
@@ -146,7 +120,9 @@
 		7E1526C219D4E0020013F222 /* Marker Felt.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7E1526C019D4E0020013F222 /* Marker Felt.ttf */; };
 		7E273C8019D9CE460029CCC0 /* Chapter2Level1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7E273C7E19D9CE460029CCC0 /* Chapter2Level1.cpp */; };
 		7E273C8119D9CE460029CCC0 /* Chapter2Level1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7E273C7E19D9CE460029CCC0 /* Chapter2Level1.cpp */; };
+		7E4ED39F19DB4D78003A49C2 /* clouds_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E4ED39E19DB4D78003A49C2 /* clouds_1.png */; };
 		7EBF314319E7803F00A7FBEA /* Icon-120.png in Resources */ = {isa = PBXBuildFile; fileRef = 5087E77617EB970100C73F5D /* Icon-120.png */; };
+		7EBF314419E7803F00A7FBEA /* HelloWorld.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E1526AF19D4DE890013F222 /* HelloWorld.png */; };
 		7EBF314519E7803F00A7FBEA /* Blue_Front1.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E1526AE19D4DE890013F222 /* Blue_Front1.png */; };
 		7EBF314619E7803F00A7FBEA /* Icon-76.png in Resources */ = {isa = PBXBuildFile; fileRef = 5087E77B17EB970100C73F5D /* Icon-76.png */; };
 		7EBF314719E7803F00A7FBEA /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5087E77417EB970100C73F5D /* Default@2x.png */; };
@@ -157,11 +133,13 @@
 		7EBF314C19E7803F00A7FBEA /* ZigzagForest_Square.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E1526B219D4DE890013F222 /* ZigzagForest_Square.png */; };
 		7EBF314D19E7803F00A7FBEA /* Icon-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 50EF62A117ECD613001EB2F8 /* Icon-50.png */; };
 		7EBF314E19E7803F00A7FBEA /* Icon-114.png in Resources */ = {isa = PBXBuildFile; fileRef = 5087E77517EB970100C73F5D /* Icon-114.png */; };
+		7EBF314F19E7803F00A7FBEA /* Marker Felt.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 50BA59A819D498F00070A133 /* Marker Felt.ttf */; };
 		7EBF315019E7803F00A7FBEA /* Icon-29.png in Resources */ = {isa = PBXBuildFile; fileRef = 50EF62A017ECD613001EB2F8 /* Icon-29.png */; };
 		7EBF315119E7803F00A7FBEA /* Icon-40.png in Resources */ = {isa = PBXBuildFile; fileRef = 50EF629217ECD46A001EB2F8 /* Icon-40.png */; };
 		7EBF315219E7803F00A7FBEA /* Icon-144.png in Resources */ = {isa = PBXBuildFile; fileRef = 5087E77717EB970100C73F5D /* Icon-144.png */; };
 		7EBF315319E7803F00A7FBEA /* Marker Felt.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7E1526C019D4E0020013F222 /* Marker Felt.ttf */; };
 		7EBF315419E7803F00A7FBEA /* Icon-80.png in Resources */ = {isa = PBXBuildFile; fileRef = 50EF629417ECD46A001EB2F8 /* Icon-80.png */; };
+		7EBF315519E7803F00A7FBEA /* clouds_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E4ED39E19DB4D78003A49C2 /* clouds_1.png */; };
 		7EBF315619E7803F00A7FBEA /* LightBlue_Front1.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E1526B019D4DE890013F222 /* LightBlue_Front1.png */; };
 		7EBF315719E7803F00A7FBEA /* ZigzagGrass_Mud_Round.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E1526B319D4DE890013F222 /* ZigzagGrass_Mud_Round.png */; };
 		7EBF315819E7803F00A7FBEA /* Icon-57.png in Resources */ = {isa = PBXBuildFile; fileRef = 5087E77917EB970100C73F5D /* Icon-57.png */; };
@@ -184,6 +162,7 @@
 		7EBF316E19E7803F00A7FBEA /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44C620F132DFF4E0009C878 /* AudioToolbox.framework */; };
 		7EBF317B19E7807500A7FBEA /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7EBF317519E7807500A7FBEA /* AppDelegate.cpp */; };
 		7EBF318019E843F100A7FBEA /* Chapter3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7EBF317E19E843F100A7FBEA /* Chapter3.cpp */; };
+		7EBF318219E8485600A7FBEA /* Chapter 3 iOS-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7EBF318119E8485600A7FBEA /* Chapter 3 iOS-Info.plist */; };
 		BF171245129291EC00B8313A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB012928DE900B8313A /* OpenGLES.framework */; };
 		BF1712471292920000B8313A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB412928DE900B8313A /* libz.dylib */; };
 		BF1C47F01293687400B63C5D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF1C47EA1293683800B63C5D /* QuartzCore.framework */; };
@@ -251,12 +230,6 @@
 		1D6058910D05DD3D006BFB54 /* Programmers Guide iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Programmers Guide iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		29997A0A19E8DB89009779D7 /* Chapter-2-iOS-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Chapter-2-iOS-Info.plist"; sourceTree = SOURCE_ROOT; };
-		29997A0B19E8DB89009779D7 /* Chapter-2-Mac-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Chapter-2-Mac-Info.plist"; sourceTree = SOURCE_ROOT; };
-		29997A0C19E8DB89009779D7 /* Chapter-3-iOS-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Chapter-3-iOS-Info.plist"; sourceTree = SOURCE_ROOT; };
-		29997A0D19E8DB89009779D7 /* Chapter-3-Mac-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Chapter-3-Mac-Info.plist"; sourceTree = SOURCE_ROOT; };
-		29997A0E19E8DB89009779D7 /* Chapter-10-iOS-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Chapter-10-iOS-Info.plist"; sourceTree = SOURCE_ROOT; };
-		29997A0F19E8DB89009779D7 /* Chapter-10-Mac-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Chapter-10-Mac-Info.plist"; sourceTree = SOURCE_ROOT; };
 		503AE0F617EB97AB00D1A890 /* Icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Icon.icns; sourceTree = "<group>"; };
 		503AE0F717EB97AB00D1A890 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		503AE0FA17EB989F00D1A890 /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppController.h; path = ios/AppController.h; sourceTree = SOURCE_ROOT; };
@@ -288,8 +261,11 @@
 		50BA599B19D493310070A133 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		50BA599C19D493310070A133 /* Chapter2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Chapter2.cpp; sourceTree = "<group>"; };
 		50BA599D19D493310070A133 /* Chapter2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Chapter2.h; sourceTree = "<group>"; };
+		50BA59A819D498F00070A133 /* Marker Felt.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Marker Felt.ttf"; sourceTree = "<group>"; };
 		50BA59DF19D4992C0070A133 /* Chapter 2 iOS copy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Chapter 2 iOS copy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		50BA59E019D4992C0070A133 /* Chapter 2 iOS copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Chapter 2 iOS copy-Info.plist"; path = "/Users/riq/progs/programmers-guide-samples/proj.ios_mac/Chapter 2 iOS copy-Info.plist"; sourceTree = "<absolute>"; };
 		50BA59FD19D499360070A133 /* Chapter 2 Mac copy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Chapter 2 Mac copy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		50BA59FE19D499360070A133 /* Chapter 2 Mac copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Chapter 2 Mac copy-Info.plist"; path = "/Users/riq/progs/programmers-guide-samples/proj.ios_mac/Chapter 2 Mac copy-Info.plist"; sourceTree = "<absolute>"; };
 		50BA5A0019D49A2F0070A133 /* AppDelegate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AppDelegate.cpp; sourceTree = "<group>"; };
 		50BA5A0119D49A2F0070A133 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		50BA5A0219D49A2F0070A133 /* Chapter10.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Chapter10.cpp; sourceTree = "<group>"; };
@@ -305,6 +281,7 @@
 		50EF62A017ECD613001EB2F8 /* Icon-29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-29.png"; sourceTree = "<group>"; };
 		50EF62A117ECD613001EB2F8 /* Icon-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-50.png"; sourceTree = "<group>"; };
 		7E1526AE19D4DE890013F222 /* Blue_Front1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Blue_Front1.png; sourceTree = "<group>"; };
+		7E1526AF19D4DE890013F222 /* HelloWorld.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HelloWorld.png; sourceTree = "<group>"; };
 		7E1526B019D4DE890013F222 /* LightBlue_Front1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LightBlue_Front1.png; sourceTree = "<group>"; };
 		7E1526B119D4DE890013F222 /* White_Front1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = White_Front1.png; sourceTree = "<group>"; };
 		7E1526B219D4DE890013F222 /* ZigzagForest_Square.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ZigzagForest_Square.png; sourceTree = "<group>"; };
@@ -312,11 +289,14 @@
 		7E1526C019D4E0020013F222 /* Marker Felt.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Marker Felt.ttf"; sourceTree = "<group>"; };
 		7E273C7E19D9CE460029CCC0 /* Chapter2Level1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Chapter2Level1.cpp; sourceTree = "<group>"; };
 		7E273C7F19D9CE460029CCC0 /* Chapter2Level1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Chapter2Level1.h; sourceTree = "<group>"; };
+		7E4ED39E19DB4D78003A49C2 /* clouds_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clouds_1.png; sourceTree = "<group>"; };
 		7EBF317219E7803F00A7FBEA /* Chapter 3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Chapter 3.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EBF317319E7804000A7FBEA /* Chapter 2 iOS copy2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Chapter 2 iOS copy2-Info.plist"; path = "/Users/chukongus/Chukong-Inc/programmers-guide-samples/proj.ios_mac/Chapter 2 iOS copy2-Info.plist"; sourceTree = "<absolute>"; };
 		7EBF317519E7807500A7FBEA /* AppDelegate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AppDelegate.cpp; sourceTree = "<group>"; };
 		7EBF317619E7807500A7FBEA /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7EBF317E19E843F100A7FBEA /* Chapter3.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Chapter3.cpp; sourceTree = "<group>"; };
 		7EBF317F19E843F100A7FBEA /* Chapter3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Chapter3.h; sourceTree = "<group>"; };
+		7EBF318119E8485600A7FBEA /* Chapter 3 iOS-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Chapter 3 iOS-Info.plist"; sourceTree = SOURCE_ROOT; };
 		BF170DB012928DE900B8313A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		BF170DB412928DE900B8313A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		BF1C47EA1293683800B63C5D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -423,12 +403,10 @@
 		080E96DDFE201D6D7F000001 /* ios */ = {
 			isa = PBXGroup;
 			children = (
-				29997A0A19E8DB89009779D7 /* Chapter-2-iOS-Info.plist */,
-				29997A0B19E8DB89009779D7 /* Chapter-2-Mac-Info.plist */,
-				29997A0C19E8DB89009779D7 /* Chapter-3-iOS-Info.plist */,
-				29997A0D19E8DB89009779D7 /* Chapter-3-Mac-Info.plist */,
-				29997A0E19E8DB89009779D7 /* Chapter-10-iOS-Info.plist */,
-				29997A0F19E8DB89009779D7 /* Chapter-10-Mac-Info.plist */,
+				50BA59E019D4992C0070A133 /* Chapter 2 iOS copy-Info.plist */,
+				50BA59FE19D499360070A133 /* Chapter 2 Mac copy-Info.plist */,
+				7EBF317319E7804000A7FBEA /* Chapter 2 iOS copy2-Info.plist */,
+				7EBF318119E8485600A7FBEA /* Chapter 3 iOS-Info.plist */,
 				5087E77117EB970100C73F5D /* Icons */,
 				503AE0FA17EB989F00D1A890 /* AppController.h */,
 				503AE0FB17EB989F00D1A890 /* AppController.mm */,
@@ -570,7 +548,9 @@
 		50BA59A419D498F00070A133 /* chapter2 */ = {
 			isa = PBXGroup;
 			children = (
+				7E4ED39E19DB4D78003A49C2 /* clouds_1.png */,
 				7E1526AE19D4DE890013F222 /* Blue_Front1.png */,
+				7E1526AF19D4DE890013F222 /* HelloWorld.png */,
 				7E1526B019D4DE890013F222 /* LightBlue_Front1.png */,
 				7E1526B119D4DE890013F222 /* White_Front1.png */,
 				7E1526B219D4DE890013F222 /* ZigzagForest_Square.png */,
@@ -583,6 +563,7 @@
 		50BA59A719D498F00070A133 /* fonts */ = {
 			isa = PBXGroup;
 			children = (
+				50BA59A819D498F00070A133 /* Marker Felt.ttf */,
 			);
 			path = fonts;
 			sourceTree = "<group>";
@@ -797,31 +778,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				5087E78117EB970100C73F5D /* Icon-120.png in Resources */,
+				7E1526B619D4DE890013F222 /* HelloWorld.png in Resources */,
 				7E1526B419D4DE890013F222 /* Blue_Front1.png in Resources */,
 				5087E78617EB970100C73F5D /* Icon-76.png in Resources */,
 				5087E77F17EB970100C73F5D /* Default@2x.png in Resources */,
-				29997A1F19E8DB89009779D7 /* Chapter-3-Mac-Info.plist in Resources */,
-				29997A1A19E8DB89009779D7 /* Chapter-3-iOS-Info.plist in Resources */,
 				50EF629917ECD46A001EB2F8 /* Icon-100.png in Resources */,
-				29997A2919E8DB89009779D7 /* Chapter-10-Mac-Info.plist in Resources */,
 				5087E78317EB970100C73F5D /* Icon-152.png in Resources */,
 				5087E77D17EB970100C73F5D /* Default-568h@2x.png in Resources */,
-				29997A1519E8DB89009779D7 /* Chapter-2-Mac-Info.plist in Resources */,
 				5087E78517EB970100C73F5D /* Icon-72.png in Resources */,
 				7E1526BC19D4DE890013F222 /* ZigzagForest_Square.png in Resources */,
 				50EF62A317ECD613001EB2F8 /* Icon-50.png in Resources */,
 				5087E78017EB970100C73F5D /* Icon-114.png in Resources */,
+				50BA59AE19D498F00070A133 /* Marker Felt.ttf in Resources */,
 				50EF62A217ECD613001EB2F8 /* Icon-29.png in Resources */,
-				29997A2419E8DB89009779D7 /* Chapter-10-iOS-Info.plist in Resources */,
 				50EF629617ECD46A001EB2F8 /* Icon-40.png in Resources */,
 				5087E78217EB970100C73F5D /* Icon-144.png in Resources */,
 				7E1526C119D4E0020013F222 /* Marker Felt.ttf in Resources */,
 				50EF629817ECD46A001EB2F8 /* Icon-80.png in Resources */,
+				7E4ED39F19DB4D78003A49C2 /* clouds_1.png in Resources */,
 				7E1526B819D4DE890013F222 /* LightBlue_Front1.png in Resources */,
 				7E1526BE19D4DE890013F222 /* ZigzagGrass_Mud_Round.png in Resources */,
 				5087E78417EB970100C73F5D /* Icon-57.png in Resources */,
 				7E1526BA19D4DE890013F222 /* White_Front1.png in Resources */,
-				29997A1019E8DB89009779D7 /* Chapter-2-iOS-Info.plist in Resources */,
 				5087E77E17EB970100C73F5D /* Default.png in Resources */,
 				50EF629717ECD46A001EB2F8 /* Icon-58.png in Resources */,
 			);
@@ -831,19 +809,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				29997A2019E8DB89009779D7 /* Chapter-3-Mac-Info.plist in Resources */,
+				50BA59AF19D498F00070A133 /* Marker Felt.ttf in Resources */,
 				7E1526C219D4E0020013F222 /* Marker Felt.ttf in Resources */,
-				29997A1119E8DB89009779D7 /* Chapter-2-iOS-Info.plist in Resources */,
 				7E1526B919D4DE890013F222 /* LightBlue_Front1.png in Resources */,
+				7E1526B719D4DE890013F222 /* HelloWorld.png in Resources */,
 				7E1526BD19D4DE890013F222 /* ZigzagForest_Square.png in Resources */,
-				29997A1B19E8DB89009779D7 /* Chapter-3-iOS-Info.plist in Resources */,
-				29997A1619E8DB89009779D7 /* Chapter-2-Mac-Info.plist in Resources */,
 				7E1526BF19D4DE890013F222 /* ZigzagGrass_Mud_Round.png in Resources */,
 				7E1526BB19D4DE890013F222 /* White_Front1.png in Resources */,
-				29997A2519E8DB89009779D7 /* Chapter-10-iOS-Info.plist in Resources */,
 				7E1526B519D4DE890013F222 /* Blue_Front1.png in Resources */,
 				503AE0F817EB97AB00D1A890 /* Icon.icns in Resources */,
-				29997A2A19E8DB89009779D7 /* Chapter-10-Mac-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -851,16 +825,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				29997A2119E8DB89009779D7 /* Chapter-3-Mac-Info.plist in Resources */,
 				50BA59B619D4992C0070A133 /* Icon-120.png in Resources */,
-				29997A1719E8DB89009779D7 /* Chapter-2-Mac-Info.plist in Resources */,
 				50BA59B719D4992C0070A133 /* Icon-76.png in Resources */,
 				50BA59B819D4992C0070A133 /* Default@2x.png in Resources */,
 				50BA59B919D4992C0070A133 /* Icon-100.png in Resources */,
 				50BA59BA19D4992C0070A133 /* Icon-152.png in Resources */,
 				50BA5A1419D49A3F0070A133 /* HelloWorld.png in Resources */,
 				50BA5A1019D49A3F0070A133 /* CloseSelected.png in Resources */,
-				29997A1219E8DB89009779D7 /* Chapter-2-iOS-Info.plist in Resources */,
 				50BA59BD19D4992C0070A133 /* Default-568h@2x.png in Resources */,
 				50BA59BE19D4992C0070A133 /* Icon-72.png in Resources */,
 				50BA59BF19D4992C0070A133 /* Icon-50.png in Resources */,
@@ -871,12 +842,9 @@
 				50BA59C419D4992C0070A133 /* Icon-144.png in Resources */,
 				50BA59C519D4992C0070A133 /* Icon-80.png in Resources */,
 				50BA59C619D4992C0070A133 /* Icon-57.png in Resources */,
-				29997A2619E8DB89009779D7 /* Chapter-10-iOS-Info.plist in Resources */,
 				50BA59C719D4992C0070A133 /* Default.png in Resources */,
-				29997A1C19E8DB89009779D7 /* Chapter-3-iOS-Info.plist in Resources */,
 				50BA5A0E19D49A3F0070A133 /* CloseNormal.png in Resources */,
 				50BA59C919D4992C0070A133 /* Icon-58.png in Resources */,
-				29997A2B19E8DB89009779D7 /* Chapter-10-Mac-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -885,14 +853,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				50BA5A1519D49A3F0070A133 /* HelloWorld.png in Resources */,
-				29997A2C19E8DB89009779D7 /* Chapter-10-Mac-Info.plist in Resources */,
-				29997A1319E8DB89009779D7 /* Chapter-2-iOS-Info.plist in Resources */,
-				29997A1D19E8DB89009779D7 /* Chapter-3-iOS-Info.plist in Resources */,
-				29997A2219E8DB89009779D7 /* Chapter-3-Mac-Info.plist in Resources */,
 				50BA5A1319D49A3F0070A133 /* Marker Felt.ttf in Resources */,
-				29997A2719E8DB89009779D7 /* Chapter-10-iOS-Info.plist in Resources */,
 				50BA59E719D499360070A133 /* Icon.icns in Resources */,
-				29997A1819E8DB89009779D7 /* Chapter-2-Mac-Info.plist in Resources */,
 				50BA5A0F19D49A3F0070A133 /* CloseNormal.png in Resources */,
 				50BA5A1119D49A3F0070A133 /* CloseSelected.png in Resources */,
 			);
@@ -903,31 +865,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				7EBF314319E7803F00A7FBEA /* Icon-120.png in Resources */,
+				7EBF314419E7803F00A7FBEA /* HelloWorld.png in Resources */,
 				7EBF314519E7803F00A7FBEA /* Blue_Front1.png in Resources */,
 				7EBF314619E7803F00A7FBEA /* Icon-76.png in Resources */,
+				7EBF318219E8485600A7FBEA /* Chapter 3 iOS-Info.plist in Resources */,
 				7EBF314719E7803F00A7FBEA /* Default@2x.png in Resources */,
-				29997A2319E8DB89009779D7 /* Chapter-3-Mac-Info.plist in Resources */,
-				29997A1E19E8DB89009779D7 /* Chapter-3-iOS-Info.plist in Resources */,
 				7EBF314819E7803F00A7FBEA /* Icon-100.png in Resources */,
-				29997A2D19E8DB89009779D7 /* Chapter-10-Mac-Info.plist in Resources */,
 				7EBF314919E7803F00A7FBEA /* Icon-152.png in Resources */,
 				7EBF314A19E7803F00A7FBEA /* Default-568h@2x.png in Resources */,
-				29997A1919E8DB89009779D7 /* Chapter-2-Mac-Info.plist in Resources */,
 				7EBF314B19E7803F00A7FBEA /* Icon-72.png in Resources */,
 				7EBF314C19E7803F00A7FBEA /* ZigzagForest_Square.png in Resources */,
 				7EBF314D19E7803F00A7FBEA /* Icon-50.png in Resources */,
 				7EBF314E19E7803F00A7FBEA /* Icon-114.png in Resources */,
+				7EBF314F19E7803F00A7FBEA /* Marker Felt.ttf in Resources */,
 				7EBF315019E7803F00A7FBEA /* Icon-29.png in Resources */,
-				29997A2819E8DB89009779D7 /* Chapter-10-iOS-Info.plist in Resources */,
 				7EBF315119E7803F00A7FBEA /* Icon-40.png in Resources */,
 				7EBF315219E7803F00A7FBEA /* Icon-144.png in Resources */,
 				7EBF315319E7803F00A7FBEA /* Marker Felt.ttf in Resources */,
 				7EBF315419E7803F00A7FBEA /* Icon-80.png in Resources */,
+				7EBF315519E7803F00A7FBEA /* clouds_1.png in Resources */,
 				7EBF315619E7803F00A7FBEA /* LightBlue_Front1.png in Resources */,
 				7EBF315719E7803F00A7FBEA /* ZigzagGrass_Mud_Round.png in Resources */,
 				7EBF315819E7803F00A7FBEA /* Icon-57.png in Resources */,
 				7EBF315919E7803F00A7FBEA /* White_Front1.png in Resources */,
-				29997A1419E8DB89009779D7 /* Chapter-2-iOS-Info.plist in Resources */,
 				7EBF315A19E7803F00A7FBEA /* Default.png in Resources */,
 				7EBF315B19E7803F00A7FBEA /* Icon-58.png in Resources */,
 			);
@@ -1047,7 +1007,7 @@
 					"$(SRCROOT)/../libs/cocos2d-x/cocos/platform/ios",
 					"$(SRCROOT)/../libs/cocos2d-x/cocos/platform/ios/Simulation",
 				);
-				INFOPLIST_FILE = "Chapter-2-iOS-Info.plist";
+				INFOPLIST_FILE = ios/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				LIBRARY_SEARCH_PATHS = "";
 				PRODUCT_NAME = "Programmers Guide iOS";
@@ -1077,7 +1037,7 @@
 					"$(SRCROOT)/../libs/cocos2d-x/cocos/platform/ios",
 					"$(SRCROOT)/../libs/cocos2d-x/cocos/platform/ios/Simulation",
 				);
-				INFOPLIST_FILE = "Chapter-2-iOS-Info.plist";
+				INFOPLIST_FILE = ios/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				LIBRARY_SEARCH_PATHS = "";
 				PRODUCT_NAME = "Programmers Guide iOS";
@@ -1110,7 +1070,7 @@
 					"$(SRCROOT)/../libs/cocos2d-x/cocos/platform/mac",
 					"$(SRCROOT)/../libs/cocos2d-x/external/glfw3/include/mac",
 				);
-				INFOPLIST_FILE = "Chapter-2-Mac-Info.plist";
+				INFOPLIST_FILE = mac/Info.plist;
 				LIBRARY_SEARCH_PATHS = "";
 				PRODUCT_NAME = "Programmers Guide Mac";
 				USER_HEADER_SEARCH_PATHS = "";
@@ -1138,7 +1098,7 @@
 					"$(SRCROOT)/../libs/cocos2d-x/cocos/platform/mac",
 					"$(SRCROOT)/../libs/cocos2d-x/external/glfw3/include/mac",
 				);
-				INFOPLIST_FILE = "Chapter-2-Mac-Info.plist";
+				INFOPLIST_FILE = mac/Info.plist;
 				LIBRARY_SEARCH_PATHS = "";
 				PRODUCT_NAME = "Programmers Guide Mac";
 				USER_HEADER_SEARCH_PATHS = "";
@@ -1167,7 +1127,7 @@
 					"$(SRCROOT)/../libs/cocos2d-x/cocos/platform/ios",
 					"$(SRCROOT)/../libs/cocos2d-x/cocos/platform/ios/Simulation",
 				);
-				INFOPLIST_FILE = "Chapter-10-iOS-Info.plist";
+				INFOPLIST_FILE = "Chapter 2 iOS copy-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				LIBRARY_SEARCH_PATHS = "";
 				PRODUCT_NAME = "Chapter 2 iOS copy";
@@ -1197,7 +1157,7 @@
 					"$(SRCROOT)/../libs/cocos2d-x/cocos/platform/ios",
 					"$(SRCROOT)/../libs/cocos2d-x/cocos/platform/ios/Simulation",
 				);
-				INFOPLIST_FILE = "Chapter-10-iOS-Info.plist";
+				INFOPLIST_FILE = "Chapter 2 iOS copy-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				LIBRARY_SEARCH_PATHS = "";
 				PRODUCT_NAME = "Chapter 2 iOS copy";
@@ -1230,7 +1190,7 @@
 					"$(SRCROOT)/../libs/cocos2d-x/cocos/platform/mac",
 					"$(SRCROOT)/../libs/cocos2d-x/external/glfw3/include/mac",
 				);
-				INFOPLIST_FILE = "$(SRCROOT)/Chapter-10-Mac-Info.plist";
+				INFOPLIST_FILE = "Chapter 2 Mac copy-Info.plist";
 				LIBRARY_SEARCH_PATHS = "";
 				PRODUCT_NAME = "Chapter 2 Mac copy";
 				USER_HEADER_SEARCH_PATHS = "";
@@ -1258,7 +1218,7 @@
 					"$(SRCROOT)/../libs/cocos2d-x/cocos/platform/mac",
 					"$(SRCROOT)/../libs/cocos2d-x/external/glfw3/include/mac",
 				);
-				INFOPLIST_FILE = "$(SRCROOT)/Chapter-10-Mac-Info.plist";
+				INFOPLIST_FILE = "Chapter 2 Mac copy-Info.plist";
 				LIBRARY_SEARCH_PATHS = "";
 				PRODUCT_NAME = "Chapter 2 Mac copy";
 				USER_HEADER_SEARCH_PATHS = "";
@@ -1287,7 +1247,7 @@
 					"$(SRCROOT)/../libs/cocos2d-x/cocos/platform/ios",
 					"$(SRCROOT)/../libs/cocos2d-x/cocos/platform/ios/Simulation",
 				);
-				INFOPLIST_FILE = "$(SRCROOT)/Chapter-3-iOS-Info.plist";
+				INFOPLIST_FILE = "Chapter 3 iOS-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				LIBRARY_SEARCH_PATHS = "";
 				PRODUCT_NAME = "Chapter 3";
@@ -1317,7 +1277,7 @@
 					"$(SRCROOT)/../libs/cocos2d-x/cocos/platform/ios",
 					"$(SRCROOT)/../libs/cocos2d-x/cocos/platform/ios/Simulation",
 				);
-				INFOPLIST_FILE = "$(SRCROOT)/Chapter-3-iOS-Info.plist";
+				INFOPLIST_FILE = "Chapter 3 iOS-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				LIBRARY_SEARCH_PATHS = "";
 				PRODUCT_NAME = "Chapter 3";
