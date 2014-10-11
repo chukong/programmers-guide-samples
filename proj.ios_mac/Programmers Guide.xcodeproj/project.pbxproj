@@ -329,7 +329,7 @@
 		50BA599B19D493310070A133 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		50BA599C19D493310070A133 /* Chapter2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Chapter2.cpp; sourceTree = "<group>"; };
 		50BA599D19D493310070A133 /* Chapter2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Chapter2.h; sourceTree = "<group>"; };
-		50BA59DF19D4992C0070A133 /* Chapter 2 iOS copy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Chapter 2 iOS copy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		50BA59DF19D4992C0070A133 /* Chapter 10 iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Chapter 10 iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		50BA59E019D4992C0070A133 /* Chapter 2 iOS copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Chapter 2 iOS copy-Info.plist"; path = "/Users/riq/progs/programmers-guide-samples/proj.ios_mac/Chapter 2 iOS copy-Info.plist"; sourceTree = "<absolute>"; };
 		50BA59FD19D499360070A133 /* Chapter 2 Mac copy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Chapter 2 Mac copy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		50BA59FE19D499360070A133 /* Chapter 2 Mac copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Chapter 2 Mac copy-Info.plist"; path = "/Users/riq/progs/programmers-guide-samples/proj.ios_mac/Chapter 2 Mac copy-Info.plist"; sourceTree = "<absolute>"; };
@@ -536,7 +536,7 @@
 			children = (
 				1D6058910D05DD3D006BFB54 /* Programmers Guide iOS.app */,
 				5087E76F17EB910900C73F5D /* Programmers Guide Mac.app */,
-				50BA59DF19D4992C0070A133 /* Chapter 2 iOS copy.app */,
+				50BA59DF19D4992C0070A133 /* Chapter 10 iOS.app */,
 				50BA59FD19D499360070A133 /* Chapter 2 Mac copy.app */,
 				7EBF317219E7803F00A7FBEA /* Chapter 3.app */,
 			);
@@ -823,7 +823,7 @@
 			);
 			name = "Chapter 10 iOS";
 			productName = iphone;
-			productReference = 50BA59DF19D4992C0070A133 /* Chapter 2 iOS copy.app */;
+			productReference = 50BA59DF19D4992C0070A133 /* Chapter 10 iOS.app */;
 			productType = "com.apple.product-type.application";
 		};
 		50BA59E119D499360070A133 /* Chapter 10 Mac */ = {
@@ -1344,10 +1344,10 @@
 					"$(SRCROOT)/../libs/cocos2d-x/cocos/platform/ios",
 					"$(SRCROOT)/../libs/cocos2d-x/cocos/platform/ios/Simulation",
 				);
-				INFOPLIST_FILE = "Chapter 2 iOS copy-Info.plist";
+				INFOPLIST_FILE = "Chapter 10 iOS-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				LIBRARY_SEARCH_PATHS = "";
-				PRODUCT_NAME = "Chapter 2 iOS copy";
+				PRODUCT_NAME = "Chapter 10 iOS";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "";
@@ -1374,10 +1374,10 @@
 					"$(SRCROOT)/../libs/cocos2d-x/cocos/platform/ios",
 					"$(SRCROOT)/../libs/cocos2d-x/cocos/platform/ios/Simulation",
 				);
-				INFOPLIST_FILE = "Chapter 2 iOS copy-Info.plist";
+				INFOPLIST_FILE = "Chapter 10 iOS-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				LIBRARY_SEARCH_PATHS = "";
-				PRODUCT_NAME = "Chapter 2 iOS copy";
+				PRODUCT_NAME = "Chapter 10 iOS";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "";
