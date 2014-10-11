@@ -104,6 +104,58 @@
 		50EF629917ECD46A001EB2F8 /* Icon-100.png in Resources */ = {isa = PBXBuildFile; fileRef = 50EF629517ECD46A001EB2F8 /* Icon-100.png */; };
 		50EF62A217ECD613001EB2F8 /* Icon-29.png in Resources */ = {isa = PBXBuildFile; fileRef = 50EF62A017ECD613001EB2F8 /* Icon-29.png */; };
 		50EF62A317ECD613001EB2F8 /* Icon-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 50EF62A117ECD613001EB2F8 /* Icon-50.png */; };
+		5E453F5E19E5178500AB3A5D /* Chapter10_1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E453F5C19E5178500AB3A5D /* Chapter10_1.cpp */; };
+		5E453F5F19E5178500AB3A5D /* Chapter10_1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E453F5C19E5178500AB3A5D /* Chapter10_1.cpp */; };
+		5E453F6419E5359600AB3A5D /* boss.c3b in Resources */ = {isa = PBXBuildFile; fileRef = 5E453F6219E5359600AB3A5D /* boss.c3b */; };
+		5E453F6519E5359600AB3A5D /* boss.c3b in Resources */ = {isa = PBXBuildFile; fileRef = 5E453F6219E5359600AB3A5D /* boss.c3b */; };
+		5E453F6619E5359600AB3A5D /* boss.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E453F6319E5359600AB3A5D /* boss.png */; };
+		5E453F6719E5359600AB3A5D /* boss.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E453F6319E5359600AB3A5D /* boss.png */; };
+		5E453F6C19E5423D00AB3A5D /* Chapter10_2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E453F6A19E5423D00AB3A5D /* Chapter10_2.cpp */; };
+		5E453F6D19E5423D00AB3A5D /* Chapter10_2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E453F6A19E5423D00AB3A5D /* Chapter10_2.cpp */; };
+		5E453F7019E5452600AB3A5D /* monguger.tga in Resources */ = {isa = PBXBuildFile; fileRef = 5E453F6E19E5452600AB3A5D /* monguger.tga */; };
+		5E453F7119E5452600AB3A5D /* monguger.tga in Resources */ = {isa = PBXBuildFile; fileRef = 5E453F6E19E5452600AB3A5D /* monguger.tga */; };
+		5E453F7219E5452600AB3A5D /* orc.c3b in Resources */ = {isa = PBXBuildFile; fileRef = 5E453F6F19E5452600AB3A5D /* orc.c3b */; };
+		5E453F7319E5452600AB3A5D /* orc.c3b in Resources */ = {isa = PBXBuildFile; fileRef = 5E453F6F19E5452600AB3A5D /* orc.c3b */; };
+		5E453F7619E62AD000AB3A5D /* Chapter10_3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E453F7419E62AD000AB3A5D /* Chapter10_3.cpp */; };
+		5E453F7719E62AD000AB3A5D /* Chapter10_3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E453F7419E62AD000AB3A5D /* Chapter10_3.cpp */; };
+		5E453F7A19E62CAA00AB3A5D /* arx.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E453F7819E62CAA00AB3A5D /* arx.png */; };
+		5E453F7B19E62CAA00AB3A5D /* arx.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E453F7819E62CAA00AB3A5D /* arx.png */; };
+		5E453F7C19E62CAA00AB3A5D /* axe.c3b in Resources */ = {isa = PBXBuildFile; fileRef = 5E453F7919E62CAA00AB3A5D /* axe.c3b */; };
+		5E453F7D19E62CAA00AB3A5D /* axe.c3b in Resources */ = {isa = PBXBuildFile; fileRef = 5E453F7919E62CAA00AB3A5D /* axe.c3b */; };
+		5E453F8A19E62EB700AB3A5D /* Girl_Face.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E453F7E19E62EB700AB3A5D /* Girl_Face.png */; };
+		5E453F8B19E62EB700AB3A5D /* Girl_Face.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E453F7E19E62EB700AB3A5D /* Girl_Face.png */; };
+		5E453F8C19E62EB700AB3A5D /* Girl_Glasses01.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E453F7F19E62EB700AB3A5D /* Girl_Glasses01.png */; };
+		5E453F8D19E62EB700AB3A5D /* Girl_Glasses01.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E453F7F19E62EB700AB3A5D /* Girl_Glasses01.png */; };
+		5E453F8E19E62EB700AB3A5D /* Girl_Hair01.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E453F8019E62EB700AB3A5D /* Girl_Hair01.png */; };
+		5E453F8F19E62EB700AB3A5D /* Girl_Hair01.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E453F8019E62EB700AB3A5D /* Girl_Hair01.png */; };
+		5E453F9019E62EB700AB3A5D /* Girl_Hair02.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E453F8119E62EB700AB3A5D /* Girl_Hair02.png */; };
+		5E453F9119E62EB700AB3A5D /* Girl_Hair02.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E453F8119E62EB700AB3A5D /* Girl_Hair02.png */; };
+		5E453F9219E62EB700AB3A5D /* Girl_Hand.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E453F8219E62EB700AB3A5D /* Girl_Hand.png */; };
+		5E453F9319E62EB700AB3A5D /* Girl_Hand.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E453F8219E62EB700AB3A5D /* Girl_Hand.png */; };
+		5E453F9419E62EB700AB3A5D /* Girl_LowerBody01.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E453F8319E62EB700AB3A5D /* Girl_LowerBody01.png */; };
+		5E453F9519E62EB700AB3A5D /* Girl_LowerBody01.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E453F8319E62EB700AB3A5D /* Girl_LowerBody01.png */; };
+		5E453F9619E62EB700AB3A5D /* Girl_LowerBody02.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E453F8419E62EB700AB3A5D /* Girl_LowerBody02.png */; };
+		5E453F9719E62EB700AB3A5D /* Girl_LowerBody02.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E453F8419E62EB700AB3A5D /* Girl_LowerBody02.png */; };
+		5E453F9819E62EB700AB3A5D /* Girl_Shoes01.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E453F8519E62EB700AB3A5D /* Girl_Shoes01.png */; };
+		5E453F9919E62EB700AB3A5D /* Girl_Shoes01.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E453F8519E62EB700AB3A5D /* Girl_Shoes01.png */; };
+		5E453F9A19E62EB700AB3A5D /* Girl_Shoes02.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E453F8619E62EB700AB3A5D /* Girl_Shoes02.png */; };
+		5E453F9B19E62EB700AB3A5D /* Girl_Shoes02.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E453F8619E62EB700AB3A5D /* Girl_Shoes02.png */; };
+		5E453F9C19E62EB700AB3A5D /* Girl_UpperBody01.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E453F8719E62EB700AB3A5D /* Girl_UpperBody01.png */; };
+		5E453F9D19E62EB700AB3A5D /* Girl_UpperBody01.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E453F8719E62EB700AB3A5D /* Girl_UpperBody01.png */; };
+		5E453F9E19E62EB700AB3A5D /* Girl_UpperBody02.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E453F8819E62EB700AB3A5D /* Girl_UpperBody02.png */; };
+		5E453F9F19E62EB700AB3A5D /* Girl_UpperBody02.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E453F8819E62EB700AB3A5D /* Girl_UpperBody02.png */; };
+		5E453FA019E62EB700AB3A5D /* ReskinGirl.c3b in Resources */ = {isa = PBXBuildFile; fileRef = 5E453F8919E62EB700AB3A5D /* ReskinGirl.c3b */; };
+		5E453FA119E62EB700AB3A5D /* ReskinGirl.c3b in Resources */ = {isa = PBXBuildFile; fileRef = 5E453F8919E62EB700AB3A5D /* ReskinGirl.c3b */; };
+		5E453FA419E6309600AB3A5D /* Chapter10_4.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E453FA219E6309600AB3A5D /* Chapter10_4.cpp */; };
+		5E453FA519E6309600AB3A5D /* Chapter10_4.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E453FA219E6309600AB3A5D /* Chapter10_4.cpp */; };
+		5E5874DD19E8DCB0009744B7 /* Chapter10_7.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E5874DB19E8DCB0009744B7 /* Chapter10_7.cpp */; };
+		5E5874DE19E8DCB0009744B7 /* Chapter10_7.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E5874DB19E8DCB0009744B7 /* Chapter10_7.cpp */; };
+		5EAA122519E790B700B5D2BA /* Chapter10_5.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5EAA122319E790B700B5D2BA /* Chapter10_5.cpp */; };
+		5EAA122619E790B700B5D2BA /* Chapter10_5.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5EAA122319E790B700B5D2BA /* Chapter10_5.cpp */; };
+		5EAA122919E7D1E400B5D2BA /* DrawNode3D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5EAA122719E7D1E400B5D2BA /* DrawNode3D.cpp */; };
+		5EAA122A19E7D1E400B5D2BA /* DrawNode3D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5EAA122719E7D1E400B5D2BA /* DrawNode3D.cpp */; };
+		5EAA122D19E7E69600B5D2BA /* Chapter10_6.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5EAA122B19E7E69600B5D2BA /* Chapter10_6.cpp */; };
+		5EAA122E19E7E69600B5D2BA /* Chapter10_6.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5EAA122B19E7E69600B5D2BA /* Chapter10_6.cpp */; };
 		7E1526B419D4DE890013F222 /* Blue_Front1.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E1526AE19D4DE890013F222 /* Blue_Front1.png */; };
 		7E1526B519D4DE890013F222 /* Blue_Front1.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E1526AE19D4DE890013F222 /* Blue_Front1.png */; };
 		7E1526B619D4DE890013F222 /* HelloWorld.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E1526AF19D4DE890013F222 /* HelloWorld.png */; };
@@ -231,6 +283,40 @@
 		50EF629517ECD46A001EB2F8 /* Icon-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-100.png"; sourceTree = "<group>"; };
 		50EF62A017ECD613001EB2F8 /* Icon-29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-29.png"; sourceTree = "<group>"; };
 		50EF62A117ECD613001EB2F8 /* Icon-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-50.png"; sourceTree = "<group>"; };
+		5E453F5C19E5178500AB3A5D /* Chapter10_1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Chapter10_1.cpp; sourceTree = "<group>"; };
+		5E453F5D19E5178500AB3A5D /* Chapter10_1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Chapter10_1.h; sourceTree = "<group>"; };
+		5E453F6219E5359600AB3A5D /* boss.c3b */ = {isa = PBXFileReference; lastKnownFileType = file; path = boss.c3b; sourceTree = "<group>"; };
+		5E453F6319E5359600AB3A5D /* boss.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = boss.png; sourceTree = "<group>"; };
+		5E453F6A19E5423D00AB3A5D /* Chapter10_2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Chapter10_2.cpp; sourceTree = "<group>"; };
+		5E453F6B19E5423D00AB3A5D /* Chapter10_2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Chapter10_2.h; sourceTree = "<group>"; };
+		5E453F6E19E5452600AB3A5D /* monguger.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = monguger.tga; sourceTree = "<group>"; };
+		5E453F6F19E5452600AB3A5D /* orc.c3b */ = {isa = PBXFileReference; lastKnownFileType = file; path = orc.c3b; sourceTree = "<group>"; };
+		5E453F7419E62AD000AB3A5D /* Chapter10_3.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Chapter10_3.cpp; sourceTree = "<group>"; };
+		5E453F7519E62AD000AB3A5D /* Chapter10_3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Chapter10_3.h; sourceTree = "<group>"; };
+		5E453F7819E62CAA00AB3A5D /* arx.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arx.png; sourceTree = "<group>"; };
+		5E453F7919E62CAA00AB3A5D /* axe.c3b */ = {isa = PBXFileReference; lastKnownFileType = file; path = axe.c3b; sourceTree = "<group>"; };
+		5E453F7E19E62EB700AB3A5D /* Girl_Face.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Girl_Face.png; sourceTree = "<group>"; };
+		5E453F7F19E62EB700AB3A5D /* Girl_Glasses01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Girl_Glasses01.png; sourceTree = "<group>"; };
+		5E453F8019E62EB700AB3A5D /* Girl_Hair01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Girl_Hair01.png; sourceTree = "<group>"; };
+		5E453F8119E62EB700AB3A5D /* Girl_Hair02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Girl_Hair02.png; sourceTree = "<group>"; };
+		5E453F8219E62EB700AB3A5D /* Girl_Hand.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Girl_Hand.png; sourceTree = "<group>"; };
+		5E453F8319E62EB700AB3A5D /* Girl_LowerBody01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Girl_LowerBody01.png; sourceTree = "<group>"; };
+		5E453F8419E62EB700AB3A5D /* Girl_LowerBody02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Girl_LowerBody02.png; sourceTree = "<group>"; };
+		5E453F8519E62EB700AB3A5D /* Girl_Shoes01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Girl_Shoes01.png; sourceTree = "<group>"; };
+		5E453F8619E62EB700AB3A5D /* Girl_Shoes02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Girl_Shoes02.png; sourceTree = "<group>"; };
+		5E453F8719E62EB700AB3A5D /* Girl_UpperBody01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Girl_UpperBody01.png; sourceTree = "<group>"; };
+		5E453F8819E62EB700AB3A5D /* Girl_UpperBody02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Girl_UpperBody02.png; sourceTree = "<group>"; };
+		5E453F8919E62EB700AB3A5D /* ReskinGirl.c3b */ = {isa = PBXFileReference; lastKnownFileType = file; path = ReskinGirl.c3b; sourceTree = "<group>"; };
+		5E453FA219E6309600AB3A5D /* Chapter10_4.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Chapter10_4.cpp; sourceTree = "<group>"; };
+		5E453FA319E6309600AB3A5D /* Chapter10_4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Chapter10_4.h; sourceTree = "<group>"; };
+		5E5874DB19E8DCB0009744B7 /* Chapter10_7.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Chapter10_7.cpp; sourceTree = "<group>"; };
+		5E5874DC19E8DCB0009744B7 /* Chapter10_7.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Chapter10_7.h; sourceTree = "<group>"; };
+		5EAA122319E790B700B5D2BA /* Chapter10_5.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Chapter10_5.cpp; sourceTree = "<group>"; };
+		5EAA122419E790B700B5D2BA /* Chapter10_5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Chapter10_5.h; sourceTree = "<group>"; };
+		5EAA122719E7D1E400B5D2BA /* DrawNode3D.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DrawNode3D.cpp; sourceTree = "<group>"; };
+		5EAA122819E7D1E400B5D2BA /* DrawNode3D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawNode3D.h; sourceTree = "<group>"; };
+		5EAA122B19E7E69600B5D2BA /* Chapter10_6.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Chapter10_6.cpp; sourceTree = "<group>"; };
+		5EAA122C19E7E69600B5D2BA /* Chapter10_6.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Chapter10_6.h; sourceTree = "<group>"; };
 		7E1526AE19D4DE890013F222 /* Blue_Front1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Blue_Front1.png; sourceTree = "<group>"; };
 		7E1526AF19D4DE890013F222 /* HelloWorld.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HelloWorld.png; sourceTree = "<group>"; };
 		7E1526B019D4DE890013F222 /* LightBlue_Front1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LightBlue_Front1.png; sourceTree = "<group>"; };
@@ -493,6 +579,22 @@
 		50BA59FF19D49A2F0070A133 /* chapter10 */ = {
 			isa = PBXGroup;
 			children = (
+				5E453FA219E6309600AB3A5D /* Chapter10_4.cpp */,
+				5E453FA319E6309600AB3A5D /* Chapter10_4.h */,
+				5EAA122B19E7E69600B5D2BA /* Chapter10_6.cpp */,
+				5EAA122C19E7E69600B5D2BA /* Chapter10_6.h */,
+				5E5874DB19E8DCB0009744B7 /* Chapter10_7.cpp */,
+				5E5874DC19E8DCB0009744B7 /* Chapter10_7.h */,
+				5EAA122319E790B700B5D2BA /* Chapter10_5.cpp */,
+				5EAA122719E7D1E400B5D2BA /* DrawNode3D.cpp */,
+				5EAA122819E7D1E400B5D2BA /* DrawNode3D.h */,
+				5EAA122419E790B700B5D2BA /* Chapter10_5.h */,
+				5E453F7419E62AD000AB3A5D /* Chapter10_3.cpp */,
+				5E453F7519E62AD000AB3A5D /* Chapter10_3.h */,
+				5E453F6A19E5423D00AB3A5D /* Chapter10_2.cpp */,
+				5E453F6B19E5423D00AB3A5D /* Chapter10_2.h */,
+				5E453F5C19E5178500AB3A5D /* Chapter10_1.cpp */,
+				5E453F5D19E5178500AB3A5D /* Chapter10_1.h */,
 				50BA5A0019D49A2F0070A133 /* AppDelegate.cpp */,
 				50BA5A0119D49A2F0070A133 /* AppDelegate.h */,
 				50BA5A0219D49A2F0070A133 /* Chapter10.cpp */,
@@ -504,6 +606,24 @@
 		50BA5A0819D49A3F0070A133 /* chapter10 */ = {
 			isa = PBXGroup;
 			children = (
+				5E453F7E19E62EB700AB3A5D /* Girl_Face.png */,
+				5E453F7F19E62EB700AB3A5D /* Girl_Glasses01.png */,
+				5E453F8019E62EB700AB3A5D /* Girl_Hair01.png */,
+				5E453F8119E62EB700AB3A5D /* Girl_Hair02.png */,
+				5E453F8219E62EB700AB3A5D /* Girl_Hand.png */,
+				5E453F8319E62EB700AB3A5D /* Girl_LowerBody01.png */,
+				5E453F8419E62EB700AB3A5D /* Girl_LowerBody02.png */,
+				5E453F8519E62EB700AB3A5D /* Girl_Shoes01.png */,
+				5E453F8619E62EB700AB3A5D /* Girl_Shoes02.png */,
+				5E453F8719E62EB700AB3A5D /* Girl_UpperBody01.png */,
+				5E453F8819E62EB700AB3A5D /* Girl_UpperBody02.png */,
+				5E453F8919E62EB700AB3A5D /* ReskinGirl.c3b */,
+				5E453F6E19E5452600AB3A5D /* monguger.tga */,
+				5E453F7819E62CAA00AB3A5D /* arx.png */,
+				5E453F7919E62CAA00AB3A5D /* axe.c3b */,
+				5E453F6F19E5452600AB3A5D /* orc.c3b */,
+				5E453F6219E5359600AB3A5D /* boss.c3b */,
+				5E453F6319E5359600AB3A5D /* boss.png */,
 				50BA5A0919D49A3F0070A133 /* CloseNormal.png */,
 				50BA5A0A19D49A3F0070A133 /* CloseSelected.png */,
 				50BA5A0B19D49A3F0070A133 /* fonts */,
@@ -717,26 +837,44 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E453F6619E5359600AB3A5D /* boss.png in Resources */,
 				50BA59B619D4992C0070A133 /* Icon-120.png in Resources */,
 				50BA59B719D4992C0070A133 /* Icon-76.png in Resources */,
 				50BA59B819D4992C0070A133 /* Default@2x.png in Resources */,
+				5E453F6419E5359600AB3A5D /* boss.c3b in Resources */,
+				5E453F8C19E62EB700AB3A5D /* Girl_Glasses01.png in Resources */,
+				5E453F8A19E62EB700AB3A5D /* Girl_Face.png in Resources */,
+				5E453F7019E5452600AB3A5D /* monguger.tga in Resources */,
+				5E453F9219E62EB700AB3A5D /* Girl_Hand.png in Resources */,
 				50BA59B919D4992C0070A133 /* Icon-100.png in Resources */,
 				50BA59BA19D4992C0070A133 /* Icon-152.png in Resources */,
+				5E453F9819E62EB700AB3A5D /* Girl_Shoes01.png in Resources */,
 				50BA5A1419D49A3F0070A133 /* HelloWorld.png in Resources */,
+				5E453F9419E62EB700AB3A5D /* Girl_LowerBody01.png in Resources */,
+				5E453F7219E5452600AB3A5D /* orc.c3b in Resources */,
+				5E453F7A19E62CAA00AB3A5D /* arx.png in Resources */,
 				50BA5A1019D49A3F0070A133 /* CloseSelected.png in Resources */,
+				5E453F8E19E62EB700AB3A5D /* Girl_Hair01.png in Resources */,
 				50BA59BD19D4992C0070A133 /* Default-568h@2x.png in Resources */,
+				5E453F9E19E62EB700AB3A5D /* Girl_UpperBody02.png in Resources */,
 				50BA59BE19D4992C0070A133 /* Icon-72.png in Resources */,
 				50BA59BF19D4992C0070A133 /* Icon-50.png in Resources */,
 				50BA59C019D4992C0070A133 /* Icon-114.png in Resources */,
+				5E453F9619E62EB700AB3A5D /* Girl_LowerBody02.png in Resources */,
+				5E453F9C19E62EB700AB3A5D /* Girl_UpperBody01.png in Resources */,
 				50BA5A1219D49A3F0070A133 /* Marker Felt.ttf in Resources */,
+				5E453F7C19E62CAA00AB3A5D /* axe.c3b in Resources */,
 				50BA59C219D4992C0070A133 /* Icon-29.png in Resources */,
 				50BA59C319D4992C0070A133 /* Icon-40.png in Resources */,
 				50BA59C419D4992C0070A133 /* Icon-144.png in Resources */,
 				50BA59C519D4992C0070A133 /* Icon-80.png in Resources */,
+				5E453F9A19E62EB700AB3A5D /* Girl_Shoes02.png in Resources */,
 				50BA59C619D4992C0070A133 /* Icon-57.png in Resources */,
 				50BA59C719D4992C0070A133 /* Default.png in Resources */,
+				5E453FA019E62EB700AB3A5D /* ReskinGirl.c3b in Resources */,
 				50BA5A0E19D49A3F0070A133 /* CloseNormal.png in Resources */,
 				50BA59C919D4992C0070A133 /* Icon-58.png in Resources */,
+				5E453F9019E62EB700AB3A5D /* Girl_Hair02.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -744,11 +882,29 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E453F9519E62EB700AB3A5D /* Girl_LowerBody01.png in Resources */,
+				5E453F8F19E62EB700AB3A5D /* Girl_Hair01.png in Resources */,
 				50BA5A1519D49A3F0070A133 /* HelloWorld.png in Resources */,
 				50BA5A1319D49A3F0070A133 /* Marker Felt.ttf in Resources */,
+				5E453F9B19E62EB700AB3A5D /* Girl_Shoes02.png in Resources */,
+				5E453F9D19E62EB700AB3A5D /* Girl_UpperBody01.png in Resources */,
+				5E453F7119E5452600AB3A5D /* monguger.tga in Resources */,
+				5E453F8D19E62EB700AB3A5D /* Girl_Glasses01.png in Resources */,
+				5E453F7319E5452600AB3A5D /* orc.c3b in Resources */,
 				50BA59E719D499360070A133 /* Icon.icns in Resources */,
+				5E453F7B19E62CAA00AB3A5D /* arx.png in Resources */,
+				5E453FA119E62EB700AB3A5D /* ReskinGirl.c3b in Resources */,
+				5E453F9319E62EB700AB3A5D /* Girl_Hand.png in Resources */,
+				5E453F6519E5359600AB3A5D /* boss.c3b in Resources */,
 				50BA5A0F19D49A3F0070A133 /* CloseNormal.png in Resources */,
+				5E453F9F19E62EB700AB3A5D /* Girl_UpperBody02.png in Resources */,
+				5E453F8B19E62EB700AB3A5D /* Girl_Face.png in Resources */,
+				5E453F7D19E62CAA00AB3A5D /* axe.c3b in Resources */,
 				50BA5A1119D49A3F0070A133 /* CloseSelected.png in Resources */,
+				5E453F9719E62EB700AB3A5D /* Girl_LowerBody02.png in Resources */,
+				5E453F6719E5359600AB3A5D /* boss.png in Resources */,
+				5E453F9919E62EB700AB3A5D /* Girl_Shoes01.png in Resources */,
+				5E453F9119E62EB700AB3A5D /* Girl_Hair02.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -784,8 +940,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				50BA5A0419D49A2F0070A133 /* AppDelegate.cpp in Sources */,
+				5E453F6C19E5423D00AB3A5D /* Chapter10_2.cpp in Sources */,
+				5EAA122519E790B700B5D2BA /* Chapter10_5.cpp in Sources */,
+				5E453F7619E62AD000AB3A5D /* Chapter10_3.cpp in Sources */,
+				5E5874DD19E8DCB0009744B7 /* Chapter10_7.cpp in Sources */,
 				50BA5A0619D49A2F0070A133 /* Chapter10.cpp in Sources */,
 				50BA59CD19D4992C0070A133 /* AppController.mm in Sources */,
+				5E453F5E19E5178500AB3A5D /* Chapter10_1.cpp in Sources */,
+				5EAA122919E7D1E400B5D2BA /* DrawNode3D.cpp in Sources */,
+				5E453FA419E6309600AB3A5D /* Chapter10_4.cpp in Sources */,
+				5EAA122D19E7E69600B5D2BA /* Chapter10_6.cpp in Sources */,
 				50BA59CE19D4992C0070A133 /* RootViewController.mm in Sources */,
 				50BA59CF19D4992C0070A133 /* main.m in Sources */,
 			);
@@ -795,7 +959,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E5874DE19E8DCB0009744B7 /* Chapter10_7.cpp in Sources */,
+				5EAA122A19E7D1E400B5D2BA /* DrawNode3D.cpp in Sources */,
+				5EAA122E19E7E69600B5D2BA /* Chapter10_6.cpp in Sources */,
+				5E453F7719E62AD000AB3A5D /* Chapter10_3.cpp in Sources */,
+				5E453F6D19E5423D00AB3A5D /* Chapter10_2.cpp in Sources */,
+				5E453FA519E6309600AB3A5D /* Chapter10_4.cpp in Sources */,
 				50BA5A0519D49A2F0070A133 /* AppDelegate.cpp in Sources */,
+				5EAA122619E790B700B5D2BA /* Chapter10_5.cpp in Sources */,
+				5E453F5F19E5178500AB3A5D /* Chapter10_1.cpp in Sources */,
 				50BA59EC19D499360070A133 /* main.cpp in Sources */,
 				50BA5A0719D49A2F0070A133 /* Chapter10.cpp in Sources */,
 			);
