@@ -1,5 +1,5 @@
 #include "AppDelegate.h"
-#include "Chapter10.h"
+#include "Chapter9.h"
 
 USING_NS_CC;
 
@@ -32,13 +32,13 @@ bool AppDelegate::applicationDidFinishLaunching() {
     }
 
     // turn on display FPS
-    director->setDisplayStats(true);
+    //director->setDisplayStats(true);
 
     // set FPS. the default value is 1.0/60 if you don't call this
     director->setAnimationInterval(1.0 / 60);
 
     // create a scene. it's an autorelease object
-    auto scene = Chapter10::createScene();
+    auto scene = Chapter9::createScene();
 
     // run
     director->runWithScene(scene);
