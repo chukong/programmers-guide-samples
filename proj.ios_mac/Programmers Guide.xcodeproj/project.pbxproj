@@ -192,8 +192,6 @@
 		7E53689419EAD894005C3C64 /* Chapter9.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7E53687D19EAD894005C3C64 /* Chapter9.cpp */; };
 		7E53689519EAD894005C3C64 /* DrawNode3D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7E53687F19EAD894005C3C64 /* DrawNode3D.cpp */; };
 		7E53689619EAD894005C3C64 /* DrawNode3D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7E53687F19EAD894005C3C64 /* DrawNode3D.cpp */; };
-		7E53689A19EB4044005C3C64 /* sprites.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7E53689819EB4044005C3C64 /* sprites.plist */; };
-		7E53689B19EB4044005C3C64 /* sprites.pvr.ccz in Resources */ = {isa = PBXBuildFile; fileRef = 7E53689919EB4044005C3C64 /* sprites.pvr.ccz */; };
 		7E5368CF19EC20DE005C3C64 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 503AE10317EB98FF00D1A890 /* main.cpp */; };
 		7E5368D119EC20DE005C3C64 /* libcocos2d Mac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 50BA599119D492B60070A133 /* libcocos2d Mac.a */; };
 		7E5368D219EC20DE005C3C64 /* libcurl.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 503AE11117EB99EE00D1A890 /* libcurl.dylib */; };
@@ -208,8 +206,6 @@
 		7E5368DB19EC20DE005C3C64 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44C620F132DFF4E0009C878 /* AudioToolbox.framework */; };
 		7E5368E119EC2128005C3C64 /* Marker Felt.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7E1526C019D4E0020013F222 /* Marker Felt.ttf */; };
 		7E5368E219EC213B005C3C64 /* Icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 503AE0F617EB97AB00D1A890 /* Icon.icns */; };
-		7E5368E319EC2159005C3C64 /* sprites.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7E53689819EB4044005C3C64 /* sprites.plist */; };
-		7E5368E419EC2159005C3C64 /* sprites.pvr.ccz in Resources */ = {isa = PBXBuildFile; fileRef = 7E53689919EB4044005C3C64 /* sprites.pvr.ccz */; };
 		7E5368E519EC2159005C3C64 /* Blue_Front1.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E1526AE19D4DE890013F222 /* Blue_Front1.png */; };
 		7E5368E619EC2159005C3C64 /* LightBlue_Front1.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E1526B019D4DE890013F222 /* LightBlue_Front1.png */; };
 		7E5368E719EC2159005C3C64 /* White_Front1.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E1526B119D4DE890013F222 /* White_Front1.png */; };
@@ -242,7 +238,6 @@
 		7E53690819EC228B005C3C64 /* White_Front1.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E1526B119D4DE890013F222 /* White_Front1.png */; };
 		7E53690919EC228B005C3C64 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 5087E77317EB970100C73F5D /* Default.png */; };
 		7E53690A19EC228B005C3C64 /* Icon-58.png in Resources */ = {isa = PBXBuildFile; fileRef = 50EF629317ECD46A001EB2F8 /* Icon-58.png */; };
-		7E53690C19EC228B005C3C64 /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7EBF317519E7807500A7FBEA /* AppDelegate.cpp */; };
 		7E53690E19EC228B005C3C64 /* AppController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 503AE0FB17EB989F00D1A890 /* AppController.mm */; };
 		7E53690F19EC228B005C3C64 /* RootViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 503AE0FF17EB989F00D1A890 /* RootViewController.mm */; };
 		7E53691019EC228B005C3C64 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 503AE0FC17EB989F00D1A890 /* main.m */; };
@@ -257,8 +252,6 @@
 		7E53691A19EC228B005C3C64 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44C620B132DFF330009C878 /* OpenAL.framework */; };
 		7E53691B19EC228B005C3C64 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44C620D132DFF430009C878 /* AVFoundation.framework */; };
 		7E53691C19EC228B005C3C64 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44C620F132DFF4E0009C878 /* AudioToolbox.framework */; };
-		7E53692619EC22F4005C3C64 /* sprites.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7E53689819EB4044005C3C64 /* sprites.plist */; };
-		7E53692719EC22F4005C3C64 /* sprites.pvr.ccz in Resources */ = {isa = PBXBuildFile; fileRef = 7E53689919EB4044005C3C64 /* sprites.pvr.ccz */; };
 		7E53692819EC22F4005C3C64 /* Blue_Front1.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E1526AE19D4DE890013F222 /* Blue_Front1.png */; };
 		7E53692919EC22F4005C3C64 /* LightBlue_Front1.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E1526B019D4DE890013F222 /* LightBlue_Front1.png */; };
 		7E53692A19EC22F4005C3C64 /* White_Front1.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E1526B119D4DE890013F222 /* White_Front1.png */; };
@@ -266,7 +259,6 @@
 		7E53692C19EC22F4005C3C64 /* ZigzagGrass_Mud_Round.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E1526B319D4DE890013F222 /* ZigzagGrass_Mud_Round.png */; };
 		7E53692D19EC22F4005C3C64 /* Icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 503AE0F617EB97AB00D1A890 /* Icon.icns */; };
 		7E53692E19EC22F4005C3C64 /* Marker Felt.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7E1526C019D4E0020013F222 /* Marker Felt.ttf */; };
-		7E53693019EC22F4005C3C64 /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7EBF317519E7807500A7FBEA /* AppDelegate.cpp */; };
 		7E53693119EC22F4005C3C64 /* AppDelegate.h in Sources */ = {isa = PBXBuildFile; fileRef = 7EBF317619E7807500A7FBEA /* AppDelegate.h */; };
 		7E53693419EC22F4005C3C64 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 503AE10317EB98FF00D1A890 /* main.cpp */; };
 		7E53693619EC22F4005C3C64 /* libcocos2d Mac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 50BA599119D492B60070A133 /* libcocos2d Mac.a */; };
@@ -284,6 +276,10 @@
 		7E53694B19EC234D005C3C64 /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7E53694619EC234D005C3C64 /* AppDelegate.cpp */; };
 		7E53694C19EC234D005C3C64 /* Chapter4.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7E53694819EC234D005C3C64 /* Chapter4.cpp */; };
 		7E53694D19EC234D005C3C64 /* Chapter4.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7E53694819EC234D005C3C64 /* Chapter4.cpp */; };
+		7E53695019EC28D3005C3C64 /* sprites.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7E53694E19EC28D3005C3C64 /* sprites.plist */; };
+		7E53695119EC28D3005C3C64 /* sprites.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7E53694E19EC28D3005C3C64 /* sprites.plist */; };
+		7E53695219EC28D3005C3C64 /* sprites.pvr.ccz in Resources */ = {isa = PBXBuildFile; fileRef = 7E53694F19EC28D3005C3C64 /* sprites.pvr.ccz */; };
+		7E53695319EC28D3005C3C64 /* sprites.pvr.ccz in Resources */ = {isa = PBXBuildFile; fileRef = 7E53694F19EC28D3005C3C64 /* sprites.pvr.ccz */; };
 		7EBF314319E7803F00A7FBEA /* Icon-120.png in Resources */ = {isa = PBXBuildFile; fileRef = 5087E77617EB970100C73F5D /* Icon-120.png */; };
 		7EBF314519E7803F00A7FBEA /* Blue_Front1.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E1526AE19D4DE890013F222 /* Blue_Front1.png */; };
 		7EBF314619E7803F00A7FBEA /* Icon-76.png in Resources */ = {isa = PBXBuildFile; fileRef = 5087E77B17EB970100C73F5D /* Icon-76.png */; };
@@ -515,18 +511,15 @@
 		7E53687E19EAD894005C3C64 /* Chapter9.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Chapter9.h; path = chapter9/Chapter9.h; sourceTree = "<group>"; };
 		7E53687F19EAD894005C3C64 /* DrawNode3D.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = DrawNode3D.cpp; path = chapter9/DrawNode3D.cpp; sourceTree = "<group>"; };
 		7E53688019EAD894005C3C64 /* DrawNode3D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DrawNode3D.h; path = chapter9/DrawNode3D.h; sourceTree = "<group>"; };
-		7E53689819EB4044005C3C64 /* sprites.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = sprites.plist; sourceTree = "<group>"; };
-		7E53689919EB4044005C3C64 /* sprites.pvr.ccz */ = {isa = PBXFileReference; lastKnownFileType = file; path = sprites.pvr.ccz; sourceTree = "<group>"; };
 		7E5368DF19EC20DE005C3C64 /* Chapter 3 Mac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Chapter 3 Mac.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7E5368E019EC20DE005C3C64 /* Chapter 9 Mac copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Chapter 9 Mac copy-Info.plist"; path = "/Users/chukongus/Chukong-Inc/programmers-guide-samples/proj.ios_mac/Chapter 9 Mac copy-Info.plist"; sourceTree = "<absolute>"; };
 		7E53692019EC228B005C3C64 /* Chapter 4 iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Chapter 4 iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7E53692119EC228C005C3C64 /* Chapter 3 iOS copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Chapter 3 iOS copy-Info.plist"; path = "/Users/chukongus/Chukong-Inc/programmers-guide-samples/proj.ios_mac/Chapter 3 iOS copy-Info.plist"; sourceTree = "<absolute>"; };
 		7E53694419EC22F4005C3C64 /* Chapter 4 Mac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Chapter 4 Mac.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7E53694519EC22F5005C3C64 /* Chapter 3 Mac copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Chapter 3 Mac copy-Info.plist"; path = "/Users/chukongus/Chukong-Inc/programmers-guide-samples/proj.ios_mac/Chapter 3 Mac copy-Info.plist"; sourceTree = "<absolute>"; };
 		7E53694619EC234D005C3C64 /* AppDelegate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AppDelegate.cpp; path = chapter4/AppDelegate.cpp; sourceTree = "<group>"; };
 		7E53694719EC234D005C3C64 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = chapter4/AppDelegate.h; sourceTree = "<group>"; };
 		7E53694819EC234D005C3C64 /* Chapter4.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Chapter4.cpp; path = chapter4/Chapter4.cpp; sourceTree = "<group>"; };
 		7E53694919EC234D005C3C64 /* Chapter4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Chapter4.h; path = chapter4/Chapter4.h; sourceTree = "<group>"; };
+		7E53694E19EC28D3005C3C64 /* sprites.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = sprites.plist; sourceTree = "<group>"; };
+		7E53694F19EC28D3005C3C64 /* sprites.pvr.ccz */ = {isa = PBXFileReference; lastKnownFileType = file; path = sprites.pvr.ccz; sourceTree = "<group>"; };
 		7EBF317219E7803F00A7FBEA /* Chapter 3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Chapter 3.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EBF317319E7804000A7FBEA /* Chapter 2 iOS copy2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Chapter 2 iOS copy2-Info.plist"; path = "/Users/chukongus/Chukong-Inc/programmers-guide-samples/proj.ios_mac/Chapter 2 iOS copy2-Info.plist"; sourceTree = "<absolute>"; };
 		7EBF317519E7807500A7FBEA /* AppDelegate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AppDelegate.cpp; sourceTree = "<group>"; };
@@ -735,9 +728,6 @@
 				080E96DDFE201D6D7F000001 /* ios */,
 				503AE10617EB990700D1A890 /* mac */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
-				7E5368E019EC20DE005C3C64 /* Chapter 9 Mac copy-Info.plist */,
-				7E53692119EC228C005C3C64 /* Chapter 3 iOS copy-Info.plist */,
-				7E53694519EC22F5005C3C64 /* Chapter 3 Mac copy-Info.plist */,
 			);
 			name = CustomTemplate;
 			sourceTree = "<group>";
@@ -948,8 +938,8 @@
 		7E53689719EB4016005C3C64 /* chapter3 */ = {
 			isa = PBXGroup;
 			children = (
-				7E53689819EB4044005C3C64 /* sprites.plist */,
-				7E53689919EB4044005C3C64 /* sprites.pvr.ccz */,
+				7E53694E19EC28D3005C3C64 /* sprites.plist */,
+				7E53694F19EC28D3005C3C64 /* sprites.pvr.ccz */,
 			);
 			name = chapter3;
 			path = ../proj.ios_mac;
@@ -1331,15 +1321,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7E5368E319EC2159005C3C64 /* sprites.plist in Resources */,
-				7E5368E419EC2159005C3C64 /* sprites.pvr.ccz in Resources */,
 				7E5368E519EC2159005C3C64 /* Blue_Front1.png in Resources */,
+				7E53695119EC28D3005C3C64 /* sprites.plist in Resources */,
 				7E5368E619EC2159005C3C64 /* LightBlue_Front1.png in Resources */,
 				7E5368E719EC2159005C3C64 /* White_Front1.png in Resources */,
 				7E5368E819EC2159005C3C64 /* ZigzagForest_Square.png in Resources */,
 				7E5368E919EC2159005C3C64 /* ZigzagGrass_Mud_Round.png in Resources */,
 				7E5368E219EC213B005C3C64 /* Icon.icns in Resources */,
 				7E5368E119EC2128005C3C64 /* Marker Felt.ttf in Resources */,
+				7E53695319EC28D3005C3C64 /* sprites.pvr.ccz in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1377,8 +1367,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7E53692619EC22F4005C3C64 /* sprites.plist in Resources */,
-				7E53692719EC22F4005C3C64 /* sprites.pvr.ccz in Resources */,
 				7E53692819EC22F4005C3C64 /* Blue_Front1.png in Resources */,
 				7E53692919EC22F4005C3C64 /* LightBlue_Front1.png in Resources */,
 				7E53692A19EC22F4005C3C64 /* White_Front1.png in Resources */,
@@ -1394,7 +1382,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7EBF314319E7803F00A7FBEA /* Icon-120.png in Resources */,
-				7E53689A19EB4044005C3C64 /* sprites.plist in Resources */,
+				7E53695019EC28D3005C3C64 /* sprites.plist in Resources */,
 				7EBF314519E7803F00A7FBEA /* Blue_Front1.png in Resources */,
 				7EBF314619E7803F00A7FBEA /* Icon-76.png in Resources */,
 				7EBF318219E8485600A7FBEA /* Chapter 3 iOS-Info.plist in Resources */,
@@ -1414,7 +1402,7 @@
 				7EBF315619E7803F00A7FBEA /* LightBlue_Front1.png in Resources */,
 				7EBF315719E7803F00A7FBEA /* ZigzagGrass_Mud_Round.png in Resources */,
 				7EBF315819E7803F00A7FBEA /* Icon-57.png in Resources */,
-				7E53689B19EB4044005C3C64 /* sprites.pvr.ccz in Resources */,
+				7E53695219EC28D3005C3C64 /* sprites.pvr.ccz in Resources */,
 				7EBF315919E7803F00A7FBEA /* White_Front1.png in Resources */,
 				7EBF315A19E7803F00A7FBEA /* Default.png in Resources */,
 				7EBF315B19E7803F00A7FBEA /* Icon-58.png in Resources */,
@@ -1505,7 +1493,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				7E53694C19EC234D005C3C64 /* Chapter4.cpp in Sources */,
-				7E53690C19EC228B005C3C64 /* AppDelegate.cpp in Sources */,
 				7E53690E19EC228B005C3C64 /* AppController.mm in Sources */,
 				7E53694A19EC234D005C3C64 /* AppDelegate.cpp in Sources */,
 				7E53690F19EC228B005C3C64 /* RootViewController.mm in Sources */,
@@ -1519,7 +1506,6 @@
 			files = (
 				7E53694B19EC234D005C3C64 /* AppDelegate.cpp in Sources */,
 				7E53694D19EC234D005C3C64 /* Chapter4.cpp in Sources */,
-				7E53693019EC22F4005C3C64 /* AppDelegate.cpp in Sources */,
 				7E53693119EC22F4005C3C64 /* AppDelegate.h in Sources */,
 				7E53693419EC22F4005C3C64 /* main.cpp in Sources */,
 			);
