@@ -73,11 +73,11 @@ Scene* Chapter4::createScene()
         newSprite->setAnchorPoint(Vec2(0,0));
         Director::getInstance()->getRunningScene()->addChild(newSprite,1);
         
-        //auto newSprite2 = Sprite::create("Blue_Front1.png");
-        //newSprite2->setPosition(100, 64);
-        //newSprite2->setName("sprite2");
-        //newSprite2->setAnchorPoint(Vec2(0,0));
-        //Director::getInstance()->getRunningScene()->addChild(newSprite2,1);
+        auto newSprite2 = Sprite::create("Blue_Front1.png");
+        newSprite2->setPosition(100, 64);
+        newSprite2->setName("sprite2");
+        newSprite2->setAnchorPoint(Vec2(0,0));
+        Director::getInstance()->getRunningScene()->addChild(newSprite2,1);
         
         auto anode = Director::getInstance()->getRunningScene()->getChildByName("menuNode");
         auto bnode = anode->getChildByName("menu");
@@ -104,12 +104,44 @@ Scene* Chapter4::createScene()
         auto xnode = wnode->getChildByName("menu");
         auto ynode = xnode->getChildByName("menuItem2");
         ynode->setVisible(false);
-        //auto znode = bnode->getChildByName("menuItem3");
+        auto znode = xnode->getChildByName("menuItem3");
+        znode->setVisible(true);
+    });
+    
+    auto menuItem3 = MenuItemFont::create("Next: Fade the Sprite over 2 seconds");
+    menuItem3->setFontNameObj("Marker Felt.ttf");
+    menuItem3->setFontSizeObj(32);
+    menuItem3->setName("menuItem3");
+    menuItem3->setVisible(false);
+    menuItem3->setPosition(Vec2(origin.x+visibleSize.width/2, origin.y+visibleSize.height/2).x,
+                           (Vec2(origin.x+visibleSize.width/2, origin.y+visibleSize.height).y - (index) * 40));
+    menuItem3->setCallback([&](cocos2d::Ref *sender) {
+        auto anode = Director::getInstance()->getRunningScene()->getChildByName("sprite1");
+        
+        auto moveTo = MoveTo::create(2, Point(300, 64));
+        
+        anode->runAction(moveTo);
+        
+        //auto fadeIn = FadeIn::create(200.0f);
+        
+        //anode->runAction(fadeIn);
+        
+        auto fadeTo = FadeTo::create(2.0f, 120.0f);
+        
+        anode->runAction(fadeTo);
+        
+        auto wnode = Director::getInstance()->getRunningScene()->getChildByName("menuNode");
+        auto xnode = wnode->getChildByName("menu");
+        auto ynode = xnode->getChildByName("menuItem3");
+        ynode->setVisible(false);
+        //auto znode = xnode->getChildByName("menuItem3");
         //znode->setVisible(true);
     });
     
     
-    auto menu = Menu::create(menuItem1, menuItem2, NULL);
+    
+    
+    auto menu = Menu::create(menuItem1, menuItem2, menuItem3, NULL);
     menu->setName("menu");
     menuNode->addChild(menu, 1);
     menu->setPosition(Vec2::ZERO);
