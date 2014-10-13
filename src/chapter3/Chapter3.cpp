@@ -25,34 +25,6 @@ Scene* Chapter3::createScene()
     nodeItems->setName("nodeItems");
     
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    // create a path/walkway
-    // depending upon how large the screen is we need to decide how many blocks to lay down.
-    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    auto testSprite = Sprite::create("ZigzagForest_Square.png");
-    
-    int howMany = std::ceil(visibleSize.width / testSprite->getContentSize().width);
-    
-    int sX = 0; // act as a counter for setPosition x coordinate.
-    int sY = 0; // act as a counter for setPosition y coordinate.
-    
-    playingSize = Size(visibleSize.width, visibleSize.height - testSprite->getContentSize().height);
-    
-    for (int i=0; i < howMany; i++)
-    {
-        auto sprite = Sprite::create("ZigzagForest_Square.png");
-        sprite->setAnchorPoint(Vec2(0,0));
-        sprite->setPosition(sX,sY);
-        
-        sX += sprite->getContentSize().width;
-        
-        nodeItems->addChild(sprite, -1);
-    }
-    
-    testSprite = NULL;
-    
-    scene->addChild(nodeItems, 1);
-    
-    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     // create a node to hold menu
     // create a menu
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -81,7 +53,7 @@ Scene* Chapter3::createScene()
         dnode->setVisible(true);
     });
     
-    auto menuItem2 = MenuItemFont::create("Next: Create a Sprite from SpriteFrame");
+    auto menuItem2 = MenuItemFont::create("Next: Create a Sprite from a Rect");
     menuItem2->setFontNameObj("Marker Felt.ttf");
     menuItem2->setFontSizeObj(32);
     menuItem2->setName("menuItem2");
@@ -89,10 +61,8 @@ Scene* Chapter3::createScene()
     menuItem2->setPosition(Vec2(origin.x+visibleSize.width/2, origin.y+visibleSize.height/2).x,
                            (Vec2(origin.x+visibleSize.width/2, origin.y+visibleSize.height).y - (index) * 40));
     menuItem2->setCallback([&](cocos2d::Ref *sender) {
-        auto newspriteFrame = SpriteFrame::create("Blue_Front1.png", Rect(0,0,75,50));
-        
-        auto newSprite = Sprite::createWithSpriteFrame(newspriteFrame);
-        newSprite->setPosition(200, 64);
+        auto newSprite = Sprite::create("Blue_Front1.png", Rect(0,0,50,50));
+        newSprite->setPosition(250, 64);
         newSprite->setName("sprite2");
         newSprite->setAnchorPoint(Vec2(0,0));
         Director::getInstance()->getRunningScene()->addChild(newSprite,1);
@@ -105,7 +75,7 @@ Scene* Chapter3::createScene()
         dnode->setVisible(true);
     });
     
-    auto menuItem3 = MenuItemFont::create("Next: Create a Sprite from SpriteCache");
+    auto menuItem3 = MenuItemFont::create("Next: Create a Sprite from SpriteFrameCache");
     menuItem3->setFontNameObj("Marker Felt.ttf");
     menuItem3->setFontSizeObj(32);
     menuItem3->setName("menuItem3");
@@ -115,13 +85,13 @@ Scene* Chapter3::createScene()
     menuItem3->setCallback([&](cocos2d::Ref *sender) {
         auto spritecache = SpriteFrameCache::getInstance();
         spritecache->addSpriteFramesWithFile("sprites.plist");
-        
-        auto newSprite = Sprite::createWithSpriteFrameName("White_Front1.png");
-        newSprite->setPosition(300, 64);
+
+        auto newSprite = Sprite::createWithSpriteFrameName("Blue_Front1.png");
+        newSprite->setPosition(400, 64);
         newSprite->setName("sprite3");
         newSprite->setAnchorPoint(Vec2(0,0));
         Director::getInstance()->getRunningScene()->addChild(newSprite,1);
-        
+
         auto anode = Director::getInstance()->getRunningScene()->getChildByName("menuNode");
         auto bnode = anode->getChildByName("menu");
         auto cnode = bnode->getChildByName("menuItem3");
@@ -130,7 +100,7 @@ Scene* Chapter3::createScene()
         dnode->setVisible(true);
     });
     
-    auto menuItem4 = MenuItemFont::create("Next: Create a Sprite from a Rect");
+    auto menuItem4 = MenuItemFont::create("Next: Create a Sprite from SpriteFrame");
     menuItem4->setFontNameObj("Marker Felt.ttf");
     menuItem4->setFontSizeObj(32);
     menuItem4->setName("menuItem4");
@@ -141,8 +111,10 @@ Scene* Chapter3::createScene()
         auto spritecache = SpriteFrameCache::getInstance();
         spritecache->addSpriteFramesWithFile("sprites.plist");
         
-        auto newSprite = Sprite::create("White_Front1.png", Rect(0,0,50,50));
-        newSprite->setPosition(400, 64);
+        auto newspriteFrame = SpriteFrame::create("Blue_Front1.png", Rect(0,0,50,50));
+        
+        auto newSprite = Sprite::createWithSpriteFrame(newspriteFrame);
+        newSprite->setPosition(550, 64);
         newSprite->setName("sprite4");
         newSprite->setAnchorPoint(Vec2(0,0));
         Director::getInstance()->getRunningScene()->addChild(newSprite,1);
@@ -340,12 +312,12 @@ Scene* Chapter3::createScene()
         newSpriteRotateP60->setRotation(60.0f);
         Director::getInstance()->getRunningScene()->addChild(newSpriteRotateP60,1);
         
-        auto newSpriteSkewN60 = Sprite::create("Blue_Front1.png");
-        newSpriteSkewN60->setPosition(700, 64);
-        newSpriteSkewN60->setName("sprite22");
-        newSpriteSkewN60->setAnchorPoint(Vec2(0,0));
-        newSpriteSkewN60->setRotation(-60.0f);
-        Director::getInstance()->getRunningScene()->addChild(newSpriteSkewN60,1);
+        auto newSpriteRotateN60 = Sprite::create("Blue_Front1.png");
+        newSpriteRotateN60->setPosition(700, 64);
+        newSpriteRotateN60->setName("sprite22");
+        newSpriteRotateN60->setAnchorPoint(Vec2(0,0));
+        newSpriteRotateN60->setRotation(-60.0f);
+        Director::getInstance()->getRunningScene()->addChild(newSpriteRotateN60,1);
         
         auto anode = Director::getInstance()->getRunningScene()->getChildByName("menuNode");
         auto bnode = anode->getChildByName("menu");
