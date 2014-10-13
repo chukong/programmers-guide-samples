@@ -408,7 +408,7 @@
 /* Begin PBXFileReference section */
 		1ACB3243164770DE00914215 /* libcurl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcurl.a; path = ../../cocos2dx/platform/third_party/ios/libraries/libcurl.a; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		1D6058910D05DD3D006BFB54 /* Programmers Guide iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Programmers Guide iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D6058910D05DD3D006BFB54 /* Chapter 2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Chapter 2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		503AE0F617EB97AB00D1A890 /* Icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Icon.icns; sourceTree = "<group>"; };
@@ -423,7 +423,7 @@
 		503AE10417EB98FF00D1A890 /* Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Prefix.pch; path = mac/Prefix.pch; sourceTree = "<group>"; };
 		503AE11117EB99EE00D1A890 /* libcurl.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcurl.dylib; path = usr/lib/libcurl.dylib; sourceTree = SDKROOT; };
 		503AE11A17EB9C5A00D1A890 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
-		5087E76F17EB910900C73F5D /* Programmers Guide Mac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Programmers Guide Mac.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5087E76F17EB910900C73F5D /* Chapter 2 Mac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Chapter 2 Mac.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5087E77217EB970100C73F5D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		5087E77317EB970100C73F5D /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		5087E77417EB970100C73F5D /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
@@ -713,8 +713,8 @@
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1D6058910D05DD3D006BFB54 /* Programmers Guide iOS.app */,
-				5087E76F17EB910900C73F5D /* Programmers Guide Mac.app */,
+				1D6058910D05DD3D006BFB54 /* Chapter 2.app */,
+				5087E76F17EB910900C73F5D /* Chapter 2 Mac.app */,
 				50BA59DF19D4992C0070A133 /* Chapter 9 iOS.app */,
 				50BA59FD19D499360070A133 /* Chapter 9 Mac.app */,
 				7EBF317219E7803F00A7FBEA /* Chapter 3.app */,
@@ -995,7 +995,7 @@
 			);
 			name = "Chapter 2 iOS";
 			productName = iphone;
-			productReference = 1D6058910D05DD3D006BFB54 /* Programmers Guide iOS.app */;
+			productReference = 1D6058910D05DD3D006BFB54 /* Chapter 2.app */;
 			productType = "com.apple.product-type.application";
 		};
 		5087E73D17EB910900C73F5D /* Chapter 2 Mac */ = {
@@ -1013,7 +1013,7 @@
 			);
 			name = "Chapter 2 Mac";
 			productName = iphone;
-			productReference = 5087E76F17EB910900C73F5D /* Programmers Guide Mac.app */;
+			productReference = 5087E76F17EB910900C73F5D /* Chapter 2 Mac.app */;
 			productType = "com.apple.product-type.application";
 		};
 		50BA59B219D4992C0070A133 /* Chapter 9 iOS */ = {
@@ -1605,10 +1605,10 @@
 					"$(SRCROOT)/../libs/cocos2d-x/cocos/platform/ios",
 					"$(SRCROOT)/../libs/cocos2d-x/cocos/platform/ios/Simulation",
 				);
-				INFOPLIST_FILE = ios/Info.plist;
+				INFOPLIST_FILE = "Chapter 2 iOS-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				LIBRARY_SEARCH_PATHS = "";
-				PRODUCT_NAME = "Programmers Guide iOS";
+				PRODUCT_NAME = "Chapter 2";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "";
@@ -1635,10 +1635,10 @@
 					"$(SRCROOT)/../libs/cocos2d-x/cocos/platform/ios",
 					"$(SRCROOT)/../libs/cocos2d-x/cocos/platform/ios/Simulation",
 				);
-				INFOPLIST_FILE = ios/Info.plist;
+				INFOPLIST_FILE = "Chapter 2 iOS-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				LIBRARY_SEARCH_PATHS = "";
-				PRODUCT_NAME = "Programmers Guide iOS";
+				PRODUCT_NAME = "Chapter 2";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "";
@@ -1668,9 +1668,9 @@
 					"$(SRCROOT)/../libs/cocos2d-x/cocos/platform/mac",
 					"$(SRCROOT)/../libs/cocos2d-x/external/glfw3/include/mac",
 				);
-				INFOPLIST_FILE = mac/Info.plist;
+				INFOPLIST_FILE = "Chapter 2 Mac-Info.plist";
 				LIBRARY_SEARCH_PATHS = "";
-				PRODUCT_NAME = "Programmers Guide Mac";
+				PRODUCT_NAME = "Chapter 2 Mac";
 				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Debug;
@@ -1696,9 +1696,9 @@
 					"$(SRCROOT)/../libs/cocos2d-x/cocos/platform/mac",
 					"$(SRCROOT)/../libs/cocos2d-x/external/glfw3/include/mac",
 				);
-				INFOPLIST_FILE = mac/Info.plist;
+				INFOPLIST_FILE = "Chapter 2 Mac-Info.plist";
 				LIBRARY_SEARCH_PATHS = "";
-				PRODUCT_NAME = "Programmers Guide Mac";
+				PRODUCT_NAME = "Chapter 2 Mac";
 				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Release;
