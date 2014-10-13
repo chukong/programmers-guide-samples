@@ -1,8 +1,8 @@
-#include "Chapter3.h"
+#include "Chapter4.h"
 
 USING_NS_CC;
 
-Scene* Chapter3::createScene()
+Scene* Chapter4::createScene()
 {
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     // some upfront items that we need
@@ -51,7 +51,7 @@ Scene* Chapter3::createScene()
     testSprite = NULL;
     
     scene->addChild(nodeItems, 1);
-    
+        
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     // create a node to hold menu
     // create a menu
