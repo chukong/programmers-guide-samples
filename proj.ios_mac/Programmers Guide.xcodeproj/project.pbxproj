@@ -35,6 +35,10 @@
 		5087E78617EB970100C73F5D /* Icon-76.png in Resources */ = {isa = PBXBuildFile; fileRef = 5087E77B17EB970100C73F5D /* Icon-76.png */; };
 		5087E78917EB974C00C73F5D /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5087E78817EB974C00C73F5D /* AppKit.framework */; };
 		5087E78B17EB975400C73F5D /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5087E78A17EB975400C73F5D /* OpenGL.framework */; };
+		50A5DBBF19EC441300082E51 /* sprites.plist in Resources */ = {isa = PBXBuildFile; fileRef = 50A5DBBD19EC441300082E51 /* sprites.plist */; };
+		50A5DBC019EC441300082E51 /* sprites.plist in Resources */ = {isa = PBXBuildFile; fileRef = 50A5DBBD19EC441300082E51 /* sprites.plist */; };
+		50A5DBC119EC441300082E51 /* sprites.pvr.ccz in Resources */ = {isa = PBXBuildFile; fileRef = 50A5DBBE19EC441300082E51 /* sprites.pvr.ccz */; };
+		50A5DBC219EC441300082E51 /* sprites.pvr.ccz in Resources */ = {isa = PBXBuildFile; fileRef = 50A5DBBE19EC441300082E51 /* sprites.pvr.ccz */; };
 		50BA599E19D493310070A133 /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 50BA599A19D493310070A133 /* AppDelegate.cpp */; };
 		50BA599F19D493310070A133 /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 50BA599A19D493310070A133 /* AppDelegate.cpp */; };
 		50BA59A019D493310070A133 /* Chapter2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 50BA599C19D493310070A133 /* Chapter2.cpp */; };
@@ -276,10 +280,6 @@
 		7E53694B19EC234D005C3C64 /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7E53694619EC234D005C3C64 /* AppDelegate.cpp */; };
 		7E53694C19EC234D005C3C64 /* Chapter4.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7E53694819EC234D005C3C64 /* Chapter4.cpp */; };
 		7E53694D19EC234D005C3C64 /* Chapter4.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7E53694819EC234D005C3C64 /* Chapter4.cpp */; };
-		7E53695019EC28D3005C3C64 /* sprites.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7E53694E19EC28D3005C3C64 /* sprites.plist */; };
-		7E53695119EC28D3005C3C64 /* sprites.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7E53694E19EC28D3005C3C64 /* sprites.plist */; };
-		7E53695219EC28D3005C3C64 /* sprites.pvr.ccz in Resources */ = {isa = PBXBuildFile; fileRef = 7E53694F19EC28D3005C3C64 /* sprites.pvr.ccz */; };
-		7E53695319EC28D3005C3C64 /* sprites.pvr.ccz in Resources */ = {isa = PBXBuildFile; fileRef = 7E53694F19EC28D3005C3C64 /* sprites.pvr.ccz */; };
 		7EBF314319E7803F00A7FBEA /* Icon-120.png in Resources */ = {isa = PBXBuildFile; fileRef = 5087E77617EB970100C73F5D /* Icon-120.png */; };
 		7EBF314519E7803F00A7FBEA /* Blue_Front1.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E1526AE19D4DE890013F222 /* Blue_Front1.png */; };
 		7EBF314619E7803F00A7FBEA /* Icon-76.png in Resources */ = {isa = PBXBuildFile; fileRef = 5087E77B17EB970100C73F5D /* Icon-76.png */; };
@@ -433,6 +433,8 @@
 		5087E77C17EB970100C73F5D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5087E78817EB974C00C73F5D /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		5087E78A17EB975400C73F5D /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		50A5DBBD19EC441300082E51 /* sprites.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = sprites.plist; path = ../res/chapter3/sprites.plist; sourceTree = "<group>"; };
+		50A5DBBE19EC441300082E51 /* sprites.pvr.ccz */ = {isa = PBXFileReference; lastKnownFileType = file; name = sprites.pvr.ccz; path = ../res/chapter3/sprites.pvr.ccz; sourceTree = "<group>"; };
 		50BA598B19D492B60070A133 /* cocos2d_libs.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = cocos2d_libs.xcodeproj; path = "../libs/cocos2d-x/build/cocos2d_libs.xcodeproj"; sourceTree = "<group>"; };
 		50BA599A19D493310070A133 /* AppDelegate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AppDelegate.cpp; sourceTree = "<group>"; };
 		50BA599B19D493310070A133 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -518,8 +520,6 @@
 		7E53694719EC234D005C3C64 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = chapter4/AppDelegate.h; sourceTree = "<group>"; };
 		7E53694819EC234D005C3C64 /* Chapter4.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Chapter4.cpp; path = chapter4/Chapter4.cpp; sourceTree = "<group>"; };
 		7E53694919EC234D005C3C64 /* Chapter4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Chapter4.h; path = chapter4/Chapter4.h; sourceTree = "<group>"; };
-		7E53694E19EC28D3005C3C64 /* sprites.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = sprites.plist; sourceTree = "<group>"; };
-		7E53694F19EC28D3005C3C64 /* sprites.pvr.ccz */ = {isa = PBXFileReference; lastKnownFileType = file; path = sprites.pvr.ccz; sourceTree = "<group>"; };
 		7EBF317219E7803F00A7FBEA /* Chapter 3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Chapter 3.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EBF317319E7804000A7FBEA /* Chapter 2 iOS copy2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Chapter 2 iOS copy2-Info.plist"; path = "/Users/chukongus/Chukong-Inc/programmers-guide-samples/proj.ios_mac/Chapter 2 iOS copy2-Info.plist"; sourceTree = "<absolute>"; };
 		7EBF317519E7807500A7FBEA /* AppDelegate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AppDelegate.cpp; sourceTree = "<group>"; };
@@ -938,8 +938,8 @@
 		7E53689719EB4016005C3C64 /* chapter3 */ = {
 			isa = PBXGroup;
 			children = (
-				7E53694E19EC28D3005C3C64 /* sprites.plist */,
-				7E53694F19EC28D3005C3C64 /* sprites.pvr.ccz */,
+				50A5DBBD19EC441300082E51 /* sprites.plist */,
+				50A5DBBE19EC441300082E51 /* sprites.pvr.ccz */,
 			);
 			name = chapter3;
 			path = ../proj.ios_mac;
@@ -1322,14 +1322,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				7E5368E519EC2159005C3C64 /* Blue_Front1.png in Resources */,
-				7E53695119EC28D3005C3C64 /* sprites.plist in Resources */,
+				50A5DBC019EC441300082E51 /* sprites.plist in Resources */,
 				7E5368E619EC2159005C3C64 /* LightBlue_Front1.png in Resources */,
 				7E5368E719EC2159005C3C64 /* White_Front1.png in Resources */,
 				7E5368E819EC2159005C3C64 /* ZigzagForest_Square.png in Resources */,
 				7E5368E919EC2159005C3C64 /* ZigzagGrass_Mud_Round.png in Resources */,
 				7E5368E219EC213B005C3C64 /* Icon.icns in Resources */,
 				7E5368E119EC2128005C3C64 /* Marker Felt.ttf in Resources */,
-				7E53695319EC28D3005C3C64 /* sprites.pvr.ccz in Resources */,
+				50A5DBC219EC441300082E51 /* sprites.pvr.ccz in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1382,7 +1382,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7EBF314319E7803F00A7FBEA /* Icon-120.png in Resources */,
-				7E53695019EC28D3005C3C64 /* sprites.plist in Resources */,
+				50A5DBBF19EC441300082E51 /* sprites.plist in Resources */,
 				7EBF314519E7803F00A7FBEA /* Blue_Front1.png in Resources */,
 				7EBF314619E7803F00A7FBEA /* Icon-76.png in Resources */,
 				7EBF318219E8485600A7FBEA /* Chapter 3 iOS-Info.plist in Resources */,
@@ -1402,7 +1402,7 @@
 				7EBF315619E7803F00A7FBEA /* LightBlue_Front1.png in Resources */,
 				7EBF315719E7803F00A7FBEA /* ZigzagGrass_Mud_Round.png in Resources */,
 				7EBF315819E7803F00A7FBEA /* Icon-57.png in Resources */,
-				7E53695219EC28D3005C3C64 /* sprites.pvr.ccz in Resources */,
+				50A5DBC119EC441300082E51 /* sprites.pvr.ccz in Resources */,
 				7EBF315919E7803F00A7FBEA /* White_Front1.png in Resources */,
 				7EBF315A19E7803F00A7FBEA /* Default.png in Resources */,
 				7EBF315B19E7803F00A7FBEA /* Icon-58.png in Resources */,
