@@ -23,7 +23,7 @@ Scene* Chapter2::createScene()
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     // create the title dialog
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    auto white = Color4F(1.0f, 0.5f, 0.3f, 1);
+    auto color = Color4F(1.0f, 0.5f, 0.3f, 1);
     
     int verts = 4;
     
@@ -36,7 +36,7 @@ Scene* Chapter2::createScene()
     
     cocos2d::DrawNode* dotNode1 = cocos2d::DrawNode::create();
     dotNode1->setContentSize(Size(600, 200));
-    dotNode1->drawPolygon(stripe1, verts, white, 0, white);
+    dotNode1->drawPolygon(stripe1, verts, color, 0, color);
     
     dotNode1->setPosition(Vec2(visibleSize.width/2 - (dotNode1->getContentSize().width / 2),
                                playingSize.height - dotNode1->getContentSize().height));
