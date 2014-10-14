@@ -196,11 +196,21 @@ Scene* Chapter3::createScene()
         newSprite00->setAnchorPoint(Vec2(0,0));
         Director::getInstance()->getRunningScene()->addChild(newSprite00,1);
         
+        auto point00 = Sprite::create("dot.png");
+        point00->setName("point00");
+        point00->setPosition(newSprite00->getPosition());
+        Director::getInstance()->getRunningScene()->addChild(point00,2);
+        
         auto newSprite01 = Sprite::create("Blue_Front1.png");
         newSprite01->setPosition(250, 64);
         newSprite01->setName("sprite10");
         newSprite01->setAnchorPoint(Vec2(0,1));
         Director::getInstance()->getRunningScene()->addChild(newSprite01,1);
+        
+        auto point01 = Sprite::create("dot.png");
+        point01->setName("point01");
+        point01->setPosition(newSprite01->getPosition());
+        Director::getInstance()->getRunningScene()->addChild(point01,2);
         
         auto newSprite10 = Sprite::create("Blue_Front1.png");
         newSprite10->setPosition(400, 64);
@@ -208,17 +218,32 @@ Scene* Chapter3::createScene()
         newSprite10->setAnchorPoint(Vec2(1,0));
         Director::getInstance()->getRunningScene()->addChild(newSprite10,1);
         
+        auto point10 = Sprite::create("dot.png");
+        point10->setName("point10");
+        point10->setPosition(newSprite10->getPosition());
+        Director::getInstance()->getRunningScene()->addChild(point10,2);
+        
         auto newSprite11 = Sprite::create("Blue_Front1.png");
         newSprite11->setPosition(550, 64);
         newSprite11->setName("sprite12");
         newSprite11->setAnchorPoint(Vec2(1,1));
         Director::getInstance()->getRunningScene()->addChild(newSprite11,1);
         
+        auto point11 = Sprite::create("dot.png");
+        point11->setName("point11");
+        point11->setPosition(newSprite11->getPosition());
+        Director::getInstance()->getRunningScene()->addChild(point11,2);
+        
         auto newSprite22 = Sprite::create("Blue_Front1.png");
         newSprite22->setPosition(700, 64);
         newSprite22->setName("sprite13");
         newSprite22->setAnchorPoint(Vec2(0.5,0.5));
         Director::getInstance()->getRunningScene()->addChild(newSprite22,1);
+        
+        auto point22 = Sprite::create("dot.png");
+        point22->setName("point22");
+        point22->setPosition(newSprite22->getPosition());
+        Director::getInstance()->getRunningScene()->addChild(point22,2);
         
         auto anode = Director::getInstance()->getRunningScene()->getChildByName("menuNode");
         auto bnode = anode->getChildByName("menu");
@@ -242,6 +267,11 @@ Scene* Chapter3::createScene()
         Director::getInstance()->getRunningScene()->removeChildByName("sprite11");
         Director::getInstance()->getRunningScene()->removeChildByName("sprite12");
         Director::getInstance()->getRunningScene()->removeChildByName("sprite13");
+        Director::getInstance()->getRunningScene()->removeChildByName("point00");
+        Director::getInstance()->getRunningScene()->removeChildByName("point01");
+        Director::getInstance()->getRunningScene()->removeChildByName("point10");
+        Director::getInstance()->getRunningScene()->removeChildByName("point11");
+        Director::getInstance()->getRunningScene()->removeChildByName("point22");
         
         auto newSprite = Sprite::create("Blue_Front1.png");
         newSprite->setPosition(100, 64);
@@ -283,41 +313,65 @@ Scene* Chapter3::createScene()
         Director::getInstance()->getRunningScene()->removeChildByName("sprite14");
         Director::getInstance()->getRunningScene()->removeChildByName("sprite15");
         Director::getInstance()->getRunningScene()->removeChildByName("sprite16");
-        Director::getInstance()->getRunningScene()->removeChildByName("sprite17");
         
         auto newSprite = Sprite::create("Blue_Front1.png");
         newSprite->setPosition(100, 64);
-        newSprite->setName("sprite18");
+        newSprite->setName("sprite17");
         newSprite->setAnchorPoint(Vec2(0,0));
         Director::getInstance()->getRunningScene()->addChild(newSprite,1);
         
+        auto point00 = Sprite::create("dot.png");
+        point00->setName("point00");
+        point00->setPosition(newSprite->getPosition());
+        Director::getInstance()->getRunningScene()->addChild(point00,2);
+        
         auto newSpriteRotateP20 = Sprite::create("Blue_Front1.png");
         newSpriteRotateP20->setPosition(250, 64);
-        newSpriteRotateP20->setName("sprite19");
+        newSpriteRotateP20->setName("sprite18");
         newSpriteRotateP20->setAnchorPoint(Vec2(0,0));
         newSpriteRotateP20->setRotation(20.0f);
         Director::getInstance()->getRunningScene()->addChild(newSpriteRotateP20,1);
         
-        auto newSpriteSkewN20 = Sprite::create("Blue_Front1.png");
-        newSpriteSkewN20->setPosition(400, 64);
-        newSpriteSkewN20->setName("sprite20");
-        newSpriteSkewN20->setAnchorPoint(Vec2(0,0));
-        newSpriteSkewN20->setRotation(-20.0f);
-        Director::getInstance()->getRunningScene()->addChild(newSpriteSkewN20,1);
+        auto pointP20 = Sprite::create("dot.png");
+        pointP20->setName("pointP20");
+        pointP20->setPosition(newSpriteRotateP20->getPosition());
+        Director::getInstance()->getRunningScene()->addChild(pointP20,2);
+        
+        auto newSpriteRotateN20 = Sprite::create("Blue_Front1.png");
+        newSpriteRotateN20->setPosition(400, 64);
+        newSpriteRotateN20->setName("sprite19");
+        newSpriteRotateN20->setAnchorPoint(Vec2(0,0));
+        newSpriteRotateN20->setRotation(-20.0f);
+        Director::getInstance()->getRunningScene()->addChild(newSpriteRotateN20,1);
+        
+        auto pointN20 = Sprite::create("dot.png");
+        pointN20->setName("pointN20");
+        pointN20->setPosition(newSpriteRotateN20->getPosition());
+        Director::getInstance()->getRunningScene()->addChild(pointN20,2);
         
         auto newSpriteRotateP60 = Sprite::create("Blue_Front1.png");
         newSpriteRotateP60->setPosition(550, 64);
-        newSpriteRotateP60->setName("sprite21");
+        newSpriteRotateP60->setName("sprite20");
         newSpriteRotateP60->setAnchorPoint(Vec2(0,0));
         newSpriteRotateP60->setRotation(60.0f);
         Director::getInstance()->getRunningScene()->addChild(newSpriteRotateP60,1);
         
+        auto pointP60 = Sprite::create("dot.png");
+        pointP60->setName("pointP60");
+        pointP60->setPosition(newSpriteRotateP60->getPosition());
+        Director::getInstance()->getRunningScene()->addChild(pointP60,2);
+        
         auto newSpriteRotateN60 = Sprite::create("Blue_Front1.png");
         newSpriteRotateN60->setPosition(700, 64);
-        newSpriteRotateN60->setName("sprite22");
+        newSpriteRotateN60->setName("sprite21");
         newSpriteRotateN60->setAnchorPoint(Vec2(0,0));
         newSpriteRotateN60->setRotation(-60.0f);
         Director::getInstance()->getRunningScene()->addChild(newSpriteRotateN60,1);
+        
+        auto pointN60 = Sprite::create("dot.png");
+        pointN60->setName("pointN60");
+        pointN60->setPosition(newSpriteRotateN60->getPosition());
+        Director::getInstance()->getRunningScene()->addChild(pointN60,2);
         
         auto anode = Director::getInstance()->getRunningScene()->getChildByName("menuNode");
         auto bnode = anode->getChildByName("menu");
