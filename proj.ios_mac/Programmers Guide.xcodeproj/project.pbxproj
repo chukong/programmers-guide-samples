@@ -10,6 +10,20 @@
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
+		2963CEA919EE55A00013B799 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 503AE10317EB98FF00D1A890 /* main.cpp */; };
+		2963CEAB19EE55A00013B799 /* libcocos2d Mac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 50BA599119D492B60070A133 /* libcocos2d Mac.a */; };
+		2963CEAC19EE55A00013B799 /* libcurl.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 503AE11117EB99EE00D1A890 /* libcurl.dylib */; };
+		2963CEAD19EE55A00013B799 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB412928DE900B8313A /* libz.dylib */; };
+		2963CEAE19EE55A00013B799 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 503AE11A17EB9C5A00D1A890 /* IOKit.framework */; };
+		2963CEAF19EE55A00013B799 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5087E78A17EB975400C73F5D /* OpenGL.framework */; };
+		2963CEB019EE55A00013B799 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5087E78817EB974C00C73F5D /* AppKit.framework */; };
+		2963CEB119EE55A00013B799 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		2963CEB219EE55A00013B799 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF1C47EA1293683800B63C5D /* QuartzCore.framework */; };
+		2963CEB319EE55A00013B799 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44C620B132DFF330009C878 /* OpenAL.framework */; };
+		2963CEB419EE55A00013B799 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44C620D132DFF430009C878 /* AVFoundation.framework */; };
+		2963CEB519EE55A00013B799 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44C620F132DFF4E0009C878 /* AudioToolbox.framework */; };
+		2963CEC319EE57A80013B799 /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2963CEBD19EE57A80013B799 /* AppDelegate.cpp */; };
+		2963CEC819EE57C80013B799 /* Chapter6.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2963CEC619EE57C80013B799 /* Chapter6.cpp */; };
 		3EE7F8C019ED607500448914 /* Icon-120.png in Resources */ = {isa = PBXBuildFile; fileRef = 5087E77617EB970100C73F5D /* Icon-120.png */; };
 		3EE7F8C219ED607500448914 /* Icon-76.png in Resources */ = {isa = PBXBuildFile; fileRef = 5087E77B17EB970100C73F5D /* Icon-76.png */; };
 		3EE7F8C319ED607500448914 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5087E77417EB970100C73F5D /* Default@2x.png */; };
@@ -384,6 +398,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		2963CEA119EE55A00013B799 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50BA598B19D492B60070A133 /* cocos2d_libs.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 1551A33E158F2AB200E66CFE;
+			remoteInfo = "libcocos2d Mac";
+		};
 		3EE7F8BE19ED607500448914 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 50BA598B19D492B60070A133 /* cocos2d_libs.xcodeproj */;
@@ -476,6 +497,11 @@
 		1D6058910D05DD3D006BFB54 /* Chapter 2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Chapter 2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2963CEB919EE55A00013B799 /* Chapter 6 Mac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Chapter 6 Mac.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2963CEBD19EE57A80013B799 /* AppDelegate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AppDelegate.cpp; sourceTree = "<group>"; };
+		2963CEBE19EE57A80013B799 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2963CEC619EE57C80013B799 /* Chapter6.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Chapter6.cpp; sourceTree = "<group>"; };
+		2963CEC719EE57C80013B799 /* Chapter6.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Chapter6.h; sourceTree = "<group>"; };
 		3EE7F8EC19ED607500448914 /* Chapter 12 iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Chapter 12 iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EE7F90D19ED607800448914 /* Chapter 12 Mac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Chapter 12 Mac.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EE7F91019ED60DF00448914 /* AppDelegate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AppDelegate.cpp; sourceTree = "<group>"; };
@@ -626,6 +652,24 @@
 				D44C620C132DFF330009C878 /* OpenAL.framework in Frameworks */,
 				D44C620E132DFF430009C878 /* AVFoundation.framework in Frameworks */,
 				D44C6210132DFF4E0009C878 /* AudioToolbox.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2963CEAA19EE55A00013B799 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2963CEAB19EE55A00013B799 /* libcocos2d Mac.a in Frameworks */,
+				2963CEAC19EE55A00013B799 /* libcurl.dylib in Frameworks */,
+				2963CEAD19EE55A00013B799 /* libz.dylib in Frameworks */,
+				2963CEAE19EE55A00013B799 /* IOKit.framework in Frameworks */,
+				2963CEAF19EE55A00013B799 /* OpenGL.framework in Frameworks */,
+				2963CEB019EE55A00013B799 /* AppKit.framework in Frameworks */,
+				2963CEB119EE55A00013B799 /* Foundation.framework in Frameworks */,
+				2963CEB219EE55A00013B799 /* QuartzCore.framework in Frameworks */,
+				2963CEB319EE55A00013B799 /* OpenAL.framework in Frameworks */,
+				2963CEB419EE55A00013B799 /* AVFoundation.framework in Frameworks */,
+				2963CEB519EE55A00013B799 /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -823,8 +867,20 @@
 				7E53694419EC22F4005C3C64 /* Chapter 4 Mac.app */,
 				3EE7F8EC19ED607500448914 /* Chapter 12 iOS.app */,
 				3EE7F90D19ED607800448914 /* Chapter 12 Mac.app */,
+				2963CEB919EE55A00013B799 /* Chapter 6 Mac.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		2963CEBC19EE57A80013B799 /* chapter6 */ = {
+			isa = PBXGroup;
+			children = (
+				2963CEC619EE57C80013B799 /* Chapter6.cpp */,
+				2963CEC719EE57C80013B799 /* Chapter6.h */,
+				2963CEBD19EE57A80013B799 /* AppDelegate.cpp */,
+				2963CEBE19EE57A80013B799 /* AppDelegate.h */,
+			);
+			path = chapter6;
 			sourceTree = "<group>";
 		};
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
@@ -931,6 +987,7 @@
 		50BA599819D493310070A133 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				2963CEBC19EE57A80013B799 /* chapter6 */,
 				3EE7F90F19ED60DF00448914 /* chapter12 */,
 				50BA599919D493310070A133 /* chapter2 */,
 				7EBF317419E7807500A7FBEA /* chapter3 */,
@@ -1109,6 +1166,24 @@
 			name = "Chapter 2 iOS";
 			productName = iphone;
 			productReference = 1D6058910D05DD3D006BFB54 /* Chapter 2.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2963CE9F19EE55A00013B799 /* Chapter 6 Mac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2963CEB619EE55A00013B799 /* Build configuration list for PBXNativeTarget "Chapter 6 Mac" */;
+			buildPhases = (
+				2963CEA219EE55A00013B799 /* Resources */,
+				2963CEA619EE55A00013B799 /* Sources */,
+				2963CEAA19EE55A00013B799 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2963CEA019EE55A00013B799 /* PBXTargetDependency */,
+			);
+			name = "Chapter 6 Mac";
+			productName = iphone;
+			productReference = 2963CEB919EE55A00013B799 /* Chapter 6 Mac.app */;
 			productType = "com.apple.product-type.application";
 		};
 		3EE7F8BC19ED607500448914 /* Chapter 12 iOS */ = {
@@ -1316,6 +1391,7 @@
 				50BA59E119D499360070A133 /* Chapter 9 Mac */,
 				3EE7F8BC19ED607500448914 /* Chapter 12 iOS */,
 				3EE7F8EE19ED607800448914 /* Chapter 12 Mac */,
+				2963CE9F19EE55A00013B799 /* Chapter 6 Mac */,
 			);
 		};
 /* End PBXProject section */
@@ -1364,6 +1440,13 @@
 				7E1526BA19D4DE890013F222 /* White_Front1.png in Resources */,
 				5087E77E17EB970100C73F5D /* Default.png in Resources */,
 				50EF629717ECD46A001EB2F8 /* Icon-58.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2963CEA219EE55A00013B799 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1625,6 +1708,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2963CEA619EE55A00013B799 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2963CEC319EE57A80013B799 /* AppDelegate.cpp in Sources */,
+				2963CEC819EE57C80013B799 /* Chapter6.cpp in Sources */,
+				2963CEA919EE55A00013B799 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3EE7F8D619ED607500448914 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1748,6 +1841,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		2963CEA019EE55A00013B799 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "libcocos2d Mac";
+			targetProxy = 2963CEA119EE55A00013B799 /* PBXContainerItemProxy */;
+		};
 		3EE7F8BD19ED607500448914 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "libcocos2d iOS";
@@ -1859,6 +1957,64 @@
 				PRODUCT_NAME = "Chapter 2";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Release;
+		};
+		2963CEB719EE55A00013B799 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = mac/Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					USE_FILE32API,
+					CC_TARGET_OS_MAC,
+					"COCOS2D_DEBUG=1",
+					"CC_ENABLE_CHIPMUNK_INTEGRATION=1",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../libs/cocos2d-x/cocos/platform/mac",
+					"$(SRCROOT)/../libs/cocos2d-x/external/glfw3/include/mac",
+				);
+				INFOPLIST_FILE = "Chapter 6 Mac-Info.plist";
+				LIBRARY_SEARCH_PATHS = "";
+				PRODUCT_NAME = "Chapter 6 Mac";
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Debug;
+		};
+		2963CEB819EE55A00013B799 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = mac/Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					USE_FILE32API,
+					CC_TARGET_OS_MAC,
+					"CC_ENABLE_CHIPMUNK_INTEGRATION=1",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../libs/cocos2d-x/cocos/platform/mac",
+					"$(SRCROOT)/../libs/cocos2d-x/external/glfw3/include/mac",
+				);
+				INFOPLIST_FILE = "Chapter 6 Mac-Info.plist";
+				LIBRARY_SEARCH_PATHS = "";
+				PRODUCT_NAME = "Chapter 6 Mac";
 				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Release;
@@ -2450,6 +2606,15 @@
 			buildConfigurations = (
 				1D6058940D05DD3E006BFB54 /* Debug */,
 				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		2963CEB619EE55A00013B799 /* Build configuration list for PBXNativeTarget "Chapter 6 Mac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2963CEB719EE55A00013B799 /* Debug */,
+				2963CEB819EE55A00013B799 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
