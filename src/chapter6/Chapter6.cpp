@@ -3,54 +3,214 @@
 
 USING_NS_CC;
 
+//==========================================================================
+#define CL(__className__) [](){ return __className__::create();}
+static Size s_visibleSize;
+static Vec2 s_origin;
+static Vec2 s_centre;
+static Scene* s_currScene;
+
+
+namespace
+{
+    static std::function<Layer*()> createFunctions[] = {
+        CL(UIDemoLabel),
+        CL(UIDemoMenu),
+        CL(UIDemoTextField),
+        CL(UIDemoControlExtensions),
+    };
+    
+    static int sceneIdx = -1;
+    
+#define MAX_LAYER (sizeof(createFunctions) / sizeof(createFunctions[0]))
+    
+    static Layer* next()
+    {
+        sceneIdx++;
+        sceneIdx = sceneIdx % MAX_LAYER;
+        
+        auto layer = (createFunctions[sceneIdx])();
+        return layer;
+    }
+    
+    static Layer* back()
+    {
+        sceneIdx--;
+        int total = MAX_LAYER;
+        if( sceneIdx < 0 )
+            sceneIdx += total;
+        
+        auto layer = (createFunctions[sceneIdx])();
+        return layer;
+    }
+    
+    static Layer* restart()
+    {
+        auto layer = (createFunctions[sceneIdx])();
+        return layer;
+    }
+}
+
 Scene* Chapter6::createScene()
 {
+    sceneIdx = -1;
+    
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     // some upfront items that we need
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    Size visibleSize = Director::getInstance()->getVisibleSize();
-    Vec2 origin = Director::getInstance()->getVisibleOrigin();
-    
-    Size playingSize = Size(visibleSize.width, visibleSize.height - (visibleSize.height/8)); // actual playing size to work with
+    s_visibleSize = Director::getInstance()->getVisibleSize();
+    s_origin = Director::getInstance()->getVisibleOrigin();
+    s_centre = s_origin + s_visibleSize / 2;
     
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    // create a scene for our game to hold everything
+    // create a scene with physics world for our game to hold everything
     // 'scene' is an autorelease object
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    auto scene = Scene::create();
+    s_currScene = Scene::create();
     
-    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    // create the title dialog
-    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    auto color = Color4F(1.0f, 0.5f, 0.3f, 1);
-    
-    int verts = 4;
-    
-    cocos2d::Point stripe1[] = {
-        cocos2d::Point(0,0),
-        cocos2d::Point(0,200),
-        cocos2d::Point(600,200),
-        cocos2d::Point(600,0)
-    };
-    
-    cocos2d::DrawNode* dotNode1 = cocos2d::DrawNode::create();
-    dotNode1->setContentSize(Size(600, 200));
-    dotNode1->drawPolygon(stripe1, verts, color, 0, color);
-    
-    dotNode1->setPosition(Vec2(visibleSize.width/2 - (dotNode1->getContentSize().width / 2),
-                               playingSize.height - dotNode1->getContentSize().height));
-    
-    auto label = Label::createWithTTF("Super Cocos Aliens", "Marker Felt.ttf", 64);
-    dotNode1->addChild(label, 1);
-    label->setPosition(Vec2(dotNode1->getContentSize().width/2, dotNode1->getContentSize().height/2));
-
-    scene->addChild(dotNode1, -1);
-
-   
-    
-    
-    
+    s_currScene->addChild(next());
     
     // return the scene
-    return scene;
+    return s_currScene;
+}
+
+bool UIDemo::init()
+{
+    if (Layer::init())
+    {
+        //create title
+        TTFConfig ttfConfig("arial.ttf", 32);
+        auto titleLabel = Label::createWithTTF(ttfConfig,"UI Chapter Samples");
+        addChild(titleLabel, 9999);
+        titleLabel->setPosition(Vec2(s_origin.x + s_visibleSize.width/2, s_origin.y + s_visibleSize.height - 30));
+        
+        //create subtitle
+        std::string strSubtitle = subtitle();
+        if( ! strSubtitle.empty() )
+        {
+            ttfConfig.fontSize = 20;
+            auto subTitleLabel = Label::createWithTTF(ttfConfig, strSubtitle.c_str());
+            addChild(subTitleLabel, 9999);
+            subTitleLabel->setPosition(Vec2(s_origin.x + s_visibleSize.width/2, s_origin.y + s_visibleSize.height - 70));
+        }
+        
+        //create menu
+        auto backItem = MenuItemImage::create("leftNormal.png", "leftSelected.png", CC_CALLBACK_1(UIDemo::backCallback, this) );
+        auto restartItem = MenuItemImage::create("restartNormal.png", "restartSelected.png", CC_CALLBACK_1(UIDemo::restartCallback, this) );
+        auto nextItem = MenuItemImage::create("rightNormal.png", "rightSelected.png", CC_CALLBACK_1(UIDemo::nextCallback, this) );
+        
+        auto menu = Menu::create(backItem, restartItem, nextItem, nullptr);
+        menu->setPosition(Vec2::ZERO);
+        addChild(menu, 9999);
+        
+        auto restartItemSize = restartItem->getContentSize();
+        backItem->setPosition(s_centre.x - restartItemSize.width * 2, s_origin.y + restartItemSize.height / 2);
+        restartItem->setPosition(s_centre.x, s_origin.y + restartItemSize.height / 2);
+        nextItem->setPosition(s_centre.x + restartItemSize.width * 2, s_origin.y + restartItemSize.height/2);
+        
+        //create border
+        auto node = Node::create();
+        auto physicsBody = PhysicsBody::createEdgeBox(s_visibleSize,PhysicsMaterial(0.1f, 1, 0.0f));
+        node->setPhysicsBody(physicsBody);
+        node->setPosition(s_centre);
+        this->addChild(node);
+        
+        
+        return true;
+    }
+    
+    return false;
+}
+
+void UIDemo::restartCallback(Ref* sender)
+{
+    s_currScene = Scene::create();
+    s_currScene->addChild( restart() );
+    Director::getInstance()->replaceScene(s_currScene);
+}
+
+void UIDemo::nextCallback(Ref* sender)
+{
+    s_currScene = Scene::create();
+    s_currScene->addChild( next() );
+    Director::getInstance()->replaceScene(s_currScene);
+}
+
+void UIDemo::backCallback(Ref* sender)
+{
+    s_currScene = Scene::create();
+    s_currScene->addChild( back() );
+    Director::getInstance()->replaceScene(s_currScene);
+}
+
+//=====================================================================================
+// MARK: - UIDemoLabel
+std::string UIDemoLabel::subtitle() const
+{
+    return "Label Sample Code";
+}
+
+bool UIDemoLabel::init()
+{
+    if (UIDemo::init()) {
+        
+      
+        return true;
+    }
+    
+    return true;
+}
+
+//=====================================================================================
+// MARK: - UIDemoMenu
+std::string UIDemoMenu::subtitle() const
+{
+    return "Menu Sample Code";
+}
+
+bool UIDemoMenu::init()
+{
+    if (UIDemo::init()) {
+        
+        
+        return true;
+    }
+    
+    return true;
+}
+
+//=====================================================================================
+// MARK: - UIDemoTextField
+std::string UIDemoTextField::subtitle() const
+{
+    return "TextField Sample Code";
+}
+
+bool UIDemoTextField::init()
+{
+    if (UIDemo::init()) {
+        
+        
+        return true;
+    }
+    
+    return true;
+}
+
+//=====================================================================================
+// MARK: - UIDemoControlExtensions
+std::string UIDemoControlExtensions::subtitle() const
+{
+    return "ControlExtensions Sample Code";
+}
+
+bool UIDemoControlExtensions::init()
+{
+    if (UIDemo::init()) {
+        
+        
+        return true;
+    }
+    
+    return true;
 }
