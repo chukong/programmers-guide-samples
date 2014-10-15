@@ -70,6 +70,38 @@ protected:
     virtual bool init();
 };
 
+class UIDemoEditBox : public UIDemo
+{
+public:
+    CREATE_FUNC(UIDemoEditBox);
+    
+    virtual std::string subtitle() const override;
+    
+protected:
+    virtual bool init();
+};
+
+class UIDemoScrollView : public UIDemo
+{
+public:
+    CREATE_FUNC(UIDemoScrollView);
+    
+    virtual std::string subtitle() const override;
+    
+protected:
+    virtual bool init();
+};
+
+class UIDemoTableView : public UIDemo
+{
+public:
+    CREATE_FUNC(UIDemoTableView);
+    
+    virtual std::string subtitle() const override;
+    
+protected:
+    virtual bool init();
+};
 
 
 #endif // __Scane_Chapter6__

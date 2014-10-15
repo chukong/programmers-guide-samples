@@ -18,6 +18,9 @@ namespace
         CL(UIDemoMenu),
         CL(UIDemoTextField),
         CL(UIDemoControlExtensions),
+        CL(UIDemoEditBox),
+        CL(UIDemoScrollView),
+        CL(UIDemoTableView),
     };
     
     static int sceneIdx = -1;
@@ -107,13 +110,6 @@ bool UIDemo::init()
         backItem->setPosition(s_centre.x - restartItemSize.width * 2, s_origin.y + restartItemSize.height / 2);
         restartItem->setPosition(s_centre.x, s_origin.y + restartItemSize.height / 2);
         nextItem->setPosition(s_centre.x + restartItemSize.width * 2, s_origin.y + restartItemSize.height/2);
-        
-        //create border
-        auto node = Node::create();
-        auto physicsBody = PhysicsBody::createEdgeBox(s_visibleSize,PhysicsMaterial(0.1f, 1, 0.0f));
-        node->setPhysicsBody(physicsBody);
-        node->setPosition(s_centre);
-        this->addChild(node);
         
         
         return true;
@@ -205,6 +201,60 @@ std::string UIDemoControlExtensions::subtitle() const
 }
 
 bool UIDemoControlExtensions::init()
+{
+    if (UIDemo::init()) {
+        
+        
+        return true;
+    }
+    
+    return true;
+}
+
+//=====================================================================================
+// MARK: - UIDemoEditBox
+std::string UIDemoEditBox::subtitle() const
+{
+    return "EditBox Sample Code";
+}
+
+bool UIDemoEditBox::init()
+{
+    if (UIDemo::init()) {
+        
+        
+        return true;
+    }
+    
+    return true;
+}
+
+//=====================================================================================
+// MARK: - UIDemoScrollView
+std::string UIDemoScrollView::subtitle() const
+{
+    return "ScrollView Sample Code";
+}
+
+bool UIDemoScrollView::init()
+{
+    if (UIDemo::init()) {
+        
+        
+        return true;
+    }
+    
+    return true;
+}
+
+//=====================================================================================
+// MARK: - UIDemoTableView
+std::string UIDemoTableView::subtitle() const
+{
+    return "TableView Sample Code";
+}
+
+bool UIDemoTableView::init()
 {
     if (UIDemo::init()) {
         
