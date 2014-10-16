@@ -66,6 +66,7 @@ public:
     CREATE_FUNC(UIDemoMenu);
     
     virtual std::string subtitle() const override;
+    void spriteMenuItemCallback(Ref* ref);
     
 protected:
     virtual bool init();

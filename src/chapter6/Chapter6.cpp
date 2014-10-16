@@ -279,13 +279,68 @@ std::string UIDemoMenu::subtitle() const
 bool UIDemoMenu::init()
 {
     if (UIDemo::init()) {
+        //create a menu with Sprites, one menuItem which don't use lambda
+        auto menuItemSprite = MenuItemSprite::create(Sprite::create("menuItemSpriteNormal.png"),
+                                                     Sprite::create("menuItemSpriteSelected.png"),
+                                                     CC_CALLBACK_1(UIDemoMenu::spriteMenuItemCallback, this));
+        menuItemSprite->setPosition(s_centre + Vec2(0,100));
         
+        auto menuSprite = Menu::createWithItem(menuItemSprite);
+        //we must call menu->setPosition() here
+        menuSprite->setPosition(Vec2::ZERO);
+        this->addChild(menuSprite);
+        
+        //create a menu with Labels, three menu items which use lambda
+        Vector<MenuItem*> labelItems;
+        for (int i = 0; i < 3; ++i) {
+            std::string str = StringUtils::format("Label MenuItem %d", i+1);
+            auto label = Label::createWithSystemFont(str, "Arial", 20);
+            MenuItemLabel *labelItem = MenuItemLabel::create(label,[=](Ref* sender){
+                auto labelItem = (MenuItemLabel*)sender;
+                CCLOG("label item %d is clicked", labelItem->getTag());
+                
+            });
+            labelItem->setTag(i+1);
+            labelItem->setPosition(s_centre + Vec2((i+1) * (labelItem->getContentSize().width + 20) - 400, 0));
+            labelItems.pushBack(labelItem);
+        }
+        auto menuLabel = Menu::createWithArray(labelItems);
+        menuLabel->setPosition(Vec2::ZERO);
+        this->addChild(menuLabel);
+        
+        //create a menu with Toggle MenuItems and alignment
+        auto menuItemImage = MenuItemImage::create("menuItemSpriteNormal.png", "menuItemSpriteSelected.png",[=](Ref*){
+            CCLOG("menu item image be clicked!");
+        });
+        
+        auto menuItemOn = MenuItemFont::create("On", nullptr);
+        auto menuItemOff = MenuItemFont::create("Off", nullptr);
+        auto menuItemToggle = MenuItemToggle::createWithCallback([=](Ref* sender){
+            auto toggleItem = (MenuItemToggle*)sender;
+            //pay attention to the log
+            if (toggleItem->getSelectedItem() == menuItemOn) {
+                CCLOG("off menu clicked!");
+            }else{
+                CCLOG("on menu clicked!");
+            }
+        }, menuItemOn, menuItemOff,nullptr);
+        auto menuMixed = Menu::create(menuItemImage, menuItemToggle,nullptr);
+        menuMixed->alignItemsVertically();
+        menuMixed->setPosition(s_centre + Vec2(50,-100));
+        this->addChild(menuMixed);
         
         return true;
     }
     
     return true;
 }
+
+void UIDemoMenu::spriteMenuItemCallback(cocos2d::Ref *ref)
+{
+    CCLOG("sprite menu item clicked!");
+}
+                                                             
+
 
 //=====================================================================================
 // MARK: - UIDemoTextField
