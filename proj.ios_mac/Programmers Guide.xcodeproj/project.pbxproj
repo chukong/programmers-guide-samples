@@ -931,11 +931,11 @@
 		50BA599819D493310070A133 /* src */ = {
 			isa = PBXGroup;
 			children = (
-				3EE7F90F19ED60DF00448914 /* chapter12 */,
 				50BA599919D493310070A133 /* chapter2 */,
 				7EBF317419E7807500A7FBEA /* chapter3 */,
 				7E53689C19EC20C8005C3C64 /* chapter4 */,
 				7E53686A19EAD87E005C3C64 /* chapter9 */,
+				3EE7F90F19ED60DF00448914 /* chapter12 */,
 			);
 			name = src;
 			path = ../src;
