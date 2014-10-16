@@ -236,7 +236,31 @@ std::string UIDemoLabelTypesetting::subtitle() const
 bool UIDemoLabelTypesetting::init()
 {
     if (UIDemo::init()) {
+        auto s = Director::getInstance()->getWinSize();
+        TTFConfig config("arial.ttf",30);
         
+        //create a label with left text alignment
+        auto ttf0 = Label::createWithTTF(config,"Alignment 0\nnew line",TextHAlignment::LEFT);
+        ttf0->setPosition(s_centre + Vec2(-100, 100));
+        this->addChild(ttf0);
+        
+        //create a long sentence with line wrap
+        TTFConfig config1("arial.ttf",14);
+        auto ttf1 = Label::createWithTTF(config1,"This is a very long sentence!This is a very long sentence!This is a very long sentence!This is a very long sentence!",
+                                         TextHAlignment::LEFT,
+                                         200);
+//        ttf1->setLineBreakWithoutSpace(true);     //uncomment this line to see the affects
+        ttf1->setPosition(s_centre);
+        this->addChild(ttf1);
+        
+        
+        //create a label with kerning
+        TTFConfig config2("arial.ttf",24);
+        auto ttf2 = Label::createWithTTF(config1,"Label with Kerning!");
+        ttf2->setPosition(s_centre + Vec2(0,-100));
+        ttf2->setTextColor(Color4B::RED);
+        ttf2->setAdditionalKerning(8.0);
+        this->addChild(ttf2);
         
         
         return true;
