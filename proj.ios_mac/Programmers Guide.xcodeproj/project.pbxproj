@@ -10,6 +10,10 @@
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
+		29386DE119EE720E0074B15D /* bitmapFontTest.fnt in Resources */ = {isa = PBXBuildFile; fileRef = 29386DDF19EE720E0074B15D /* bitmapFontTest.fnt */; };
+		29386DE219EE720E0074B15D /* bitmapFontTest.fnt in Resources */ = {isa = PBXBuildFile; fileRef = 29386DDF19EE720E0074B15D /* bitmapFontTest.fnt */; };
+		29386DE319EE720E0074B15D /* bitmapFontTest.png in Resources */ = {isa = PBXBuildFile; fileRef = 29386DE019EE720E0074B15D /* bitmapFontTest.png */; };
+		29386DE419EE720E0074B15D /* bitmapFontTest.png in Resources */ = {isa = PBXBuildFile; fileRef = 29386DE019EE720E0074B15D /* bitmapFontTest.png */; };
 		2963CEA919EE55A00013B799 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 503AE10317EB98FF00D1A890 /* main.cpp */; };
 		2963CEAB19EE55A00013B799 /* libcocos2d Mac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 50BA599119D492B60070A133 /* libcocos2d Mac.a */; };
 		2963CEAC19EE55A00013B799 /* libcurl.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 503AE11117EB99EE00D1A890 /* libcurl.dylib */; };
@@ -541,6 +545,8 @@
 		1D6058910D05DD3D006BFB54 /* Chapter 2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Chapter 2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		29386DDF19EE720E0074B15D /* bitmapFontTest.fnt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = bitmapFontTest.fnt; sourceTree = "<group>"; };
+		29386DE019EE720E0074B15D /* bitmapFontTest.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bitmapFontTest.png; sourceTree = "<group>"; };
 		2963CEB919EE55A00013B799 /* Chapter 6 Mac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Chapter 6 Mac.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2963CEBD19EE57A80013B799 /* AppDelegate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AppDelegate.cpp; sourceTree = "<group>"; };
 		2963CEBE19EE57A80013B799 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -979,6 +985,8 @@
 		2963CF0219EE5F8A0013B799 /* fonts */ = {
 			isa = PBXGroup;
 			children = (
+				29386DDF19EE720E0074B15D /* bitmapFontTest.fnt */,
+				29386DE019EE720E0074B15D /* bitmapFontTest.png */,
 				2963CF0319EE5F8A0013B799 /* arial.ttf */,
 			);
 			path = fonts;
@@ -1577,6 +1585,8 @@
 				2963CF1C19EE5F8A0013B799 /* rightSelected.png in Resources */,
 				2963CF1419EE5F8A0013B799 /* LightBlueSprite.png in Resources */,
 				2963CF0C19EE5F8A0013B799 /* blueSprite.png in Resources */,
+				29386DE319EE720E0074B15D /* bitmapFontTest.png in Resources */,
+				29386DE119EE720E0074B15D /* bitmapFontTest.fnt in Resources */,
 				2963CF1219EE5F8A0013B799 /* leftSelected.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1585,11 +1595,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29386DE219EE720E0074B15D /* bitmapFontTest.fnt in Resources */,
 				2963CF0D19EE5F8A0013B799 /* blueSprite.png in Resources */,
 				2963CF1D19EE5F8A0013B799 /* rightSelected.png in Resources */,
 				2963CF1319EE5F8A0013B799 /* leftSelected.png in Resources */,
 				2963CF1119EE5F8A0013B799 /* leftNormal.png in Resources */,
 				2963CF0F19EE5F8A0013B799 /* arial.ttf in Resources */,
+				29386DE419EE720E0074B15D /* bitmapFontTest.png in Resources */,
 				2963CF1919EE5F8A0013B799 /* restartSelected.png in Resources */,
 				2963CF1B19EE5F8A0013B799 /* rightNormal.png in Resources */,
 				2963CF1F19EE5F8A0013B799 /* whiteSprite.png in Resources */,

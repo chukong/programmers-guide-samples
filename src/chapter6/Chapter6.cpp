@@ -149,8 +149,13 @@ std::string UIDemoLabel::subtitle() const
 bool UIDemoLabel::init()
 {
     if (UIDemo::init()) {
+        //create a BMFont label
+        auto bmFntLabel = Label::createWithBMFont("bitmapFontTest.fnt", "My BMFont Label");
+        bmFntLabel->setPosition(s_centre + Vec2(0,100));
+        this->addChild(bmFntLabel);
         
-      
+        //create a TTF label
+        
         return true;
     }
     
