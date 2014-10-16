@@ -37,6 +37,29 @@ protected:
     virtual bool init();
 };
 
+class UIDemoLabelEffect : public UIDemo
+{
+public:
+    CREATE_FUNC(UIDemoLabelEffect);
+    
+    virtual std::string subtitle() const override;
+    
+protected:
+    virtual bool init();
+};
+
+class UIDemoLabelTypesetting : public UIDemo
+{
+public:
+    CREATE_FUNC(UIDemoLabelTypesetting);
+    
+    virtual std::string subtitle() const override;
+    
+protected:
+    virtual bool init();
+};
+
+
 class UIDemoMenu : public UIDemo
 {
 public:

@@ -15,6 +15,8 @@ namespace
 {
     static std::function<Layer*()> createFunctions[] = {
         CL(UIDemoLabel),
+        CL(UIDemoLabelEffect),
+        CL(UIDemoLabelTypesetting),
         CL(UIDemoMenu),
         CL(UIDemoTextField),
         CL(UIDemoControlExtensions),
@@ -150,11 +152,92 @@ bool UIDemoLabel::init()
 {
     if (UIDemo::init()) {
         //create a BMFont label
-        auto bmFntLabel = Label::createWithBMFont("bitmapFontTest.fnt", "My BMFont Label");
-        bmFntLabel->setPosition(s_centre + Vec2(0,100));
+        auto bmFntLabel = Label::createWithBMFont("bitmapFontTest.fnt", "This is BMFont Label");
+        bmFntLabel->setPosition(s_centre + Vec2(-50,100));
         this->addChild(bmFntLabel);
         
         //create a TTF label
+        auto ttfLabel = Label::createWithTTF("This is TTF Label", "arial.ttf", 40);
+        ttfLabel->setPosition(s_centre);
+        this->addChild(ttfLabel);
+        
+        //create a TTF label from TTFConfig
+        TTFConfig labelConfig;
+        labelConfig.fontFilePath = "arial.ttf";
+        labelConfig.fontSize = 20;
+        labelConfig.glyphs = GlyphCollection::DYNAMIC;
+        labelConfig.outlineSize = 0;
+        labelConfig.customGlyphs = nullptr;
+        labelConfig.distanceFieldEnabled = false;
+        auto ttfLabelFromTTFConfig = Label::createWithTTF(labelConfig, "This is TTF Label created from TTFConfig");
+        ttfLabelFromTTFConfig->setPosition(s_centre + Vec2(50, -30));
+        this->addChild(ttfLabelFromTTFConfig);
+        
+        //create a label use SystemFont
+        auto systemFontLabel = Label::createWithSystemFont("This is a Label created form System Font", "Helvetical", 36);
+        systemFontLabel->setPosition(s_centre + Vec2(100,-100));
+        this->addChild(systemFontLabel);
+        
+        //create a label use atlas file
+        auto atlasLabel = Label::createWithCharMap("labelatlasimg.png",24,32,'0');
+        atlasLabel->setString("12345");
+        atlasLabel->setPosition(s_centre + Vec2(0,150));
+        this->addChild(atlasLabel);
+
+        
+        return true;
+    }
+    
+    return true;
+}
+
+//=====================================================================================
+// MARK: - UIDemoLabelEffect
+std::string UIDemoLabelEffect::subtitle() const
+{
+    return "Label Effect Sample Code";
+}
+
+bool UIDemoLabelEffect::init()
+{
+    if (UIDemo::init()) {
+        
+        //create a white ttf label with red shadow
+        auto ttfLabelWithShadow = Label::createWithTTF("Label With Shadow", "arial.ttf", 40);
+        ttfLabelWithShadow->setPosition(s_centre + Vec2(0,100));
+        ttfLabelWithShadow->enableShadow(Color4B::RED, Size(2,2));
+        this->addChild(ttfLabelWithShadow);
+        
+        //create a white ttf label with yellow outline
+        auto ttfLabelWithOutline = Label::createWithTTF("Label with outline", "arial.ttf", 60);
+        ttfLabelWithOutline->setPosition(s_centre);
+        ttfLabelWithOutline->enableOutline(Color4B::YELLOW, 4);
+        this->addChild(ttfLabelWithOutline);
+        
+        //create a white ttf label with green glow effect
+        auto ttfLabelWithGlow = Label::createWithTTF("Label with Glow", "arial.ttf", 40);
+        ttfLabelWithGlow->setPosition(s_centre + Vec2(0,-100));
+        ttfLabelWithGlow->enableGlow(Color4B::GREEN);
+        this->addChild(ttfLabelWithGlow);
+        
+        return true;
+    }
+    
+    return true;
+}
+
+//=====================================================================================
+// MARK: - UIDemoLabelTypesetting
+std::string UIDemoLabelTypesetting::subtitle() const
+{
+    return "Label Typesetting Sample Code";
+}
+
+bool UIDemoLabelTypesetting::init()
+{
+    if (UIDemo::init()) {
+        
+        
         
         return true;
     }
