@@ -145,6 +145,12 @@
 		50EF629917ECD46A001EB2F8 /* Icon-100.png in Resources */ = {isa = PBXBuildFile; fileRef = 50EF629517ECD46A001EB2F8 /* Icon-100.png */; };
 		50EF62A217ECD613001EB2F8 /* Icon-29.png in Resources */ = {isa = PBXBuildFile; fileRef = 50EF62A017ECD613001EB2F8 /* Icon-29.png */; };
 		50EF62A317ECD613001EB2F8 /* Icon-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 50EF62A117ECD613001EB2F8 /* Icon-50.png */; };
+		5E38D2C619F0F3DD0099B433 /* Chapter9_9.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E38D2C419F0F3DD0099B433 /* Chapter9_9.cpp */; };
+		5E38D2C719F0F3DD0099B433 /* Chapter9_9.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E38D2C419F0F3DD0099B433 /* Chapter9_9.cpp */; };
+		5E38D2CA19F0F3FF0099B433 /* sphere.c3b in Resources */ = {isa = PBXBuildFile; fileRef = 5E38D2C819F0F3FF0099B433 /* sphere.c3b */; };
+		5E38D2CB19F0F3FF0099B433 /* sphere.c3b in Resources */ = {isa = PBXBuildFile; fileRef = 5E38D2C819F0F3FF0099B433 /* sphere.c3b */; };
+		5E38D2CC19F0F3FF0099B433 /* spheretex.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E38D2C919F0F3FF0099B433 /* spheretex.png */; };
+		5E38D2CD19F0F3FF0099B433 /* spheretex.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E38D2C919F0F3FF0099B433 /* spheretex.png */; };
 		7E1526B419D4DE890013F222 /* Blue_Front1.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E1526AE19D4DE890013F222 /* Blue_Front1.png */; };
 		7E1526B519D4DE890013F222 /* Blue_Front1.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E1526AE19D4DE890013F222 /* Blue_Front1.png */; };
 		7E1526B819D4DE890013F222 /* LightBlue_Front1.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E1526B019D4DE890013F222 /* LightBlue_Front1.png */; };
@@ -544,6 +550,10 @@
 		50EF629517ECD46A001EB2F8 /* Icon-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-100.png"; sourceTree = "<group>"; };
 		50EF62A017ECD613001EB2F8 /* Icon-29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-29.png"; sourceTree = "<group>"; };
 		50EF62A117ECD613001EB2F8 /* Icon-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-50.png"; sourceTree = "<group>"; };
+		5E38D2C419F0F3DD0099B433 /* Chapter9_9.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Chapter9_9.cpp; path = chapter9/Chapter9_9.cpp; sourceTree = "<group>"; };
+		5E38D2C519F0F3DD0099B433 /* Chapter9_9.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Chapter9_9.h; path = chapter9/Chapter9_9.h; sourceTree = "<group>"; };
+		5E38D2C819F0F3FF0099B433 /* sphere.c3b */ = {isa = PBXFileReference; lastKnownFileType = file; name = sphere.c3b; path = chapter9/sphere.c3b; sourceTree = "<group>"; };
+		5E38D2C919F0F3FF0099B433 /* spheretex.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = spheretex.png; path = chapter9/spheretex.png; sourceTree = "<group>"; };
 		7E1526AE19D4DE890013F222 /* Blue_Front1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Blue_Front1.png; sourceTree = "<group>"; };
 		7E1526B019D4DE890013F222 /* LightBlue_Front1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LightBlue_Front1.png; sourceTree = "<group>"; };
 		7E1526B119D4DE890013F222 /* White_Front1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = White_Front1.png; sourceTree = "<group>"; };
@@ -1035,6 +1045,8 @@
 		7E5367D919EAD7DC005C3C64 /* chapter9 */ = {
 			isa = PBXGroup;
 			children = (
+				5E38D2C819F0F3FF0099B433 /* sphere.c3b */,
+				5E38D2C919F0F3FF0099B433 /* spheretex.png */,
 				7E5367DA19EAD7F2005C3C64 /* arx.png */,
 				7E5367DB19EAD7F2005C3C64 /* axe.c3b */,
 				7E5367DC19EAD7F2005C3C64 /* Blue_Front1.png */,
@@ -1086,6 +1098,8 @@
 			children = (
 				7E53686B19EAD894005C3C64 /* AppDelegate.cpp */,
 				7E53686C19EAD894005C3C64 /* AppDelegate.h */,
+				7E53687D19EAD894005C3C64 /* Chapter9.cpp */,
+				7E53687E19EAD894005C3C64 /* Chapter9.h */,
 				7E53686D19EAD894005C3C64 /* Chapter9_1.cpp */,
 				7E53686E19EAD894005C3C64 /* Chapter9_1.h */,
 				7E53686F19EAD894005C3C64 /* Chapter9_2.cpp */,
@@ -1102,8 +1116,8 @@
 				7E53687A19EAD894005C3C64 /* Chapter9_7.h */,
 				7E53687B19EAD894005C3C64 /* Chapter9_8.cpp */,
 				7E53687C19EAD894005C3C64 /* Chapter9_8.h */,
-				7E53687D19EAD894005C3C64 /* Chapter9.cpp */,
-				7E53687E19EAD894005C3C64 /* Chapter9.h */,
+				5E38D2C419F0F3DD0099B433 /* Chapter9_9.cpp */,
+				5E38D2C519F0F3DD0099B433 /* Chapter9_9.h */,
 				7E53687F19EAD894005C3C64 /* DrawNode3D.cpp */,
 				7E53688019EAD894005C3C64 /* DrawNode3D.h */,
 			);
@@ -1481,6 +1495,7 @@
 				50BA59B719D4992C0070A133 /* Icon-76.png in Resources */,
 				7E53680419EAD7F2005C3C64 /* boss.c3b in Resources */,
 				50BA59B819D4992C0070A133 /* Default@2x.png in Resources */,
+				5E38D2CA19F0F3FF0099B433 /* sphere.c3b in Resources */,
 				7E53683619EAD7F2005C3C64 /* zhujue.c3b in Resources */,
 				7E5367FE19EAD7F2005C3C64 /* axe.c3b in Resources */,
 				7E53680019EAD7F2005C3C64 /* Blue_Front1.png in Resources */,
@@ -1498,6 +1513,7 @@
 				7E53681819EAD7F2005C3C64 /* Girl_LowerBody01.png in Resources */,
 				50BA59BD19D4992C0070A133 /* Default-568h@2x.png in Resources */,
 				7E53683819EAD7F2005C3C64 /* zhujue.c3t in Resources */,
+				5E38D2CC19F0F3FF0099B433 /* spheretex.png in Resources */,
 				50BA59BE19D4992C0070A133 /* Icon-72.png in Resources */,
 				7E53681C19EAD7F2005C3C64 /* Girl_Shoes01.png in Resources */,
 				7E53682A19EAD7F2005C3C64 /* orc.c3b in Resources */,
@@ -1528,6 +1544,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E38D2CD19F0F3FF0099B433 /* spheretex.png in Resources */,
 				7E53683519EAD7F2005C3C64 /* zhujue_jian.png in Resources */,
 				7E53682B19EAD7F2005C3C64 /* orc.c3b in Resources */,
 				7E53681B19EAD7F2005C3C64 /* Girl_LowerBody02.png in Resources */,
@@ -1537,6 +1554,7 @@
 				7E53682319EAD7F2005C3C64 /* Girl_UpperBody02.png in Resources */,
 				7E5367FF19EAD7F2005C3C64 /* axe.c3b in Resources */,
 				7E53682D19EAD7F2005C3C64 /* ReskinGirl.c3b in Resources */,
+				5E38D2CB19F0F3FF0099B433 /* sphere.c3b in Resources */,
 				7E53681119EAD7F2005C3C64 /* Girl_Glasses01.png in Resources */,
 				7E53683D19EAD7F2005C3C64 /* zhujue.png in Resources */,
 				7E53680919EAD7F2005C3C64 /* CloseNormal.png in Resources */,
@@ -1745,6 +1763,7 @@
 				7E53689319EAD894005C3C64 /* Chapter9.cpp in Sources */,
 				7E53688719EAD894005C3C64 /* Chapter9_3.cpp in Sources */,
 				7E53688D19EAD894005C3C64 /* Chapter9_6.cpp in Sources */,
+				5E38D2C619F0F3DD0099B433 /* Chapter9_9.cpp in Sources */,
 				50BA59CD19D4992C0070A133 /* AppController.mm in Sources */,
 				50BA59CE19D4992C0070A133 /* RootViewController.mm in Sources */,
 				50BA59CF19D4992C0070A133 /* main.m in Sources */,
@@ -1763,6 +1782,7 @@
 				7E53688E19EAD894005C3C64 /* Chapter9_6.cpp in Sources */,
 				7E53689619EAD894005C3C64 /* DrawNode3D.cpp in Sources */,
 				7E53689219EAD894005C3C64 /* Chapter9_8.cpp in Sources */,
+				5E38D2C719F0F3DD0099B433 /* Chapter9_9.cpp in Sources */,
 				7E53688419EAD894005C3C64 /* Chapter9_1.cpp in Sources */,
 				7E53689419EAD894005C3C64 /* Chapter9.cpp in Sources */,
 				7E53688A19EAD894005C3C64 /* Chapter9_4.cpp in Sources */,

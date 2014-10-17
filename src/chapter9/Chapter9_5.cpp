@@ -5,7 +5,6 @@ USING_NS_CC;
 
 Scene* Chapter9_5::createScene()
 {
-    //cocos2d::Rect visibleRect = Director::getInstance()->getOpenGLView()->getVisibleRect();
     Size visibleSize = Director::getInstance()->getVisibleSize();
     Vec2 origin = Director::getInstance()->getVisibleOrigin();
     auto winSize = Director::getInstance()->getWinSize();
@@ -17,7 +16,7 @@ Scene* Chapter9_5::createScene()
     auto scene = Scene::create();
     
     // add title
-    auto label = LabelTTF::create("camera test", "Arial", 24);
+    auto label = LabelTTF::create("Camera", "Arial", 24);
     label->setPosition(Vec2(origin.x+visibleSize.width/2, origin.y+visibleSize.height/2).x,
                        Vec2(origin.x+visibleSize.width/2, origin.y+visibleSize.height).y - 30);
     
@@ -25,16 +24,13 @@ Scene* Chapter9_5::createScene()
     
     //add the menu item for back to main menu
     label = LabelTTF::create("MainMenu", "Arial", 24);
-    
     auto menuItem = MenuItemLabel::create(label);
     menuItem->setCallback([&](cocos2d::Ref *sender) {
         Director::getInstance()->replaceScene(Chapter9::createScene());
     });
     auto menu = Menu::create(menuItem, nullptr);
-    
     menu->setPosition( Vec2::ZERO );
-    menuItem->setPosition( Vec2( Vec2(origin.x+visibleSize.width, origin.y+visibleSize.height/2).x - 80, Vec2(origin.x+visibleSize.width/2, origin.y).y + 25) );
-    
+    menuItem->setPosition( Vec2(origin.x+visibleSize.width - 80, origin.y + 25) );
     scene->addChild(menu, 1);
     
     auto layer3D=Layer::create();

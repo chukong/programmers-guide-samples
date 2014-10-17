@@ -6,7 +6,6 @@ USING_NS_CC;
 
 Scene* Chapter9_8::createScene()
 {
-    //cocos2d::Rect visibleRect = Director::getInstance()->getOpenGLView()->getVisibleRect();
     Size visibleSize = Director::getInstance()->getVisibleSize();
     Vec2 origin = Director::getInstance()->getVisibleOrigin();
     auto winSize = Director::getInstance()->getWinSize();
@@ -18,7 +17,7 @@ Scene* Chapter9_8::createScene()
     auto scene = Scene::create();
     
     // add title
-    auto label = LabelTTF::create("BillBoard Test", "Arial", 24);
+    auto label = LabelTTF::create("BillBoard", "Arial", 24);
     label->setPosition(Vec2(origin.x+visibleSize.width/2, origin.y+visibleSize.height/2).x,
                        Vec2(origin.x+visibleSize.width/2, origin.y+visibleSize.height).y - 30);
     
@@ -26,18 +25,14 @@ Scene* Chapter9_8::createScene()
     
     //add the menu item for back to main menu
     label = LabelTTF::create("MainMenu", "Arial", 24);
-    
     auto menuItem = MenuItemLabel::create(label);
     menuItem->setCallback([&](cocos2d::Ref *sender) {
         Director::getInstance()->replaceScene(Chapter9::createScene());
     });
     auto menu = Menu::create(menuItem, nullptr);
-    
     menu->setPosition( Vec2::ZERO );
-    menuItem->setPosition( Vec2( Vec2(origin.x+visibleSize.width, origin.y+visibleSize.height/2).x - 80, Vec2(origin.x+visibleSize.width/2, origin.y).y + 25) );
-    
+    menuItem->setPosition( Vec2(origin.x+visibleSize.width - 80, origin.y + 25) );
     scene->addChild(menu, 1);
-    
     
     
     auto layer3D=Layer::create();
@@ -88,6 +83,7 @@ Scene* Chapter9_8::createScene()
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     layer3D->setCameraMask(0x2);
     
+    // add select menue
     auto label1 = LabelTTF::create("Point Oriented", "Arial", 24);
     auto item1 = MenuItemLabel::create(label1);
     item1->setCallback([&](cocos2d::Ref *sender) {
@@ -95,9 +91,6 @@ Scene* Chapter9_8::createScene()
             billboard->setMode(BillBoard::Mode::VIEW_POINT_ORIENTED);
         }
     });
-    item1->setPosition( Vec2(Vec2(origin.x, origin.y+visibleSize.height/2).x+100,
-                             Vec2(origin.x+visibleSize.width/2, origin.y+visibleSize.height).y-item1->getContentSize().height * 3 ) );
-    
     auto label2 = LabelTTF::create("Plane Oriented", "Arial", 24);
     auto item2 = MenuItemLabel::create(label2);
     item2->setCallback([&](cocos2d::Ref *sender) {
@@ -105,8 +98,9 @@ Scene* Chapter9_8::createScene()
             billboard->setMode(BillBoard::Mode::VIEW_PLANE_ORIENTED);
         }
     });
-    item2->setPosition( Vec2(Vec2(origin.x, origin.y+visibleSize.height/2).x+100,
-                             Vec2(origin.x+visibleSize.width/2, origin.y+visibleSize.height).y-item2->getContentSize().height * 4 ) );
+    auto itemSize = item1->getContentSize();
+    item1->setPosition( Vec2(origin.x + 100, origin.y+visibleSize.height - itemSize.height * 2));
+    item2->setPosition( Vec2(origin.x + 100, origin.y+visibleSize.height - itemSize.height * 3));
     
     auto menuSelect = CCMenu::create(item1, item2, NULL);
     menuSelect->setPosition(Vec2(0,0));
