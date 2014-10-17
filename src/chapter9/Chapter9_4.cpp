@@ -30,28 +30,24 @@ Scene* Chapter9_4::createScene()
     
     scene->addChild(label, -1);
     
-    //add the menu item for back to main menu
-    label = LabelTTF::create("MainMenu", "Arial", 24);
-    
-    auto menuItem = MenuItemLabel::create(label);
-    menuItem->setCallback([&](cocos2d::Ref *sender) {
-        Director::getInstance()->replaceScene(Chapter9::createScene());
-    });
-    auto menu = Menu::create(menuItem, nullptr);
-    
-    menu->setPosition( Vec2::ZERO );
-    menuItem->setPosition( Vec2( Vec2(origin.x+visibleSize.width, origin.y+visibleSize.height/2).x - 80, Vec2(origin.x+visibleSize.width/2, origin.y).y + 25) );
-    
-    scene->addChild(menu, 1);
-    
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     // create sprite3D
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     std::string fileName = "ReskinGirl.c3b";
-    static auto sprite = Sprite3D::create(fileName);
-    sprite->setScale(5.f);
+    static Sprite3D* sprite = nullptr;
+    if(sprite == nullptr)
+        sprite = Sprite3D::create(fileName);
+    sprite->setScale(6.f);
     sprite->setPosition( Vec2(origin.x+visibleSize.width/2, origin.y+visibleSize.height/2).x,
-                        Vec2(origin.x+visibleSize.width/2, origin.y+visibleSize.height/2).y );
+                         Vec2(origin.x+visibleSize.width/2, origin.y+visibleSize.height/2).y );
+    auto animation = Animation3D::create(fileName);
+    if (animation)
+    {
+        auto animate = Animate3D::create(animation);
+        sprite->runAction(RepeatForever::create(animate));
+    }
+    scene->addChild(sprite);
+
     auto girlPants_ = sprite->getMeshByName(girlPants[1]);
     if(girlPants)
     {
@@ -203,22 +199,27 @@ Scene* Chapter9_4::createScene()
         }
     });
     
-    item1->setPosition( Vec2(Vec2(origin.x, origin.y+visibleSize.height/2).x+50,
-                             Vec2(origin.x+visibleSize.width/2, origin.y).y+item1->getContentSize().height * 4 ) );
-    item2->setPosition( Vec2(Vec2(origin.x, origin.y+visibleSize.height/2).x+50,
-                             Vec2(origin.x+visibleSize.width/2, origin.y).y+item1->getContentSize().height * 5 ) );
-    item3->setPosition( Vec2(Vec2(origin.x, origin.y+visibleSize.height/2).x+50,
-                             Vec2(origin.x+visibleSize.width/2, origin.y).y+item1->getContentSize().height * 6 ) );
-    item4->setPosition( Vec2(Vec2(origin.x, origin.y+visibleSize.height/2).x+50,
-                             Vec2(origin.x+visibleSize.width/2, origin.y).y+item1->getContentSize().height * 7 ) );
-    item5->setPosition( Vec2(Vec2(origin.x, origin.y+visibleSize.height/2).x+50,
-                             Vec2(origin.x+visibleSize.width/2, origin.y).y+item1->getContentSize().height * 8 ) );
+    auto itemSize = item1->getContentSize();
+    item1->setPosition( Vec2(origin.x + 50, origin.y+visibleSize.height - itemSize.height * 2));
+    item2->setPosition( Vec2(origin.x + 50, origin.y+visibleSize.height - itemSize.height * 3));
+    item3->setPosition( Vec2(origin.x + 50, origin.y+visibleSize.height - itemSize.height * 4));
+    item4->setPosition( Vec2(origin.x + 50, origin.y+visibleSize.height - itemSize.height * 5));
+    item5->setPosition( Vec2(origin.x + 50, origin.y+visibleSize.height - itemSize.height * 6));
     auto pMenu1 = CCMenu::create(item1,item2,item3,item4,item5,NULL);
     pMenu1->setPosition(Vec2(0,0));
     scene->addChild(pMenu1, 10);
     
-    //add to scene
-    scene->addChild(sprite);
+    //add the menu item for back to main menu
+    label = LabelTTF::create("MainMenu", "Arial", 24);
+    auto menuItem = MenuItemLabel::create(label);
+    menuItem->setCallback([&](cocos2d::Ref *sender) {
+        sprite = nullptr;
+        Director::getInstance()->replaceScene(Chapter9::createScene());
+    });
+    auto menu = Menu::create(menuItem, nullptr);
+    menu->setPosition( Vec2::ZERO );
+    menuItem->setPosition( Vec2(origin.x+visibleSize.width - 80, origin.y + 25) );
+    scene->addChild(menu, 1);
     
     // return the scene
     return scene;

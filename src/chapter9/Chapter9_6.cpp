@@ -6,8 +6,6 @@ USING_NS_CC;
 
 Scene* Chapter9_6::createScene()
 {
-    cocos2d::Rect visibleRect = Director::getInstance()->getOpenGLView()->getVisibleRect();
-
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     // create a scene
     // 'scene' is an autorelease object
@@ -38,24 +36,20 @@ _pick(false)
     auto winSize = Director::getInstance()->getWinSize();
     
     // add title
-    auto label = LabelTTF::create("AABB test", "Arial", 24);
+    auto label = LabelTTF::create("AABB", "Arial", 24);
     label->setPosition(Vec2(origin.x+visibleSize.width/2, origin.y+visibleSize.height/2).x,
                        Vec2(origin.x+visibleSize.width/2, origin.y+visibleSize.height).y - 30);
-    
     this->addChild(label, -1);
     
     //add the menu item for back to main menu
     label = LabelTTF::create("MainMenu", "Arial", 24);
-    
     auto menuItem = MenuItemLabel::create(label);
     menuItem->setCallback([&](cocos2d::Ref *sender) {
         Director::getInstance()->replaceScene(Chapter9::createScene());
     });
     auto menu = Menu::create(menuItem, nullptr);
-    
     menu->setPosition( Vec2::ZERO );
-    menuItem->setPosition( Vec2( Vec2(origin.x+visibleSize.width, origin.y+visibleSize.height/2).x - 80, Vec2(origin.x+visibleSize.width/2, origin.y).y + 25) );
-    
+    menuItem->setPosition( Vec2(origin.x+visibleSize.width - 80, origin.y + 25) );
     this->addChild(menu, 1);
     
     auto layer3D = Layer::create();

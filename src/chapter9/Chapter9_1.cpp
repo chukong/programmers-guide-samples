@@ -14,7 +14,7 @@ Scene* Chapter9_1::createScene()
     auto scene = Scene::create();
     
     // add title
-    auto label = LabelTTF::create("Static model test", "Arial", 24);
+    auto label = LabelTTF::create("3D static model", "Arial", 24);
     label->setPosition(Vec2(visibleRect.origin.x+visibleRect.size.width/2, visibleRect.origin.y+visibleRect.size.height/2).x,
                        Vec2(visibleRect.origin.x+visibleRect.size.width/2, visibleRect.origin.y+visibleRect.size.height).y - 30);
     
@@ -22,16 +22,13 @@ Scene* Chapter9_1::createScene()
     
     //add the menu item for back to main menu
     label = LabelTTF::create("MainMenu", "Arial", 24);
-    
     auto menuItem = MenuItemLabel::create(label);
     menuItem->setCallback([&](cocos2d::Ref *sender) {
         Director::getInstance()->replaceScene(Chapter9::createScene());
     });
     auto menu = Menu::create(menuItem, nullptr);
-    
     menu->setPosition( Vec2::ZERO );
-    menuItem->setPosition( Vec2( Vec2(visibleRect.origin.x+visibleRect.size.width, visibleRect.origin.y+visibleRect.size.height/2).x - 80, Vec2(visibleRect.origin.x+visibleRect.size.width/2, visibleRect.origin.y).y + 25) );
-    
+    menuItem->setPosition( Vec2( visibleRect.origin.x+visibleRect.size.width - 80, visibleRect.origin.y + 25) );
     scene->addChild(menu, 1);
     
     auto sprite = Sprite3D::create("boss.c3b");

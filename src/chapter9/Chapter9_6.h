@@ -22,8 +22,8 @@ public:
     void onTouchesEnded(const std::vector<Touch*>& touches, Event* event);
     void onTouchesMoved(const std::vector<Touch*>& touches, Event* event);
 protected:
-    DrawNode3D*               _drawAABB;
-    AABB                      _aabb;
+    DrawNode3D* _drawAABB;
+    AABB _aabb;
     Camera* _camera;
     bool _pick;
 };
