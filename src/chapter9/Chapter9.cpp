@@ -178,7 +178,7 @@ bool Chapter9::init()
     /////////////////////////////
     // 3. add your codes below...
 
-    auto label = LabelTTF::create("Chapter 10", "Arial", 24);
+    auto label = LabelTTF::create("Chapter 9", "Arial", 24);
     
     // position the label on the center of the screen
     label->setPosition(Vec2(origin.x + visibleSize.width/2,
