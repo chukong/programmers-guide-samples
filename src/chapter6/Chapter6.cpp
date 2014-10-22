@@ -18,7 +18,7 @@ namespace
         CL(UIDemoLabelTypesetting),
         CL(UIDemoMenu),
         CL(UIDemoButton),
-       
+        CL(UIDemoCheckBox),
     };
     
     static int sceneIdx = -1;
@@ -366,3 +366,33 @@ void UIDemoButton::touchEvent(cocos2d::Ref *sender, Widget::TouchEventType type)
     
 }
 
+
+//=====================================================================================
+// MARK: - UIDemoCheckBox
+std::string UIDemoCheckBox::subtitle() const
+{
+    return "CheckBox Sample Code";
+}
+
+bool UIDemoCheckBox::init()
+{
+    if (UIDemo::init()) {
+        auto checkBox = CheckBox::create("check_box_normal.png",
+                                         "check_box_normal_press.png",
+                                         "check_box_active.png",
+                                         "check_box_normal_disable.png",
+                                         "check_box_active_disable.png");
+        checkBox->setPosition(s_centre);
+        checkBox->setSelected(true);
+        checkBox->addTouchEventListener(CC_CALLBACK_2(UIDemoCheckBox::selectedEvent, this));
+        this->addChild(checkBox);
+        return true;
+    }
+    
+    return true;
+}
+
+void UIDemoCheckBox::selectedEvent(cocos2d::Ref *sender, Widget::TouchEventType type)
+{
+    
+}
