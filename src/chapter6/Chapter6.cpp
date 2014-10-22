@@ -18,11 +18,8 @@ namespace
         CL(UIDemoLabelEffect),
         CL(UIDemoLabelTypesetting),
         CL(UIDemoMenu),
-        CL(UIDemoTextField),
-        CL(UIDemoControlExtensions),
-        CL(UIDemoEditBox),
-        CL(UIDemoScrollView),
-        CL(UIDemoTableView),
+        CL(UIDemoButton),
+       
     };
     
     static int sceneIdx = -1;
@@ -343,13 +340,13 @@ void UIDemoMenu::spriteMenuItemCallback(cocos2d::Ref *ref)
 
 
 //=====================================================================================
-// MARK: - UIDemoTextField
-std::string UIDemoTextField::subtitle() const
+// MARK: - UIDemoButton
+std::string UIDemoButton::subtitle() const
 {
-    return "TextField Sample Code";
+    return "Button Sample Code";
 }
 
-bool UIDemoTextField::init()
+bool UIDemoButton::init()
 {
     if (UIDemo::init()) {
         
@@ -360,74 +357,3 @@ bool UIDemoTextField::init()
     return true;
 }
 
-//=====================================================================================
-// MARK: - UIDemoControlExtensions
-std::string UIDemoControlExtensions::subtitle() const
-{
-    return "ControlExtensions Sample Code";
-}
-
-bool UIDemoControlExtensions::init()
-{
-    if (UIDemo::init()) {
-        
-        
-        return true;
-    }
-    
-    return true;
-}
-
-//=====================================================================================
-// MARK: - UIDemoEditBox
-std::string UIDemoEditBox::subtitle() const
-{
-    return "EditBox Sample Code";
-}
-
-bool UIDemoEditBox::init()
-{
-    if (UIDemo::init()) {
-        
-        
-        return true;
-    }
-    
-    return true;
-}
-
-//=====================================================================================
-// MARK: - UIDemoScrollView
-std::string UIDemoScrollView::subtitle() const
-{
-    return "ScrollView Sample Code";
-}
-
-bool UIDemoScrollView::init()
-{
-    if (UIDemo::init()) {
-        
-        
-        return true;
-    }
-    
-    return true;
-}
-
-//=====================================================================================
-// MARK: - UIDemoTableView
-std::string UIDemoTableView::subtitle() const
-{
-    return "TableView Sample Code";
-}
-
-bool UIDemoTableView::init()
-{
-    if (UIDemo::init()) {
-        
-        
-        return true;
-    }
-    
-    return true;
-}
