@@ -21,6 +21,7 @@ namespace
         CL(UIDemoCheckBox),
         CL(UIDemoLoadingBar),
         CL(UIDemoSlider),
+        CL(UIDemoImageView)
     };
     
     static int sceneIdx = -1;
@@ -473,3 +474,33 @@ void UIDemoSlider::sliderEvent(cocos2d::Ref *sender, Slider::EventType type)
 {
     
 }
+
+//=====================================================================================
+// MARK: - UIDemoImageView
+std::string UIDemoImageView::subtitle() const
+{
+    return "ImageView Sample Code";
+}
+
+bool UIDemoImageView::init()
+{
+    if (UIDemo::init()) {
+        //create a ImageView from a png file
+        auto imageView = ImageView::create("blueSprite.png");
+        imageView->setPosition(s_centre + Vec2(-50,0));
+        this->addChild(imageView);
+        
+       //load spritesheets
+        SpriteFrameCache::getInstance()->addSpriteFramesWithFile("sprites.plist");
+        
+        //create a ImageView from SpriteFrame
+        auto imageView2 = ImageView::create("Blue_Front1.png", TextureResType::PLIST);
+        imageView2->setPosition(s_centre + Vec2(50,0));
+        this->addChild(imageView2);
+        
+        return true;
+    }
+    
+    return true;
+}
+
