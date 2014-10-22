@@ -21,7 +21,10 @@ namespace
         CL(UIDemoCheckBox),
         CL(UIDemoLoadingBar),
         CL(UIDemoSlider),
-        CL(UIDemoImageView)
+        CL(UIDemoImageView),
+        CL(UIDemoText),
+        CL(UIDemoTextBMFont),
+        CL(UIDemoTextAtlas),
     };
     
     static int sceneIdx = -1;
@@ -504,3 +507,62 @@ bool UIDemoImageView::init()
     return true;
 }
 
+
+//=====================================================================================
+// MARK: - UIDemoText
+std::string UIDemoText::subtitle() const
+{
+    return "Text Sample Code";
+}
+
+bool UIDemoText::init()
+{
+    if (UIDemo::init()) {
+        auto text = Text::create("Text","arial.ttf",30);
+        text->setPosition(s_centre);
+        this->addChild(text);
+        return true;
+    }
+    
+    return true;
+}
+
+//=====================================================================================
+// MARK: - UIDemoTextBMFont
+std::string UIDemoTextBMFont::subtitle() const
+{
+    return "TextBMFont Sample Code";
+}
+
+bool UIDemoTextBMFont::init()
+{
+    if (UIDemo::init()) {
+        auto textBMFont = TextBMFont::create("BMFont", "bitmapFontTest.fnt");
+        textBMFont->setPosition(s_centre);
+        this->addChild(textBMFont);
+        
+        return true;
+    }
+    
+    return true;
+}
+
+//=====================================================================================
+// MARK: - UIDemoTextAtlas
+std::string UIDemoTextAtlas::subtitle() const
+{
+    return "TextAtlas Sample Code";
+}
+
+bool UIDemoTextAtlas::init()
+{
+    if (UIDemo::init()) {
+        auto textAtlas = TextAtlas::create("1234567890", "labelatlasimg.png", 24, 32, "0");
+        textAtlas->setPosition(s_centre);
+        this->addChild(textAtlas);
+        
+        return true;
+    }
+    
+    return true;
+}

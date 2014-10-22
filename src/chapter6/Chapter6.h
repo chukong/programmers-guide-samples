@@ -133,4 +133,37 @@ protected:
     virtual bool init();
 };
 
+class UIDemoText : public UIDemo
+{
+public:
+    CREATE_FUNC(UIDemoText);
+    
+    virtual std::string subtitle() const override;
+    
+protected:
+    virtual bool init();
+};
+
+
+class UIDemoTextBMFont : public UIDemo
+{
+public:
+    CREATE_FUNC(UIDemoTextBMFont);
+    
+    virtual std::string subtitle() const override;
+    
+protected:
+    virtual bool init();
+};
+
+class UIDemoTextAtlas : public UIDemo
+{
+public:
+    CREATE_FUNC(UIDemoTextAtlas);
+    
+    virtual std::string subtitle() const override;
+    
+protected:
+    virtual bool init();
+};
 #endif // __Scane_Chapter6__
