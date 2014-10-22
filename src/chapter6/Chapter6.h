@@ -177,4 +177,15 @@ public:
 protected:
     virtual bool init();
 };
+
+class UIDemoTextField : public UIDemo
+{
+public:
+    CREATE_FUNC(UIDemoTextField);
+    void textFieldEvent(Ref* sender, TextField::EventType type);
+    virtual std::string subtitle() const override;
+    
+protected:
+    virtual bool init();
+};
 #endif // __Scane_Chapter6__

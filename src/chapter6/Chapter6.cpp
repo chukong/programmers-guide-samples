@@ -26,6 +26,7 @@ namespace
         CL(UIDemoTextBMFont),
         CL(UIDemoTextAtlas),
         CL(UIDemoRichText),
+        CL(UIDemoTextField)
     };
     
     static int sceneIdx = -1;
@@ -600,4 +601,32 @@ bool UIDemoRichText::init()
     }
     
     return true;
+}
+
+//=====================================================================================
+// MARK: - UIDemoTextField
+std::string UIDemoTextField::subtitle() const
+{
+    return "TextField Sample Code";
+}
+
+bool UIDemoTextField::init()
+{
+    if (UIDemo::init()) {
+        auto textField = TextField::create("input words here","Arial",30);
+        textField->setPosition(s_centre);
+        textField->addEventListener(CC_CALLBACK_2(UIDemoTextField::textFieldEvent, this));
+        this->addChild(textField);
+        return true;
+    }
+    
+    return true;
+}
+
+void UIDemoTextField::textFieldEvent(cocos2d::Ref *sender, TextField::EventType type)
+{
+    auto textField = (TextField*)sender;
+    if (type == TextField::EventType::INSERT_TEXT) {
+        CCLOG("the text is %s", textField->getString().c_str());
+    }
 }
