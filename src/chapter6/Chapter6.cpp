@@ -1,5 +1,6 @@
 #include "Chapter6.h"
 
+
 USING_NS_CC;
 
 //==========================================================================
@@ -17,16 +18,11 @@ namespace
         CL(UIDemoLabelEffect),
         CL(UIDemoLabelTypesetting),
         CL(UIDemoMenu),
-        CL(UIDemoButton),
-        CL(UIDemoCheckBox),
-        CL(UIDemoLoadingBar),
-        CL(UIDemoSlider),
-        CL(UIDemoImageView),
-        CL(UIDemoText),
-        CL(UIDemoTextBMFont),
-        CL(UIDemoTextAtlas),
-        CL(UIDemoRichText),
-        CL(UIDemoTextField)
+        CL(UIDemoTextField),
+        CL(UIDemoControlExtensions),
+        CL(UIDemoEditBox),
+        CL(UIDemoScrollView),
+        CL(UIDemoTableView),
     };
     
     static int sceneIdx = -1;
@@ -347,263 +343,6 @@ void UIDemoMenu::spriteMenuItemCallback(cocos2d::Ref *ref)
 
 
 //=====================================================================================
-// MARK: - UIDemoButton
-std::string UIDemoButton::subtitle() const
-{
-    return "Button Sample Code";
-}
-
-bool UIDemoButton::init()
-{
-    if (UIDemo::init()) {
-        auto button = Button::create("menuItemSpriteNormal.png",
-                                     "menuItemSpriteSelected.png");
-        button->setTitleText("Text Button");
-        button->setPosition(s_centre);
-        button->addTouchEventListener(CC_CALLBACK_2(UIDemoButton::touchEvent, this));
-        this->addChild(button);
-        
-        return true;
-    }
-    
-    return true;
-}
-
-void UIDemoButton::touchEvent(cocos2d::Ref *sender, Widget::TouchEventType type)
-{
-    
-}
-
-
-//=====================================================================================
-// MARK: - UIDemoCheckBox
-std::string UIDemoCheckBox::subtitle() const
-{
-    return "CheckBox Sample Code";
-}
-
-bool UIDemoCheckBox::init()
-{
-    if (UIDemo::init()) {
-        auto checkBox = CheckBox::create("check_box_normal.png",
-                                         "check_box_normal_press.png",
-                                         "check_box_active.png",
-                                         "check_box_normal_disable.png",
-                                         "check_box_active_disable.png");
-        checkBox->setPosition(s_centre);
-        checkBox->setSelected(true);
-        checkBox->addEventListener(CC_CALLBACK_2(UIDemoCheckBox::selectedEvent, this));
-        this->addChild(checkBox);
-        return true;
-    }
-    
-    return true;
-}
-
-void UIDemoCheckBox::selectedEvent(cocos2d::Ref *sender, CheckBox::EventType type)
-{
-    if (type == CheckBox::EventType::SELECTED)
-    {
-        CCLOG("checkbox selected");
-    }
-    else
-    {
-        CCLOG("checkbox unselected");
-    }
-}
-
-
-//=====================================================================================
-// MARK: - UIDemoLoadingBar
-std::string UIDemoLoadingBar::subtitle() const
-{
-    return "LoadingBar Sample Code";
-}
-
-bool UIDemoLoadingBar::init()
-{
-    if (UIDemo::init()) {
-        auto loadingBar = LoadingBar::create("sliderProgress.png");
-        loadingBar->setDirection(LoadingBar::Direction::RIGHT);
-        loadingBar->setPosition(s_centre);
-        loadingBar->setName("loadingBar");
-        this->addChild(loadingBar);
-        
-        this->schedule(schedule_selector(UIDemoLoadingBar::updateLoadingBar), 1.0 / 60);
-        return true;
-    }
-    
-    return true;
-}
-
-void UIDemoLoadingBar::updateLoadingBar(float dt)
-{
-    LoadingBar* bar = (LoadingBar*)this->getChildByName("loadingBar");
-    float percent = bar->getPercent();
-    if (percent < 100)
-    {
-        bar->setPercent(bar->getPercent()+1);
-    }
-    else
-    {
-        bar->setPercent(0);
-    }
-}
-
-
-//=====================================================================================
-// MARK: - UIDemoSlider
-std::string UIDemoSlider::subtitle() const
-{
-    return "Slider Sample Code";
-}
-
-bool UIDemoSlider::init()
-{
-    if (UIDemo::init()) {
-        auto slider = Slider::create();
-        slider->loadBarTexture("sliderTrack.png");
-        slider->loadSlidBallTextures("sliderThumb.png", "sliderThumb.png", "");
-        slider->loadProgressBarTexture("sliderProgress.png");
-        slider->setPosition(s_centre);
-        slider->addEventListener(CC_CALLBACK_2(UIDemoSlider::sliderEvent, this));
-        this->addChild(slider);
-        
-        return true;
-    }
-    
-    return true;
-}
-
-void UIDemoSlider::sliderEvent(cocos2d::Ref *sender, Slider::EventType type)
-{
-    
-}
-
-//=====================================================================================
-// MARK: - UIDemoImageView
-std::string UIDemoImageView::subtitle() const
-{
-    return "ImageView Sample Code";
-}
-
-bool UIDemoImageView::init()
-{
-    if (UIDemo::init()) {
-        //create a ImageView from a png file
-        auto imageView = ImageView::create("blueSprite.png");
-        imageView->setPosition(s_centre + Vec2(-50,0));
-        this->addChild(imageView);
-        
-       //load spritesheets
-        SpriteFrameCache::getInstance()->addSpriteFramesWithFile("sprites.plist");
-        
-        //create a ImageView from SpriteFrame
-        auto imageView2 = ImageView::create("Blue_Front1.png", TextureResType::PLIST);
-        imageView2->setPosition(s_centre + Vec2(50,0));
-        this->addChild(imageView2);
-        
-        return true;
-    }
-    
-    return true;
-}
-
-
-//=====================================================================================
-// MARK: - UIDemoText
-std::string UIDemoText::subtitle() const
-{
-    return "Text Sample Code";
-}
-
-bool UIDemoText::init()
-{
-    if (UIDemo::init()) {
-        auto text = Text::create("Text","arial.ttf",30);
-        text->setPosition(s_centre);
-        this->addChild(text);
-        return true;
-    }
-    
-    return true;
-}
-
-//=====================================================================================
-// MARK: - UIDemoTextBMFont
-std::string UIDemoTextBMFont::subtitle() const
-{
-    return "TextBMFont Sample Code";
-}
-
-bool UIDemoTextBMFont::init()
-{
-    if (UIDemo::init()) {
-        auto textBMFont = TextBMFont::create("BMFont", "bitmapFontTest.fnt");
-        textBMFont->setPosition(s_centre);
-        this->addChild(textBMFont);
-        
-        return true;
-    }
-    
-    return true;
-}
-
-//=====================================================================================
-// MARK: - UIDemoTextAtlas
-std::string UIDemoTextAtlas::subtitle() const
-{
-    return "TextAtlas Sample Code";
-}
-
-bool UIDemoTextAtlas::init()
-{
-    if (UIDemo::init()) {
-        auto textAtlas = TextAtlas::create("1234567890", "labelatlasimg.png", 24, 32, "0");
-        textAtlas->setPosition(s_centre);
-        this->addChild(textAtlas);
-        
-        return true;
-    }
-    
-    return true;
-}
-
-//=====================================================================================
-// MARK: - UIDemoRichText
-std::string UIDemoRichText::subtitle() const
-{
-    return "RichText Sample Code";
-}
-
-bool UIDemoRichText::init()
-{
-    if (UIDemo::init()) {
-        //create a RichText
-        auto richText = RichText::create();
-        
-        //use custom text area size
-        richText->ignoreContentAdaptWithSize(false);
-        richText->setContentSize(Size(100, 100));
-        
-        //create two rich text element
-        auto re1 = RichElementText::create(1, Color3B::BLUE, 255, "Blue Rich Text", "Marker Felt", 20);
-        auto re2 = RichElementText::create(1, Color3B::RED, 255, "红色的文字", "Marker Felt", 20);
-        
-        //add the created rich text element to the rich text
-        richText->pushBackElement(re1);
-        richText->pushBackElement(re2);
-        
-        richText->setPosition(s_centre);
-        this->addChild(richText);
-        
-        return true;
-    }
-    
-    return true;
-}
-
-//=====================================================================================
 // MARK: - UIDemoTextField
 std::string UIDemoTextField::subtitle() const
 {
@@ -613,20 +352,82 @@ std::string UIDemoTextField::subtitle() const
 bool UIDemoTextField::init()
 {
     if (UIDemo::init()) {
-        auto textField = TextField::create("input words here","Arial",30);
-        textField->setPosition(s_centre);
-        textField->addEventListener(CC_CALLBACK_2(UIDemoTextField::textFieldEvent, this));
-        this->addChild(textField);
+        
+        
         return true;
     }
     
     return true;
 }
 
-void UIDemoTextField::textFieldEvent(cocos2d::Ref *sender, TextField::EventType type)
+//=====================================================================================
+// MARK: - UIDemoControlExtensions
+std::string UIDemoControlExtensions::subtitle() const
 {
-    auto textField = (TextField*)sender;
-    if (type == TextField::EventType::INSERT_TEXT) {
-        CCLOG("the text is %s", textField->getString().c_str());
+    return "ControlExtensions Sample Code";
+}
+
+bool UIDemoControlExtensions::init()
+{
+    if (UIDemo::init()) {
+        
+        
+        return true;
     }
+    
+    return true;
+}
+
+//=====================================================================================
+// MARK: - UIDemoEditBox
+std::string UIDemoEditBox::subtitle() const
+{
+    return "EditBox Sample Code";
+}
+
+bool UIDemoEditBox::init()
+{
+    if (UIDemo::init()) {
+        
+        
+        return true;
+    }
+    
+    return true;
+}
+
+//=====================================================================================
+// MARK: - UIDemoScrollView
+std::string UIDemoScrollView::subtitle() const
+{
+    return "ScrollView Sample Code";
+}
+
+bool UIDemoScrollView::init()
+{
+    if (UIDemo::init()) {
+        
+        
+        return true;
+    }
+    
+    return true;
+}
+
+//=====================================================================================
+// MARK: - UIDemoTableView
+std::string UIDemoTableView::subtitle() const
+{
+    return "TableView Sample Code";
+}
+
+bool UIDemoTableView::init()
+{
+    if (UIDemo::init()) {
+        
+        
+        return true;
+    }
+    
+    return true;
 }
