@@ -25,6 +25,7 @@ namespace
         CL(UIDemoText),
         CL(UIDemoTextBMFont),
         CL(UIDemoTextAtlas),
+        CL(UIDemoRichText),
     };
     
     static int sceneIdx = -1;
@@ -560,6 +561,40 @@ bool UIDemoTextAtlas::init()
         auto textAtlas = TextAtlas::create("1234567890", "labelatlasimg.png", 24, 32, "0");
         textAtlas->setPosition(s_centre);
         this->addChild(textAtlas);
+        
+        return true;
+    }
+    
+    return true;
+}
+
+//=====================================================================================
+// MARK: - UIDemoRichText
+std::string UIDemoRichText::subtitle() const
+{
+    return "RichText Sample Code";
+}
+
+bool UIDemoRichText::init()
+{
+    if (UIDemo::init()) {
+        //create a RichText
+        auto richText = RichText::create();
+        
+        //use custom text area size
+        richText->ignoreContentAdaptWithSize(false);
+        richText->setContentSize(Size(100, 100));
+        
+        //create two rich text element
+        auto re1 = RichElementText::create(1, Color3B::BLUE, 255, "Blue Rich Text", "Marker Felt", 20);
+        auto re2 = RichElementText::create(1, Color3B::RED, 255, "红色的文字", "Marker Felt", 20);
+        
+        //add the created rich text element to the rich text
+        richText->pushBackElement(re1);
+        richText->pushBackElement(re2);
+        
+        richText->setPosition(s_centre);
+        this->addChild(richText);
         
         return true;
     }

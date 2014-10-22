@@ -166,4 +166,15 @@ public:
 protected:
     virtual bool init();
 };
+
+class UIDemoRichText : public UIDemo
+{
+public:
+    CREATE_FUNC(UIDemoRichText);
+    
+    virtual std::string subtitle() const override;
+    
+protected:
+    virtual bool init();
+};
 #endif // __Scane_Chapter6__
