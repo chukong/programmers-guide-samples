@@ -718,7 +718,6 @@
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		296358F119F78D4F003732AB /* Chapter 4 iOS copy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Chapter 4 iOS copy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		296358F219F78D4F003732AB /* Chapter 4 iOS copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Chapter 4 iOS copy-Info.plist"; path = "/Users/guanghui/Github/programmers-guide-samples/proj.ios_mac/Chapter 4 iOS copy-Info.plist"; sourceTree = "<absolute>"; };
 		296358F419F78D81003732AB /* AppDelegate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AppDelegate.cpp; path = chapter6/AppDelegate.cpp; sourceTree = "<group>"; };
 		296358F519F78D81003732AB /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = chapter6/AppDelegate.h; sourceTree = "<group>"; };
 		296358F619F78D81003732AB /* Chapter6.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Chapter6.cpp; path = chapter6/Chapter6.cpp; sourceTree = "<group>"; };
@@ -737,7 +736,6 @@
 		2963590819F78ED4003732AB /* rightNormal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rightNormal.png; sourceTree = "<group>"; };
 		2963590919F78ED4003732AB /* rightSelected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rightSelected.png; sourceTree = "<group>"; };
 		2963594219F78F74003732AB /* Chapter 4 Mac copy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Chapter 4 Mac copy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2963594319F78F74003732AB /* Chapter 4 Mac copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Chapter 4 Mac copy-Info.plist"; path = "/Users/guanghui/Github/programmers-guide-samples/proj.ios_mac/Chapter 4 Mac copy-Info.plist"; sourceTree = "<absolute>"; };
 		3EE7F8EC19ED607500448914 /* Chapter 12 iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Chapter 12 iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EE7F90D19ED607800448914 /* Chapter 12 Mac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Chapter 12 Mac.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EE7F91019ED60DF00448914 /* AppDelegate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AppDelegate.cpp; sourceTree = "<group>"; };
@@ -873,13 +871,9 @@
 		7E53694819EC234D005C3C64 /* Chapter4.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Chapter4.cpp; path = chapter4/Chapter4.cpp; sourceTree = "<group>"; };
 		7E53694919EC234D005C3C64 /* Chapter4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Chapter4.h; path = chapter4/Chapter4.h; sourceTree = "<group>"; };
 		7E9571D119F1938B00F6AE44 /* Chapter 8 iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Chapter 8 iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7E9571D219F1938C00F6AE44 /* Chapter 3 iOS copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Chapter 3 iOS copy-Info.plist"; path = "/Users/chukongus/Chukong-Inc/programmers-guide-samples/proj.ios_mac/Chapter 3 iOS copy-Info.plist"; sourceTree = "<absolute>"; };
 		7E9571FF19F196D200F6AE44 /* Chapter 8 Mac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Chapter 8 Mac.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7E95720019F196D300F6AE44 /* Chapter 4 Mac copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Chapter 4 Mac copy-Info.plist"; path = "/Users/chukongus/Chukong-Inc/programmers-guide-samples/proj.ios_mac/Chapter 4 Mac copy-Info.plist"; sourceTree = "<absolute>"; };
 		7E95722A19F197BA00F6AE44 /* Chapter 13 iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Chapter 13 iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7E95722B19F197BA00F6AE44 /* Chapter 8 iOS copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Chapter 8 iOS copy-Info.plist"; path = "/Users/chukongus/Chukong-Inc/programmers-guide-samples/proj.ios_mac/Chapter 8 iOS copy-Info.plist"; sourceTree = "<absolute>"; };
 		7E95724319F197F500F6AE44 /* Chapter 13 Mac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Chapter 13 Mac.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7E95724419F197F500F6AE44 /* Chapter 8 Mac copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Chapter 8 Mac copy-Info.plist"; path = "/Users/chukongus/Chukong-Inc/programmers-guide-samples/proj.ios_mac/Chapter 8 Mac copy-Info.plist"; sourceTree = "<absolute>"; };
 		7E95724519F1983600F6AE44 /* AppDelegate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AppDelegate.cpp; path = chapter13/AppDelegate.cpp; sourceTree = "<group>"; };
 		7E95724619F1983600F6AE44 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = chapter13/AppDelegate.h; sourceTree = "<group>"; };
 		7E95724719F1983600F6AE44 /* Chapter13.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Chapter13.cpp; path = chapter13/Chapter13.cpp; sourceTree = "<group>"; };
@@ -1282,12 +1276,6 @@
 				503AE10617EB990700D1A890 /* mac */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
 				296358FA19F78DDD003732AB /* Chapter 6 iOS-Info.plist */,
-				7E9571D219F1938C00F6AE44 /* Chapter 3 iOS copy-Info.plist */,
-				7E95720019F196D300F6AE44 /* Chapter 4 Mac copy-Info.plist */,
-				7E95722B19F197BA00F6AE44 /* Chapter 8 iOS copy-Info.plist */,
-				7E95724419F197F500F6AE44 /* Chapter 8 Mac copy-Info.plist */,
-				296358F219F78D4F003732AB /* Chapter 4 iOS copy-Info.plist */,
-				2963594319F78F74003732AB /* Chapter 4 Mac copy-Info.plist */,
 			);
 			name = CustomTemplate;
 			sourceTree = "<group>";
@@ -1382,10 +1370,10 @@
 		50BA599819D493310070A133 /* src */ = {
 			isa = PBXGroup;
 			children = (
-				296358F319F78D6F003732AB /* chapter6 */,
 				50BA599919D493310070A133 /* chapter2 */,
 				7EBF317419E7807500A7FBEA /* chapter3 */,
 				7E53689C19EC20C8005C3C64 /* chapter4 */,
+				296358F319F78D6F003732AB /* chapter6 */,
 				7E95720119F1972600F6AE44 /* chapter8 */,
 				7E53686A19EAD87E005C3C64 /* chapter9 */,
 				3EE7F90F19ED60DF00448914 /* chapter12 */,

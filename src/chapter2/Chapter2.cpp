@@ -27,14 +27,14 @@ Scene* Chapter2::createScene()
     
     int verts = 4;
     
-    cocos2d::Point stripe1[] = {
-        cocos2d::Point(0,0),
-        cocos2d::Point(0,200),
-        cocos2d::Point(600,200),
-        cocos2d::Point(600,0)
+    Vec2 stripe1[] = {
+        Vec2::ZERO,
+        Vec2(0,200),
+        Vec2(600,200),
+        Vec2(600,0)
     };
     
-    cocos2d::DrawNode* dotNode1 = cocos2d::DrawNode::create();
+    DrawNode* dotNode1 = DrawNode::create();
     dotNode1->setContentSize(Size(600, 200));
     dotNode1->drawPolygon(stripe1, verts, color, 0, color);
     
@@ -43,7 +43,8 @@ Scene* Chapter2::createScene()
     
     auto label = Label::createWithTTF("Super Cocos Aliens", "Marker Felt.ttf", 64);
     dotNode1->addChild(label, 1);
-    label->setPosition(Vec2(dotNode1->getContentSize().width/2, dotNode1->getContentSize().height/2));
+    auto dotNodeSize = dotNode1->getContentSize();
+    label->setPosition(Vec2(dotNodeSize.width/2, dotNodeSize.height/2));
 
     scene->addChild(dotNode1, -1);
 
@@ -66,19 +67,24 @@ Scene* Chapter2::createScene()
     labelNode->addChild(player2, 0);
     labelNode->addChild(player1Score, 0);
     labelNode->addChild(player2Score, 0);
+
+    auto player1Size = player1->getContentSize();
+    auto player1ScoreSize = player1Score->getContentSize();
+    auto player2Size = player2->getContentSize();
+    auto player2ScoreSize = player2Score->getContentSize();
+
+    player1->setPosition(Vec2(0 + player1Size.width / 2 + paddingX,
+                              visibleSize.height - player1Size.height / 2 - paddingY));
     
-    player1->setPosition(Vec2(0 + player1->getContentSize().width / 2 + paddingX,
-                              visibleSize.height - player1->getContentSize().height / 2 - paddingY));
+    player1Score->setPosition(Vec2(0 + player1->getPositionX() + player1ScoreSize.width + paddingX,
+                                   visibleSize.height - player1ScoreSize.height / 2 - paddingY));
     
-    player1Score->setPosition(Vec2(0 + player1->getPositionX() + player1->getContentSize().width + paddingX,
-                                   visibleSize.height - player1->getContentSize().height / 2 - paddingY));
-    
-    player2Score->setPosition(Vec2(visibleSize.width - player2Score->getContentSize().width / 2 - paddingX,
-                                   visibleSize.height - player2Score->getContentSize().height / 2 - paddingY));
-    
-    player2->setPosition(Vec2(player2Score->getPositionX() - player2Score->getContentSize().width - paddingX,
-                              visibleSize.height - player2Score->getContentSize().height / 2 - paddingY));
-    
+    player2Score->setPosition(Vec2(visibleSize.width - player2ScoreSize.width / 2 - paddingX,
+                                   visibleSize.height - player2ScoreSize.height / 2 - paddingY));
+
+    player2->setPosition(Vec2(player2Score->getPositionX() - player2Size.width - paddingX,
+                              visibleSize.height - player2Size.height / 2 - paddingY));
+
     scene->addChild(labelNode, -1);
     
     
@@ -92,18 +98,19 @@ Scene* Chapter2::createScene()
     // depending upon how large the screen is we need to decide how many blocks to lay down.
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     auto testSprite = Sprite::create("ZigzagForest_Square.png");
+    auto spriteSize = testSprite->getContentSize();
     
-    int howMany = std::ceil(visibleSize.width / testSprite->getContentSize().width);
+    int howMany = std::ceil(visibleSize.width / spriteSize.width);
     
     int sX = 0; // act as a counter for setPosition x coordinate.
     int sY = 0; // act as a counter for setPosition y coordinate.
     
-    playingSize = Size(visibleSize.width, visibleSize.height - testSprite->getContentSize().height);
+    playingSize = Size(visibleSize.width, visibleSize.height - spriteSize.height);
     
     for (int i=0; i < howMany; i++)
     {
         auto sprite = Sprite::create("ZigzagForest_Square.png");
-        sprite->setAnchorPoint(Vec2(0,0));
+        sprite->setAnchorPoint(Vec2::ZERO);
         sprite->setPosition(sX,sY);
         
         sX += sprite->getContentSize().width;
@@ -124,7 +131,7 @@ Scene* Chapter2::createScene()
     for (int i=0; i < 5; i++)
     {
         auto sprite = Sprite::create("ZigzagGrass_Mud_Round.png");
-        sprite->setAnchorPoint(Vec2(0,0));
+        sprite->setAnchorPoint(Vec2::ZERO);
         sprite->setPosition(sX,sY);
         
         sX += sprite->getContentSize().width;
@@ -169,7 +176,7 @@ Scene* Chapter2::createScene()
     menuItem1->setFontNameObj("Marker Felt.ttf");
     menuItem1->setFontSizeObj(64);
     
-    menuItem1->setCallback([&](cocos2d::Ref *sender) {
+    menuItem1->setCallback([&](Ref *sender) {
        Director::getInstance()->replaceScene(Chapter2Level1::createScene());
     });
     
