@@ -91,13 +91,24 @@ class UIDemoCheckBox : public UIDemo
 public:
     CREATE_FUNC(UIDemoCheckBox);
     
-    void selectedEvent(Ref* sender, Widget::TouchEventType type);
+    void selectedEvent(Ref* sender, CheckBox::EventType type);
     virtual std::string subtitle() const override;
     
 protected:
     virtual bool init();
 };
 
+class UIDemoLoadingBar : public UIDemo
+{
+public:
+    CREATE_FUNC(UIDemoLoadingBar);
+    
+    void updateLoadingBar(float dt);
+    virtual std::string subtitle() const override;
+    
+protected:
+    virtual bool init();
+};
 
 
 #endif // __Scane_Chapter6__

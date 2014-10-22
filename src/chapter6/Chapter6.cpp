@@ -19,6 +19,7 @@ namespace
         CL(UIDemoMenu),
         CL(UIDemoButton),
         CL(UIDemoCheckBox),
+        CL(UIDemoLoadingBar),
     };
     
     static int sceneIdx = -1;
@@ -384,7 +385,7 @@ bool UIDemoCheckBox::init()
                                          "check_box_active_disable.png");
         checkBox->setPosition(s_centre);
         checkBox->setSelected(true);
-        checkBox->addTouchEventListener(CC_CALLBACK_2(UIDemoCheckBox::selectedEvent, this));
+        checkBox->addEventListener(CC_CALLBACK_2(UIDemoCheckBox::selectedEvent, this));
         this->addChild(checkBox);
         return true;
     }
@@ -392,7 +393,52 @@ bool UIDemoCheckBox::init()
     return true;
 }
 
-void UIDemoCheckBox::selectedEvent(cocos2d::Ref *sender, Widget::TouchEventType type)
+void UIDemoCheckBox::selectedEvent(cocos2d::Ref *sender, CheckBox::EventType type)
 {
+    if (type == CheckBox::EventType::SELECTED)
+    {
+        CCLOG("checkbox selected");
+    }
+    else
+    {
+        CCLOG("checkbox unselected");
+    }
+}
+
+
+//=====================================================================================
+// MARK: - UIDemoLoadingBar
+std::string UIDemoLoadingBar::subtitle() const
+{
+    return "LoadingBar Sample Code";
+}
+
+bool UIDemoLoadingBar::init()
+{
+    if (UIDemo::init()) {
+        auto loadingBar = LoadingBar::create("sliderProgress.png");
+        loadingBar->setDirection(LoadingBar::Direction::RIGHT);
+        loadingBar->setPosition(s_centre);
+        loadingBar->setName("loadingBar");
+        this->addChild(loadingBar);
+        
+        this->schedule(schedule_selector(UIDemoLoadingBar::updateLoadingBar), 1.0 / 60);
+        return true;
+    }
     
+    return true;
+}
+
+void UIDemoLoadingBar::updateLoadingBar(float dt)
+{
+    LoadingBar* bar = (LoadingBar*)this->getChildByName("loadingBar");
+    float percent = bar->getPercent();
+    if (percent < 100)
+    {
+        bar->setPercent(bar->getPercent()+1);
+    }
+    else
+    {
+        bar->setPercent(0);
+    }
 }
