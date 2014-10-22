@@ -1,6 +1,5 @@
 #include "Chapter6.h"
 
-
 USING_NS_CC;
 
 //==========================================================================
@@ -349,11 +348,21 @@ std::string UIDemoButton::subtitle() const
 bool UIDemoButton::init()
 {
     if (UIDemo::init()) {
-        
+        auto button = Button::create("menuItemSpriteNormal.png",
+                                     "menuItemSpriteSelected.png");
+        button->setTitleText("Text Button");
+        button->setPosition(s_centre);
+        button->addTouchEventListener(CC_CALLBACK_2(UIDemoButton::touchEvent, this));
+        this->addChild(button);
         
         return true;
     }
     
     return true;
+}
+
+void UIDemoButton::touchEvent(cocos2d::Ref *sender, Widget::TouchEventType type)
+{
+    
 }
 

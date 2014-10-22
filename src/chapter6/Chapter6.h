@@ -2,10 +2,12 @@
 #define __Scane_Chapter6__
 
 #include "cocos2d.h"
+#include "ui/CocosGUI.h"
 
 #include <iostream>
 
 USING_NS_CC;
+using namespace cocos2d::ui;
 
 class Chapter6
 {
@@ -76,7 +78,8 @@ class UIDemoButton : public UIDemo
 {
 public:
     CREATE_FUNC(UIDemoButton);
-    
+   
+    void touchEvent(Ref* sender, Widget::TouchEventType type);
     virtual std::string subtitle() const override;
     
 protected:
