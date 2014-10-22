@@ -20,6 +20,7 @@ namespace
         CL(UIDemoButton),
         CL(UIDemoCheckBox),
         CL(UIDemoLoadingBar),
+        CL(UIDemoSlider),
     };
     
     static int sceneIdx = -1;
@@ -441,4 +442,34 @@ void UIDemoLoadingBar::updateLoadingBar(float dt)
     {
         bar->setPercent(0);
     }
+}
+
+
+//=====================================================================================
+// MARK: - UIDemoSlider
+std::string UIDemoSlider::subtitle() const
+{
+    return "Slider Sample Code";
+}
+
+bool UIDemoSlider::init()
+{
+    if (UIDemo::init()) {
+        auto slider = Slider::create();
+        slider->loadBarTexture("sliderTrack.png");
+        slider->loadSlidBallTextures("sliderThumb.png", "sliderThumb.png", "");
+        slider->loadProgressBarTexture("sliderProgress.png");
+        slider->setPosition(s_centre);
+        slider->addEventListener(CC_CALLBACK_2(UIDemoSlider::sliderEvent, this));
+        this->addChild(slider);
+        
+        return true;
+    }
+    
+    return true;
+}
+
+void UIDemoSlider::sliderEvent(cocos2d::Ref *sender, Slider::EventType type)
+{
+    
 }

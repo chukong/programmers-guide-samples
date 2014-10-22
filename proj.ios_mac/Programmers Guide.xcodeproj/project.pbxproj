@@ -99,6 +99,10 @@
 		2963596519F79487003732AB /* check_box_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 2963595919F79487003732AB /* check_box_normal.png */; };
 		2963596719F79CF2003732AB /* sliderProgress.png in Resources */ = {isa = PBXBuildFile; fileRef = 2963596619F79CF2003732AB /* sliderProgress.png */; };
 		2963596819F79CF2003732AB /* sliderProgress.png in Resources */ = {isa = PBXBuildFile; fileRef = 2963596619F79CF2003732AB /* sliderProgress.png */; };
+		2963596B19F7A092003732AB /* sliderThumb.png in Resources */ = {isa = PBXBuildFile; fileRef = 2963596919F7A092003732AB /* sliderThumb.png */; };
+		2963596C19F7A092003732AB /* sliderThumb.png in Resources */ = {isa = PBXBuildFile; fileRef = 2963596919F7A092003732AB /* sliderThumb.png */; };
+		2963596D19F7A092003732AB /* sliderTrack.png in Resources */ = {isa = PBXBuildFile; fileRef = 2963596A19F7A092003732AB /* sliderTrack.png */; };
+		2963596E19F7A092003732AB /* sliderTrack.png in Resources */ = {isa = PBXBuildFile; fileRef = 2963596A19F7A092003732AB /* sliderTrack.png */; };
 		3EE7F8C019ED607500448914 /* Icon-120.png in Resources */ = {isa = PBXBuildFile; fileRef = 5087E77617EB970100C73F5D /* Icon-120.png */; };
 		3EE7F8C219ED607500448914 /* Icon-76.png in Resources */ = {isa = PBXBuildFile; fileRef = 5087E77B17EB970100C73F5D /* Icon-76.png */; };
 		3EE7F8C319ED607500448914 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5087E77417EB970100C73F5D /* Default@2x.png */; };
@@ -759,6 +763,8 @@
 		2963595819F79487003732AB /* check_box_normal_press.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = check_box_normal_press.png; sourceTree = "<group>"; };
 		2963595919F79487003732AB /* check_box_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = check_box_normal.png; sourceTree = "<group>"; };
 		2963596619F79CF2003732AB /* sliderProgress.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sliderProgress.png; sourceTree = "<group>"; };
+		2963596919F7A092003732AB /* sliderThumb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sliderThumb.png; sourceTree = "<group>"; };
+		2963596A19F7A092003732AB /* sliderTrack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sliderTrack.png; sourceTree = "<group>"; };
 		3EE7F8EC19ED607500448914 /* Chapter 12 iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Chapter 12 iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EE7F90D19ED607800448914 /* Chapter 12 Mac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Chapter 12 Mac.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EE7F91019ED60DF00448914 /* AppDelegate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AppDelegate.cpp; sourceTree = "<group>"; };
@@ -1268,6 +1274,8 @@
 		296358FC19F78ED4003732AB /* chapter6 */ = {
 			isa = PBXGroup;
 			children = (
+				2963596919F7A092003732AB /* sliderThumb.png */,
+				2963596A19F7A092003732AB /* sliderTrack.png */,
 				2963596619F79CF2003732AB /* sliderProgress.png */,
 				2963595419F79487003732AB /* check_box_active_disable.png */,
 				2963595519F79487003732AB /* check_box_active_press.png */,
@@ -2026,6 +2034,7 @@
 				2963590B19F78ED4003732AB /* bitmapFontTest.fnt in Resources */,
 				296358BC19F78D4F003732AB /* Icon-120.png in Resources */,
 				296358BE19F78D4F003732AB /* Icon-76.png in Resources */,
+				2963596D19F7A092003732AB /* sliderTrack.png in Resources */,
 				2963596719F79CF2003732AB /* sliderProgress.png in Resources */,
 				296358BF19F78D4F003732AB /* Default@2x.png in Resources */,
 				296358C019F78D4F003732AB /* Icon-100.png in Resources */,
@@ -2045,6 +2054,7 @@
 				2963590F19F78ED4003732AB /* leftSelected.png in Resources */,
 				2963591319F78ED4003732AB /* restartSelected.png in Resources */,
 				2963591019F78ED4003732AB /* menuItemSpriteNormal.png in Resources */,
+				2963596B19F7A092003732AB /* sliderThumb.png in Resources */,
 				296358FB19F78DDD003732AB /* Chapter 6 iOS-Info.plist in Resources */,
 				296358D519F78D4F003732AB /* Icon-57.png in Resources */,
 				2963591119F78ED4003732AB /* menuItemSpriteSelected.png in Resources */,
@@ -2068,6 +2078,8 @@
 				2963595D19F79487003732AB /* check_box_active_press.png in Resources */,
 				2963594819F78FC4003732AB /* arial.ttf in Resources */,
 				2963594919F78FC4003732AB /* bitmapFontTest.fnt in Resources */,
+				2963596E19F7A092003732AB /* sliderTrack.png in Resources */,
+				2963596C19F7A092003732AB /* sliderThumb.png in Resources */,
 				2963594A19F78FC4003732AB /* bitmapFontTest.png in Resources */,
 				2963596819F79CF2003732AB /* sliderProgress.png in Resources */,
 				2963596319F79487003732AB /* check_box_normal_press.png in Resources */,
