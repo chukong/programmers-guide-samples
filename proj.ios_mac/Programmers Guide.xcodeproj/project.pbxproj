@@ -779,7 +779,7 @@
 		1D6058910D05DD3D006BFB54 /* Chapter 2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Chapter 2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		296358F119F78D4F003732AB /* Chapter 4 iOS copy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Chapter 4 iOS copy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		296358F119F78D4F003732AB /* Chapter 6 iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Chapter 6 iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		296358F419F78D81003732AB /* AppDelegate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AppDelegate.cpp; path = chapter6/AppDelegate.cpp; sourceTree = "<group>"; };
 		296358F519F78D81003732AB /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = chapter6/AppDelegate.h; sourceTree = "<group>"; };
 		296358F619F78D81003732AB /* Chapter6.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Chapter6.cpp; path = chapter6/Chapter6.cpp; sourceTree = "<group>"; };
@@ -796,7 +796,7 @@
 		2963590719F78ED4003732AB /* restartSelected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = restartSelected.png; sourceTree = "<group>"; };
 		2963590819F78ED4003732AB /* rightNormal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rightNormal.png; sourceTree = "<group>"; };
 		2963590919F78ED4003732AB /* rightSelected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rightSelected.png; sourceTree = "<group>"; };
-		2963594219F78F74003732AB /* Chapter 4 Mac copy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Chapter 4 Mac copy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2963594219F78F74003732AB /* Chapter 6 Mac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Chapter 6 Mac.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EE7F8EC19ED607500448914 /* Chapter 12 iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Chapter 12 iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EE7F90D19ED607800448914 /* Chapter 12 Mac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Chapter 12 Mac.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EE7F91019ED60DF00448914 /* AppDelegate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AppDelegate.cpp; sourceTree = "<group>"; };
@@ -1324,8 +1324,8 @@
 				7E9571FF19F196D200F6AE44 /* Chapter 8 Mac.app */,
 				7E95722A19F197BA00F6AE44 /* Chapter 13 iOS.app */,
 				7E95724319F197F500F6AE44 /* Chapter 13 Mac.app */,
-				296358F119F78D4F003732AB /* Chapter 4 iOS copy.app */,
-				2963594219F78F74003732AB /* Chapter 4 Mac copy.app */,
+				296358F119F78D4F003732AB /* Chapter 6 iOS.app */,
+				2963594219F78F74003732AB /* Chapter 6 Mac.app */,
 				7E914A6E1A1BC3F200C6B2D4 /* Chapter 5 iOS.app */,
 				7E914A8B1A1BC40200C6B2D4 /* Chapter 5 Mac.app */,
 			);
@@ -1737,7 +1737,7 @@
 			);
 			name = "Chapter 6 iOS";
 			productName = iphone;
-			productReference = 296358F119F78D4F003732AB /* Chapter 4 iOS copy.app */;
+			productReference = 296358F119F78D4F003732AB /* Chapter 6 iOS.app */;
 			productType = "com.apple.product-type.application";
 		};
 		2963591619F78F74003732AB /* Chapter 6 Mac */ = {
@@ -1755,7 +1755,7 @@
 			);
 			name = "Chapter 6 Mac";
 			productName = iphone;
-			productReference = 2963594219F78F74003732AB /* Chapter 4 Mac copy.app */;
+			productReference = 2963594219F78F74003732AB /* Chapter 6 Mac.app */;
 			productType = "com.apple.product-type.application";
 		};
 		3EE7F8BC19ED607500448914 /* Chapter 12 iOS */ = {
@@ -2897,7 +2897,7 @@
 					"$(SRCROOT)/../libs/cocos2d-x/cocos/platform/ios",
 					"$(SRCROOT)/../libs/cocos2d-x/cocos/platform/ios/Simulation",
 				);
-				INFOPLIST_FILE = "Chapter 2 iOS-Info.plist";
+				INFOPLIST_FILE = "iOS-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				LIBRARY_SEARCH_PATHS = "";
 				PRODUCT_NAME = "Chapter 2";
@@ -2927,7 +2927,7 @@
 					"$(SRCROOT)/../libs/cocos2d-x/cocos/platform/ios",
 					"$(SRCROOT)/../libs/cocos2d-x/cocos/platform/ios/Simulation",
 				);
-				INFOPLIST_FILE = "Chapter 2 iOS-Info.plist";
+				INFOPLIST_FILE = "iOS-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				LIBRARY_SEARCH_PATHS = "";
 				PRODUCT_NAME = "Chapter 2";
@@ -2959,10 +2959,10 @@
 					"$(SRCROOT)/../libs/cocos2d-x/cocos/platform/ios",
 					"$(SRCROOT)/../libs/cocos2d-x/cocos/platform/ios/Simulation",
 				);
-				INFOPLIST_FILE = "$(SRCROOT)/Chapter 6 iOS-Info.plist";
+				INFOPLIST_FILE = "iOS-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				LIBRARY_SEARCH_PATHS = "";
-				PRODUCT_NAME = "Chapter 4 iOS copy";
+				PRODUCT_NAME = "Chapter 6 iOS";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "";
@@ -2989,10 +2989,10 @@
 					"$(SRCROOT)/../libs/cocos2d-x/cocos/platform/ios",
 					"$(SRCROOT)/../libs/cocos2d-x/cocos/platform/ios/Simulation",
 				);
-				INFOPLIST_FILE = "$(SRCROOT)/Chapter 6 iOS-Info.plist";
+				INFOPLIST_FILE = "iOS-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				LIBRARY_SEARCH_PATHS = "";
-				PRODUCT_NAME = "Chapter 4 iOS copy";
+				PRODUCT_NAME = "Chapter 6 iOS";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "";
@@ -3022,9 +3022,9 @@
 					"$(SRCROOT)/../libs/cocos2d-x/cocos/platform/mac",
 					"$(SRCROOT)/../libs/cocos2d-x/external/glfw3/include/mac",
 				);
-				INFOPLIST_FILE = "Chapter 4 Mac copy-Info.plist";
+				INFOPLIST_FILE = "Mac-Info.plist";
 				LIBRARY_SEARCH_PATHS = "";
-				PRODUCT_NAME = "Chapter 4 Mac copy";
+				PRODUCT_NAME = "Chapter 6 Mac";
 				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Debug;
@@ -3050,9 +3050,9 @@
 					"$(SRCROOT)/../libs/cocos2d-x/cocos/platform/mac",
 					"$(SRCROOT)/../libs/cocos2d-x/external/glfw3/include/mac",
 				);
-				INFOPLIST_FILE = "Chapter 4 Mac copy-Info.plist";
+				INFOPLIST_FILE = "Mac-Info.plist";
 				LIBRARY_SEARCH_PATHS = "";
-				PRODUCT_NAME = "Chapter 4 Mac copy";
+				PRODUCT_NAME = "Chapter 6 Mac";
 				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Release;
@@ -3079,7 +3079,7 @@
 					"$(SRCROOT)/../libs/cocos2d-x/cocos/platform/ios",
 					"$(SRCROOT)/../libs/cocos2d-x/cocos/platform/ios/Simulation",
 				);
-				INFOPLIST_FILE = "Chapter 12 iOS-Info.plist";
+				INFOPLIST_FILE = "iOS-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				LIBRARY_SEARCH_PATHS = "";
 				PRODUCT_NAME = "Chapter 12 iOS";
@@ -3109,7 +3109,7 @@
 					"$(SRCROOT)/../libs/cocos2d-x/cocos/platform/ios",
 					"$(SRCROOT)/../libs/cocos2d-x/cocos/platform/ios/Simulation",
 				);
-				INFOPLIST_FILE = "Chapter 12 iOS-Info.plist";
+				INFOPLIST_FILE = "iOS-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				LIBRARY_SEARCH_PATHS = "";
 				PRODUCT_NAME = "Chapter 12 iOS";
@@ -3142,7 +3142,7 @@
 					"$(SRCROOT)/../libs/cocos2d-x/cocos/platform/mac",
 					"$(SRCROOT)/../libs/cocos2d-x/external/glfw3/include/mac",
 				);
-				INFOPLIST_FILE = "Chapter 12 Mac-Info.plist";
+				INFOPLIST_FILE = "Mac-Info.plist";
 				LIBRARY_SEARCH_PATHS = "";
 				PRODUCT_NAME = "Chapter 12 Mac";
 				USER_HEADER_SEARCH_PATHS = "";
@@ -3170,7 +3170,7 @@
 					"$(SRCROOT)/../libs/cocos2d-x/cocos/platform/mac",
 					"$(SRCROOT)/../libs/cocos2d-x/external/glfw3/include/mac",
 				);
-				INFOPLIST_FILE = "Chapter 12 Mac-Info.plist";
+				INFOPLIST_FILE = "Mac-Info.plist";
 				LIBRARY_SEARCH_PATHS = "";
 				PRODUCT_NAME = "Chapter 12 Mac";
 				USER_HEADER_SEARCH_PATHS = "";
@@ -3200,7 +3200,7 @@
 					"$(SRCROOT)/../libs/cocos2d-x/cocos/platform/mac",
 					"$(SRCROOT)/../libs/cocos2d-x/external/glfw3/include/mac",
 				);
-				INFOPLIST_FILE = "Chapter 2 Mac-Info.plist";
+				INFOPLIST_FILE = "Mac-Info.plist";
 				LIBRARY_SEARCH_PATHS = "";
 				PRODUCT_NAME = "Chapter 2 Mac";
 				USER_HEADER_SEARCH_PATHS = "";
@@ -3228,7 +3228,7 @@
 					"$(SRCROOT)/../libs/cocos2d-x/cocos/platform/mac",
 					"$(SRCROOT)/../libs/cocos2d-x/external/glfw3/include/mac",
 				);
-				INFOPLIST_FILE = "Chapter 2 Mac-Info.plist";
+				INFOPLIST_FILE = "Mac-Info.plist";
 				LIBRARY_SEARCH_PATHS = "";
 				PRODUCT_NAME = "Chapter 2 Mac";
 				USER_HEADER_SEARCH_PATHS = "";
@@ -3257,7 +3257,7 @@
 					"$(SRCROOT)/../libs/cocos2d-x/cocos/platform/ios",
 					"$(SRCROOT)/../libs/cocos2d-x/cocos/platform/ios/Simulation",
 				);
-				INFOPLIST_FILE = "Chapter 9 iOS-Info.plist";
+				INFOPLIST_FILE = "iOS-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				LIBRARY_SEARCH_PATHS = "";
 				PRODUCT_NAME = "Chapter 9 iOS";
@@ -3287,7 +3287,7 @@
 					"$(SRCROOT)/../libs/cocos2d-x/cocos/platform/ios",
 					"$(SRCROOT)/../libs/cocos2d-x/cocos/platform/ios/Simulation",
 				);
-				INFOPLIST_FILE = "Chapter 9 iOS-Info.plist";
+				INFOPLIST_FILE = "iOS-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				LIBRARY_SEARCH_PATHS = "";
 				PRODUCT_NAME = "Chapter 9 iOS";
@@ -3320,7 +3320,7 @@
 					"$(SRCROOT)/../libs/cocos2d-x/cocos/platform/mac",
 					"$(SRCROOT)/../libs/cocos2d-x/external/glfw3/include/mac",
 				);
-				INFOPLIST_FILE = "Chapter 9 Mac-Info.plist";
+				INFOPLIST_FILE = "Mac-Info.plist";
 				LIBRARY_SEARCH_PATHS = "";
 				PRODUCT_NAME = "Chapter 9 Mac";
 				USER_HEADER_SEARCH_PATHS = "";
@@ -3348,7 +3348,7 @@
 					"$(SRCROOT)/../libs/cocos2d-x/cocos/platform/mac",
 					"$(SRCROOT)/../libs/cocos2d-x/external/glfw3/include/mac",
 				);
-				INFOPLIST_FILE = "Chapter 9 Mac-Info.plist";
+				INFOPLIST_FILE = "Mac-Info.plist";
 				LIBRARY_SEARCH_PATHS = "";
 				PRODUCT_NAME = "Chapter 9 Mac";
 				USER_HEADER_SEARCH_PATHS = "";
@@ -3378,7 +3378,7 @@
 					"$(SRCROOT)/../libs/cocos2d-x/cocos/platform/mac",
 					"$(SRCROOT)/../libs/cocos2d-x/external/glfw3/include/mac",
 				);
-				INFOPLIST_FILE = "Chapter 3 Mac-Info.plist";
+				INFOPLIST_FILE = "Mac-Info.plist";
 				LIBRARY_SEARCH_PATHS = "";
 				PRODUCT_NAME = "Chapter 3 Mac";
 				USER_HEADER_SEARCH_PATHS = "";
@@ -3406,7 +3406,7 @@
 					"$(SRCROOT)/../libs/cocos2d-x/cocos/platform/mac",
 					"$(SRCROOT)/../libs/cocos2d-x/external/glfw3/include/mac",
 				);
-				INFOPLIST_FILE = "Chapter 3 Mac-Info.plist";
+				INFOPLIST_FILE = "Mac-Info.plist";
 				LIBRARY_SEARCH_PATHS = "";
 				PRODUCT_NAME = "Chapter 3 Mac";
 				USER_HEADER_SEARCH_PATHS = "";
@@ -3435,7 +3435,7 @@
 					"$(SRCROOT)/../libs/cocos2d-x/cocos/platform/ios",
 					"$(SRCROOT)/../libs/cocos2d-x/cocos/platform/ios/Simulation",
 				);
-				INFOPLIST_FILE = "Chapter 4 iOS-Info.plist";
+				INFOPLIST_FILE = "iOS-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				LIBRARY_SEARCH_PATHS = "";
 				PRODUCT_NAME = "Chapter 4 iOS";
@@ -3465,7 +3465,7 @@
 					"$(SRCROOT)/../libs/cocos2d-x/cocos/platform/ios",
 					"$(SRCROOT)/../libs/cocos2d-x/cocos/platform/ios/Simulation",
 				);
-				INFOPLIST_FILE = "Chapter 4 iOS-Info.plist";
+				INFOPLIST_FILE = "iOS-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				LIBRARY_SEARCH_PATHS = "";
 				PRODUCT_NAME = "Chapter 4 iOS";
@@ -3498,7 +3498,7 @@
 					"$(SRCROOT)/../libs/cocos2d-x/cocos/platform/mac",
 					"$(SRCROOT)/../libs/cocos2d-x/external/glfw3/include/mac",
 				);
-				INFOPLIST_FILE = "Chapter 4 Mac-Info.plist";
+				INFOPLIST_FILE = "Mac-Info.plist";
 				LIBRARY_SEARCH_PATHS = "";
 				PRODUCT_NAME = "Chapter 4 Mac";
 				USER_HEADER_SEARCH_PATHS = "";
@@ -3526,7 +3526,7 @@
 					"$(SRCROOT)/../libs/cocos2d-x/cocos/platform/mac",
 					"$(SRCROOT)/../libs/cocos2d-x/external/glfw3/include/mac",
 				);
-				INFOPLIST_FILE = "Chapter 4 Mac-Info.plist";
+				INFOPLIST_FILE = "Mac-Info.plist";
 				LIBRARY_SEARCH_PATHS = "";
 				PRODUCT_NAME = "Chapter 4 Mac";
 				USER_HEADER_SEARCH_PATHS = "";
@@ -3555,7 +3555,7 @@
 					"$(SRCROOT)/../libs/cocos2d-x/cocos/platform/ios",
 					"$(SRCROOT)/../libs/cocos2d-x/cocos/platform/ios/Simulation",
 				);
-				INFOPLIST_FILE = "Chapter 5 iOS-Info.plist";
+				INFOPLIST_FILE = "iOS-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				LIBRARY_SEARCH_PATHS = "";
 				PRODUCT_NAME = "Chapter 5 iOS";
@@ -3585,7 +3585,7 @@
 					"$(SRCROOT)/../libs/cocos2d-x/cocos/platform/ios",
 					"$(SRCROOT)/../libs/cocos2d-x/cocos/platform/ios/Simulation",
 				);
-				INFOPLIST_FILE = "Chapter 5 iOS-Info.plist";
+				INFOPLIST_FILE = "iOS-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				LIBRARY_SEARCH_PATHS = "";
 				PRODUCT_NAME = "Chapter 5 iOS";
@@ -3618,7 +3618,7 @@
 					"$(SRCROOT)/../libs/cocos2d-x/cocos/platform/mac",
 					"$(SRCROOT)/../libs/cocos2d-x/external/glfw3/include/mac",
 				);
-				INFOPLIST_FILE = "Chapter 5 Mac-Info.plist";
+				INFOPLIST_FILE = "Mac-Info.plist";
 				LIBRARY_SEARCH_PATHS = "";
 				PRODUCT_NAME = "Chapter 5 Mac";
 				USER_HEADER_SEARCH_PATHS = "";
@@ -3646,7 +3646,7 @@
 					"$(SRCROOT)/../libs/cocos2d-x/cocos/platform/mac",
 					"$(SRCROOT)/../libs/cocos2d-x/external/glfw3/include/mac",
 				);
-				INFOPLIST_FILE = "Chapter 5 Mac-Info.plist";
+				INFOPLIST_FILE = "Mac-Info.plist";
 				LIBRARY_SEARCH_PATHS = "";
 				PRODUCT_NAME = "Chapter 5 Mac";
 				USER_HEADER_SEARCH_PATHS = "";
@@ -3675,7 +3675,7 @@
 					"$(SRCROOT)/../libs/cocos2d-x/cocos/platform/ios",
 					"$(SRCROOT)/../libs/cocos2d-x/cocos/platform/ios/Simulation",
 				);
-				INFOPLIST_FILE = "Chapter 8 iOS-Info.plist";
+				INFOPLIST_FILE = "iOS-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				LIBRARY_SEARCH_PATHS = "";
 				PRODUCT_NAME = "Chapter 8 iOS";
@@ -3705,7 +3705,7 @@
 					"$(SRCROOT)/../libs/cocos2d-x/cocos/platform/ios",
 					"$(SRCROOT)/../libs/cocos2d-x/cocos/platform/ios/Simulation",
 				);
-				INFOPLIST_FILE = "Chapter 8 iOS-Info.plist";
+				INFOPLIST_FILE = "iOS-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				LIBRARY_SEARCH_PATHS = "";
 				PRODUCT_NAME = "Chapter 8 iOS";
@@ -3738,7 +3738,7 @@
 					"$(SRCROOT)/../libs/cocos2d-x/cocos/platform/mac",
 					"$(SRCROOT)/../libs/cocos2d-x/external/glfw3/include/mac",
 				);
-				INFOPLIST_FILE = "Chapter 8 Mac-Info.plist";
+				INFOPLIST_FILE = "Mac-Info.plist";
 				LIBRARY_SEARCH_PATHS = "";
 				PRODUCT_NAME = "Chapter 8 Mac";
 				USER_HEADER_SEARCH_PATHS = "";
@@ -3766,7 +3766,7 @@
 					"$(SRCROOT)/../libs/cocos2d-x/cocos/platform/mac",
 					"$(SRCROOT)/../libs/cocos2d-x/external/glfw3/include/mac",
 				);
-				INFOPLIST_FILE = "Chapter 8 Mac-Info.plist";
+				INFOPLIST_FILE = "Mac-Info.plist";
 				LIBRARY_SEARCH_PATHS = "";
 				PRODUCT_NAME = "Chapter 8 Mac";
 				USER_HEADER_SEARCH_PATHS = "";
@@ -3795,7 +3795,7 @@
 					"$(SRCROOT)/../libs/cocos2d-x/cocos/platform/ios",
 					"$(SRCROOT)/../libs/cocos2d-x/cocos/platform/ios/Simulation",
 				);
-				INFOPLIST_FILE = "Chapter 13 iOS-Info.plist";
+				INFOPLIST_FILE = "iOS-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				LIBRARY_SEARCH_PATHS = "";
 				PRODUCT_NAME = "Chapter 13 iOS";
@@ -3825,7 +3825,7 @@
 					"$(SRCROOT)/../libs/cocos2d-x/cocos/platform/ios",
 					"$(SRCROOT)/../libs/cocos2d-x/cocos/platform/ios/Simulation",
 				);
-				INFOPLIST_FILE = "Chapter 13 iOS-Info.plist";
+				INFOPLIST_FILE = "iOS-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				LIBRARY_SEARCH_PATHS = "";
 				PRODUCT_NAME = "Chapter 13 iOS";
@@ -3858,7 +3858,7 @@
 					"$(SRCROOT)/../libs/cocos2d-x/cocos/platform/mac",
 					"$(SRCROOT)/../libs/cocos2d-x/external/glfw3/include/mac",
 				);
-				INFOPLIST_FILE = "Chapter 13 Mac-Info.plist";
+				INFOPLIST_FILE = "Mac-Info.plist";
 				LIBRARY_SEARCH_PATHS = "";
 				PRODUCT_NAME = "Chapter 13 Mac";
 				USER_HEADER_SEARCH_PATHS = "";
@@ -3886,7 +3886,7 @@
 					"$(SRCROOT)/../libs/cocos2d-x/cocos/platform/mac",
 					"$(SRCROOT)/../libs/cocos2d-x/external/glfw3/include/mac",
 				);
-				INFOPLIST_FILE = "Chapter 13 Mac-Info.plist";
+				INFOPLIST_FILE = "Mac-Info.plist";
 				LIBRARY_SEARCH_PATHS = "";
 				PRODUCT_NAME = "Chapter 13 Mac";
 				USER_HEADER_SEARCH_PATHS = "";
@@ -3915,7 +3915,7 @@
 					"$(SRCROOT)/../libs/cocos2d-x/cocos/platform/ios",
 					"$(SRCROOT)/../libs/cocos2d-x/cocos/platform/ios/Simulation",
 				);
-				INFOPLIST_FILE = "Chapter 3 iOS-Info.plist";
+				INFOPLIST_FILE = "iOS-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				LIBRARY_SEARCH_PATHS = "";
 				PRODUCT_NAME = "Chapter 3";
@@ -3945,7 +3945,7 @@
 					"$(SRCROOT)/../libs/cocos2d-x/cocos/platform/ios",
 					"$(SRCROOT)/../libs/cocos2d-x/cocos/platform/ios/Simulation",
 				);
-				INFOPLIST_FILE = "Chapter 3 iOS-Info.plist";
+				INFOPLIST_FILE = "iOS-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				LIBRARY_SEARCH_PATHS = "";
 				PRODUCT_NAME = "Chapter 3";
