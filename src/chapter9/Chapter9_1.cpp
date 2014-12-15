@@ -31,11 +31,10 @@ Scene* Chapter9_1::createScene()
     menuItem->setPosition( Vec2( visibleRect.origin.x+visibleRect.size.width - 80, visibleRect.origin.y + 25) );
     scene->addChild(menu, 1);
     
+    // create 3D sprite
     auto sprite = Sprite3D::create("boss.c3b");
     sprite->setScale(5.f);
-    
-    sprite->setPosition( Vec2(visibleRect.origin.x+visibleRect.size.width/2, visibleRect.origin.y+visibleRect.size.height/2).x,
-                        Vec2(visibleRect.origin.x+visibleRect.size.width/2, visibleRect.origin.y+visibleRect.size.height/2).y );
+    sprite->setPosition( Vec2(visibleRect.origin.x+visibleRect.size.width/2, visibleRect.origin.y+visibleRect.size.height/2));
     
     ActionInterval* action;
     action = ScaleBy::create(3, 2);
