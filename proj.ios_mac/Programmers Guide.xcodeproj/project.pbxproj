@@ -225,6 +225,10 @@
 		5E38D2CB19F0F3FF0099B433 /* sphere.c3b in Resources */ = {isa = PBXBuildFile; fileRef = 5E38D2C819F0F3FF0099B433 /* sphere.c3b */; };
 		5E38D2CC19F0F3FF0099B433 /* spheretex.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E38D2C919F0F3FF0099B433 /* spheretex.png */; };
 		5E38D2CD19F0F3FF0099B433 /* spheretex.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E38D2C919F0F3FF0099B433 /* spheretex.png */; };
+		5E4C83EB1A3EC4DA00F65FA9 /* plane.obj in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C83EA1A3EC4DA00F65FA9 /* plane.obj */; };
+		5E4C83EC1A3EC4DA00F65FA9 /* plane.obj in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C83EA1A3EC4DA00F65FA9 /* plane.obj */; };
+		5E4C83EE1A3EC4F900F65FA9 /* planetex.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C83ED1A3EC4F900F65FA9 /* planetex.png */; };
+		5E4C83EF1A3EC4F900F65FA9 /* planetex.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C83ED1A3EC4F900F65FA9 /* planetex.png */; };
 		7E1526B419D4DE890013F222 /* Blue_Front1.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E1526AE19D4DE890013F222 /* Blue_Front1.png */; };
 		7E1526B519D4DE890013F222 /* Blue_Front1.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E1526AE19D4DE890013F222 /* Blue_Front1.png */; };
 		7E1526B819D4DE890013F222 /* LightBlue_Front1.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E1526B019D4DE890013F222 /* LightBlue_Front1.png */; };
@@ -849,6 +853,8 @@
 		5E38D2C519F0F3DD0099B433 /* Chapter9_9.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Chapter9_9.h; path = chapter9/Chapter9_9.h; sourceTree = "<group>"; };
 		5E38D2C819F0F3FF0099B433 /* sphere.c3b */ = {isa = PBXFileReference; lastKnownFileType = file; name = sphere.c3b; path = chapter9/sphere.c3b; sourceTree = "<group>"; };
 		5E38D2C919F0F3FF0099B433 /* spheretex.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = spheretex.png; path = chapter9/spheretex.png; sourceTree = "<group>"; };
+		5E4C83EA1A3EC4DA00F65FA9 /* plane.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = plane.obj; path = chapter9/plane.obj; sourceTree = "<group>"; };
+		5E4C83ED1A3EC4F900F65FA9 /* planetex.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = planetex.png; path = chapter9/planetex.png; sourceTree = "<group>"; };
 		7E1526AE19D4DE890013F222 /* Blue_Front1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Blue_Front1.png; sourceTree = "<group>"; };
 		7E1526B019D4DE890013F222 /* LightBlue_Front1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LightBlue_Front1.png; sourceTree = "<group>"; };
 		7E1526B119D4DE890013F222 /* White_Front1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = White_Front1.png; sourceTree = "<group>"; };
@@ -1556,6 +1562,7 @@
 				5E38D2C919F0F3FF0099B433 /* spheretex.png */,
 				7E5367DA19EAD7F2005C3C64 /* arx.png */,
 				7E5367DB19EAD7F2005C3C64 /* axe.c3b */,
+				5E4C83ED1A3EC4F900F65FA9 /* planetex.png */,
 				7E5367DC19EAD7F2005C3C64 /* Blue_Front1.png */,
 				7E5367DD19EAD7F2005C3C64 /* body.png */,
 				7E5367DE19EAD7F2005C3C64 /* boss.c3b */,
@@ -1566,6 +1573,7 @@
 				7E5367E419EAD7F2005C3C64 /* Girl_Face.png */,
 				7E5367E519EAD7F2005C3C64 /* Girl_Glasses01.png */,
 				7E5367E619EAD7F2005C3C64 /* Girl_Hair01.png */,
+				5E4C83EA1A3EC4DA00F65FA9 /* plane.obj */,
 				7E5367E719EAD7F2005C3C64 /* Girl_Hair02.png */,
 				7E5367E819EAD7F2005C3C64 /* Girl_Hand.png */,
 				7E5367E919EAD7F2005C3C64 /* Girl_LowerBody01.png */,
@@ -2258,6 +2266,7 @@
 				7E53681019EAD7F2005C3C64 /* Girl_Glasses01.png in Resources */,
 				7E53681A19EAD7F2005C3C64 /* Girl_LowerBody02.png in Resources */,
 				7E53680E19EAD7F2005C3C64 /* Girl_Face.png in Resources */,
+				5E4C83EE1A3EC4F900F65FA9 /* planetex.png in Resources */,
 				50BA59B919D4992C0070A133 /* Icon-100.png in Resources */,
 				7E53683A19EAD7F2005C3C64 /* zhujue.FBX in Resources */,
 				7E53680819EAD7F2005C3C64 /* CloseNormal.png in Resources */,
@@ -2269,6 +2278,7 @@
 				5E38D2CC19F0F3FF0099B433 /* spheretex.png in Resources */,
 				50BA59BE19D4992C0070A133 /* Icon-72.png in Resources */,
 				7E53681C19EAD7F2005C3C64 /* Girl_Shoes01.png in Resources */,
+				5E4C83EB1A3EC4DA00F65FA9 /* plane.obj in Resources */,
 				7E53682A19EAD7F2005C3C64 /* orc.c3b in Resources */,
 				7E53681419EAD7F2005C3C64 /* Girl_Hair02.png in Resources */,
 				7E53681E19EAD7F2005C3C64 /* Girl_Shoes02.png in Resources */,
@@ -2303,6 +2313,7 @@
 				7E53681B19EAD7F2005C3C64 /* Girl_LowerBody02.png in Resources */,
 				7E53681D19EAD7F2005C3C64 /* Girl_Shoes01.png in Resources */,
 				7E53683B19EAD7F2005C3C64 /* zhujue.FBX in Resources */,
+				5E4C83EC1A3EC4DA00F65FA9 /* plane.obj in Resources */,
 				7E53682919EAD7F2005C3C64 /* monguger.tga in Resources */,
 				7E53682319EAD7F2005C3C64 /* Girl_UpperBody02.png in Resources */,
 				7E5367FF19EAD7F2005C3C64 /* axe.c3b in Resources */,
@@ -2310,6 +2321,7 @@
 				5E38D2CB19F0F3FF0099B433 /* sphere.c3b in Resources */,
 				7E53681119EAD7F2005C3C64 /* Girl_Glasses01.png in Resources */,
 				7E53683D19EAD7F2005C3C64 /* zhujue.png in Resources */,
+				5E4C83EF1A3EC4F900F65FA9 /* planetex.png in Resources */,
 				7E53680919EAD7F2005C3C64 /* CloseNormal.png in Resources */,
 				7E53681319EAD7F2005C3C64 /* Girl_Hair01.png in Resources */,
 				7E53680319EAD7F2005C3C64 /* body.png in Resources */,
