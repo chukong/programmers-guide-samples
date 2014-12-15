@@ -63,6 +63,15 @@ Scene* Chapter9_9::createScene()
         layer->addChild(sprite);
     }
 
+    {
+        std::string fileName = "plane.obj";
+        auto sprite = Sprite3D::create(fileName);
+        sprite->setTexture("planetex.png");
+        sprite->setScale(20.0f);
+        sprite->setPosition(Vec2(0.0, -10.0f));
+        layer->addChild(sprite);
+    }
+    
     //end add sprite3d
 
     //add lights
@@ -79,7 +88,7 @@ Scene* Chapter9_9::createScene()
     pointLight->setEnabled(false);
     layer->addChild(pointLight);
 
-    auto spotLight = SpotLight::create(Vec3(0.0f, -1.0f, 0.0f), Vec3(-200.0f, 200.0f, 0.0f), Color3B(200, 200, 200), 0.5f, 0.7f, 10000.0f);
+    auto spotLight = SpotLight::create(Vec3(0.0f, -1.0f, 0.0f), Vec3(-200.0f, 200.0f, 0.0f), Color3B(200, 200, 200), 0.0f, 0.5f, 10000.0f);
     spotLight->setEnabled(false);
     layer->addChild(spotLight);
 
