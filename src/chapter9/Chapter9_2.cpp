@@ -15,7 +15,7 @@ Scene* Chapter9_2::createScene()
     auto scene = Scene::create();
     
     // add title
-    auto label = LabelTTF::create("3D skeleton aniamtion", "Arial", 24);
+    auto label = LabelTTF::create("3D skeleton animation", "Arial", 24);
     label->setPosition(Vec2(origin.x+visibleSize.width/2, origin.y+visibleSize.height/2).x,
                        Vec2(origin.x+visibleSize.width/2, origin.y+visibleSize.height).y - 30);
     
