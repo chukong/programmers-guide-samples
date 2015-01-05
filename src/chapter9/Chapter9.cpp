@@ -8,6 +8,7 @@
 #include "Chapter9_7.h"
 #include "Chapter9_8.h"
 #include "Chapter9_9.h"
+#include "Chapter9_10.h"
 
 USING_NS_CC;
 
@@ -73,7 +74,7 @@ bool Chapter9::init()
     
     mainmenu->addChild(menuItem,2);
     mainmenu->setPosition(Vec2::ZERO);
-    
+
     // add "Sprite3D skeleton animation"
     itemlabel = LabelTTF::create("3D skeleton animation", "Arial", 24);
     menuItem = MenuItemLabel::create(itemlabel);
@@ -85,7 +86,7 @@ bool Chapter9::init()
     
     mainmenu->addChild(menuItem,2);
     mainmenu->setPosition(Vec2::ZERO);
-    
+
     
     // add "Attach weapon"
     itemlabel = LabelTTF::create("Attach weapon", "Arial", 24);
@@ -110,7 +111,7 @@ bool Chapter9::init()
     
     mainmenu->addChild(menuItem,2);
     mainmenu->setPosition(Vec2::ZERO);
-    
+
     // add "Test camera"
     itemlabel = LabelTTF::create("Camera", "Arial", 24);
     menuItem = MenuItemLabel::create(itemlabel);
@@ -122,7 +123,7 @@ bool Chapter9::init()
     
     mainmenu->addChild(menuItem,2);
     mainmenu->setPosition(Vec2::ZERO);
-    
+
     // add "Test AABB"
     itemlabel = LabelTTF::create("AABB", "Arial", 24);
     menuItem = MenuItemLabel::create(itemlabel);
@@ -146,7 +147,7 @@ bool Chapter9::init()
     
     mainmenu->addChild(menuItem,2);
     mainmenu->setPosition(Vec2::ZERO);
-    
+
     // add "Test BillBoard"
     itemlabel = LabelTTF::create("BillBoard", "Arial", 24);
     menuItem = MenuItemLabel::create(itemlabel);
@@ -158,12 +159,24 @@ bool Chapter9::init()
     
     mainmenu->addChild(menuItem,2);
     mainmenu->setPosition(Vec2::ZERO);
-    
+
     // add "Test BillBoard"
     itemlabel = LabelTTF::create("Light", "Arial", 24);
     menuItem = MenuItemLabel::create(itemlabel);
     menuItem->setCallback([&](cocos2d::Ref *sender) {
         Director::getInstance()->replaceScene(Chapter9_9::createScene());
+    });
+    menuItem->setPosition(Vec2(origin.x+visibleSize.width/2, origin.y+visibleSize.height/2).x,
+                          (Vec2(origin.x+visibleSize.width/2, origin.y+visibleSize.height).y - (++index) * 40));
+    
+    mainmenu->addChild(menuItem,2);
+    mainmenu->setPosition(Vec2::ZERO);
+    
+    // add "Frustum Clipping"
+    itemlabel = LabelTTF::create("Frustum Clipping", "Arial", 24);
+    menuItem = MenuItemLabel::create(itemlabel);
+    menuItem->setCallback([&](cocos2d::Ref *sender) {
+        Director::getInstance()->replaceScene(Chapter9_10::createScene());
     });
     menuItem->setPosition(Vec2(origin.x+visibleSize.width/2, origin.y+visibleSize.height/2).x,
                           (Vec2(origin.x+visibleSize.width/2, origin.y+visibleSize.height).y - (++index) * 40));
