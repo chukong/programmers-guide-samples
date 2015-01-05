@@ -57,7 +57,7 @@ Scene* Chapter9_10::createScene()
     }
     
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    // open fustum clipping
+    // open frustum clipping
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     camera->enableFrustumCulling(true, true);
     
