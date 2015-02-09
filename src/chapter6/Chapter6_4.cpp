@@ -1,4 +1,4 @@
-#include "Chapter6_3.h"
+#include "Chapter6_4.h"
 #include "Chapter6.h"
 
 #include "ui/CocosGUI.h"
@@ -6,7 +6,7 @@
 USING_NS_CC;
 using namespace cocos2d::ui;
 
-Scene* Chapter6_3::createScene()
+Scene* Chapter6_4::createScene()
 {
     cocos2d::Rect visibleRect = Director::getInstance()->getOpenGLView()->getVisibleRect();
     Size visibleSize = Director::getInstance()->getVisibleSize();
@@ -18,7 +18,7 @@ Scene* Chapter6_3::createScene()
     auto scene = Scene::create();
     
     // add title
-    auto label = LabelTTF::create("Button", "Marker Felt.ttf", 32);
+    auto label = LabelTTF::create("CheckBox", "Marker Felt.ttf", 32);
     label->setPosition(Vec2(visibleRect.origin.x+visibleRect.size.width/2, visibleRect.origin.y+visibleRect.size.height/2).x,
                        Vec2(visibleRect.origin.x+visibleRect.size.width/2, visibleRect.origin.y+visibleRect.size.height).y - 30);
     
@@ -36,34 +36,35 @@ Scene* Chapter6_3::createScene()
     menuItem->setPosition(Vec2(visibleRect.origin.x+visibleRect.size.width - 80, visibleRect.origin.y + 25));
     scene->addChild(menu, 1);
 
-    // button
-    auto button = Button::create("Button_Normal.png", "Button_Press.png", "Button_Disable.png");
-    button->setTitleText("Button 1");
-    button->setPosition(Vec2(visibleSize.width / 2, visibleSize.height - (++index) * 40));
-   
-    std::function<void(Ref*, Widget::TouchEventType)> button_pressed = [&](Ref* sender, Widget::TouchEventType type){
+    // checkbox
+    auto checkbox = CheckBox::create("CheckBox_Normal.png",
+                                     "CheckBox_Press.png",
+                                     "CheckBoxNode_Normal.png",
+                                     "CheckBox_Disable.png",
+                                     "CheckBoxNode_Disable.png");
+    
+    checkbox->setPosition(Vec2(visibleSize.width / 2, visibleSize.height - (++index) * 40));
+    
+    checkbox->addTouchEventListener([&](Ref* sender, Widget::TouchEventType type){
         switch (type)
         {
             case ui::Widget::TouchEventType::BEGAN:
                 break;
             case ui::Widget::TouchEventType::ENDED:
-                std::cout << "Button 1 clicked" << std::endl;
+                std::cout << "checkbox 1 clicked" << std::endl;
                 break;
             default:
                 break;
         }
-    };
-    
-    button->addTouchEventListener(button_pressed);
-    //button->addTouchEventListener(CC_CALLBACK_2(Chapter6_3::buttonOneCallback, this));
-    
-    scene->addChild(button);
+    });
+        
+    scene->addChild(checkbox);
     
     // return the scene
     return scene;
 }
 
-//void Chapter6_3::buttonOneCallback(Ref* sender)
+//void Chapter6_4::buttonOneCallback(Ref* sender)
 //{
 //    std::cout << "Button One clicked" << std::endl;
 //}

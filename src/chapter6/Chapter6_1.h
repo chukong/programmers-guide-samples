@@ -8,7 +8,7 @@ USING_NS_CC;
 class Chapter6_1 : public Ref
 {
     public:
-        static cocos2d::Scene* createScene();
+        static Scene* createScene();
 };
 
 #endif // __CHAPTER_6_1_H__

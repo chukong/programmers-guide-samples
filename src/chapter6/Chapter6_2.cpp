@@ -1,9 +1,9 @@
-#include "Chapter6_1.h"
+#include "Chapter6_2.h"
 #include "Chapter6.h"
 
 USING_NS_CC;
 
-Scene* Chapter6_1::createScene()
+Scene* Chapter6_2::createScene()
 {
     cocos2d::Rect visibleRect = Director::getInstance()->getOpenGLView()->getVisibleRect();
     Size visibleSize = Director::getInstance()->getVisibleSize();
@@ -15,7 +15,7 @@ Scene* Chapter6_1::createScene()
     auto scene = Scene::create();
     
     // add title
-    auto label = LabelTTF::create("Label", "Marker Felt.ttf", 32);
+    auto label = LabelTTF::create("Menu and MenuItem", "Marker Felt.ttf", 32);
     label->setPosition(Vec2(visibleRect.origin.x+visibleRect.size.width/2, visibleRect.origin.y+visibleRect.size.height/2).x,
                        Vec2(visibleRect.origin.x+visibleRect.size.width/2, visibleRect.origin.y+visibleRect.size.height).y - 30);
     
@@ -33,69 +33,44 @@ Scene* Chapter6_1::createScene()
     menuItem->setPosition(Vec2(visibleRect.origin.x+visibleRect.size.width - 80, visibleRect.origin.y + 25));
     scene->addChild(menu, 1);
     
-    // this is for Labels section of the Programmers Guide
+    // this is for Menu section of the Programmers Guide
+    // creating a Menu from a Vector of items
+    Vector<MenuItem*> MenuItems;
     
-    // 1. BMFont
-    auto myLabel = Label::createWithBMFont("bitmapRed.fnt", "LabelBMFont");
-    myLabel->setPosition(Vec2(origin.x+visibleSize.width/2, origin.y+visibleSize.height/2).x,
-                         (Vec2(origin.x+visibleSize.width/2, origin.y+visibleSize.height).y - (++index) * 40));
+    // first item
+    auto label1 = LabelTTF::create("Item 1", "Marker Felt.ttf", 32);
+    auto item1 = MenuItemLabel::create(label1);
+    item1->setPosition(Vec2(origin.x+visibleSize.width/2, origin.y+visibleSize.height/2).x,
+                       (Vec2(origin.x+visibleSize.width/2, origin.y+visibleSize.height).y - (++index) * 40));
+    item1->setCallback([&](cocos2d::Ref *sender) {
+        std::cout << "Item 1 was pushed..." << std::endl;
+    });
+    MenuItems.pushBack(item1);
     
-    scene->addChild(myLabel, 1);
+    // second item
+    auto label2 = LabelTTF::create("Item 2", "Marker Felt.ttf", 32);
+    auto item2 = MenuItemLabel::create(label2);
+    item2->setPosition(Vec2(origin.x+visibleSize.width/2, origin.y+visibleSize.height/2).x,
+                       (Vec2(origin.x+visibleSize.width/2, origin.y+visibleSize.height).y - (++index) * 40));
+    item2->setCallback([&](cocos2d::Ref *sender) {
+        std::cout << "Item 2 was pushed..." << std::endl;
+    });
+    MenuItems.pushBack(item2);
     
-    // 2. LabelTTF
-    auto myLabel2 = Label::createWithTTF("LabelTTF", "Marker Felt.ttf", 32);
-    myLabel2->setColor(Color3B::RED);
-    myLabel2->setPosition(Vec2(origin.x+visibleSize.width/2, origin.y+visibleSize.height/2).x,
-                 (Vec2(origin.x+visibleSize.width/2, origin.y+visibleSize.height).y - (++index) * 40));
+    // third item
+    auto label3 = LabelTTF::create("Item 3", "Marker Felt.ttf", 32);
+    auto item3 = MenuItemLabel::create(label3);
+    item3->setPosition(Vec2(origin.x+visibleSize.width/2, origin.y+visibleSize.height/2).x,
+                       (Vec2(origin.x+visibleSize.width/2, origin.y+visibleSize.height).y - (++index) * 40));
+    item3->setCallback([&](cocos2d::Ref *sender) {
+        std::cout << "Item 3 was pushed..." << std::endl;
+    });
+    MenuItems.pushBack(item3);
     
-    scene->addChild(myLabel2, 1);
-    
-    // 3. LabelTTF with TTFConfig
-    
-    // create a TTFConfig files for labels to share
-    TTFConfig labelConfig;
-    labelConfig.fontFilePath = "Marker Felt.ttf";
-    labelConfig.fontSize = 32;
-    
-    auto myLabel3 = Label::createWithTTF(labelConfig, "LabelTTF from TTFConfig");
-    myLabel3->setColor(Color3B::RED);
-    myLabel3->setPosition(Vec2(origin.x+visibleSize.width/2, origin.y+visibleSize.height/2).x,
-                          (Vec2(origin.x+visibleSize.width/2, origin.y+visibleSize.height).y - (++index) * 40));
-    
-    scene->addChild(myLabel3, 1);
-    
-    // 4. Label using SystemFont
-    auto myLabel4 = Label::createWithSystemFont("Label using SystemFont", "Arial", 32);
-    myLabel4->setColor(Color3B::RED);
-    myLabel4->setPosition(Vec2(origin.x+visibleSize.width/2, origin.y+visibleSize.height/2).x,
-                          (Vec2(origin.x+visibleSize.width/2, origin.y+visibleSize.height).y - (++index) * 40));
-    
-    scene->addChild(myLabel4, 1);
-    
-    // 5. LabelTTF with shadow, outline and glow
-    auto myLabel5 = Label::createWithTTF("LabelTTF with Shadow", "Marker Felt.ttf", 32);
-    myLabel5->enableShadow();
-    myLabel5->setColor(Color3B::RED);
-    myLabel5->setPosition(Vec2(origin.x+visibleSize.width/2, origin.y+visibleSize.height/2).x,
-                          (Vec2(origin.x+visibleSize.width/2, origin.y+visibleSize.height).y - (++index) * 40));
-    
-    scene->addChild(myLabel5, 1);
-
-    auto myLabel6 = Label::createWithTTF("LabelTTF with Outline", "Marker Felt.ttf", 32);
-    myLabel6->enableOutline(Color4B::WHITE);
-    myLabel6->setColor(Color3B::RED);
-    myLabel6->setPosition(Vec2(origin.x+visibleSize.width/2, origin.y+visibleSize.height/2).x,
-                          (Vec2(origin.x+visibleSize.width/2, origin.y+visibleSize.height).y - (++index) * 40));
-    
-    scene->addChild(myLabel6, 1);
-    
-    auto myLabel7 = Label::createWithTTF("LabelTTF with Glow", "Marker Felt.ttf", 32);
-    myLabel7->enableGlow(Color4B::WHITE);
-    myLabel7->setColor(Color3B::RED);
-    myLabel7->setPosition(Vec2(origin.x+visibleSize.width/2, origin.y+visibleSize.height/2).x,
-                          (Vec2(origin.x+visibleSize.width/2, origin.y+visibleSize.height).y - (++index) * 40));
-    
-    scene->addChild(myLabel7, 1);
+    // now create the menu from the vector of MenuItems
+    auto menuExample = Menu::createWithArray(MenuItems);
+    menuExample->setPosition(Vec2::ZERO);
+    scene->addChild(menuExample, 1);
     
     // return the scene
     return scene;

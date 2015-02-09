@@ -1,4 +1,4 @@
-#include "Chapter6_6.h"
+#include "Chapter6_7.h"
 #include "Chapter6.h"
 
 #include "ui/CocosGUI.h"
@@ -6,7 +6,7 @@
 USING_NS_CC;
 using namespace cocos2d::ui;
 
-Scene* Chapter6_6::createScene()
+Scene* Chapter6_7::createScene()
 {
     cocos2d::Rect visibleRect = Director::getInstance()->getOpenGLView()->getVisibleRect();
     Size visibleSize = Director::getInstance()->getVisibleSize();
@@ -18,7 +18,7 @@ Scene* Chapter6_6::createScene()
     auto scene = Scene::create();
     
     // add title
-    auto label = LabelTTF::create("Slider", "Marker Felt.ttf", 32);
+    auto label = LabelTTF::create("TextField", "Marker Felt.ttf", 32);
     label->setPosition(Vec2(visibleRect.origin.x+visibleRect.size.width/2, visibleRect.origin.y+visibleRect.size.height/2).x,
                        Vec2(visibleRect.origin.x+visibleRect.size.width/2, visibleRect.origin.y+visibleRect.size.height).y - 30);
     
@@ -36,28 +36,17 @@ Scene* Chapter6_6::createScene()
     menuItem->setPosition(Vec2(visibleRect.origin.x+visibleRect.size.width - 80, visibleRect.origin.y + 25));
     scene->addChild(menu, 1);
 
-    // slider
-    auto slider = Slider::create();
-    slider->loadBarTexture("Slider_Back.png"); // what the slider looks like
-    slider->loadSlidBallTextures("SliderNode_Normal.png", "SliderNode_Press.png", "SliderNode_Disable.png");
-    slider->loadProgressBarTexture("Slider_PressBar.png");
-    slider->setPosition(Vec2(visibleSize.width / 2, visibleSize.height - (++index) * 40));
+    // textfield
+    auto textField = TextField::create("TextField - Edit Me", "Marker Felt.ttf", 30);
+    textField->setPosition(Vec2(visibleSize.width / 2, visibleSize.height - (++index) * 40));
     
-    slider->addTouchEventListener([&](Ref* sender, Widget::TouchEventType type){
-        switch (type)
-        {
-            case ui::Widget::TouchEventType::BEGAN:
-                break;
-            case ui::Widget::TouchEventType::ENDED:
-                std::cout << "slider moved" << std::endl;
-                break;
-            default:
-                break;
-        }
+    textField->setMaxLength(10); // max number of chars user can enter
+    
+    textField->addTouchEventListener([&](Ref* sender, Widget::TouchEventType type){
+        std::cout << "editing a TextField" << std::endl;
     });
 
-    scene->addChild(slider);
-    
+    scene->addChild(textField);
     
     // return the scene
     return scene;

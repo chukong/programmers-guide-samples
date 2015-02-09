@@ -1,5 +1,11 @@
 #include "Chapter6.h"
 #include "Chapter6_1.h"
+#include "Chapter6_2.h"
+#include "Chapter6_3.h"
+#include "Chapter6_4.h"
+#include "Chapter6_5.h"
+#include "Chapter6_6.h"
+#include "Chapter6_7.h"
 
 USING_NS_CC;
 
@@ -70,7 +76,7 @@ bool Chapter6::init()
     itemlabel = LabelTTF::create("Menu and Menu Items", "Marker Felt.ttf", 32);
     menuItem = MenuItemLabel::create(itemlabel);
     menuItem->setCallback([&](cocos2d::Ref *sender) {
-        Director::getInstance()->replaceScene(Chapter6_1::createScene());
+        Director::getInstance()->replaceScene(Chapter6_2::createScene());
     });
     menuItem->setPosition(Vec2(origin.x+visibleSize.width/2, origin.y+visibleSize.height/2).x,
                           (Vec2(origin.x+visibleSize.width/2, origin.y+visibleSize.height).y - (++index) * 40));
@@ -78,11 +84,24 @@ bool Chapter6::init()
     mainmenu->addChild(menuItem,2);
     mainmenu->setPosition(Vec2::ZERO);
     
+    // Button
+    itemlabel = LabelTTF::create("Button", "Marker Felt.ttf", 32);
+    menuItem = MenuItemLabel::create(itemlabel);
+    menuItem->setCallback([&](cocos2d::Ref *sender) {
+        Director::getInstance()->replaceScene(Chapter6_3::createScene());
+    });
+    menuItem->setPosition(Vec2(origin.x+visibleSize.width/2, origin.y+visibleSize.height/2).x,
+                          (Vec2(origin.x+visibleSize.width/2, origin.y+visibleSize.height).y - (++index) * 40));
+    
+    mainmenu->addChild(menuItem,2);
+    mainmenu->setPosition(Vec2::ZERO);
+    
+    
     // Checkbox
     itemlabel = LabelTTF::create("CheckBox", "Marker Felt.ttf", 32);
     menuItem = MenuItemLabel::create(itemlabel);
     menuItem->setCallback([&](cocos2d::Ref *sender) {
-        Director::getInstance()->replaceScene(Chapter6_1::createScene());
+        Director::getInstance()->replaceScene(Chapter6_4::createScene());
     });
     menuItem->setPosition(Vec2(origin.x+visibleSize.width/2, origin.y+visibleSize.height/2).x,
                           (Vec2(origin.x+visibleSize.width/2, origin.y+visibleSize.height).y - (++index) * 40));
@@ -94,7 +113,7 @@ bool Chapter6::init()
     itemlabel = LabelTTF::create("LoadingBar", "Marker Felt.ttf", 32);
     menuItem = MenuItemLabel::create(itemlabel);
     menuItem->setCallback([&](cocos2d::Ref *sender) {
-        Director::getInstance()->replaceScene(Chapter6_1::createScene());
+        Director::getInstance()->replaceScene(Chapter6_5::createScene());
     });
     menuItem->setPosition(Vec2(origin.x+visibleSize.width/2, origin.y+visibleSize.height/2).x,
                           (Vec2(origin.x+visibleSize.width/2, origin.y+visibleSize.height).y - (++index) * 40));
@@ -106,7 +125,7 @@ bool Chapter6::init()
     itemlabel = LabelTTF::create("Slider", "Marker Felt.ttf", 32);
     menuItem = MenuItemLabel::create(itemlabel);
     menuItem->setCallback([&](cocos2d::Ref *sender) {
-        Director::getInstance()->replaceScene(Chapter6_1::createScene());
+        Director::getInstance()->replaceScene(Chapter6_6::createScene());
     });
     menuItem->setPosition(Vec2(origin.x+visibleSize.width/2, origin.y+visibleSize.height/2).x,
                           (Vec2(origin.x+visibleSize.width/2, origin.y+visibleSize.height).y - (++index) * 40));
@@ -118,7 +137,7 @@ bool Chapter6::init()
     itemlabel = LabelTTF::create("TextField", "Marker Felt.ttf", 32);
     menuItem = MenuItemLabel::create(itemlabel);
     menuItem->setCallback([&](cocos2d::Ref *sender) {
-        Director::getInstance()->replaceScene(Chapter6_1::createScene());
+        Director::getInstance()->replaceScene(Chapter6_7::createScene());
     });
     menuItem->setPosition(Vec2(origin.x+visibleSize.width/2, origin.y+visibleSize.height/2).x,
                           (Vec2(origin.x+visibleSize.width/2, origin.y+visibleSize.height).y - (++index) * 40));

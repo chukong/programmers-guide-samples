@@ -1,14 +1,16 @@
-#ifndef __CHAPTER_6_1_H__
-#define __CHAPTER_6_1_H__
+#ifndef __CHAPTER_6_2_H__
+#define __CHAPTER_6_2_H__
+
+#include <iostream>
 
 #include "cocos2d.h"
 
 USING_NS_CC;
 
-class Chapter6_1 : public Ref
+class Chapter6_2 : public Ref
 {
     public:
-        static cocos2d::Scene* createScene();
+        static Scene* createScene();
 };
 
-#endif // __CHAPTER_6_1_H__
+#endif // __CHAPTER_6_2_H__

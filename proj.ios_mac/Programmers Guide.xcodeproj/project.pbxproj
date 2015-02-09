@@ -9,6 +9,44 @@
 /* Begin PBXBuildFile section */
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		258B03651A8908D70078E3EF /* Chapter6_3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 258B03631A8908D70078E3EF /* Chapter6_3.cpp */; };
+		258B03661A8908D70078E3EF /* Chapter6_3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 258B03631A8908D70078E3EF /* Chapter6_3.cpp */; };
+		258B036A1A89131B0078E3EF /* Button_Disable.png in Resources */ = {isa = PBXBuildFile; fileRef = 258B03671A89131B0078E3EF /* Button_Disable.png */; };
+		258B036B1A89131B0078E3EF /* Button_Disable.png in Resources */ = {isa = PBXBuildFile; fileRef = 258B03671A89131B0078E3EF /* Button_Disable.png */; };
+		258B036C1A89131B0078E3EF /* Button_Normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 258B03681A89131B0078E3EF /* Button_Normal.png */; };
+		258B036D1A89131B0078E3EF /* Button_Normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 258B03681A89131B0078E3EF /* Button_Normal.png */; };
+		258B036E1A89131B0078E3EF /* Button_Press.png in Resources */ = {isa = PBXBuildFile; fileRef = 258B03691A89131B0078E3EF /* Button_Press.png */; };
+		258B036F1A89131B0078E3EF /* Button_Press.png in Resources */ = {isa = PBXBuildFile; fileRef = 258B03691A89131B0078E3EF /* Button_Press.png */; };
+		258B03731A892CFD0078E3EF /* Chapter6_4.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 258B03711A892CFD0078E3EF /* Chapter6_4.cpp */; };
+		258B03741A892CFD0078E3EF /* Chapter6_4.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 258B03711A892CFD0078E3EF /* Chapter6_4.cpp */; };
+		258B037A1A892DC90078E3EF /* CheckBox_Disable.png in Resources */ = {isa = PBXBuildFile; fileRef = 258B03751A892DC90078E3EF /* CheckBox_Disable.png */; };
+		258B037B1A892DC90078E3EF /* CheckBox_Disable.png in Resources */ = {isa = PBXBuildFile; fileRef = 258B03751A892DC90078E3EF /* CheckBox_Disable.png */; };
+		258B037C1A892DC90078E3EF /* CheckBox_Normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 258B03761A892DC90078E3EF /* CheckBox_Normal.png */; };
+		258B037D1A892DC90078E3EF /* CheckBox_Normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 258B03761A892DC90078E3EF /* CheckBox_Normal.png */; };
+		258B037E1A892DC90078E3EF /* CheckBox_Press.png in Resources */ = {isa = PBXBuildFile; fileRef = 258B03771A892DC90078E3EF /* CheckBox_Press.png */; };
+		258B037F1A892DC90078E3EF /* CheckBox_Press.png in Resources */ = {isa = PBXBuildFile; fileRef = 258B03771A892DC90078E3EF /* CheckBox_Press.png */; };
+		258B03801A892DC90078E3EF /* CheckBoxNode_Disable.png in Resources */ = {isa = PBXBuildFile; fileRef = 258B03781A892DC90078E3EF /* CheckBoxNode_Disable.png */; };
+		258B03811A892DC90078E3EF /* CheckBoxNode_Disable.png in Resources */ = {isa = PBXBuildFile; fileRef = 258B03781A892DC90078E3EF /* CheckBoxNode_Disable.png */; };
+		258B03821A892DC90078E3EF /* CheckBoxNode_Normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 258B03791A892DC90078E3EF /* CheckBoxNode_Normal.png */; };
+		258B03831A892DC90078E3EF /* CheckBoxNode_Normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 258B03791A892DC90078E3EF /* CheckBoxNode_Normal.png */; };
+		258B03861A892F330078E3EF /* Chapter6_5.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 258B03841A892F330078E3EF /* Chapter6_5.cpp */; };
+		258B03871A892F330078E3EF /* Chapter6_5.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 258B03841A892F330078E3EF /* Chapter6_5.cpp */; };
+		258B03891A892FF60078E3EF /* LoadingBarFile.png in Resources */ = {isa = PBXBuildFile; fileRef = 258B03881A892FF60078E3EF /* LoadingBarFile.png */; };
+		258B038A1A892FF60078E3EF /* LoadingBarFile.png in Resources */ = {isa = PBXBuildFile; fileRef = 258B03881A892FF60078E3EF /* LoadingBarFile.png */; };
+		258B038D1A8942A40078E3EF /* Chapter6_6.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 258B038B1A8942A40078E3EF /* Chapter6_6.cpp */; };
+		258B038E1A8942A40078E3EF /* Chapter6_6.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 258B038B1A8942A40078E3EF /* Chapter6_6.cpp */; };
+		258B03941A8942ED0078E3EF /* Slider_Back.png in Resources */ = {isa = PBXBuildFile; fileRef = 258B038F1A8942ED0078E3EF /* Slider_Back.png */; };
+		258B03951A8942ED0078E3EF /* Slider_Back.png in Resources */ = {isa = PBXBuildFile; fileRef = 258B038F1A8942ED0078E3EF /* Slider_Back.png */; };
+		258B03961A8942ED0078E3EF /* Slider_PressBar.png in Resources */ = {isa = PBXBuildFile; fileRef = 258B03901A8942ED0078E3EF /* Slider_PressBar.png */; };
+		258B03971A8942ED0078E3EF /* Slider_PressBar.png in Resources */ = {isa = PBXBuildFile; fileRef = 258B03901A8942ED0078E3EF /* Slider_PressBar.png */; };
+		258B03981A8942ED0078E3EF /* SliderNode_Disable.png in Resources */ = {isa = PBXBuildFile; fileRef = 258B03911A8942ED0078E3EF /* SliderNode_Disable.png */; };
+		258B03991A8942ED0078E3EF /* SliderNode_Disable.png in Resources */ = {isa = PBXBuildFile; fileRef = 258B03911A8942ED0078E3EF /* SliderNode_Disable.png */; };
+		258B039A1A8942ED0078E3EF /* SliderNode_Normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 258B03921A8942ED0078E3EF /* SliderNode_Normal.png */; };
+		258B039B1A8942ED0078E3EF /* SliderNode_Normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 258B03921A8942ED0078E3EF /* SliderNode_Normal.png */; };
+		258B039C1A8942ED0078E3EF /* SliderNode_Press.png in Resources */ = {isa = PBXBuildFile; fileRef = 258B03931A8942ED0078E3EF /* SliderNode_Press.png */; };
+		258B039D1A8942ED0078E3EF /* SliderNode_Press.png in Resources */ = {isa = PBXBuildFile; fileRef = 258B03931A8942ED0078E3EF /* SliderNode_Press.png */; };
+		258B03A01A8948CD0078E3EF /* Chapter6_7.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 258B039E1A8948CD0078E3EF /* Chapter6_7.cpp */; };
+		258B03A11A8948CD0078E3EF /* Chapter6_7.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 258B039E1A8948CD0078E3EF /* Chapter6_7.cpp */; };
 		25D87BA01A84036100456FF7 /* Icon-120.png in Resources */ = {isa = PBXBuildFile; fileRef = 5087E77617EB970100C73F5D /* Icon-120.png */; };
 		25D87BA11A84036100456FF7 /* Icon-76.png in Resources */ = {isa = PBXBuildFile; fileRef = 5087E77B17EB970100C73F5D /* Icon-76.png */; };
 		25D87BA21A84036100456FF7 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5087E77417EB970100C73F5D /* Default@2x.png */; };
@@ -71,6 +109,8 @@
 		25F1DB811A8551F700A31EA4 /* bitmapRed.fnt in Resources */ = {isa = PBXBuildFile; fileRef = 25F1DB7E1A8551F700A31EA4 /* bitmapRed.fnt */; };
 		25F1DB821A8551F700A31EA4 /* bitmapRed.png in Resources */ = {isa = PBXBuildFile; fileRef = 25F1DB7F1A8551F700A31EA4 /* bitmapRed.png */; };
 		25F1DB831A8551F700A31EA4 /* bitmapRed.png in Resources */ = {isa = PBXBuildFile; fileRef = 25F1DB7F1A8551F700A31EA4 /* bitmapRed.png */; };
+		25F1DB8A1A85672E00A31EA4 /* Chapter6_2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 25F1DB881A85672E00A31EA4 /* Chapter6_2.cpp */; };
+		25F1DB8B1A85672E00A31EA4 /* Chapter6_2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 25F1DB881A85672E00A31EA4 /* Chapter6_2.cpp */; };
 		25F2FF9E1A78393800CE153F /* Chapter6_1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 25F2FF9C1A78393800CE153F /* Chapter6_1.cpp */; };
 		25F2FF9F1A78393800CE153F /* Chapter6_1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 25F2FF9C1A78393800CE153F /* Chapter6_1.cpp */; };
 		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
@@ -835,6 +875,30 @@
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D6058910D05DD3D006BFB54 /* Chapter 2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Chapter 2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		258B03631A8908D70078E3EF /* Chapter6_3.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Chapter6_3.cpp; path = chapter6/Chapter6_3.cpp; sourceTree = "<group>"; };
+		258B03641A8908D70078E3EF /* Chapter6_3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Chapter6_3.h; path = chapter6/Chapter6_3.h; sourceTree = "<group>"; };
+		258B03671A89131B0078E3EF /* Button_Disable.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Button_Disable.png; sourceTree = "<group>"; };
+		258B03681A89131B0078E3EF /* Button_Normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Button_Normal.png; sourceTree = "<group>"; };
+		258B03691A89131B0078E3EF /* Button_Press.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Button_Press.png; sourceTree = "<group>"; };
+		258B03711A892CFD0078E3EF /* Chapter6_4.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Chapter6_4.cpp; path = chapter6/Chapter6_4.cpp; sourceTree = "<group>"; };
+		258B03721A892CFD0078E3EF /* Chapter6_4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Chapter6_4.h; path = chapter6/Chapter6_4.h; sourceTree = "<group>"; };
+		258B03751A892DC90078E3EF /* CheckBox_Disable.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CheckBox_Disable.png; sourceTree = "<group>"; };
+		258B03761A892DC90078E3EF /* CheckBox_Normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CheckBox_Normal.png; sourceTree = "<group>"; };
+		258B03771A892DC90078E3EF /* CheckBox_Press.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CheckBox_Press.png; sourceTree = "<group>"; };
+		258B03781A892DC90078E3EF /* CheckBoxNode_Disable.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CheckBoxNode_Disable.png; sourceTree = "<group>"; };
+		258B03791A892DC90078E3EF /* CheckBoxNode_Normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CheckBoxNode_Normal.png; sourceTree = "<group>"; };
+		258B03841A892F330078E3EF /* Chapter6_5.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Chapter6_5.cpp; path = chapter6/Chapter6_5.cpp; sourceTree = "<group>"; };
+		258B03851A892F330078E3EF /* Chapter6_5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Chapter6_5.h; path = chapter6/Chapter6_5.h; sourceTree = "<group>"; };
+		258B03881A892FF60078E3EF /* LoadingBarFile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LoadingBarFile.png; sourceTree = "<group>"; };
+		258B038B1A8942A40078E3EF /* Chapter6_6.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Chapter6_6.cpp; path = chapter6/Chapter6_6.cpp; sourceTree = "<group>"; };
+		258B038C1A8942A40078E3EF /* Chapter6_6.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Chapter6_6.h; path = chapter6/Chapter6_6.h; sourceTree = "<group>"; };
+		258B038F1A8942ED0078E3EF /* Slider_Back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Slider_Back.png; sourceTree = "<group>"; };
+		258B03901A8942ED0078E3EF /* Slider_PressBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Slider_PressBar.png; sourceTree = "<group>"; };
+		258B03911A8942ED0078E3EF /* SliderNode_Disable.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SliderNode_Disable.png; sourceTree = "<group>"; };
+		258B03921A8942ED0078E3EF /* SliderNode_Normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SliderNode_Normal.png; sourceTree = "<group>"; };
+		258B03931A8942ED0078E3EF /* SliderNode_Press.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SliderNode_Press.png; sourceTree = "<group>"; };
+		258B039E1A8948CD0078E3EF /* Chapter6_7.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Chapter6_7.cpp; path = chapter6/Chapter6_7.cpp; sourceTree = "<group>"; };
+		258B039F1A8948CD0078E3EF /* Chapter6_7.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Chapter6_7.h; path = chapter6/Chapter6_7.h; sourceTree = "<group>"; };
 		25D87BD21A84036100456FF7 /* Chapter 7 iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Chapter 7 iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		25D87BFB1A84037000456FF7 /* Chapter 7 Mac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Chapter 7 Mac.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		25D87BFE1A84045700456FF7 /* AppDelegate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AppDelegate.cpp; sourceTree = "<group>"; };
@@ -849,6 +913,8 @@
 		25F1DB6D1A85413100A31EA4 /* CloseSelected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CloseSelected.png; sourceTree = "<group>"; };
 		25F1DB7E1A8551F700A31EA4 /* bitmapRed.fnt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = bitmapRed.fnt; sourceTree = "<group>"; };
 		25F1DB7F1A8551F700A31EA4 /* bitmapRed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bitmapRed.png; sourceTree = "<group>"; };
+		25F1DB881A85672E00A31EA4 /* Chapter6_2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Chapter6_2.cpp; path = chapter6/Chapter6_2.cpp; sourceTree = "<group>"; };
+		25F1DB891A85672E00A31EA4 /* Chapter6_2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Chapter6_2.h; path = chapter6/Chapter6_2.h; sourceTree = "<group>"; };
 		25F2FF9C1A78393800CE153F /* Chapter6_1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Chapter6_1.cpp; path = chapter6/Chapter6_1.cpp; sourceTree = "<group>"; };
 		25F2FF9D1A78393800CE153F /* Chapter6_1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Chapter6_1.h; path = chapter6/Chapter6_1.h; sourceTree = "<group>"; };
 		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -1462,6 +1528,18 @@
 				296358F719F78D81003732AB /* Chapter6.h */,
 				25F2FF9C1A78393800CE153F /* Chapter6_1.cpp */,
 				25F2FF9D1A78393800CE153F /* Chapter6_1.h */,
+				25F1DB881A85672E00A31EA4 /* Chapter6_2.cpp */,
+				25F1DB891A85672E00A31EA4 /* Chapter6_2.h */,
+				258B03631A8908D70078E3EF /* Chapter6_3.cpp */,
+				258B03641A8908D70078E3EF /* Chapter6_3.h */,
+				258B03711A892CFD0078E3EF /* Chapter6_4.cpp */,
+				258B03721A892CFD0078E3EF /* Chapter6_4.h */,
+				258B03841A892F330078E3EF /* Chapter6_5.cpp */,
+				258B03851A892F330078E3EF /* Chapter6_5.h */,
+				258B038B1A8942A40078E3EF /* Chapter6_6.cpp */,
+				258B038C1A8942A40078E3EF /* Chapter6_6.h */,
+				258B039E1A8948CD0078E3EF /* Chapter6_7.cpp */,
+				258B039F1A8948CD0078E3EF /* Chapter6_7.h */,
 			);
 			name = chapter6;
 			sourceTree = "<group>";
@@ -1469,6 +1547,20 @@
 		296358FC19F78ED4003732AB /* chapter6 */ = {
 			isa = PBXGroup;
 			children = (
+				258B038F1A8942ED0078E3EF /* Slider_Back.png */,
+				258B03901A8942ED0078E3EF /* Slider_PressBar.png */,
+				258B03911A8942ED0078E3EF /* SliderNode_Disable.png */,
+				258B03921A8942ED0078E3EF /* SliderNode_Normal.png */,
+				258B03931A8942ED0078E3EF /* SliderNode_Press.png */,
+				258B03881A892FF60078E3EF /* LoadingBarFile.png */,
+				258B03751A892DC90078E3EF /* CheckBox_Disable.png */,
+				258B03761A892DC90078E3EF /* CheckBox_Normal.png */,
+				258B03771A892DC90078E3EF /* CheckBox_Press.png */,
+				258B03781A892DC90078E3EF /* CheckBoxNode_Disable.png */,
+				258B03791A892DC90078E3EF /* CheckBoxNode_Normal.png */,
+				258B03671A89131B0078E3EF /* Button_Disable.png */,
+				258B03681A89131B0078E3EF /* Button_Normal.png */,
+				258B03691A89131B0078E3EF /* Button_Press.png */,
 				25F1DB7E1A8551F700A31EA4 /* bitmapRed.fnt */,
 				25F1DB7F1A8551F700A31EA4 /* bitmapRed.png */,
 				25F1DB651A85412000A31EA4 /* CloseNormal.png */,
@@ -2320,19 +2412,32 @@
 			buildActionMask = 2147483647;
 			files = (
 				296358BC19F78D4F003732AB /* Icon-120.png in Resources */,
+				258B039C1A8942ED0078E3EF /* SliderNode_Press.png in Resources */,
 				296358BE19F78D4F003732AB /* Icon-76.png in Resources */,
+				258B037E1A892DC90078E3EF /* CheckBox_Press.png in Resources */,
 				296358BF19F78D4F003732AB /* Default@2x.png in Resources */,
+				258B036E1A89131B0078E3EF /* Button_Press.png in Resources */,
 				25F1DB821A8551F700A31EA4 /* bitmapRed.png in Resources */,
+				258B037C1A892DC90078E3EF /* CheckBox_Normal.png in Resources */,
 				296358C019F78D4F003732AB /* Icon-100.png in Resources */,
+				258B03821A892DC90078E3EF /* CheckBoxNode_Normal.png in Resources */,
+				258B039A1A8942ED0078E3EF /* SliderNode_Normal.png in Resources */,
 				296358C319F78D4F003732AB /* Icon-152.png in Resources */,
+				258B03961A8942ED0078E3EF /* Slider_PressBar.png in Resources */,
+				258B03891A892FF60078E3EF /* LoadingBarFile.png in Resources */,
 				296358C519F78D4F003732AB /* Default-568h@2x.png in Resources */,
 				25F1DB691A85412000A31EA4 /* CloseSelected.png in Resources */,
+				258B036A1A89131B0078E3EF /* Button_Disable.png in Resources */,
 				296358C619F78D4F003732AB /* Icon-72.png in Resources */,
 				296358CB19F78D4F003732AB /* Icon-50.png in Resources */,
+				258B037A1A892DC90078E3EF /* CheckBox_Disable.png in Resources */,
 				296358CC19F78D4F003732AB /* Marker Felt.ttf in Resources */,
 				296358CD19F78D4F003732AB /* Icon-114.png in Resources */,
 				296358CE19F78D4F003732AB /* Icon-29.png in Resources */,
+				258B03981A8942ED0078E3EF /* SliderNode_Disable.png in Resources */,
+				258B03941A8942ED0078E3EF /* Slider_Back.png in Resources */,
 				296358CF19F78D4F003732AB /* Icon-40.png in Resources */,
+				258B036C1A89131B0078E3EF /* Button_Normal.png in Resources */,
 				25F1DB671A85412000A31EA4 /* CloseNormal.png in Resources */,
 				296358D019F78D4F003732AB /* Icon-144.png in Resources */,
 				296358D119F78D4F003732AB /* Icon-80.png in Resources */,
@@ -2340,6 +2445,7 @@
 				296358D919F78D4F003732AB /* Default.png in Resources */,
 				296358DA19F78D4F003732AB /* Icon-58.png in Resources */,
 				25F1DB801A8551F700A31EA4 /* bitmapRed.fnt in Resources */,
+				258B03801A892DC90078E3EF /* CheckBoxNode_Disable.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2347,11 +2453,25 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				258B036B1A89131B0078E3EF /* Button_Disable.png in Resources */,
 				25F1DB831A8551F700A31EA4 /* bitmapRed.png in Resources */,
 				25F1DB681A85412000A31EA4 /* CloseNormal.png in Resources */,
+				258B037F1A892DC90078E3EF /* CheckBox_Press.png in Resources */,
+				258B039D1A8942ED0078E3EF /* SliderNode_Press.png in Resources */,
+				258B036F1A89131B0078E3EF /* Button_Press.png in Resources */,
 				2963592B19F78F74003732AB /* Icon.icns in Resources */,
+				258B03991A8942ED0078E3EF /* SliderNode_Disable.png in Resources */,
 				25F1DB6A1A85412000A31EA4 /* CloseSelected.png in Resources */,
+				258B03811A892DC90078E3EF /* CheckBoxNode_Disable.png in Resources */,
+				258B038A1A892FF60078E3EF /* LoadingBarFile.png in Resources */,
+				258B036D1A89131B0078E3EF /* Button_Normal.png in Resources */,
+				258B03971A8942ED0078E3EF /* Slider_PressBar.png in Resources */,
+				258B037D1A892DC90078E3EF /* CheckBox_Normal.png in Resources */,
+				258B039B1A8942ED0078E3EF /* SliderNode_Normal.png in Resources */,
 				25F1DB811A8551F700A31EA4 /* bitmapRed.fnt in Resources */,
+				258B03831A892DC90078E3EF /* CheckBoxNode_Normal.png in Resources */,
+				258B03951A8942ED0078E3EF /* Slider_Back.png in Resources */,
+				258B037B1A892DC90078E3EF /* CheckBox_Disable.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2772,10 +2892,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				296358DE19F78D4F003732AB /* AppController.mm in Sources */,
+				25F1DB8A1A85672E00A31EA4 /* Chapter6_2.cpp in Sources */,
 				296358F819F78D81003732AB /* AppDelegate.cpp in Sources */,
 				296358F919F78D81003732AB /* Chapter6.cpp in Sources */,
 				296358E019F78D4F003732AB /* RootViewController.mm in Sources */,
 				25F2FF9E1A78393800CE153F /* Chapter6_1.cpp in Sources */,
+				258B03861A892F330078E3EF /* Chapter6_5.cpp in Sources */,
+				258B038D1A8942A40078E3EF /* Chapter6_6.cpp in Sources */,
+				258B03651A8908D70078E3EF /* Chapter6_3.cpp in Sources */,
+				258B03731A892CFD0078E3EF /* Chapter6_4.cpp in Sources */,
+				258B03A01A8948CD0078E3EF /* Chapter6_7.cpp in Sources */,
 				296358E119F78D4F003732AB /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2785,10 +2911,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				2963594419F78F9D003732AB /* AppDelegate.cpp in Sources */,
+				25F1DB8B1A85672E00A31EA4 /* Chapter6_2.cpp in Sources */,
 				2963594519F78F9D003732AB /* AppDelegate.h in Sources */,
 				2963594619F78F9D003732AB /* Chapter6.cpp in Sources */,
 				2963594719F78F9D003732AB /* Chapter6.h in Sources */,
 				25F2FF9F1A78393800CE153F /* Chapter6_1.cpp in Sources */,
+				258B03871A892F330078E3EF /* Chapter6_5.cpp in Sources */,
+				258B038E1A8942A40078E3EF /* Chapter6_6.cpp in Sources */,
+				258B03661A8908D70078E3EF /* Chapter6_3.cpp in Sources */,
+				258B03741A892CFD0078E3EF /* Chapter6_4.cpp in Sources */,
+				258B03A11A8948CD0078E3EF /* Chapter6_7.cpp in Sources */,
 				2963593219F78F74003732AB /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

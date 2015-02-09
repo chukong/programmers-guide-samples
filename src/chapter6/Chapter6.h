@@ -3,16 +3,18 @@
 
 #include "cocos2d.h"
 
-class Chapter6 : public cocos2d::Node
+USING_NS_CC;
+
+class Chapter6 : public Node
 {
 public:
     // there's no 'id' in cpp, so we recommend returning the class instance pointer
-    static cocos2d::Scene* createScene();
+    static Scene* createScene();
     
     virtual bool init();
     
     // a selector callback
-    void onMenuCloseCallback(cocos2d::Ref* sender);
+    void onMenuCloseCallback(Ref* sender);
     
     // implement the "static create()" method manually
     CREATE_FUNC(Chapter6);

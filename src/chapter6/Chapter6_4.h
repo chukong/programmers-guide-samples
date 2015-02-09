@@ -1,5 +1,5 @@
-#ifndef __CHAPTER_6_3_H__
-#define __CHAPTER_6_3_H__
+#ifndef __CHAPTER_6_4_H__
+#define __CHAPTER_6_4_H__
 
 #include <iostream>
 
@@ -8,12 +8,10 @@
 
 USING_NS_CC;
 
-class Chapter6_3 : public Ref
+class Chapter6_4 : public Ref
 {
     public:
         static Scene* createScene();
-    
-        //void buttonOneCallback(Ref* sender);
 };
 
-#endif // __CHAPTER_6_3_H__
+#endif // __CHAPTER_6_4_H__
