@@ -51,6 +51,8 @@
 		258B03AB1A8965110078E3EF /* isometric_grass_and_water.png in Resources */ = {isa = PBXBuildFile; fileRef = 258B03A81A8965110078E3EF /* isometric_grass_and_water.png */; };
 		258B03AC1A8965110078E3EF /* isometric_grass_and_water.tmx in Resources */ = {isa = PBXBuildFile; fileRef = 258B03A91A8965110078E3EF /* isometric_grass_and_water.tmx */; };
 		258B03AD1A8965110078E3EF /* isometric_grass_and_water.tmx in Resources */ = {isa = PBXBuildFile; fileRef = 258B03A91A8965110078E3EF /* isometric_grass_and_water.tmx */; };
+		258B03B01A8C0DF40078E3EF /* Chapter7_2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 258B03AE1A8C0DF40078E3EF /* Chapter7_2.cpp */; };
+		258B03B11A8C0DF40078E3EF /* Chapter7_2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 258B03AE1A8C0DF40078E3EF /* Chapter7_2.cpp */; };
 		25D87BA01A84036100456FF7 /* Icon-120.png in Resources */ = {isa = PBXBuildFile; fileRef = 5087E77617EB970100C73F5D /* Icon-120.png */; };
 		25D87BA11A84036100456FF7 /* Icon-76.png in Resources */ = {isa = PBXBuildFile; fileRef = 5087E77B17EB970100C73F5D /* Icon-76.png */; };
 		25D87BA21A84036100456FF7 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5087E77417EB970100C73F5D /* Default@2x.png */; };
@@ -905,6 +907,8 @@
 		258B039F1A8948CD0078E3EF /* Chapter6_7.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Chapter6_7.h; path = chapter6/Chapter6_7.h; sourceTree = "<group>"; };
 		258B03A81A8965110078E3EF /* isometric_grass_and_water.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = isometric_grass_and_water.png; sourceTree = "<group>"; };
 		258B03A91A8965110078E3EF /* isometric_grass_and_water.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = isometric_grass_and_water.tmx; sourceTree = "<group>"; };
+		258B03AE1A8C0DF40078E3EF /* Chapter7_2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Chapter7_2.cpp; sourceTree = "<group>"; };
+		258B03AF1A8C0DF40078E3EF /* Chapter7_2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Chapter7_2.h; sourceTree = "<group>"; };
 		25D87BD21A84036100456FF7 /* Chapter 7 iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Chapter 7 iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		25D87BFB1A84037000456FF7 /* Chapter 7 Mac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Chapter 7 Mac.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		25D87BFE1A84045700456FF7 /* AppDelegate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AppDelegate.cpp; sourceTree = "<group>"; };
@@ -1512,6 +1516,8 @@
 				25D87C011A84045700456FF7 /* Chapter7.h */,
 				25D87C021A84045700456FF7 /* Chapter7_1.cpp */,
 				25D87C031A84045700456FF7 /* Chapter7_1.h */,
+				258B03AE1A8C0DF40078E3EF /* Chapter7_2.cpp */,
+				258B03AF1A8C0DF40078E3EF /* Chapter7_2.h */,
 			);
 			path = chapter7;
 			sourceTree = "<group>";
@@ -2882,6 +2888,7 @@
 				25D87C041A84045700456FF7 /* AppDelegate.cpp in Sources */,
 				25D87C081A84045700456FF7 /* Chapter7_1.cpp in Sources */,
 				25D87C061A84045700456FF7 /* Chapter7.cpp in Sources */,
+				258B03B01A8C0DF40078E3EF /* Chapter7_2.cpp in Sources */,
 				25D87BBD1A84036100456FF7 /* AppController.mm in Sources */,
 				25D87BC01A84036100456FF7 /* RootViewController.mm in Sources */,
 				25D87BC21A84036100456FF7 /* main.m in Sources */,
@@ -2893,6 +2900,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				25D87C071A84045700456FF7 /* Chapter7.cpp in Sources */,
+				258B03B11A8C0DF40078E3EF /* Chapter7_2.cpp in Sources */,
 				25D87C091A84045700456FF7 /* Chapter7_1.cpp in Sources */,
 				25D87C051A84045700456FF7 /* AppDelegate.cpp in Sources */,
 				25D87BEB1A84037000456FF7 /* main.cpp in Sources */,
