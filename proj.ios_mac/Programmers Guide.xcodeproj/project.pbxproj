@@ -47,6 +47,10 @@
 		258B039D1A8942ED0078E3EF /* SliderNode_Press.png in Resources */ = {isa = PBXBuildFile; fileRef = 258B03931A8942ED0078E3EF /* SliderNode_Press.png */; };
 		258B03A01A8948CD0078E3EF /* Chapter6_7.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 258B039E1A8948CD0078E3EF /* Chapter6_7.cpp */; };
 		258B03A11A8948CD0078E3EF /* Chapter6_7.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 258B039E1A8948CD0078E3EF /* Chapter6_7.cpp */; };
+		258B03AA1A8965110078E3EF /* isometric_grass_and_water.png in Resources */ = {isa = PBXBuildFile; fileRef = 258B03A81A8965110078E3EF /* isometric_grass_and_water.png */; };
+		258B03AB1A8965110078E3EF /* isometric_grass_and_water.png in Resources */ = {isa = PBXBuildFile; fileRef = 258B03A81A8965110078E3EF /* isometric_grass_and_water.png */; };
+		258B03AC1A8965110078E3EF /* isometric_grass_and_water.tmx in Resources */ = {isa = PBXBuildFile; fileRef = 258B03A91A8965110078E3EF /* isometric_grass_and_water.tmx */; };
+		258B03AD1A8965110078E3EF /* isometric_grass_and_water.tmx in Resources */ = {isa = PBXBuildFile; fileRef = 258B03A91A8965110078E3EF /* isometric_grass_and_water.tmx */; };
 		25D87BA01A84036100456FF7 /* Icon-120.png in Resources */ = {isa = PBXBuildFile; fileRef = 5087E77617EB970100C73F5D /* Icon-120.png */; };
 		25D87BA11A84036100456FF7 /* Icon-76.png in Resources */ = {isa = PBXBuildFile; fileRef = 5087E77B17EB970100C73F5D /* Icon-76.png */; };
 		25D87BA21A84036100456FF7 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5087E77417EB970100C73F5D /* Default@2x.png */; };
@@ -899,6 +903,8 @@
 		258B03931A8942ED0078E3EF /* SliderNode_Press.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SliderNode_Press.png; sourceTree = "<group>"; };
 		258B039E1A8948CD0078E3EF /* Chapter6_7.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Chapter6_7.cpp; path = chapter6/Chapter6_7.cpp; sourceTree = "<group>"; };
 		258B039F1A8948CD0078E3EF /* Chapter6_7.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Chapter6_7.h; path = chapter6/Chapter6_7.h; sourceTree = "<group>"; };
+		258B03A81A8965110078E3EF /* isometric_grass_and_water.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = isometric_grass_and_water.png; sourceTree = "<group>"; };
+		258B03A91A8965110078E3EF /* isometric_grass_and_water.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = isometric_grass_and_water.tmx; sourceTree = "<group>"; };
 		25D87BD21A84036100456FF7 /* Chapter 7 iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Chapter 7 iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		25D87BFB1A84037000456FF7 /* Chapter 7 Mac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Chapter 7 Mac.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		25D87BFE1A84045700456FF7 /* AppDelegate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AppDelegate.cpp; sourceTree = "<group>"; };
@@ -1513,6 +1519,8 @@
 		25F1DB6B1A85413100A31EA4 /* chapter7 */ = {
 			isa = PBXGroup;
 			children = (
+				258B03A81A8965110078E3EF /* isometric_grass_and_water.png */,
+				258B03A91A8965110078E3EF /* isometric_grass_and_water.tmx */,
 				25F1DB6C1A85413100A31EA4 /* CloseNormal.png */,
 				25F1DB6D1A85413100A31EA4 /* CloseSelected.png */,
 			);
@@ -2393,7 +2401,9 @@
 				25D87BB31A84036100456FF7 /* Icon-57.png in Resources */,
 				25D87BB81A84036100456FF7 /* Default.png in Resources */,
 				25D87BBA1A84036100456FF7 /* Icon-58.png in Resources */,
+				258B03AA1A8965110078E3EF /* isometric_grass_and_water.png in Resources */,
 				25F1DB6E1A85413100A31EA4 /* CloseNormal.png in Resources */,
+				258B03AC1A8965110078E3EF /* isometric_grass_and_water.tmx in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2402,7 +2412,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				25D87BE41A84037000456FF7 /* Icon.icns in Resources */,
+				258B03AD1A8965110078E3EF /* isometric_grass_and_water.tmx in Resources */,
 				25F1DB6F1A85413100A31EA4 /* CloseNormal.png in Resources */,
+				258B03AB1A8965110078E3EF /* isometric_grass_and_water.png in Resources */,
 				25F1DB711A85413100A31EA4 /* CloseSelected.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
