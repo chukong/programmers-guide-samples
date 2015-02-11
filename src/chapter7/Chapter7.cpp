@@ -49,13 +49,23 @@ bool Chapter7::init()
     closemenu->setPosition(Vec2::ZERO);
     this->addChild(closemenu, 1);
     
+    // Create a Label to identify the sample
+    auto label = LabelTTF::create("Chapter 7", "Marker Felt.ttf", 32);
+    
+    // position the label on the center of the screen
+    label->setPosition(Vec2(origin.x + visibleSize.width/2,
+                            origin.y + visibleSize.height - label->getContentSize().height));
+    
+    // add the label as a child to this layer
+    this->addChild(label, 1);
+
     /////////////////////////////
     // 3. add main menu
     auto mainmenu = Menu::create();
     int index = 2;
     
-    // Label
-    auto itemlabel = LabelTTF::create("Label", "Arial", 24);
+    // TileMap
+    auto itemlabel = LabelTTF::create("TileMap", "Marker Felt.ttf", 32);
     auto menuItem = MenuItemLabel::create(itemlabel);
     menuItem->setCallback([&](cocos2d::Ref *sender) {
         Director::getInstance()->replaceScene(Chapter7_1::createScene());
@@ -64,10 +74,9 @@ bool Chapter7::init()
                           (Vec2(origin.x+visibleSize.width/2, origin.y+visibleSize.height).y - (++index) * 40));
     
     mainmenu->addChild(menuItem,2);
-    mainmenu->setPosition(Vec2::ZERO);
     
-    // Munu and Menu Items
-    itemlabel = LabelTTF::create("Menu and Menu Items", "Arial", 24);
+    // Particle
+    itemlabel = LabelTTF::create("Particle", "Marker Felt.ttf", 32);
     menuItem = MenuItemLabel::create(itemlabel);
     menuItem->setCallback([&](cocos2d::Ref *sender) {
         Director::getInstance()->replaceScene(Chapter7_1::createScene());
@@ -76,22 +85,21 @@ bool Chapter7::init()
                           (Vec2(origin.x+visibleSize.width/2, origin.y+visibleSize.height).y - (++index) * 40));
     
     mainmenu->addChild(menuItem,2);
-    mainmenu->setPosition(Vec2::ZERO);
     
+    // Parallax
+    itemlabel = LabelTTF::create("Parallax", "Marker Felt.ttf", 32);
+    menuItem = MenuItemLabel::create(itemlabel);
+    menuItem->setCallback([&](cocos2d::Ref *sender) {
+        Director::getInstance()->replaceScene(Chapter7_1::createScene());
+    });
+    menuItem->setPosition(Vec2(origin.x+visibleSize.width/2, origin.y+visibleSize.height/2).x,
+                          (Vec2(origin.x+visibleSize.width/2, origin.y+visibleSize.height).y - (++index) * 40));
     
-    // add main menu
-    this->addChild(mainmenu, 1);
+    mainmenu->addChild(menuItem,2);
 
-    // Create a Label to identify the sample
-    auto label = LabelTTF::create("Chapter 7", "Arial", 24);
-    
-    // position the label on the center of the screen
-    label->setPosition(Vec2(origin.x + visibleSize.width/2,
-                            origin.y + visibleSize.height - label->getContentSize().height));
-    
-    // add the label as a child to this layer
-    this->addChild(label, 1);
-    
+    // add main menu
+    mainmenu->setPosition(Vec2::ZERO);
+    this->addChild(mainmenu, 1);
 
     return true;
 }

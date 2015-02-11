@@ -3,6 +3,8 @@
 
 #include "cocos2d.h"
 
+#include <iostream>
+
 USING_NS_CC;
 
 class Chapter7_1 : public Ref

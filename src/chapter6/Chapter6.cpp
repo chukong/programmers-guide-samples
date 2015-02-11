@@ -55,6 +55,16 @@ bool Chapter6::init()
     closemenu->setPosition(Vec2::ZERO);
     this->addChild(closemenu, 1);
     
+    // Create a Label to identify the sample
+    auto label = LabelTTF::create("Chapter 6", "Marker Felt.ttf", 32);
+    
+    // position the label on the center of the screen
+    label->setPosition(Vec2(origin.x + visibleSize.width/2,
+                            origin.y + visibleSize.height - label->getContentSize().height));
+    
+    // add the label as a child to this layer
+    this->addChild(label, 1);
+    
     /////////////////////////////
     // 3. add main menu
     auto mainmenu = Menu::create();
@@ -143,20 +153,12 @@ bool Chapter6::init()
                           (Vec2(origin.x+visibleSize.width/2, origin.y+visibleSize.height).y - (++index) * 40));
     
     mainmenu->addChild(menuItem,2);
-    mainmenu->setPosition(Vec2::ZERO);
     
     // add main menu
+    mainmenu->setPosition(Vec2::ZERO);
     this->addChild(mainmenu, 1);
 
-    // Create a Label to identify the sample
-    auto label = LabelTTF::create("Chapter 6", "Marker Felt.ttf", 32);
     
-    // position the label on the center of the screen
-    label->setPosition(Vec2(origin.x + visibleSize.width/2,
-                            origin.y + visibleSize.height - label->getContentSize().height));
-    
-    // add the label as a child to this layer
-    this->addChild(label, 1);
     
     return true;
 }
