@@ -1,6 +1,7 @@
 #include "Chapter7.h"
 #include "Chapter7_1.h"
 #include "Chapter7_2.h"
+#include "Chapter7_3.h"
 
 USING_NS_CC;
 
@@ -91,7 +92,7 @@ bool Chapter7::init()
     itemlabel = LabelTTF::create("Parallax", "Marker Felt.ttf", 32);
     menuItem = MenuItemLabel::create(itemlabel);
     menuItem->setCallback([&](cocos2d::Ref *sender) {
-        Director::getInstance()->replaceScene(Chapter7_1::createScene());
+        Director::getInstance()->replaceScene(Chapter7_3::createScene());
     });
     menuItem->setPosition(Vec2(origin.x+visibleSize.width/2, origin.y+visibleSize.height/2).x,
                           (Vec2(origin.x+visibleSize.width/2, origin.y+visibleSize.height).y - (++index) * 40));
