@@ -83,7 +83,7 @@ Scene* Chapter7_3::createScene()
     auto seq = Sequence::create(goUp, go, goDown, goBack, nullptr);
     parallax->runAction( (RepeatForever::create(seq) ));
     
-    scene->addChild(parallax, 1); 
+    scene->addChild(parallax, 1);
     
     return scene;
 }
