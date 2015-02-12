@@ -14,6 +14,9 @@ Scene* Chapter6_1::createScene()
     // create a scene
     auto scene = Scene::create();
     
+    auto layer = LayerColor::create(Color4B::GRAY);
+    scene->addChild(layer);
+    
     // add title
     auto label = LabelTTF::create("Label", "Marker Felt.ttf", 32);
     label->setPosition(Vec2(visibleRect.origin.x+visibleRect.size.width/2, visibleRect.origin.y+visibleRect.size.height/2).x,
@@ -82,16 +85,18 @@ Scene* Chapter6_1::createScene()
     scene->addChild(myLabel5, 1);
 
     auto myLabel6 = Label::createWithTTF("LabelTTF with Outline", "Marker Felt.ttf", 32);
-    myLabel6->enableOutline(Color4B::WHITE);
-    myLabel6->setColor(Color3B::RED);
+    myLabel6->setTextColor(Color4B::RED);
+    //setColor will change the color of the whole label with effects as if 3.4
+//    myLabel6->setColor(Color3B::RED);
+    myLabel6->enableOutline(Color4B::WHITE, 1);
     myLabel6->setPosition(Vec2(origin.x+visibleSize.width/2, origin.y+visibleSize.height/2).x,
                           (Vec2(origin.x+visibleSize.width/2, origin.y+visibleSize.height).y - (++index) * 40));
     
     scene->addChild(myLabel6, 1);
     
     auto myLabel7 = Label::createWithTTF("LabelTTF with Glow", "Marker Felt.ttf", 32);
-    myLabel7->enableGlow(Color4B::WHITE);
-    myLabel7->setColor(Color3B::RED);
+    myLabel7->enableGlow(Color4B::YELLOW);
+    myLabel7->setTextColor(Color4B::RED);
     myLabel7->setPosition(Vec2(origin.x+visibleSize.width/2, origin.y+visibleSize.height/2).x,
                           (Vec2(origin.x+visibleSize.width/2, origin.y+visibleSize.height).y - (++index) * 40));
     
