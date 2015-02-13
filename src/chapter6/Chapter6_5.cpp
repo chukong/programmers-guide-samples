@@ -39,24 +39,24 @@ Scene* Chapter6_5::createScene()
     // loadingbar
     auto loadingBar = LoadingBar::create("LoadingBarFile.png");
     loadingBar->loadTexture("LoadingBarFile.png");
-    loadingBar->setPercent(0.0);
-    loadingBar->setDirection(LoadingBar::Direction::RIGHT);
+    loadingBar->setPercent(20.0);
+    loadingBar->setDirection(LoadingBar::Direction::LEFT);
     loadingBar->setPosition(Vec2(visibleSize.width / 2, visibleSize.height - (++index) * 40));
     
     scene->addChild(loadingBar, 1);
     
-//    loadingBar->schedule([&](float f){
-//        if (loadingBar->getPercent() <= 100.0)
-//        {
-//            loadingBar->setPercent(loadingBar->getPercent() + 10.00f);
-//            std::cout << "LoadingBar percent: " << loadingBar->getPercent() << std::endl;
-//        }
-//        else
-//        {
-//            loadingBar->unschedule("update_loading_bar");
-//            std::cout << "Loading complete!" << std::endl;
-//        }
-//    }, 0.5f, "update_loading_bar");
+    loadingBar->schedule([loadingBar](float f){
+        if (loadingBar->getPercent() < 100.0)
+        {
+            loadingBar->setPercent(loadingBar->getPercent() + 10.00f);
+            std::cout << "LoadingBar percent: " << loadingBar->getPercent() << std::endl;
+        }
+        else
+        {
+            loadingBar->unschedule("update_loading_bar");
+            std::cout << "Loading complete!" << std::endl;
+        }
+    }, 0.5f, "update_loading_bar");
     
     // return the scene
     return scene;
