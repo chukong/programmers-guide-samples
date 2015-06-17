@@ -9,6 +9,9 @@
 #include "Chapter9_8.h"
 #include "Chapter9_9.h"
 #include "Chapter9_10.h"
+#include "Chapter9_11.h"
+#include "Chapter9_12.h"
+#include "Chapter9_13.h"
 
 USING_NS_CC;
 
@@ -50,7 +53,7 @@ bool Chapter9::init()
                                            "CloseSelected.png",
                                            CC_CALLBACK_1(Chapter9::onMenuCloseCallback, this));
     
-	closeItem->setPosition(Vec2(origin.x + visibleSize.width - closeItem->getContentSize().width/2 ,
+    closeItem->setPosition(Vec2(origin.x + visibleSize.width - closeItem->getContentSize().width/2 ,
                                 origin.y + closeItem->getContentSize().height/2));
 
     // create menu, it's an autorelease object
@@ -183,6 +186,44 @@ bool Chapter9::init()
     
     mainmenu->addChild(menuItem,2);
     mainmenu->setPosition(Vec2::ZERO);
+
+    // add "Test Particle3D"
+    itemlabel = LabelTTF::create("Particle3D", "Arial", 24);
+    menuItem = MenuItemLabel::create(itemlabel);
+    menuItem->setCallback([&](cocos2d::Ref *sender) {
+        Director::getInstance()->replaceScene(Chapter9_11::createScene());
+    });
+    menuItem->setPosition(Vec2(origin.x + visibleSize.width / 2, origin.y + visibleSize.height / 2).x,
+        (Vec2(origin.x + visibleSize.width / 2, origin.y + visibleSize.height).y - (++index) * 40));
+
+    mainmenu->addChild(menuItem, 2);
+    mainmenu->setPosition(Vec2::ZERO);
+
+
+    // add "Test Physics3D"
+    itemlabel = LabelTTF::create("Physics3D", "Arial", 24);
+    menuItem = MenuItemLabel::create(itemlabel);
+    menuItem->setCallback([&](cocos2d::Ref *sender) {
+        Director::getInstance()->replaceScene(Chapter9_12::createScene());
+    });
+    menuItem->setPosition(Vec2(origin.x + visibleSize.width / 2, origin.y + visibleSize.height / 2).x,
+        (Vec2(origin.x + visibleSize.width / 2, origin.y + visibleSize.height).y - (++index) * 40));
+
+    mainmenu->addChild(menuItem, 2);
+    mainmenu->setPosition(Vec2::ZERO);
+
+
+    // add "Test NavMesh"
+    itemlabel = LabelTTF::create("NavMesh", "Arial", 24);
+    menuItem = MenuItemLabel::create(itemlabel);
+    menuItem->setCallback([&](cocos2d::Ref *sender) {
+        Director::getInstance()->replaceScene(Chapter9_13::createScene());
+    });
+    menuItem->setPosition(Vec2(origin.x + visibleSize.width / 2, origin.y + visibleSize.height / 2).x,
+        (Vec2(origin.x + visibleSize.width / 2, origin.y + visibleSize.height).y - (++index) * 40));
+
+    mainmenu->addChild(menuItem, 2);
+    mainmenu->setPosition(Vec2::ZERO);
     
     // add main menu
     this->addChild(mainmenu, 1);
@@ -207,7 +248,7 @@ bool Chapter9::init()
 void Chapter9::onMenuCloseCallback(Ref* sender)
 {
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_WP8) || (CC_TARGET_PLATFORM == CC_PLATFORM_WINRT)
-	MessageBox("You pressed the close button. Windows Store Apps do not implement a close button.","Alert");
+    MessageBox("You pressed the close button. Windows Store Apps do not implement a close button.","Alert");
     return;
 #endif
 
