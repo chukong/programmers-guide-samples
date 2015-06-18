@@ -49,7 +49,7 @@ Scene* Chapter9_13::createScene()
 
     auto camera = Camera::createPerspective(60, (GLfloat)winSize.width / winSize.height, 1.0f, 1000.0f);
     camera->setCameraFlag(CameraFlag::USER1);
-    camera->setPosition3D(Vec3(0.0, 50.0f, 80.0f));
+    camera->setPosition3D(Vec3(0.0f, 30.0f, 60.0f));
     camera->lookAt(Vec3(0.0, 0.0, 0.0), Vec3(0.0, 1.0, 0.0));
     scene->addChild(camera);
 
@@ -75,11 +75,35 @@ Scene* Chapter9_13::createScene()
     auto agent = NavMeshAgent::create(param);
     auto agentNode = Sprite3D::create(filePath);
     agent->setOrientationRefAxes(Vec3(-1.0f, 0.0f, 1.0f));
-    agentNode->setPosition3D(Vec3(0.0f, 2.34667206f, 0.0f));
+    agentNode->setPosition3D(Vec3(30.0f, 1.0f, 0.0f));
     agentNode->setScale(0.05f);
     agentNode->addComponent(agent);
     agentNode->setCameraMask((unsigned short)CameraFlag::USER1);
     scene->addChild(agentNode);
+
+    {
+        auto obstacle = NavMeshObstacle::create(2.0f, 6.0f);
+        auto obstacleNode = Sprite3D::create("box.c3t");
+        obstacleNode->setTexture("HelloWorld.png");
+        obstacleNode->setPosition3D(Vec3(35.0f, 1.0f, 10.0f));
+        obstacleNode->setScale(3.0f);
+        obstacleNode->setScaleY(10.0f);
+        obstacleNode->addComponent(obstacle);
+        obstacleNode->setCameraMask((unsigned short)CameraFlag::USER1);
+        scene->addChild(obstacleNode);
+    }
+
+    {
+        auto obstacle = NavMeshObstacle::create(2.0f, 6.0f);
+        auto obstacleNode = Sprite3D::create("box.c3t");
+        obstacleNode->setTexture("HelloWorld.png");
+        obstacleNode->setPosition3D(Vec3(-35.0f, 1.0f, 0.0f));
+        obstacleNode->setScale(3.0f);
+        obstacleNode->setScaleY(10.0f);
+        obstacleNode->addComponent(obstacle);
+        obstacleNode->setCameraMask((unsigned short)CameraFlag::USER1);
+        scene->addChild(obstacleNode);
+    }
 
     agentNode->runAction(RepeatForever::create(Sequence::create(CallFunc::create([=](){
         float x = cocos2d::random(-50.0f, 50.0f);
