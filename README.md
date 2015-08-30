@@ -9,6 +9,9 @@
 * each chapter should do as much work in the constructor. no need for `::init()`
 * model the code design after chapter 2's example code. Follow these same conventions.
 
+## Prerequisites
+* make sure to drop in a cocos2d-x folder into libs or make a new symlink to where your cocos2d-x directory lives already.
+
 ## How to compile the samples
 
     $ git clone https://github.com/chukong/programmers-guide-samples.git
