@@ -638,6 +638,8 @@
 		7EC0CFCC19ECD4BE00C41BDA /* dot.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EC0CFC819ECD2FD00C41BDA /* dot.png */; };
 		7EC0CFCD19ECE10A00C41BDA /* dot.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EC0CFC819ECD2FD00C41BDA /* dot.png */; };
 		7EC0CFCE19ECE10B00C41BDA /* dot.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EC0CFC819ECD2FD00C41BDA /* dot.png */; };
+		B633D6751B02E31000E32ECA /* Chapter9_11.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B633D6731B02E31000E32ECA /* Chapter9_11.cpp */; };
+		B633D6761B02E31000E32ECA /* Chapter9_11.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B633D6731B02E31000E32ECA /* Chapter9_11.cpp */; };
 		B686A5F11AF1D2850050773F /* chapter9 in Resources */ = {isa = PBXBuildFile; fileRef = B686A5F01AF1D2850050773F /* chapter9 */; };
 		B686A5F21AF1D2850050773F /* chapter9 in Resources */ = {isa = PBXBuildFile; fileRef = B686A5F01AF1D2850050773F /* chapter9 */; };
 		B6C9D0481AF0C37C002EC43F /* Chapter9_10.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B6C9D0461AF0C37C002EC43F /* Chapter9_10.cpp */; };
@@ -989,6 +991,8 @@
 		7EBF317E19E843F100A7FBEA /* Chapter3.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Chapter3.cpp; sourceTree = "<group>"; };
 		7EBF317F19E843F100A7FBEA /* Chapter3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Chapter3.h; sourceTree = "<group>"; };
 		7EC0CFC819ECD2FD00C41BDA /* dot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dot.png; sourceTree = "<group>"; };
+		B633D6731B02E31000E32ECA /* Chapter9_11.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Chapter9_11.cpp; path = chapter9/Chapter9_11.cpp; sourceTree = "<group>"; };
+		B633D6741B02E31000E32ECA /* Chapter9_11.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Chapter9_11.h; path = chapter9/Chapter9_11.h; sourceTree = "<group>"; };
 		B686A5F01AF1D2850050773F /* chapter9 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = chapter9; sourceTree = "<group>"; };
 		B6C9D0461AF0C37C002EC43F /* Chapter9_10.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Chapter9_10.cpp; path = chapter9/Chapter9_10.cpp; sourceTree = "<group>"; };
 		B6C9D0471AF0C37C002EC43F /* Chapter9_10.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Chapter9_10.h; path = chapter9/Chapter9_10.h; sourceTree = "<group>"; };
@@ -1669,6 +1673,8 @@
 		7E53686A19EAD87E005C3C64 /* chapter9 */ = {
 			isa = PBXGroup;
 			children = (
+				B633D6731B02E31000E32ECA /* Chapter9_11.cpp */,
+				B633D6741B02E31000E32ECA /* Chapter9_11.h */,
 				B6C9D0461AF0C37C002EC43F /* Chapter9_10.cpp */,
 				B6C9D0471AF0C37C002EC43F /* Chapter9_10.h */,
 				7E53686B19EAD894005C3C64 /* AppDelegate.cpp */,
@@ -2776,6 +2782,7 @@
 				7E53688719EAD894005C3C64 /* Chapter9_3.cpp in Sources */,
 				7E53688D19EAD894005C3C64 /* Chapter9_6.cpp in Sources */,
 				5E38D2C619F0F3DD0099B433 /* Chapter9_9.cpp in Sources */,
+				B633D6751B02E31000E32ECA /* Chapter9_11.cpp in Sources */,
 				50BA59CD19D4992C0070A133 /* AppController.mm in Sources */,
 				50BA59CE19D4992C0070A133 /* RootViewController.mm in Sources */,
 				50BA59CF19D4992C0070A133 /* main.m in Sources */,
@@ -2790,6 +2797,7 @@
 				7E53688819EAD894005C3C64 /* Chapter9_3.cpp in Sources */,
 				7E53688C19EAD894005C3C64 /* Chapter9_5.cpp in Sources */,
 				7E53688219EAD894005C3C64 /* AppDelegate.cpp in Sources */,
+				B633D6761B02E31000E32ECA /* Chapter9_11.cpp in Sources */,
 				7E53689019EAD894005C3C64 /* Chapter9_7.cpp in Sources */,
 				7E53688E19EAD894005C3C64 /* Chapter9_6.cpp in Sources */,
 				B6C9D0491AF0C37C002EC43F /* Chapter9_10.cpp in Sources */,
@@ -4231,6 +4239,7 @@
 					"$(SRCROOT)/../libs/cocos2d-x/cocos",
 					"$(SRCROOT)/../libs/cocos2d-x/cocos/audio/include",
 					"$(SRCROOT)/../libs/cocos2d-x/cocos/editor-support",
+					"$(SRCROOT)/../libs/cocos2d-x",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
@@ -4250,6 +4259,7 @@
 					"$(SRCROOT)/../libs/cocos2d-x/cocos",
 					"$(SRCROOT)/../libs/cocos2d-x/cocos/audio/include",
 					"$(SRCROOT)/../libs/cocos2d-x/cocos/editor-support",
+					"$(SRCROOT)/../libs/cocos2d-x",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
