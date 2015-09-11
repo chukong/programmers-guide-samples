@@ -69,7 +69,7 @@ bool MainScene::init()
     // create the menu items for each chaper
     for (int i=0; i < vChapters.size(); i++)
     {
-        auto itemLabel = LabelTTF::create(vChapters.at(i), "Arial", 24);
+        auto itemLabel = LabelTTF::create(vChapters.at(i), "Arial", 32);
         auto menuItemLabel = MenuItemLabel::create(itemLabel);
         
         menuItemLabel->setPosition(Vec2(origin.x+visibleSize.width/2, origin.y+visibleSize.height/2).x,
