@@ -1,5 +1,5 @@
-#ifndef __HELLOWORLD_SCENE_H__
-#define __HELLOWORLD_SCENE_H__
+#ifndef __CHAPTER9_H__
+#define __CHAPTER9_H__
 
 #include "cocos2d.h"
 
@@ -19,4 +19,4 @@ public:
     CREATE_FUNC(Chapter9);
 };
 
-#endif // __HELLOWORLD_SCENE_H__
+#endif // __CHAPTER9_H__

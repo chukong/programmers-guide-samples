@@ -272,8 +272,11 @@ bool PhysicsDemo::init()
         s_currScene->getPhysicsWorld()->setDebugDrawMask(PhysicsWorld::DEBUGDRAW_ALL);
 
         //create title
-        TTFConfig ttfConfig("fonts/arial.ttf", 32);
-        auto titleLabel = Label::createWithTTF(ttfConfig,"Physics Chapter Samples");
+        //TTFConfig ttfConfig("Arial", 32);
+        //auto titleLabel = Label::createWithTTF(ttfConfig,"Physics Chapter Samples");
+        
+        auto titleLabel = LabelTTF::create("Physics Chapter Samples", "Arial", 24);
+        
         addChild(titleLabel, 9999);
         titleLabel->setPosition(Vec2(s_origin.x + s_visibleSize.width/2, s_origin.y + s_visibleSize.height - 30));
 
@@ -281,8 +284,10 @@ bool PhysicsDemo::init()
         std::string strSubtitle = subtitle();
         if( ! strSubtitle.empty() )
         {
-            ttfConfig.fontSize = 20;
-            auto subTitleLabel = Label::createWithTTF(ttfConfig, strSubtitle.c_str());
+            //ttfConfig.fontSize = 20;
+            //auto subTitleLabel = Label::createWithTTF(ttfConfig, strSubtitle.c_str());
+            
+            auto subTitleLabel = LabelTTF::create(strSubtitle.c_str(), "Arial", 20);
             addChild(subTitleLabel, 9999);
             subTitleLabel->setPosition(Vec2(s_origin.x + s_visibleSize.width/2, s_origin.y + s_visibleSize.height - 70));
         }
