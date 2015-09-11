@@ -1,0 +1,13 @@
+{
+    "ndk_module_path" :[
+        "${COCOS_FRAMEWORKS}/cocos2d-x-3.8",
+        "${COCOS_FRAMEWORKS}/cocos2d-x-3.8/cocos",
+        "${COCOS_FRAMEWORKS}/cocos2d-x-3.8/external"
+    ],
+    "copy_resources": [
+        {
+            "from": "../Resources",
+            "to": ""
+        }
+    ]
+}
