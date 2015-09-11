@@ -15,9 +15,7 @@ For iOS you should have:
 ```
 libs/libcocos2d iOS.a
 ```
-For Android you should have:
-```
-```
+For Android you should have everything if you have the Cocos app installed. If you do not, you can drop the pre-built libraries into __libs/__ and edit your projects config to reflect this.
 
 ## How to compile the samples
 iOS:
@@ -30,5 +28,6 @@ Android:
 ```
 $ git clone https://github.com/chukong/programmers-guide-samples.git
 $ cd programmers-guide-samples
-
+$ cd proj.android
+$ cocos run -p android
 ```
