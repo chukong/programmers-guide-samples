@@ -1,9 +1,9 @@
-#ifndef __CHAPTER9_H__
-#define __CHAPTER9_H__
+#ifndef __MAINSCENE_H__
+#define __MAINSCENE_H__
 
 #include "cocos2d.h"
 
-class Chapter9 : public cocos2d::Node
+class MainScene : public cocos2d::Node
 {
 public:
     // there's no 'id' in cpp, so we recommend returning the class instance pointer
@@ -16,7 +16,7 @@ public:
     void onMenuCloseCallback(cocos2d::Ref* sender);
     
     // implement the "static create()" method manually
-    CREATE_FUNC(Chapter9);
+    CREATE_FUNC(MainScene);
 };
 
-#endif // __CHAPTER9_H__
+#endif // __MAINSCENE_H__
