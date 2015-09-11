@@ -37,6 +37,16 @@ bool AppDelegate::applicationDidFinishLaunching() {
     // set FPS. the default value is 1.0/60 if you don't call this
     director->setAnimationInterval(1.0 / 60);
 
+    FileUtils::getInstance()->addSearchPath("res");
+    FileUtils::getInstance()->addSearchPath("res/chapter2");
+    FileUtils::getInstance()->addSearchPath("res/chapter3");
+    FileUtils::getInstance()->addSearchPath("res/chapter4");
+    FileUtils::getInstance()->addSearchPath("res/chapter6");
+    FileUtils::getInstance()->addSearchPath("res/chapter7");
+    FileUtils::getInstance()->addSearchPath("res/chapter9");
+    FileUtils::getInstance()->addSearchPath("res/chapter12");
+    FileUtils::getInstance()->addSearchPath("res/chapter13");
+    
     // create a scene. it's an autorelease object
     auto scene = MainScene::createScene();
 
