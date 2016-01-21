@@ -3,7 +3,7 @@
   <Identity Name="6136306D-4E1C-4339-85A7-964D852DB9A6" Publisher="CN=dalestam" Version="1.0.0.0" />
   <mp:PhoneIdentity PhoneProductId="24d2f8cc-f033-491e-90ce-f498d794d2be" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
-    <DisplayName>test.WindowsPhone</DisplayName>
+    <DisplayName>Cocos2d-x Guide.WindowsPhone</DisplayName>
     <PublisherDisplayName>msopentech</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
@@ -16,7 +16,7 @@
   </Resources>
   <Applications>
     <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="cocos2d_WindowsPhone.App">
-      <m3:VisualElements DisplayName="test.WindowsPhone" Square150x150Logo="Assets\Logo.png" Square44x44Logo="Assets\SmallLogo.png" Description="test.WindowsPhone" ForegroundText="light" BackgroundColor="transparent">
+      <m3:VisualElements DisplayName="Cocos2d-x Guide.WindowsPhone" Square150x150Logo="Assets\Logo.png" Square44x44Logo="Assets\SmallLogo.png" Description="Cocos2d-x Programmers Guide" ForegroundText="light" BackgroundColor="transparent">
         <m3:DefaultTile Wide310x150Logo="Assets\WideLogo.png" Square71x71Logo="Assets\Square71x71Logo.png">
         </m3:DefaultTile>
         <m3:SplashScreen Image="Assets\SplashScreen.png" />

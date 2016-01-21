@@ -87,7 +87,7 @@
       <AdditionalOptions>/bigobj /Zm200 %(AdditionalOptions)</AdditionalOptions>
       <DisableSpecificWarnings>%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <ForcedIncludeFiles>pch.h</ForcedIncludeFiles>
-      <AdditionalIncludeDirectories>../../Classes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../../src;..\..\src\chapter2;..\..\src\chapter3;..\..\src\chapter4;..\..\src\chapter5;..\..\src\chapter6;..\..\src\chapter7;..\..\src\chapter9;..\..\src\chapter12;..\..\src\chapter13;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <SDLCheck>false</SDLCheck>
       <PreprocessorDefinitions>CC_WINDOWS_PHONE_8_1;CC_ENABLE_CHIPMUNK_INTEGRATION=1;CC_ENABLE_CHIPMUNK_INTEGRATION=1;COCOS2D_DEBUG=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
@@ -100,7 +100,7 @@
       <AdditionalOptions>/bigobj /Zm200 %(AdditionalOptions)</AdditionalOptions>
       <DisableSpecificWarnings>%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <ForcedIncludeFiles>pch.h</ForcedIncludeFiles>
-      <AdditionalIncludeDirectories>../../Classes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../../src;..\..\src\chapter2;..\..\src\chapter3;..\..\src\chapter4;..\..\src\chapter5;..\..\src\chapter6;..\..\src\chapter7;..\..\src\chapter9;..\..\src\chapter12;..\..\src\chapter13;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <SDLCheck>false</SDLCheck>
       <PreprocessorDefinitions>CC_WINDOWS_PHONE_8_1;CC_ENABLE_CHIPMUNK_INTEGRATION=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
@@ -110,7 +110,7 @@
       <AdditionalOptions>/bigobj /Zm200 %(AdditionalOptions)</AdditionalOptions>
       <DisableSpecificWarnings>%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <ForcedIncludeFiles>pch.h</ForcedIncludeFiles>
-      <AdditionalIncludeDirectories>../../Classes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../../src;..\..\src\chapter2;..\..\src\chapter3;..\..\src\chapter4;..\..\src\chapter5;..\..\src\chapter6;..\..\src\chapter7;..\..\src\chapter9;..\..\src\chapter12;..\..\src\chapter13;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <SDLCheck>false</SDLCheck>
       <PreprocessorDefinitions>CC_WINDOWS_PHONE_8_1;CC_ENABLE_CHIPMUNK_INTEGRATION=1;CC_ENABLE_CHIPMUNK_INTEGRATION=1;COCOS2D_DEBUG=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
@@ -123,7 +123,7 @@
       <AdditionalOptions>/bigobj /Zm200 %(AdditionalOptions)</AdditionalOptions>
       <DisableSpecificWarnings>%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <ForcedIncludeFiles>pch.h</ForcedIncludeFiles>
-      <AdditionalIncludeDirectories>../../Classes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../../src;..\..\src\chapter2;..\..\src\chapter3;..\..\src\chapter4;..\..\src\chapter5;..\..\src\chapter6;..\..\src\chapter7;..\..\src\chapter9;..\..\src\chapter12;..\..\src\chapter13;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <SDLCheck>false</SDLCheck>
       <PreprocessorDefinitions>CC_WINDOWS_PHONE_8_1;CC_ENABLE_CHIPMUNK_INTEGRATION=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>

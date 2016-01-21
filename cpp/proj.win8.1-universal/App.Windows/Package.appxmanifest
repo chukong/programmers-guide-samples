@@ -2,7 +2,7 @@
 <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest">
   <Identity Name="72E03097-0A54-455B-97D7-45DF07333C1A" Publisher="CN=stamm" Version="1.0.0.0" />
   <Properties>
-    <DisplayName>test.Windows</DisplayName>
+    <DisplayName>Cocos2d-x Guide.Windows</DisplayName>
     <PublisherDisplayName>msopentech</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
@@ -15,7 +15,7 @@
   </Resources>
   <Applications>
     <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="cocos2d_Windows.App">
-      <m2:VisualElements DisplayName="test.Windows" Square150x150Logo="Assets\Logo.png" Square30x30Logo="Assets\SmallLogo.png" Description="test.Windows" ForegroundText="light" BackgroundColor="#464646">
+      <m2:VisualElements DisplayName="Cocos2d-x Guide.Windows" Square150x150Logo="Assets\Logo.png" Square30x30Logo="Assets\SmallLogo.png" Description="Cocos2d-x Programmers Guide" ForegroundText="light" BackgroundColor="#464646">
         <m2:DefaultTile>
           <m2:ShowNameOnTiles>
             <m2:ShowOn Tile="square150x150Logo" />

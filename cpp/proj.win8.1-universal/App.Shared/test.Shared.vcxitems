@@ -16,8 +16,39 @@
     <ApplicationDefinition Include="$(MSBuildThisFileDirectory)App.xaml">
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\Classes\AppDelegate.cpp" />
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\Classes\HelloWorldScene.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\AppDelegate.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\chapter12\Chapter12.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\chapter13\Chapter13.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\chapter2\Chapter2.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\chapter2\Chapter2Level1.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\chapter3\Chapter3.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\chapter4\Chapter4.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\chapter5\Chapter5.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\chapter6\Chapter6.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\chapter6\Chapter6_1.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\chapter6\Chapter6_2.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\chapter6\Chapter6_3.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\chapter6\Chapter6_4.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\chapter6\Chapter6_5.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\chapter6\Chapter6_6.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\chapter6\Chapter6_7.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\chapter7\Chapter7.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\chapter7\Chapter7_1.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\chapter7\Chapter7_2.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\chapter7\Chapter7_3.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\chapter9\Chapter9.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\chapter9\Chapter9_1.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\chapter9\Chapter9_10.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\chapter9\Chapter9_2.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\chapter9\Chapter9_3.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\chapter9\Chapter9_4.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\chapter9\Chapter9_5.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\chapter9\Chapter9_6.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\chapter9\Chapter9_7.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\chapter9\Chapter9_8.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\chapter9\Chapter9_9.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\chapter9\DrawNode3D.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\MainScene.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)App.xaml.cpp">
       <DependentUpon>$(MSBuildThisFileDirectory)App.xaml</DependentUpon>
     </ClCompile>
@@ -26,8 +57,39 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)OpenGLESPage.xaml.cpp">
       <DependentUpon>$(MSBuildThisFileDirectory)OpenGLESPage.xaml</DependentUpon>
     </ClCompile>
-    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Classes\AppDelegate.h" />
-    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Classes\HelloWorldScene.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\src\AppDelegate.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\src\chapter12\Chapter12.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\src\chapter13\Chapter13.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\src\chapter2\Chapter2.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\src\chapter2\Chapter2Level1.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\src\chapter3\Chapter3.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\src\chapter4\Chapter4.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\src\chapter5\Chapter5.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\src\chapter6\Chapter6.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\src\chapter6\Chapter6_1.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\src\chapter6\Chapter6_2.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\src\chapter6\Chapter6_3.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\src\chapter6\Chapter6_4.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\src\chapter6\Chapter6_5.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\src\chapter6\Chapter6_6.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\src\chapter6\Chapter6_7.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\src\chapter7\Chapter7.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\src\chapter7\Chapter7_1.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\src\chapter7\Chapter7_2.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\src\chapter7\Chapter7_3.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\src\chapter9\Chapter9.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\src\chapter9\Chapter9_1.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\src\chapter9\Chapter9_10.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\src\chapter9\Chapter9_2.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\src\chapter9\Chapter9_3.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\src\chapter9\Chapter9_4.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\src\chapter9\Chapter9_5.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\src\chapter9\Chapter9_6.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\src\chapter9\Chapter9_7.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\src\chapter9\Chapter9_8.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\src\chapter9\Chapter9_9.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\src\chapter9\DrawNode3D.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\src\MainScene.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)App.xaml.h">
       <DependentUpon>$(MSBuildThisFileDirectory)App.xaml</DependentUpon>
     </ClInclude>
