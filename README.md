@@ -22,6 +22,7 @@ For Windows 10 UWP and Windows 8.1 Universal App projects (WinRT Platforms) it i
 $ cd programmers-guide-samples/cpp
 $ git clone https://github.com/cocos2d/cocos2d-x.git cocos2d
 $ cd cocos2d
+$ git checkout v3.10
 $ git submodule update --init
 $ download-deps.py
 ```
