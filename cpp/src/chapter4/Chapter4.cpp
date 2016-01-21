@@ -480,20 +480,20 @@ Scene* Chapter4::createScene()
     });
     
     // menus with more than 10 items should be created with Menu::createWithArray()
-    cocos2d::Vector<MenuItem*> items;
-    items.pushBack(menuItem1);
-    items.pushBack(menuItem2);
-    items.pushBack(menuItem3);
-    items.pushBack(menuItem4);
-    items.pushBack(menuItem5);
-    items.pushBack(menuItem6);
-    items.pushBack(menuItem7);
-    items.pushBack(menuItem8);
-    items.pushBack(menuItem9);
-    items.pushBack(menuItem10);
-    items.pushBack(menuItem11);
+    cocos2d::Vector<MenuItem*> menuItems;
+    menuItems.pushBack(menuItem1);
+    menuItems.pushBack(menuItem2);
+    menuItems.pushBack(menuItem3);
+    menuItems.pushBack(menuItem4);
+    menuItems.pushBack(menuItem5);
+    menuItems.pushBack(menuItem6);
+    menuItems.pushBack(menuItem7);
+    menuItems.pushBack(menuItem8);
+    menuItems.pushBack(menuItem9);
+    menuItems.pushBack(menuItem10);
+    menuItems.pushBack(menuItem11);
 
-    auto menu = Menu::createWithArray(items);
+    auto menu = Menu::createWithArray(menuItems);
 
     menu->setName("menu");
     menuNode->addChild(menu, 1);
