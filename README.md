@@ -18,13 +18,13 @@ libs/libcocos2d iOS.a
 For Android you should have everything if you have the Cocos app installed. If you do not, you can drop the pre-built libraries into __libs/__ and edit your projects config to reflect this.
 
 For Windows 10 UWP and Windows 8.1 Universal App projects (WinRT Platforms) it is easier to work with the cocos2d-x source. Do the following:
-
-1. cd programmers-guide-samples/cpp
-2. git clone https://github.com/cocos2d/cocos2d-x.git cocos2d
-3. cd cocos2d
-4. git submodule update --init
-5. download-deps.py
-
+```
+$ cd programmers-guide-samples/cpp
+$ git clone https://github.com/cocos2d/cocos2d-x.git cocos2d
+$ cd cocos2d
+$ git submodule update --init
+$ download-deps.py
+```
 This will setup the cocos2d-x code needed by the Windows 10 and 8.1 projects.
 
 
