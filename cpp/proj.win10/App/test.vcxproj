@@ -148,7 +148,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
     <ClCompile>
       <AdditionalOptions>/bigobj /Zm200 %(AdditionalOptions)</AdditionalOptions>
-      <DisableSpecificWarnings>4453;28204;4251</DisableSpecificWarnings>
+      <DisableSpecificWarnings>4453;28204;4251;4996;</DisableSpecificWarnings>
       <SDLCheck>false</SDLCheck>
       <AdditionalIncludeDirectories>..\..\src;..\..\src\chapter2;..\..\src\chapter3;..\..\src\chapter4;..\..\src\chapter5;..\..\src\chapter6;..\..\src\chapter7;..\..\src\chapter9;..\..\src\chapter12;..\..\src\chapter13;Cocos2dEngine;Generated Files\Cocos2dEngine;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <ForcedIncludeFiles>pch.h</ForcedIncludeFiles>
@@ -161,7 +161,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
     <ClCompile>
       <AdditionalOptions>/bigobj /Zm200 %(AdditionalOptions)</AdditionalOptions>
-      <DisableSpecificWarnings>4453;28204;4251</DisableSpecificWarnings>
+      <DisableSpecificWarnings>4453;28204;4251;4996;</DisableSpecificWarnings>
       <SDLCheck>false</SDLCheck>
       <AdditionalIncludeDirectories>..\..\src;..\..\src\chapter2;..\..\src\chapter3;..\..\src\chapter4;..\..\src\chapter5;..\..\src\chapter6;..\..\src\chapter7;..\..\src\chapter9;..\..\src\chapter12;..\..\src\chapter13;Cocos2dEngine;Generated Files\Cocos2dEngine;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <ForcedIncludeFiles>pch.h</ForcedIncludeFiles>
@@ -171,7 +171,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <AdditionalOptions>/bigobj /Zm200 %(AdditionalOptions)</AdditionalOptions>
-      <DisableSpecificWarnings>4453;28204;4251</DisableSpecificWarnings>
+      <DisableSpecificWarnings>4453;28204;4251;4996;</DisableSpecificWarnings>
       <SDLCheck>false</SDLCheck>
       <AdditionalIncludeDirectories>..\..\src;..\..\src\chapter2;..\..\src\chapter3;..\..\src\chapter4;..\..\src\chapter5;..\..\src\chapter6;..\..\src\chapter7;..\..\src\chapter9;..\..\src\chapter12;..\..\src\chapter13;Cocos2dEngine;Generated Files\Cocos2dEngine;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <ForcedIncludeFiles>pch.h</ForcedIncludeFiles>
@@ -184,7 +184,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
       <AdditionalOptions>/bigobj /Zm200 %(AdditionalOptions)</AdditionalOptions>
-      <DisableSpecificWarnings>4453;28204;4251</DisableSpecificWarnings>
+      <DisableSpecificWarnings>4453;28204;4251;4996;</DisableSpecificWarnings>
       <SDLCheck>false</SDLCheck>
       <AdditionalIncludeDirectories>..\..\src;..\..\src\chapter2;..\..\src\chapter3;..\..\src\chapter4;..\..\src\chapter5;..\..\src\chapter6;..\..\src\chapter7;..\..\src\chapter9;..\..\src\chapter12;..\..\src\chapter13;Cocos2dEngine;Generated Files\Cocos2dEngine;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <ForcedIncludeFiles>pch.h</ForcedIncludeFiles>
@@ -194,7 +194,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
       <AdditionalOptions>/bigobj /Zm200 %(AdditionalOptions)</AdditionalOptions>
-      <DisableSpecificWarnings>4453;28204;4251</DisableSpecificWarnings>
+      <DisableSpecificWarnings>4453;28204;4251;4996;</DisableSpecificWarnings>
       <SDLCheck>false</SDLCheck>
       <AdditionalIncludeDirectories>..\..\src;..\..\src\chapter2;..\..\src\chapter3;..\..\src\chapter4;..\..\src\chapter5;..\..\src\chapter6;..\..\src\chapter7;..\..\src\chapter9;..\..\src\chapter12;..\..\src\chapter13;Cocos2dEngine;Generated Files\Cocos2dEngine;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <ForcedIncludeFiles>pch.h</ForcedIncludeFiles>
@@ -207,7 +207,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
       <AdditionalOptions>/bigobj /Zm200 %(AdditionalOptions)</AdditionalOptions>
-      <DisableSpecificWarnings>4453;28204;4251</DisableSpecificWarnings>
+      <DisableSpecificWarnings>4453;28204;4251;4996;</DisableSpecificWarnings>
       <SDLCheck>false</SDLCheck>
       <AdditionalIncludeDirectories>..\..\src;..\..\src\chapter2;..\..\src\chapter3;..\..\src\chapter4;..\..\src\chapter5;..\..\src\chapter6;..\..\src\chapter7;..\..\src\chapter9;..\..\src\chapter12;..\..\src\chapter13;Cocos2dEngine;Generated Files\Cocos2dEngine;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <ForcedIncludeFiles>pch.h</ForcedIncludeFiles>
