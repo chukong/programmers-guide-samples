@@ -31,6 +31,12 @@ bool AppDelegate::applicationDidFinishLaunching() {
         director->setOpenGLView(glview);
     }
 
+#if (CC_TARGET_PLATFORM == CC_PLATFORM_WINRT)
+    // Allows windows to be resizable on winrt platforms
+    Size frameSize = glview->getFrameSize();
+    glview->setDesignResolutionSize(frameSize.width, frameSize.height, ResolutionPolicy::SHOW_ALL);
+#endif
+
     // turn on display FPS
     //director->setDisplayStats(true);
 
