@@ -1,0 +1,313 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Common">
+      <UniqueIdentifier>187d3e60-961a-41ee-bc18-c510a431d22e</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets">
+      <UniqueIdentifier>f8868b9a-1bec-48df-b4b6-294815dc7a5d</UniqueIdentifier>
+      <Extensions>bmp;fbx;gif;jpg;jpeg;tga;tiff;tif;png</Extensions>
+    </Filter>
+    <Filter Include="Cocos2dEngine">
+      <UniqueIdentifier>{6b9ca606-5a38-4479-a7ec-01bdfeda67bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes">
+      <UniqueIdentifier>{a18967bc-4fa1-4c67-bf7e-3f9c8b6a1129}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\chapter2">
+      <UniqueIdentifier>{819b90ac-3982-488a-ad0c-d2a1ef57b789}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\chapter3">
+      <UniqueIdentifier>{4889689c-9495-4401-a178-27a76fa5cc2b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\chapter4">
+      <UniqueIdentifier>{2cf72b9a-ad0b-4294-9cd3-78f7595a43c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\chapter5">
+      <UniqueIdentifier>{7fff199b-cc89-42cf-869c-f7bf584938c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\chapter6">
+      <UniqueIdentifier>{417acfa4-a239-4936-a816-bb384dffb19c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\chapter7">
+      <UniqueIdentifier>{fd363f2f-54c3-4607-bf0e-51d874b6852e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\chapter9">
+      <UniqueIdentifier>{56cf7779-d1a6-4e32-b0d9-6e905bcf7e7a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\chapter12">
+      <UniqueIdentifier>{f71e86c0-1b4b-426e-b9f5-cd2ad1c936df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\chapter13">
+      <UniqueIdentifier>{8c1d0afb-04ad-40b6-aba5-a34c0f7c7263}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="App.xaml.cpp" />
+    <ClCompile Include="Cocos2dEngine\Cocos2dRenderer.cpp">
+      <Filter>Cocos2dEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="Cocos2dEngine\OpenGLES.cpp">
+      <Filter>Cocos2dEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="pch.cpp" />
+    <ClCompile Include="Cocos2dEngine\OpenGLESPage.xaml.cpp" />
+    <ClCompile Include="..\..\src\AppDelegate.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\MainScene.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\chapter2\Chapter2.cpp">
+      <Filter>Classes\chapter2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\chapter2\Chapter2Level1.cpp">
+      <Filter>Classes\chapter2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\chapter3\Chapter3.cpp">
+      <Filter>Classes\chapter3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\chapter4\Chapter4.cpp">
+      <Filter>Classes\chapter4</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\chapter5\Chapter5.cpp">
+      <Filter>Classes\chapter5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\chapter6\Chapter6.cpp">
+      <Filter>Classes\chapter6</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\chapter6\Chapter6_1.cpp">
+      <Filter>Classes\chapter6</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\chapter6\Chapter6_2.cpp">
+      <Filter>Classes\chapter6</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\chapter6\Chapter6_3.cpp">
+      <Filter>Classes\chapter6</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\chapter6\Chapter6_4.cpp">
+      <Filter>Classes\chapter6</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\chapter6\Chapter6_5.cpp">
+      <Filter>Classes\chapter6</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\chapter6\Chapter6_6.cpp">
+      <Filter>Classes\chapter6</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\chapter6\Chapter6_7.cpp">
+      <Filter>Classes\chapter6</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\chapter7\Chapter7.cpp">
+      <Filter>Classes\chapter7</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\chapter7\Chapter7_1.cpp">
+      <Filter>Classes\chapter7</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\chapter7\Chapter7_2.cpp">
+      <Filter>Classes\chapter7</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\chapter7\Chapter7_3.cpp">
+      <Filter>Classes\chapter7</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\chapter9\Chapter9.cpp">
+      <Filter>Classes\chapter9</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\chapter9\Chapter9_1.cpp">
+      <Filter>Classes\chapter9</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\chapter9\Chapter9_2.cpp">
+      <Filter>Classes\chapter9</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\chapter9\Chapter9_3.cpp">
+      <Filter>Classes\chapter9</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\chapter9\Chapter9_4.cpp">
+      <Filter>Classes\chapter9</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\chapter9\Chapter9_5.cpp">
+      <Filter>Classes\chapter9</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\chapter9\Chapter9_6.cpp">
+      <Filter>Classes\chapter9</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\chapter9\Chapter9_7.cpp">
+      <Filter>Classes\chapter9</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\chapter9\Chapter9_8.cpp">
+      <Filter>Classes\chapter9</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\chapter9\Chapter9_9.cpp">
+      <Filter>Classes\chapter9</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\chapter9\Chapter9_10.cpp">
+      <Filter>Classes\chapter9</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\chapter9\DrawNode3D.cpp">
+      <Filter>Classes\chapter9</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\chapter12\Chapter12.cpp">
+      <Filter>Classes\chapter12</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\chapter13\Chapter13.cpp">
+      <Filter>Classes\chapter13</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="App.xaml.h" />
+    <ClInclude Include="Cocos2dEngine\Cocos2dRenderer.h">
+      <Filter>Cocos2dEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="Cocos2dEngine\OpenGLES.h">
+      <Filter>Cocos2dEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="Cocos2dEngine\OpenGLESPage.xaml.h" />
+    <ClInclude Include="..\..\src\AppDelegate.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\MainScene.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\chapter2\Chapter2.h">
+      <Filter>Classes\chapter2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\chapter2\Chapter2Level1.h">
+      <Filter>Classes\chapter2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\chapter3\Chapter3.h">
+      <Filter>Classes\chapter3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\chapter4\Chapter4.h">
+      <Filter>Classes\chapter4</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\chapter5\Chapter5.h">
+      <Filter>Classes\chapter5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\chapter6\Chapter6.h">
+      <Filter>Classes\chapter6</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\chapter6\Chapter6_1.h">
+      <Filter>Classes\chapter6</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\chapter6\Chapter6_2.h">
+      <Filter>Classes\chapter6</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\chapter6\Chapter6_3.h">
+      <Filter>Classes\chapter6</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\chapter6\Chapter6_4.h">
+      <Filter>Classes\chapter6</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\chapter6\Chapter6_5.h">
+      <Filter>Classes\chapter6</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\chapter6\Chapter6_6.h">
+      <Filter>Classes\chapter6</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\chapter6\Chapter6_7.h">
+      <Filter>Classes\chapter6</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\chapter7\Chapter7.h">
+      <Filter>Classes\chapter7</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\chapter7\Chapter7_1.h">
+      <Filter>Classes\chapter7</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\chapter7\Chapter7_2.h">
+      <Filter>Classes\chapter7</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\chapter7\Chapter7_3.h">
+      <Filter>Classes\chapter7</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\chapter9\Chapter9.h">
+      <Filter>Classes\chapter9</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\chapter9\Chapter9_1.h">
+      <Filter>Classes\chapter9</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\chapter9\Chapter9_2.h">
+      <Filter>Classes\chapter9</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\chapter9\Chapter9_3.h">
+      <Filter>Classes\chapter9</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\chapter9\Chapter9_4.h">
+      <Filter>Classes\chapter9</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\chapter9\Chapter9_5.h">
+      <Filter>Classes\chapter9</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\chapter9\Chapter9_6.h">
+      <Filter>Classes\chapter9</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\chapter9\Chapter9_7.h">
+      <Filter>Classes\chapter9</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\chapter9\Chapter9_8.h">
+      <Filter>Classes\chapter9</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\chapter9\Chapter9_9.h">
+      <Filter>Classes\chapter9</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\chapter9\Chapter9_10.h">
+      <Filter>Classes\chapter9</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\chapter9\DrawNode3D.h">
+      <Filter>Classes\chapter9</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\chapter12\Chapter12.h">
+      <Filter>Classes\chapter12</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\chapter13\Chapter13.h">
+      <Filter>Classes\chapter13</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="test_TemporaryKey.pfx" />
+    <None Include="$(AngleBinPath)libEGL.dll" />
+    <None Include="$(AngleBinPath)libGLESv2.dll" />
+    <None Include="$(ZLibBinPath)zlib.dll" />
+    <None Include="$(WebsocketsBinPath)libwebsockets.dll" />
+    <None Include="$(SQLiteBinPath)sqlite3.dll" />
+    <None Include="$(OggBinPath)libogg.dll" />
+    <None Include="$(OggBinPath)libvorbis.dll" />
+    <None Include="$(OggBinPath)libvorbisfile.dll" />
+    <None Include="$(CurlBinPath)libcurl.dll" />
+    <None Include="$(CurlBinPath)libeay32.dll" />
+    <None Include="$(CurlBinPath)ssleay32.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="Cocos2dEngine\OpenGLESPage.xaml">
+      <Filter>Cocos2dEngine</Filter>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Assets\LockScreenLogo.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\SplashScreen.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square44x44Logo.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square150x150Logo.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\StoreLogo.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Wide310x150Logo.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

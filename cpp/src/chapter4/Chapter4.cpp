@@ -479,9 +479,22 @@ Scene* Chapter4::createScene()
         newSprite2->runAction(sequence->reverse());
     });
     
-    auto menu = Menu::create(menuItem1, menuItem2, menuItem3, menuItem4, menuItem5,
-                             menuItem6, menuItem7, menuItem8, menuItem9, menuItem10,
-                             menuItem11, NULL);
+    // menus with more than 10 items should be created with Menu::createWithArray()
+    cocos2d::Vector<MenuItem*> menuItems;
+    menuItems.pushBack(menuItem1);
+    menuItems.pushBack(menuItem2);
+    menuItems.pushBack(menuItem3);
+    menuItems.pushBack(menuItem4);
+    menuItems.pushBack(menuItem5);
+    menuItems.pushBack(menuItem6);
+    menuItems.pushBack(menuItem7);
+    menuItems.pushBack(menuItem8);
+    menuItems.pushBack(menuItem9);
+    menuItems.pushBack(menuItem10);
+    menuItems.pushBack(menuItem11);
+
+    auto menu = Menu::createWithArray(menuItems);
+
     menu->setName("menu");
     menuNode->addChild(menu, 1);
     menu->setPosition(Vec2::ZERO);

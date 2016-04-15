@@ -33,7 +33,9 @@ obj/
 _ReSharper*/
 [Tt]est[Rr]esult*
 ipch/
+Generated Files/
 *.opensdf
+*.opendb
 
 # Ignore files build by ndk and eclipse
 #libs/
@@ -111,6 +113,9 @@ tests/*/publish/
 
 # Android
 project.properties
+
+# Ignore winrt cocos2d folder
+/cpp/cocos2d/
 
 # Ignore prebuilt libraries folder
 /external/xxhash/

@@ -1,0 +1,253 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CLCompile Include="$(MSBuildThisFileDirectory)App.xaml.cpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)App.xaml.h" />
+    <CLCompile Include="$(MSBuildThisFileDirectory)pch.cpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)pch.h" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cocos2dRenderer.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)OpenGLES.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)OpenGLESPage.xaml.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\AppDelegate.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\MainScene.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\chapter2\Chapter2.cpp">
+      <Filter>Classes\chapter2</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\chapter2\Chapter2Level1.cpp">
+      <Filter>Classes\chapter2</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\chapter3\Chapter3.cpp">
+      <Filter>Classes\chapter3</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\chapter4\Chapter4.cpp">
+      <Filter>Classes\chapter4</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\chapter5\Chapter5.cpp">
+      <Filter>Classes\chapter5</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\chapter7\Chapter7.cpp">
+      <Filter>Classes\chapter7</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\chapter7\Chapter7_1.cpp">
+      <Filter>Classes\chapter7</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\chapter7\Chapter7_2.cpp">
+      <Filter>Classes\chapter7</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\chapter7\Chapter7_3.cpp">
+      <Filter>Classes\chapter7</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\chapter9\Chapter9.cpp">
+      <Filter>Classes\chapter9</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\chapter9\Chapter9_1.cpp">
+      <Filter>Classes\chapter9</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\chapter9\Chapter9_2.cpp">
+      <Filter>Classes\chapter9</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\chapter9\Chapter9_3.cpp">
+      <Filter>Classes\chapter9</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\chapter9\Chapter9_4.cpp">
+      <Filter>Classes\chapter9</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\chapter9\Chapter9_5.cpp">
+      <Filter>Classes\chapter9</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\chapter9\Chapter9_6.cpp">
+      <Filter>Classes\chapter9</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\chapter9\Chapter9_7.cpp">
+      <Filter>Classes\chapter9</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\chapter9\Chapter9_8.cpp">
+      <Filter>Classes\chapter9</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\chapter9\Chapter9_9.cpp">
+      <Filter>Classes\chapter9</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\chapter9\Chapter9_10.cpp">
+      <Filter>Classes\chapter9</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\chapter9\DrawNode3D.cpp">
+      <Filter>Classes\chapter9</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\chapter6\Chapter6.cpp">
+      <Filter>Classes\chapter6</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\chapter6\Chapter6_1.cpp">
+      <Filter>Classes\chapter6</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\chapter6\Chapter6_2.cpp">
+      <Filter>Classes\chapter6</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\chapter6\Chapter6_3.cpp">
+      <Filter>Classes\chapter6</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\chapter6\Chapter6_4.cpp">
+      <Filter>Classes\chapter6</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\chapter6\Chapter6_5.cpp">
+      <Filter>Classes\chapter6</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\chapter6\Chapter6_6.cpp">
+      <Filter>Classes\chapter6</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\chapter6\Chapter6_7.cpp">
+      <Filter>Classes\chapter6</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\chapter12\Chapter12.cpp">
+      <Filter>Classes\chapter12</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\chapter13\Chapter13.cpp">
+      <Filter>Classes\chapter13</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="$(MSBuildThisFileDirectory)App.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Classes">
+      <UniqueIdentifier>{38ad799c-8c3c-44a2-8e41-516c8f62f556}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\chapter2">
+      <UniqueIdentifier>{47e0cdf3-47ee-459b-9382-cbd1abc8e77c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\chapter3">
+      <UniqueIdentifier>{5017c340-531b-401f-862e-3b8767b680e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\chapter4">
+      <UniqueIdentifier>{8dae661b-79d1-4487-8aa7-b2616fb5ec44}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\chapter5">
+      <UniqueIdentifier>{7899fae1-e55c-4719-bf39-48c2e14b6c68}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\chapter7">
+      <UniqueIdentifier>{00d9cdcc-c798-441f-b6b6-cdc8301bd239}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\chapter9">
+      <UniqueIdentifier>{cd142a37-946b-4548-8c28-5c929dd3e4d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\chapter6">
+      <UniqueIdentifier>{ece5a324-593e-4560-81e2-de3579a9900a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\chapter12">
+      <UniqueIdentifier>{f6199189-6ef9-40ef-9309-f85b311b0ec6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\chapter13">
+      <UniqueIdentifier>{928cd2c7-54c0-4f68-86d9-c7699818fec4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)OpenGLES.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)OpenGLESPage.xaml.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Cocos2dRenderer.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\src\AppDelegate.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\src\MainScene.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\src\chapter2\Chapter2.h">
+      <Filter>Classes\chapter2</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\src\chapter2\Chapter2Level1.h">
+      <Filter>Classes\chapter2</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\src\chapter3\Chapter3.h">
+      <Filter>Classes\chapter3</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\src\chapter4\Chapter4.h">
+      <Filter>Classes\chapter4</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\src\chapter5\Chapter5.h">
+      <Filter>Classes\chapter5</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\src\chapter7\Chapter7.h">
+      <Filter>Classes\chapter7</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\src\chapter7\Chapter7_1.h">
+      <Filter>Classes\chapter7</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\src\chapter7\Chapter7_2.h">
+      <Filter>Classes\chapter7</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\src\chapter7\Chapter7_3.h">
+      <Filter>Classes\chapter7</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\src\chapter9\Chapter9.h">
+      <Filter>Classes\chapter9</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\src\chapter9\Chapter9_1.h">
+      <Filter>Classes\chapter9</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\src\chapter9\Chapter9_2.h">
+      <Filter>Classes\chapter9</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\src\chapter9\Chapter9_3.h">
+      <Filter>Classes\chapter9</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\src\chapter9\Chapter9_4.h">
+      <Filter>Classes\chapter9</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\src\chapter9\Chapter9_5.h">
+      <Filter>Classes\chapter9</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\src\chapter9\Chapter9_6.h">
+      <Filter>Classes\chapter9</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\src\chapter9\Chapter9_7.h">
+      <Filter>Classes\chapter9</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\src\chapter9\Chapter9_8.h">
+      <Filter>Classes\chapter9</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\src\chapter9\Chapter9_9.h">
+      <Filter>Classes\chapter9</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\src\chapter9\Chapter9_10.h">
+      <Filter>Classes\chapter9</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\src\chapter9\DrawNode3D.h">
+      <Filter>Classes\chapter9</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\src\chapter6\Chapter6.h">
+      <Filter>Classes\chapter6</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\src\chapter6\Chapter6_1.h">
+      <Filter>Classes\chapter6</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\src\chapter6\Chapter6_2.h">
+      <Filter>Classes\chapter6</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\src\chapter6\Chapter6_3.h">
+      <Filter>Classes\chapter6</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\src\chapter6\Chapter6_4.h">
+      <Filter>Classes\chapter6</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\src\chapter6\Chapter6_5.h">
+      <Filter>Classes\chapter6</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\src\chapter6\Chapter6_6.h">
+      <Filter>Classes\chapter6</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\src\chapter6\Chapter6_7.h">
+      <Filter>Classes\chapter6</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\src\chapter12\Chapter12.h">
+      <Filter>Classes\chapter12</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\src\chapter13\Chapter13.h">
+      <Filter>Classes\chapter13</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="$(MSBuildThisFileDirectory)OpenGLESPage.xaml" />
+  </ItemGroup>
+</Project>
