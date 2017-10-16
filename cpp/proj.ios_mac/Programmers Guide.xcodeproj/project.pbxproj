@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		252A48221C3B41FE00095D0C /* libcocos2d iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 252A48201C3B3CD800095D0C /* libcocos2d iOS.a */; };
+		050F225C1F953E3700429126 /* libcocos2d iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 252A48201C3B3CD800095D0C /* libcocos2d iOS.a */; };
+		050F225F1F9548CE00429126 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 050F225E1F9548CE00429126 /* CoreText.framework */; };
 		252DDC811BA248990061E3CC /* sprites.plist in Resources */ = {isa = PBXBuildFile; fileRef = 50A5DBBD19EC441300082E51 /* sprites.plist */; };
 		252DDC821BA248990061E3CC /* sprites.pvr.ccz in Resources */ = {isa = PBXBuildFile; fileRef = 50A5DBBE19EC441300082E51 /* sprites.pvr.ccz */; };
 		252DDC831BA2489F0061E3CC /* Blue_Back1.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E35329019F06ECB0080126B /* Blue_Back1.png */; };
@@ -185,6 +186,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		050F225E1F9548CE00429126 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.0.sdk/System/Library/Frameworks/CoreText.framework; sourceTree = DEVELOPER_DIR; };
 		1ACB3243164770DE00914215 /* libcurl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcurl.a; path = ../../cocos2dx/platform/third_party/ios/libraries/libcurl.a; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -405,7 +407,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				252A48221C3B41FE00095D0C /* libcocos2d iOS.a in Frameworks */,
+				050F225F1F9548CE00429126 /* CoreText.framework in Frameworks */,
+				050F225C1F953E3700429126 /* libcocos2d iOS.a in Frameworks */,
 				25A034091BA212890043DB02 /* libiconv.dylib in Frameworks */,
 				25A0340A1BA212890043DB02 /* CoreMotion.framework in Frameworks */,
 				25A0340B1BA212890043DB02 /* Foundation.framework in Frameworks */,
@@ -620,6 +623,7 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				050F225E1F9548CE00429126 /* CoreText.framework */,
 				252A48201C3B3CD800095D0C /* libcocos2d iOS.a */,
 				252A481E1C3B3B7300095D0C /* libcocos2d iOS.a */,
 				25A0344B1BA2176D0043DB02 /* libcocos2d iOS.a */,
@@ -1145,15 +1149,16 @@
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = (
+					"/Users/dubb/Projects/cocos2d-x/cocos/platform/ios",
+					"/Users/dubb/Projects/cocos2d-x/cocos/platform/ios/Simulation",
 					"$(inherited)",
-					"$(SRCROOT)/../libs/cocos2d-x/cocos/platform/ios",
-					"$(SRCROOT)/../libs/cocos2d-x/cocos/platform/ios/Simulation",
 				);
 				INFOPLIST_FILE = ios/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				LIBRARY_SEARCH_PATHS = "/Users/jtsm/Chukong-Inc/programmers-guide-samples/libs";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = "/Users/dubb/Projects/cocos2d-x/prebuilt/ios";
 				PRODUCT_NAME = "Programmers Guide";
 				SDKROOT = iphoneos;
+				STRIP_PNG_TEXT = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "";
 			};
@@ -1175,15 +1180,16 @@
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = (
+					"/Users/dubb/Projects/cocos2d-x/cocos/platform/ios",
+					"/Users/dubb/Projects/cocos2d-x/cocos/platform/ios/Simulation",
 					"$(inherited)",
-					"$(SRCROOT)/../libs/cocos2d-x/cocos/platform/ios",
-					"$(SRCROOT)/../libs/cocos2d-x/cocos/platform/ios/Simulation",
 				);
 				INFOPLIST_FILE = ios/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				LIBRARY_SEARCH_PATHS = "/Users/jtsm/Chukong-Inc/programmers-guide-samples/libs";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = "/Users/dubb/Projects/cocos2d-x/prebuilt/ios";
 				PRODUCT_NAME = "Programmers Guide";
 				SDKROOT = iphoneos;
+				STRIP_PNG_TEXT = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "";
 			};
@@ -1257,20 +1263,21 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = (
-					"/Applications/Cocos/frameworks/cocos2d-x-3.9",
-					"/Applications/Cocos/frameworks/cocos2d-x-3.9/cocos",
-					"/Applications/Cocos/frameworks/cocos2d-x-3.9/cocos/base",
-					"/Applications/Cocos/frameworks/cocos2d-x-3.9/cocos/physics",
-					"/Applications/Cocos/frameworks/cocos2d-x-3.9/cocos/math",
-					"/Applications/Cocos/frameworks/cocos2d-x-3.9/cocos/2d",
-					"/Applications/Cocos/frameworks/cocos2d-x-3.9/cocos/ui",
-					"/Applications/Cocos/frameworks/cocos2d-x-3.9/cocos/network",
-					"/Applications/Cocos/frameworks/cocos2d-x-3.9/cocos/audio/include",
-					"/Applications/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support",
-					"/Applications/Cocos/frameworks/cocos2d-x-3.9/extensions",
-					"/Applications/Cocos/frameworks/cocos2d-x-3.9/external",
-					"/Applications/Cocos/frameworks/cocos2d-x-3.9/external/chipmunk/include/chipmunk",
+					"/Users/dubb/Projects/cocos2d-x/",
+					"/Users/dubb/Projects/cocos2d-x/cocos",
+					"/Users/dubb/Projects/cocos2d-x/cocos/base",
+					"/Users/dubb/Projects/cocos2d-x/cocos/physics",
+					"/Users/dubb/Projects/cocos2d-x/cocos/math",
+					"/Users/dubb/Projects/cocos2d-x/cocos/2d",
+					"/Users/dubb/Projects/cocos2d-x/cocos/ui",
+					"/Users/dubb/Projects/cocos2d-x/cocos/network",
+					"/Users/dubb/Projects/cocos2d-x/cocos/audio/include",
+					"/Users/dubb/Projects/cocos2d-x/cocos/editor-support",
+					"/Users/dubb/Projects/cocos2d-x/extensions",
+					"/Users/dubb/Projects/cocos2d-x/external",
+					"/Users/dubb/Projects/cocos2d-x/external/chipmunk/include/chipmunk",
 				);
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1286,20 +1293,21 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = (
-					"/Applications/Cocos/frameworks/cocos2d-x-3.9",
-					"/Applications/Cocos/frameworks/cocos2d-x-3.9/cocos",
-					"/Applications/Cocos/frameworks/cocos2d-x-3.9/cocos/base",
-					"/Applications/Cocos/frameworks/cocos2d-x-3.9/cocos/physics",
-					"/Applications/Cocos/frameworks/cocos2d-x-3.9/cocos/math",
-					"/Applications/Cocos/frameworks/cocos2d-x-3.9/cocos/2d",
-					"/Applications/Cocos/frameworks/cocos2d-x-3.9/cocos/ui",
-					"/Applications/Cocos/frameworks/cocos2d-x-3.9/cocos/network",
-					"/Applications/Cocos/frameworks/cocos2d-x-3.9/cocos/audio/include",
-					"/Applications/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support",
-					"/Applications/Cocos/frameworks/cocos2d-x-3.9/extensions",
-					"/Applications/Cocos/frameworks/cocos2d-x-3.9/external",
-					"/Applications/Cocos/frameworks/cocos2d-x-3.9/external/chipmunk/include/chipmunk",
+					"/Users/dubb/Projects/cocos2d-x/",
+					"/Users/dubb/Projects/cocos2d-x/cocos",
+					"/Users/dubb/Projects/cocos2d-x/cocos/base",
+					"/Users/dubb/Projects/cocos2d-x/cocos/physics",
+					"/Users/dubb/Projects/cocos2d-x/cocos/math",
+					"/Users/dubb/Projects/cocos2d-x/cocos/2d",
+					"/Users/dubb/Projects/cocos2d-x/cocos/ui",
+					"/Users/dubb/Projects/cocos2d-x/cocos/network",
+					"/Users/dubb/Projects/cocos2d-x/cocos/audio/include",
+					"/Users/dubb/Projects/cocos2d-x/cocos/editor-support",
+					"/Users/dubb/Projects/cocos2d-x/extensions",
+					"/Users/dubb/Projects/cocos2d-x/external",
+					"/Users/dubb/Projects/cocos2d-x/external/chipmunk/include/chipmunk",
 				);
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
