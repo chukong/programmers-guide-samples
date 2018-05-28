@@ -89,8 +89,7 @@ bool MainScene::init()
         Director::getInstance()->replaceScene(Chapter4::createScene());
     });
     vMenuItems.at(3)->setCallback([&](cocos2d::Ref *sender) {
-        auto chapter5 = Chapter5();
-        Director::getInstance()->replaceScene(chapter5.getScene1());
+        Director::getInstance()->replaceScene(Chapter5::createScene());
     });
     vMenuItems.at(4)->setCallback([&](cocos2d::Ref *sender) {
         Director::getInstance()->replaceScene(Chapter6::createScene());

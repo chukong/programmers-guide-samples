@@ -1,5 +1,5 @@
-#ifndef __HELLOWORLD_SCENE_H__
-#define __HELLOWORLD_SCENE_H__
+#ifndef __CHAPTER2_H__
+#define __CHAPTER2_H__
 
 #include "cocos2d.h"
 
@@ -13,4 +13,4 @@ class Chapter2
         static cocos2d::Scene* createScene();
 };
 
-#endif // __HELLOWORLD_SCENE_H__
+#endif // __CHAPTER2_H__

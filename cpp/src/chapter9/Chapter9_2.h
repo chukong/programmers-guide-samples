@@ -11,4 +11,4 @@ class Chapter9_2 : public Ref
         static cocos2d::Scene* createScene();
 };
 
-#endif // __CHAPTER_10_2_H__
+#endif // __CHAPTER_9_2_H__

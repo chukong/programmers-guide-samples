@@ -29,4 +29,4 @@ protected:
     bool _pick;
 };
 
-#endif // __CHAPTER_10_6_H__
+#endif // __CHAPTER_9_7_H__

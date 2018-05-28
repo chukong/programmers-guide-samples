@@ -18,4 +18,4 @@ public:
     CREATE_FUNC(Chapter7);
 };
 
-#endif // __CHAPTER6_H__
+#endif // __CHAPTER7_H__
