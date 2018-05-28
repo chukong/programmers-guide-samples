@@ -11,4 +11,4 @@ public:
     static cocos2d::Scene* createScene();
 };
 
-#endif // __CHAPTER_9_9_H__
+#endif // __CHAPTER_9_10_H__
